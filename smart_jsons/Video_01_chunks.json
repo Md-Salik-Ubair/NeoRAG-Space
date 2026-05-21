@@ -1,0 +1,923 @@
+{
+    "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+    "chunks": [
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 0.0,
+            "end": 31.5,
+            "text": "Hi guys, my name is Nitish and you welcome to my YouTube channel. So you all are very happy to announce that I will start making videos on this channel. Now I know I am late and many YouTube channels have already posted videos on my channel. But I am not talking about it, I am starting from late, but I will make sure that my videos are in depth and you guys will help me. Now I have decided that I have decided to post a lot of videos on my channel."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 18.5,
+            "end": 56.5,
+            "text": "But I am not talking about it, I am starting from late, but I will make sure that my videos are in depth and you guys will help me. Now I have decided that I have decided to post a lot of videos on my channel. But when I tried to execute the plan of this whole process, I realized that making videos on my channel is a bit difficult. The reason behind this is that I have developed a very lazy and advanced technology. You will notice that in the last two years, every day you get a new model or a new research paper or a new tool to listen to."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 41.5,
+            "end": 79.5,
+            "text": "The reason behind this is that I have developed a very lazy and advanced technology. You will notice that in the last two years, every day you get a new model or a new research paper or a new tool to listen to. Now it is difficult to plan a curriculum as a teacher. So last 3 months I have spent in planning and subsequent research. Today's video is not an announcement video where I will come to the camera and I will tell you how much I will be able to present the guest spot."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 61.0,
+            "end": 93.5,
+            "text": "So last 3 months I have spent in planning and subsequent research. Today's video is not an announcement video where I will come to the camera and I will tell you how much I will be able to present the guest spot. No, what I want is that through this video, I want to share my past 3 months with you. I want to share with you how I have done this whole planning."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 79.5,
+            "end": 110.5,
+            "text": "No, what I want is that through this video, I want to share my past 3 months with you. I want to share with you how I have done this whole planning. I want to share my past 3 months with you and I want to show you how I have made a curriculum. Not only that, but also my past 3 months with you."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 93.5,
+            "end": 124.5,
+            "text": "I want to share my past 3 months with you and I want to show you how I have made a curriculum. Not only that, but also my past 3 months with you. So on the whole, if you are planning to learn a lot from me, then this is a very important video. Please make sure that you can watch this video till the end. So now let's start this video."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 110.5,
+            "end": 141.5,
+            "text": "So on the whole, if you are planning to learn a lot from me, then this is a very important video. Please make sure that you can watch this video till the end. So now let's start this video. Now guys, let's start our discussion. I want to tell you a little bit about why you should study the generative AI today. Let's start with the discussion. First of all, I want to tell you what the generative AI is. I have a definition for you all. I will read it once in a while and then we will discuss it."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 131.5,
+            "end": 166.5,
+            "text": "Let's start with the discussion. First of all, I want to tell you what the generative AI is. I have a definition for you all. I will read it once in a while and then we will discuss it. So generative AI is a type of AI that creates new content such as text, images, music or even code by learning patterns from existing data, mimicking human creativity. This is a very good definition and I will give you a little background so that you can perceive this definition better. So if you look at the history of AI, then AI work is going on for the last 7-7 years."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 153.5,
+            "end": 187.5,
+            "text": "This is a very good definition and I will give you a little background so that you can perceive this definition better. So if you look at the history of AI, then AI work is going on for the last 7-7 years. Which means that generations of brilliant individuals have come and they have given their own field. And the result was that many technologies, techniques, AI systems have come to build. Like a very popular technology symbolized in ATEs, which has been made by the help of expert systems, which is a type of AI system."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 172.5,
+            "end": 205.5,
+            "text": "And the result was that many technologies, techniques, AI systems have come to build. Like a very popular technology symbolized in ATEs, which has been made by the help of expert systems, which is a type of AI system. After that, it has been very successful in fuzzy logic, evolutionary algorithm, and the field of NLP has been very successful in the field of computer vision. But one technique that has the most impact created in the domain of AI was machine learning."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 187.5,
+            "end": 219.5,
+            "text": "After that, it has been very successful in fuzzy logic, evolutionary algorithm, and the field of NLP has been very successful in the field of computer vision. But one technique that has the most impact created in the domain of AI was machine learning. Machine learning, what do you do? You take a mathematical or statistical algorithm and provide it with a lot of data. And our goal here is to get the data from the statistical algorithm and get it from the data."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 207.5,
+            "end": 238.5,
+            "text": "You take a mathematical or statistical algorithm and provide it with a lot of data. And our goal here is to get the data from the statistical algorithm and get it from the data. So that when you give it a new data, it will give you the prediction. The simple idea was that this is also relevant. We use machine learning and we have a related job in the market. So machine learning is that you can make 3-4 types of models."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 227.5,
+            "end": 259.5,
+            "text": "We use machine learning and we have a related job in the market. So machine learning is that you can make 3-4 types of models. First, you can make such models, which are printed numbers. For example, you can make such a model, which can be printed by a stock price of a particular company. Basically, regression problem. Or you can make such a ML model, where you can classify one category in given categories."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 242.5,
+            "end": 276.5,
+            "text": "For example, you can make such a model, which can be printed by a stock price of a particular company. Basically, regression problem. Or you can make such a ML model, where you can classify one category in given categories. Like if we showed a photo of our model, then it can be printed and explained that it is a cat or dog. Classification problem. Or you can use ML as a ranking problem. Like given a product, you want to rank the most similar products and show them to you."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 266.5,
+            "end": 296.5,
+            "text": "Or you can use ML as a ranking problem. Like given a product, you want to rank the most similar products and show them to you. Recommendations systems. So you used ML as a problem in this way. But, you never used machine learning as a problem in this way. Where human creativity was needed. But after the generative AI, this thing changed. What is the biggest and biggest differentiating factor of generative AI?"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 286.5,
+            "end": 316.5,
+            "text": "Where human creativity was needed. But after the generative AI, this thing changed. What is the biggest and biggest differentiating factor of generative AI? That it can create new things. It can create text, images, videos, even code. And this is the biggest power of generative AI. Even before 2-3 years ago, people used to say that you should make strong systems. Human creativity is not going to replace AI."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 305.5,
+            "end": 338.5,
+            "text": "And this is the biggest power of generative AI. Even before 2-3 years ago, people used to say that you should make strong systems. Human creativity is not going to replace AI. At least now. But, within 2 years, after generative AI, this statement has completely fallen. Now, in today's rate, human creativity can be mimicked. With the help of generative AI. And this is the biggest superpower that generative AI has. Now, you have understood that generative AI is a thing that we will see in a quick way."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 328.5,
+            "end": 361.5,
+            "text": "With the help of generative AI. And this is the biggest superpower that generative AI has. Now, you have understood that generative AI is a thing that we will see in a quick way. That generative AI is in the entire AI landscape. So, this famous diagram, we will see in a pretty short time. So, the outer circle of AI is in the air. Everything comes under this particular umbrella. And, as I said, in AI, there are many techniques like the one in the AI. It is a symbolic AI, it is an export system, it is a fuzzy logic. But, the most powerful technique in it is machine learning."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 351.5,
+            "end": 385.5,
+            "text": "And, as I said, in AI, there are many techniques like the one in the AI. It is a symbolic AI, it is an export system, it is a fuzzy logic. But, the most powerful technique in it is machine learning. In machine learning, there are many techniques, statistical techniques. Your model-based algorithms are different. But, there is a more technique that came out of it. And, there is deep learning, where you use neural network-based models. And, finally, deep learning, when a very advanced transformer architecture came in, then, after that, generative AI originated from there."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 375.5,
+            "end": 407.5,
+            "text": "And, finally, deep learning, when a very advanced transformer architecture came in, then, after that, generative AI originated from there. So, this diagram is a very good mental model. To track this whole story, there is a machine learning, deep learning and generative AI. So, this kind of thing should be known to you, if you want to learn generative AI. So, now, you have understood, now, let's discuss one important thing."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 392.5,
+            "end": 422.5,
+            "text": "there is a machine learning, deep learning and generative AI. So, this kind of thing should be known to you, if you want to learn generative AI. So, now, you have understood, now, let's discuss one important thing. How in the past two years, within two years, generative AI has become the most powerful technology in our current world. I would like to show you the impact areas, where generative AI has created the most impact."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 407.5,
+            "end": 437.5,
+            "text": "How in the past two years, within two years, generative AI has become the most powerful technology in our current world. I would like to show you the impact areas, where generative AI has created the most impact. So, there are many impact areas, where generative AI has created some significant contribution. But, I will talk about four areas, where I think generative AI has a very big contribution, to enhance that field."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 426.5,
+            "end": 456.5,
+            "text": "created some significant contribution. But, I will talk about four areas, where I think generative AI has a very big contribution, to enhance that field. So, the first area, is the support of the customer. So, this is a field, where generative AI has created significant impact. So, even now, the big companies, were very challenging for them, the customer handling. So, the more the cost, the more the queries, the more the complaints."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 446.5,
+            "end": 478.5,
+            "text": "So, even now, the big companies, were very challenging for them, the customer handling. So, the more the cost, the more the queries, the more the complaints. So, to handle all these things, what do companies do? They set up their call centers, and they put their employees through their phones, or through chat messages, through their queries. But, as you can see, this is a costly model, and businesses need to invest a lot of money here. After generative AI, this problem has been solved for a long time."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 467.5,
+            "end": 499.5,
+            "text": "But, as you can see, this is a costly model, and businesses need to invest a lot of money here. After generative AI, this problem has been solved for a long time. Now, what happens is, take a big company, let's say, Zumato, where many customers come to the daily basis, and place orders. So, what happens now, if you go to the first level, and go to the first level, then you will not talk about any human executive, you will talk about a chatbot, and try to solve the problem on your level."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 489.5,
+            "end": 522.5,
+            "text": "and go to the first level, then you will not talk about any human executive, you will talk about a chatbot, and try to solve the problem on your level. If the problem is solved, then it is very good. If the problem is a little deeper, and the problem is not solved, then what happens is, you send that problem ahead, and then you solve that problem with your human executives. But, what happens to this simple model, that you need 10 people, for customer handling, now you can solve those 3 people there,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 512.5,
+            "end": 544.5,
+            "text": "But, what happens to this simple model, that you need 10 people, for customer handling, now you can solve those 3 people there, and this model is using the whole industry, everyone is having a first layer of chatbot, and then their customer support team. So, this is a area, where there is already a lot of progress, and innovation is being shown, with the help of Genie I. Second is content creation. So, content creation was still so feels,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 533.5,
+            "end": 563.5,
+            "text": "So, this is a area, where there is already a lot of progress, and innovation is being shown, with the help of Genie I. Second is content creation. So, content creation was still so feels, about which I was saying, that AI is not coming right now. But, since Genie I can create content since, then obviously, Genie I will penetrate a lot of content in the industry. So, now, you can take any form of content, text based content, like blogs and websites,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 551.5,
+            "end": 583.5,
+            "text": "then obviously, Genie I will penetrate a lot of content in the industry. So, now, you can take any form of content, text based content, like blogs and websites, or you can take video based content, like Instagram, YouTube, or I don't know, or any form of content you can take. You would notice, now, the tools of Genie I. have come and help in content creation. In fact, in today's rate, if I read an article on Medium, then I cannot say 100% that,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 573.5,
+            "end": 606.5,
+            "text": "have come and help in content creation. In fact, in today's rate, if I read an article on Medium, then I cannot say 100% that, that person has written or AI has written, it is so good that it is the Genie I. So, content creation is one such domain, where already, there is a lot of penetration, Genie I. will be more and more in future. Third is education. You will agree, in a way, you have been in a change for the past two years,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 595.5,
+            "end": 626.5,
+            "text": "will be more and more in future. Third is education. You will agree, in a way, you have been in a change for the past two years, since the chat GPT has come to the tools market. Now, for us, it is very easy to explore a new topic, to explore a new topic. I want to plan curriculum, I can go to chat GPT, I have been in a problem, I can go to chat GPT, I want to practice some particular problem. I can go to chat GPT, right?"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 615.5,
+            "end": 645.5,
+            "text": "I want to plan curriculum, I can go to chat GPT, I have been in a problem, I can go to chat GPT, I want to practice some particular problem. I can go to chat GPT, right? It's like having a personal tutor with you all the time. And that is why education is evolving in a different way. Even schools are also learning to think that going forward, how to implement educational methodologies. So, education is the third frontier, where the generated AI has a significant impact,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 634.5,
+            "end": 664.5,
+            "text": "that going forward, how to implement educational methodologies. So, education is the third frontier, where the generated AI has a significant impact, and for this software development, it was considered that software development is a job where people need a lot of attention, because it is a very creative and important work. But apparently, generative models are really good at writing code, and they can write code,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 654.5,
+            "end": 684.5,
+            "text": "because it is a very creative and important work. But apparently, generative models are really good at writing code, and they can write code, but they can write very good production ready code. So, here too, it is showing that now, there are a lot of changes, there are already many tools, that are easy to program with help, you simply give a prompt, and the whole code is generated, you can change it, where there are five programmers,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 673.5,
+            "end": 705.5,
+            "text": "that are easy to program with help, you simply give a prompt, and the whole code is generated, you can change it, where there are five programmers, there is a good chance that two or three programmers handle the task easily. So, these are some impact areas, which I think is the most important thing to have a positive impact, after the generated AI. Now, the important question you should ask is, what is the generated AI as a technology successful considered?"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 695.5,
+            "end": 727.5,
+            "text": "after the generated AI. Now, the important question you should ask is, what is the generated AI as a technology successful considered? Because if technology is not successful, then there is no benefit of studying it. So, I personally feel whenever you are going to spend some time on a technology, you have to be sure that this technology is like a successful one. So, next, we will discuss this, is it a successful technology that should be known or not?"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 715.5,
+            "end": 745.5,
+            "text": "you have to be sure that this technology is like a successful one. So, next, we will discuss this, is it a successful technology that should be known or not? I will talk about two more technologies, and compare them to the generated AI. One is internet. I think that the most successful technology is internet. And I will take another example, blockchain and crypto,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 735.5,
+            "end": 767.5,
+            "text": "I think that the most successful technology is internet. And I will take another example, blockchain and crypto, because this is another technology that has come in my lifetime, and I still cannot reach my full potential. So, I just want to see how the internet and crypto are generated in the entire spectrum and in the middle of the crypto. If the internet is more likely to be used, then it is the right way to be successful. If the crypto will be used in the line,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 757.5,
+            "end": 787.5,
+            "text": "and in the middle of the crypto. If the internet is more likely to be used, then it is the right way to be successful. If the crypto will be used in the line, then maybe it is not successful. So, if someone asks me if a technology is successful, then I ask a series of questions. If I have a answer to the questions, then I believe that the technology is successful. So, I will show you a series of questions. So, first question I will ask you, is it that what technology is solving real-world problems?"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 777.5,
+            "end": 807.5,
+            "text": "then I believe that the technology is successful. So, I will show you a series of questions. So, first question I will ask you, is it that what technology is solving real-world problems? Or not? So, if you talk about the internet, then the real-world problems are solving the real-world problems. Earlier, we used to write our relatives letters, which were turning around the time of the day. Right? Earlier, we used to go to the bank and do transactions. We used to go to the railway station and do tickets. We used to buy things on the shops."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 796.5,
+            "end": 826.5,
+            "text": "which were turning around the time of the day. Right? Earlier, we used to go to the bank and do transactions. We used to go to the railway station and do tickets. We used to buy things on the shops. After the internet, you can do all this with your phone, and sit in the house. You are actually solving a problem. But at the same time, if you talk about crypto, then there is no concrete example where there is a real-world problem solving. Again, it can happen. I can show a very popular example. Right?"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 816.5,
+            "end": 846.5,
+            "text": "if you talk about crypto, then there is no concrete example where there is a real-world problem solving. Again, it can happen. I can show a very popular example. Right? Now, let's talk about the generative way. Generative way is, most likely, solving real-world problems. For example, earlier, I told you about the problem of customer support. The problem of the world is that the customers have handled the problem in the problem of the world. After the generative way, this problem is solved."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 835.5,
+            "end": 866.5,
+            "text": "earlier, I told you about the problem of customer support. The problem of the world is that the customers have handled the problem in the problem of the world. After the generative way, this problem is solved. Similarly, I gave you an example of education. How many people have been given their personal tutor in the case of a real-world problem solved by generative way. So, for me, this question's answer is yes. Next question. Is it useful on a daily basis? Again, the answer is yes."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 855.5,
+            "end": 885.5,
+            "text": "solved by generative way. So, for me, this question's answer is yes. Next question. Is it useful on a daily basis? Again, the answer is yes. I have the tools that I have in the generative way. You definitely use them on a daily basis. And you will benefit from that. Third question. Is it impacting the world economics? What do I say? I mean, today's news is taking place. So, today, a news came that China has"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 874.5,
+            "end": 904.5,
+            "text": "Is it impacting the world economics? What do I say? I mean, today's news is taking place. So, today, a news came that China has a new AI model, AI has a deep-seek R1. And from its arrival, from its market, from its US-based tech companies' stock shares, it has a $1 trillion wipeout. Can you imagine $1 trillion? That is roughly equal to"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 892.5,
+            "end": 922.5,
+            "text": "from its US-based tech companies' stock shares, it has a $1 trillion wipeout. Can you imagine $1 trillion? That is roughly equal to 80 lakh crore rupees. Only one AI model can create such an impact in a new country's share market in a new country. So, I don't need to answer this question. The answer is absolutely yes. Question number four. Is it creating new jobs?"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 911.5,
+            "end": 941.5,
+            "text": "such an impact in a new country's share market in a new country. So, I don't need to answer this question. The answer is absolutely yes. Question number four. Is it creating new jobs? Now, this is a controversial question. Because you will find that a lot of jobs will be created by the arrival of the new generation, but we are not discussing that. We are discussing strictly technical point of view. From me to you, in terms of arrival of the new generation, we have come to a completely new job"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 931.5,
+            "end": 961.5,
+            "text": "We are discussing strictly technical point of view. From me to you, in terms of arrival of the new generation, we have come to a completely new job which is called AI Engineer. And this job is the number that is always the next day. I constantly knock it out. I check on the websites and I have seen that this particular job is demanding that it is increasing over time. And there is a good chance that in the next five years, this particular job"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 951.5,
+            "end": 982.5,
+            "text": "on the websites and I have seen that this particular job is demanding that it is increasing over time. And there is a good chance that in the next five years, this particular job will be so popular that the software developer or Web developer's job is. So, again, the answer is yes. And the last question is, is it accessible? Again, the answer is yes. You can run the tools of the A.I.S.A. from a very easy way. Not only you, but even your parents, can easily use these tools"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 972.5,
+            "end": 1002.5,
+            "text": "Again, the answer is yes. You can run the tools of the A.I.S.A. from a very easy way. Not only you, but even your parents, can easily use these tools because you don't need to write the code for these tools. You simply speak in English or Hindi and generate the response from these tools. So, this technology is accessible. So, since all of these questions have a yes for answer, that's why in my mind,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 991.5,
+            "end": 1021.5,
+            "text": "So, this technology is accessible. So, since all of these questions have a yes for answer, that's why in my mind, I have a successful technology to become a successful Internet So, that is why I feel that if you are working in the field of A.I.S.A.S.A. or you want to work in the field of A.I.S.A. then in the generated way, you definitely have to invest your time and demand. Because"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1010.5,
+            "end": 1040.5,
+            "text": "in the field of A.I.S.A.S.A. or you want to work in the field of A.I.S.A. then in the generated way, you definitely have to invest your time and demand. Because now, this technology is just here and now, it has not reached its full potential. So, when it reaches its full potential, whatever technology is working in that time, it will definitely be very successful. So, I really hope that I can convince you"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1030.5,
+            "end": 1061.5,
+            "text": "whatever technology is working in that time, it will definitely be very successful. So, I really hope that I can convince you that why you need to study this technology. Now, I know what you are saying. You are saying that we already know that this technology is important and in the future, it will demand a lot. That is why we keep making a message that please put videos on the generated way. You tell me that you used to put videos on the planet. So, I will do this."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1051.5,
+            "end": 1081.5,
+            "text": "it will demand a lot. That is why we keep making a message that please put videos on the generated way. You tell me that you used to put videos on the planet. So, I will do this. I will tell you that I have a lot of videos in the past. So, three reasons. The first reason is that I was a little doubt on this technology. Because this technology is new and just came two years ago. And in these two years, it became very popular. So, I felt that this is a powerful technology"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1071.5,
+            "end": 1102.5,
+            "text": "on this technology. Because this technology is new and just came two years ago. And in these two years, it became very popular. So, I felt that this is a powerful technology or this is a bubble. All of the people are creating hype. The second problem was that there was a time commitment in my life. There was something else like that. I was not able to get time allocated. I was able to read the generated way. And the third if I had a time commitment, I would have been scared"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1092.5,
+            "end": 1122.5,
+            "text": "like that. I was not able to get time allocated. I was able to read the generated way. And the third if I had a time commitment, I would have been scared by the generated way. And the reason is that every day something new came. Some new model came. Some new tool came. Some new research paper came. Some new terminology came. So, basically, there was a fast-paced development that I felt that what to read? Where to read? And I am pretty sure that you guys are able to read"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1111.5,
+            "end": 1141.5,
+            "text": "Some new terminology came. So, basically, there was a fast-paced development that I felt that what to read? Where to read? And I am pretty sure that you guys are able to read that the generated way to read. So, the biggest problem is that there is so much information on a daily basis that meaningful things are being removed. And that technology is a very very difficult work. So, now, there are two problems that I have solved."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1131.5,
+            "end": 1161.5,
+            "text": "meaningful things are being removed. And that technology is a very very difficult work. So, now, there are two problems that I have solved. The first problem was that I was doubted. That doubt is all because now, I have read it and understood things and now I feel that there is a doubt in the biology. The second time commitment was solved. I have a lot of time left. So, now, I can make content, make videos on January. But,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1151.5,
+            "end": 1181.5,
+            "text": "The second time commitment was solved. I have a lot of time left. So, now, I can make content, make videos on January. But, the third problem was that the fast-paced development on a daily basis was to understand things and then make videos for you. This was a challenging work for me. So, one thing about the problem is that we discuss in detail. So, the problem is that this technology is growing"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1171.5,
+            "end": 1201.5,
+            "text": "a challenging work for me. So, one thing about the problem is that we discuss in detail. So, the problem is that this technology is growing very rapidly. Which means it is getting very advanced on a daily basis. And, it is getting attracted to it. And, it is getting very challenging to get a meaning. The second noise is very much. If you go to any social media platform, for example, Lingden, then, you will get people who create a"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1191.5,
+            "end": 1221.5,
+            "text": "to get a meaning. The second noise is very much. If you go to any social media platform, for example, Lingden, then, you will get people who create a formal environment if you have not read what you are doing, you are doing, you are doing, which is you feel very demotivating. And, the third is that there is no single source, you will go and read"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1210.5,
+            "end": 1242.5,
+            "text": "you feel very demotivating. And, the third is that there is no single source, you will go and read the generated way. If you want to learn something, a single source is there. Some book, some YouTube playlist is there. Here, there is no single source established because of this new technology. And the first step is to design a curriculum."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1232.5,
+            "end": 1266.5,
+            "text": "there is no single source established because of this new technology. And the first step is to design a curriculum. But because of these reasons, I was not even able to create a very good curriculum. So I thought that first of all, I had to do a bad thing and solve this problem. And I had to make a mental model that helped me to design a curriculum. First, and then I made videos for you. So, my experience was in AI, machine learning, deep learning."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1253.5,
+            "end": 1284.5,
+            "text": "And I had to make a mental model that helped me to design a curriculum. First, and then I made videos for you. So, my experience was in AI, machine learning, deep learning. I used everything to create a mental model, a framework, which you can easily use to create information. And I am going to share this with you. So, in the process of making a mental model,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1272.5,
+            "end": 1303.5,
+            "text": "which you can easily use to create information. And I am going to share this with you. So, in the process of making a mental model, I thought that first of all, I should have a term that is centered on the whole mental model. I mean, all the terms in the generated AI are so many tools. Is there any term or tool that can be centered on the whole mental model?"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1293.5,
+            "end": 1326.5,
+            "text": "I mean, all the terms in the generated AI are so many tools. Is there any term or tool that can be centered on the whole mental model? To simplify things, the answer is yes. There is one term that comes to the center of the generated AI. And what are the terms of foundation models? So, foundation models are actually a type of AI models, which are very large scale AI models. To train them, you need a huge amount of data."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1314.5,
+            "end": 1346.5,
+            "text": "So, foundation models are actually a type of AI models, which are very large scale AI models. To train them, you need a huge amount of data. Literally, like, the internet is as much as the data, and to train them, you need a lot of hardware, like, a lot of GPUs, and to train them, they are on the road. But what is the most special thing about them? Unlike other machine learning models, these models are generalized models."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1333.5,
+            "end": 1363.5,
+            "text": "like, a lot of GPUs, and to train them, they are on the road. But what is the most special thing about them? Unlike other machine learning models, these models are generalized models. They are not specialized models. So, what does it mean? That you have made models up to the machine learning, that whatever models you make, they are task specific models. If you want to predict what a stock price of a company will be,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1351.5,
+            "end": 1383.5,
+            "text": "That you have made models up to the machine learning, that whatever models you make, they are task specific models. If you want to predict what a stock price of a company will be, on a future date, then you can only do the same thing for that model. It is not like they will predict the score of cricket. So, these are like specific models. But foundation models are generalized models. That means, they can do more than one, more than one, and can solve tasks."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1372.5,
+            "end": 1403.5,
+            "text": "So, these are like specific models. But foundation models are generalized models. That means, they can do more than one, more than one, and can solve tasks. And that is why, because you are making models, first of all, their architecture is very big, they are very wide, and they are very parameters. And second, you are giving them a lot of data. So, basically, a lot of people who are very smart, and are reading a lot of books. So, obviously, they can solve more problems in a lot of domains. So, foundation models are the same."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1391.5,
+            "end": 1421.5,
+            "text": "And second, you are giving them a lot of data. So, basically, a lot of people who are very smart, and are reading a lot of books. So, obviously, they can solve more problems in a lot of domains. So, foundation models are the same. And the foundation model has a very good example, the large language models, which is basically the backbone of the day, in the form of a generate rate. You can solve some of the problems with the element, and you can solve them in a lot of ways. You can do text generation, you can do sentiment analysis, you can do summarization, you can do question answering,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1411.5,
+            "end": 1441.5,
+            "text": "You can solve some of the problems with the element, and you can solve them in a lot of ways. You can do text generation, you can do sentiment analysis, you can do summarization, you can do question answering, all because, in the process of training the elements, you have given a lot of big AI models, which have a lot of parameters, you have given the data of the entire internet, and then, what happened in this process? That not only did they have to edit the next word, but at the same time, sentiment analysis, question answering, summarization,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1429.5,
+            "end": 1459.5,
+            "text": "you have given the data of the entire internet, and then, what happened in this process? That not only did they have to edit the next word, but at the same time, sentiment analysis, question answering, summarization, all these things have been learnt. So, I think that if you want to keep in the center of this landscape, in the whole whole of the whole of the day, then that is the foundation model. By the way, in the foundation model, there are not only LLMs, there are also LMMs, large multi-model models."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1448.5,
+            "end": 1478.5,
+            "text": "in the whole whole of the whole of the day, then that is the foundation model. By the way, in the foundation model, there are not only LLMs, there are also LMMs, large multi-model models. Asimmodels, which are not only used with text, but also with images, videos, sound, that is why I have written the LLMs with the foundation models. But if you want to simplify the film, then you can change the foundation model here, LLMs, write it. So, now, one very good thing is that"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1467.5,
+            "end": 1497.5,
+            "text": "with the foundation models. But if you want to simplify the film, then you can change the foundation model here, LLMs, write it. So, now, one very good thing is that the mental model that I made, on one of its centers, one term has come, that is, foundation model. Now, after this, I have simplified the things, on my knowledge basis, I thought that, you can divide the whole whole generative way into two parts. Okay?"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1486.5,
+            "end": 1516.5,
+            "text": "I have simplified the things, on my knowledge basis, I thought that, you can divide the whole whole generative way into two parts. Okay? So, on its center, is the foundation model. Now, in generative way, you can task two. Either, you can use foundation models, or, you can build foundation models. These are the two things. The whole whole generative way is divided into two parts. You are also listening to any term, you are also listening to any tool,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1504.5,
+            "end": 1534.5,
+            "text": "you can use foundation models, or, you can build foundation models. These are the two things. The whole whole generative way is divided into two parts. You are also listening to any term, you are also listening to any tool, you are also listening to any term, you are also listening to any tool, you will be able to build, or use it, or use it from the perspective. So, in short, my mental model is that, in the whole generative way, the core component of the foundation model, and in the whole generative way, you are working one by two."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1524.5,
+            "end": 1554.5,
+            "text": "my mental model is that, in the whole generative way, the core component of the foundation model, and in the whole generative way, you are working one by two. Either, you have a user perspective, where you are using a single foundation model for your work, and the second perspective is, the builders perspective. Where you are, as a big company, in foundation models, are building a big company, and deploying it somewhere. So, this was my mental model, which I simplified"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1543.5,
+            "end": 1573.5,
+            "text": "the builders perspective. Where you are, as a big company, in foundation models, are building a big company, and deploying it somewhere. So, this was my mental model, which I simplified the whole thing, from the help of which I simplified it. So, now, it started to be very fun here. As I created this mental model, after that, I created a game, kind of create it. After that, I had never ever met any new term, or had heard it. I tried to think about it"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1563.5,
+            "end": 1593.5,
+            "text": "I created a game, kind of create it. After that, I had never ever met any new term, or had heard it. I tried to think about it and tried to think about it. That it will be used, i.e. the application building, or the builder side, where we make foundation models. So, let's do one thing. Let's check this out. Let's check the entire mental model. Let's check it out. A match, the following kind of game. So, you have heard a new term, prompt engineering."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1583.5,
+            "end": 1614.5,
+            "text": "Let's check this out. Let's check the entire mental model. Let's check it out. A match, the following kind of game. So, you have heard a new term, prompt engineering. What you do, you go from the grid, and ask the charge GPD about the prompt engineering. And then, on the basis of that description, you will decide, whether it will be used, or the builder side, or the builder side. So, what is the prompt engineering? If you have an LLM, then you can talk directly in English, ask that question, and you can refine your question"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1604.5,
+            "end": 1634.5,
+            "text": "So, what is the prompt engineering? If you have an LLM, then you can talk directly in English, ask that question, and you can refine your question in this way, that you will get a bigger answer. That is what prompt engineering is. So, since you are using an LLM here, then this will be used. User side. Second, RLHF, reinforcement, learning, with the help of human feedback. Now, how this technology is,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1624.5,
+            "end": 1655.5,
+            "text": "User side. Second, RLHF, reinforcement, learning, with the help of human feedback. Now, how this technology is, which helps you, you can modify some LLM behaviour, you can safeguard it, so that it does not say anything wrong. So, this LLM is used in the process of making it. That is why, this will be used in the Builders perspective. Similarly, Rag is a very famous term. What do you do in Rag? You can do a question answering"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1643.5,
+            "end": 1673.5,
+            "text": "So, this LLM is used in the process of making it. That is why, this will be used in the Builders perspective. Similarly, Rag is a very famous term. What do you do in Rag? You can do a question answering on your document, on a given LLM. As I have to answer on my private data, I can merge it with 4GPT. So, again, since we are using an LLM, this will also be used on user-wide side. What is pre-training?"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1663.5,
+            "end": 1695.5,
+            "text": "I can merge it with 4GPT. So, again, since we are using an LLM, this will also be used on user-wide side. What is pre-training? Pre-training is when you take a foundation model, and you train it with the data of the whole world, on a big hardware. Since, this is the process of making this LLM, this will be in the Builders perspective. What is quantization? The quantization is the process, where you can optimize a model, which will help you to run different environments."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1685.5,
+            "end": 1715.5,
+            "text": "this will be in the Builders perspective. What is quantization? The quantization is the process, where you can optimize a model, which will help you to run different environments. So, this also comes in the process of making LLM, hence Builders perspective. AI agents, a term that is very important today, where you make an as-software from the LLM's help, which not only can you answer on a question, but at the same time, you can also give some work to do, like you are booking a ticket. So, again,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1704.5,
+            "end": 1734.5,
+            "text": "where you make an as-software from the LLM's help, which not only can you answer on a question, but at the same time, you can also give some work to do, like you are booking a ticket. So, again, you are making the help of the LLM's help, so this will also be in the user perspective. Rector databases, this is the work of implementing Rags, so this will also be in the user perspective. And some of the other terms, both sides, like fine tuning, fine tuning, you also do the process of making LLM's, and also the process of using LLM's,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1723.5,
+            "end": 1754.5,
+            "text": "so this will also be in the user perspective. And some of the other terms, both sides, like fine tuning, fine tuning, you also do the process of making LLM's, and also the process of using LLM's, so this will both be in the side. So, I have done this for the past 6-8 months, whenever I had to listen to new items, the first thing that I used to ask was, is this user side, or this builder side, and by doing this, in the past 6-8 months, now finally,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1743.5,
+            "end": 1774.5,
+            "text": "the first thing that I used to ask was, is this user side, or this builder side, and by doing this, in the past 6-8 months, now finally, I have prepared a curriculum, where there are two aspects, one is the Builders perspective, and one is the User's perspective. Both of them are in their own curriculum, and I will share them with you both. So guys, now I will share with you the curriculum of builder side, where you make the foundation models in the generated way,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1764.5,
+            "end": 1794.5,
+            "text": "and I will share them with you both. So guys, now I will share with you the curriculum of builder side, where you make the foundation models in the generated way, and deploy them, so that the whole world can use it. Okay? So, this side is a bit technical, and honestly, we will be a little bit more relevant, because we are working on this, until now, we are learning and deep learning. So, the builder side, the curriculum, it starts, in fact, before starting,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1783.5,
+            "end": 1813.5,
+            "text": "we will be a little bit more relevant, because we are working on this, until now, we are learning and deep learning. So, the builder side, the curriculum, it starts, in fact, before starting, I will tell you, pre-requisite, that what you should do to cover this curriculum, and what you should do to cover this. First, you should learn the fundamentals of machine learning, second, you should learn deep learning fundamentals, and you should have an idea of a deep learning framework, TensorFlow or PyTorch,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1801.5,
+            "end": 1831.5,
+            "text": "First, you should learn the fundamentals of machine learning, second, you should learn deep learning fundamentals, and you should have an idea of a deep learning framework, TensorFlow or PyTorch, both of them will go, although PyTorch is more preferred. Okay? Now let's talk about this curriculum. So, this curriculum is the very start, with the transformers architecture, obviously, because, in any foundation model, in the large-credits, it is based on the transformer model, based on the transformer architecture."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1821.5,
+            "end": 1852.5,
+            "text": "with the transformers architecture, obviously, because, in any foundation model, in the large-credits, it is based on the transformer model, based on the transformer architecture. So, if you don't understand, how to make foundation models, then, it starts, with the transformer architecture. You should know, how to make the entire transformer architecture, in the encoder side, in the decoder side, in the embeddings, how to work on self-attention,"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1842.5,
+            "end": 1874.5,
+            "text": "how to make the entire transformer architecture, in the encoder side, in the decoder side, in the embeddings, how to work on self-attention, how to work on layer normalization, the concept of language modeling, all these things, you should know, this is step number one, in this curriculum. Once you have read the transformer architecture, then, the second one, you have to read, it is types of transformers. So, you know, this multiple types of transformers exist today."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1862.5,
+            "end": 1893.5,
+            "text": "Once you have read the transformer architecture, then, the second one, you have to read, it is types of transformers. So, you know, this multiple types of transformers exist today. So, what are the encoder-only transformers? What are the decoder-only transformers? And encoder and decoder-based transformers? What are the ideas? You should know, you should know, you should know, you should know, you should know, you should know, you should know, you should know, some more famous transformers architecture."
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1883.5,
+            "end": 1915.86,
+            "text": "You should know, you should know, you should know, you should know, you should know, you should know, you should know, you should know, some more famous transformers architecture. This is step number two. Once you have learnt, then, then, the part of the training of foundation model starts. So, here, you will read first, pre-training. Pre-training is the part, where you train foundation models. So, there are many things, you have to read. First, you have to read about the training objectives. Occasionally, you have to train your educational drug-ship"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1905.5,
+            "end": 1936.5,
+            "text": "where you train foundation models. So, there are many things, you have to read. First, you have to read about the training objectives. Occasionally, you have to train your educational drug-ship running business out of order. Besides eso-chanical training training. igan your educational products, your programs you\u5deb an education, or other medical facilities on AFT who shows everyone their training. And signature frontline Services. So, in case you should.. Let's say, manner. And hinted that you have to work without informing oransaung"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1923.7,
+            "end": 1953.82,
+            "text": "or other medical facilities on AFT who shows everyone their training. And signature frontline Services. So, in case you should.. Let's say, manner. And hinted that you have to work without informing oransaung and that's the Final nau\u043d\u0438\u0439. That's how you are allowed to mute. You should know about the challenges and solutions So this is what is called pre-training Read the pre-training once Also, evaluation comes here Once you have pre-training"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1941.3,
+            "end": 1971.54,
+            "text": "You should know about the challenges and solutions So this is what is called pre-training Read the pre-training once Also, evaluation comes here Once you have pre-training So, it is good to check You evaluate your models So, when you get pre-training once After that, it is called optimization So, it is a size of foundation models And you cannot run them on normal hardware"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1961.3799999999999,
+            "end": 1991.54,
+            "text": "After that, it is called optimization So, it is a size of foundation models And you cannot run them on normal hardware So, what you have to do is optimize them a little bit In different ways You can optimize in the process of training Finally, you can make the model You can compress it You may have heard about your short term We have heard a little before It comes with knowledge distillation So, all these things come here"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 1981.54,
+            "end": 2012.54,
+            "text": "You can compress it You may have heard about your short term We have heard a little before It comes with knowledge distillation So, all these things come here Finally, you are from the inference You are from your LLM How can you reduce the time? It also comes here on optimization So, this is the third module The whole curriculum is completed Once you have been optimised After that, you can finally do your final training So, what happens is that"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2002.54,
+            "end": 2032.54,
+            "text": "The whole curriculum is completed Once you have been optimised After that, you can finally do your final training So, what happens is that The foundation model is trained on a large data set And that is a generalized model It can work in a lot of ways But what do you do? You can do your own basic You can find a particular task for a type To do that In that particular task, its performance and enhance So, there are many things here"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2021.54,
+            "end": 2052.54,
+            "text": "You can find a particular task for a type To do that In that particular task, its performance and enhance So, there are many things here The task specific tuning Instruction tuning Continual pre-training You can do it again In some particular domain There is a very famous technique It comes here on PFT So, the final tuning is One thing that is very important And after the optimization's adjustment"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2042.54,
+            "end": 2073.54,
+            "text": "There is a very famous technique It comes here on PFT So, the final tuning is One thing that is very important And after the optimization's adjustment You perform After that, you have evaluated Once you have done your final training Now you can implement it in a particular domain But before implementing it, you apply a lot of evaluation techniques To find out the performance Okay? In today's rate, you will listen to the entire time LLM leaderwoods Where you listen to the other LLM"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2063.54,
+            "end": 2093.54,
+            "text": "evaluation techniques To find out the performance Okay? In today's rate, you will listen to the entire time LLM leaderwoods Where you listen to the other LLM Beat the other LLM Beat the deep seek R1 Beat the charge GPD So, this decision making is what is happening You try to understand this In this particular module, where you perform different metrics On evaluation And lastly, when you do all this So, the final task is to deploy it"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2083.54,
+            "end": 2114.54,
+            "text": "different metrics On evaluation And lastly, when you do all this So, the final task is to deploy it Because if you don't deploy it Then other people will not be able to use it So, last but a very important step is Deployment So, the screen you are showing This is the builders side Builders side Any data scientist Who is working in the company of OpenAI Is doing this"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2104.54,
+            "end": 2134.54,
+            "text": "This is the builders side Builders side Any data scientist Who is working in the company of OpenAI Is doing this He is taking the idea of the transformer architecture To train a model To deploy it And the beach All the steps are listed here So, if you have done this Then you will understand the builders perspective Okay? So, now that we know That we know what is the process of building a foundation model"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2124.54,
+            "end": 2155.54,
+            "text": "So, if you have done this Then you will understand the builders perspective Okay? So, now that we know That we know what is the process of building a foundation model To make a foundation model What is the process in which we are doing this? Now, let's discuss That a foundation model To use a foundation model To make a foundation model So, now let's talk about the user side Where you learn to use a foundation model So, first This side"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2144.54,
+            "end": 2176.54,
+            "text": "So, now let's talk about the user side Where you learn to use a foundation model So, first This side Personally, I am a little less technical And it seems a little easier In comparison to the builder side So, to make a foundation model To make a more difficult time To use a foundation tool So, this side You will get a little easier And maybe it will be more fun Because you get to make a lot of interesting things here So, first of all, you have to learn"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2166.54,
+            "end": 2196.54,
+            "text": "You will get a little easier And maybe it will be more fun Because you get to make a lot of interesting things here So, first of all, you have to learn First of all, Use the basic apps of LLMs First of all, you learn What are the different types of LLMs Or the foundations available Closed source Or open source If you are a close source Then you can use the APIs through you If you are a close source Then you can use the tools through you"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2186.54,
+            "end": 2217.54,
+            "text": "Closed source Or open source If you are a close source Then you can use the APIs through you If you are a close source Then you can use the tools through you You can use the Hanging Face It is a library You can use it to run LLMs Or use the Olama like tool You can use it to run LLMs on your server Then you can learn the frame work Like the LLMs You can learn the LLMs based applications"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2205.54,
+            "end": 2236.54,
+            "text": "You can use it to run LLMs on your server Then you can learn the frame work Like the LLMs You can learn the LLMs based applications And Hanging Face Olama, I have told you about all these So, this is the first part You know that a LLMs exist You learn the different ways of using it The API based or local To run on your machine Once you have done all this"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2226.54,
+            "end": 2257.54,
+            "text": "You learn the different ways of using it The API based or local To run on your machine Once you have done all this Now, It is a very important stage Where you are getting the response from LLMs You learn to improve it So, there are three techniques First, prompt engineering I have discussed it earlier Prompt engineering is the art and science of writing prompts Prompt is a foundation model Which you send to input"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2246.54,
+            "end": 2276.54,
+            "text": "First, prompt engineering I have discussed it earlier Prompt engineering is the art and science of writing prompts Prompt is a foundation model Which you send to input Prompt is called And if you can handle your prompts in the right way You can also improve your response Which you are getting from LLMs Prompt engineering has been successful And to learn a lot So, this is the first method Which you can improve the output of LLMs Second is Rags"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2266.54,
+            "end": 2297.54,
+            "text": "Prompt engineering has been successful And to learn a lot So, this is the first method Which you can improve the output of LLMs Second is Rags So, LLMs are trained on their data They don't have any idea about your personal data But, what can you do with Rags? You can show your private data And you can answer it with that So, Rags are famous So, Rags are a big field of study And third, fine tuning Here also fine tuning is used on user's side"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2286.54,
+            "end": 2316.54,
+            "text": "And you can answer it with that So, Rags are famous So, Rags are a big field of study And third, fine tuning Here also fine tuning is used on user's side Fine tuning will be found in both places Which you are reading on the builder's side But, you can find more advanced fine tuning And you can find more deeper layers And you can find more different models And you can find more different models And you can find more shallow level But, you can do it again You can find more user level"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2306.54,
+            "end": 2336.54,
+            "text": "And you can find more different models And you can find more different models And you can find more shallow level But, you can do it again You can find more user level So, you can find many techniques You can find more user's side So, these are the three techniques Which you can improve the output of LLMs And then, a big field of study is coming up And, this is the agents' A.I. agents So, LLMs use applications mostly To build chatbots etc"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2324.54,
+            "end": 2354.54,
+            "text": "And then, a big field of study is coming up And, this is the agents' A.I. agents So, LLMs use applications mostly To build chatbots etc But, with the help of agents You can make such chatbots Which you can't cheat on you And, you can do some work Like, you are doing a chat You are doing a best tourist destination Which is the best tourist destination Which is the best tourist destination"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2344.54,
+            "end": 2374.54,
+            "text": "Like, you are doing a chat You are doing a best tourist destination Which is the best tourist destination Which is the best tourist destination You have given some answers And, you can say that you can say that You can book a hotel for me And, it will also give you a book So, this is the difference In chatbot and AI agent So, what you are doing here is basically You provide some tools to LLMs That they can access all these tools"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2364.54,
+            "end": 2394.54,
+            "text": "In chatbot and AI agent So, what you are doing here is basically You provide some tools to LLMs That they can access all these tools So, this whole concept You are making the AI agent To implement the tools And, this is very popular And, this whole field of study It comes on the user side After that, LLMs I am pretty sure you have heard this term"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2382.54,
+            "end": 2412.54,
+            "text": "And, this whole field of study It comes on the user side After that, LLMs I am pretty sure you have heard this term So, you are making applications To use LLMs So, you are making customers To make customers So, you have to take it and deploy it So that you can use it So, these LLMs are based applications To make them in the process And, in the process of deploying"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2402.54,
+            "end": 2432.54,
+            "text": "So, you have to take it and deploy it So that you can use it So, these LLMs are based applications To make them in the process And, in the process of deploying Which you do You perform improvements You perform improvements You do all the handling in the deployment You do all the handling in the process You do all the handling in the process You do all the libraries You can help you So, this is also a very important field of study To make them in the process"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2422.54,
+            "end": 2452.54,
+            "text": "You do all the handling in the process You do all the libraries You can help you So, this is also a very important field of study To make them in the process And, lastly, there are some miscellaneous things Like, multi-models Which are based on your foundation We are using it Like, we are discussing the most LLMs, but what if you work with a model With which you are working on Audio input Or, you are giving the video input So, this is the way"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2442.54,
+            "end": 2472.54,
+            "text": "LLMs, but what if you work with a model With which you are working on Audio input Or, you are giving the video input So, this is the way You can keep it in miscellaneous You will have to listen to it Stable diffusion Or diffusion based models So, the study of all these things I am putting it in miscellaneous But yeah, mostly this is what we have in user Wally side This is the curriculum that you have to follow How to build applications using"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2462.54,
+            "end": 2492.54,
+            "text": "I am putting it in miscellaneous But yeah, mostly this is what we have in user Wally side This is the curriculum that you have to follow How to build applications using Large language models So, guys, we have done this The whole generative way And the growth of these things And the terms, tools and technologies We have organized all of these things In two parts One is the builder side And the other is the user side"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2482.54,
+            "end": 2512.54,
+            "text": "We have organized all of these things In two parts One is the builder side And the other is the user side And now, I have shown you the curriculum of both sides And these are the ones we are going to cover Now, on this YouTube channel I know you have some questions And I want to answer those questions So, first and foremost The obvious question that you are going to be coming Is it the need to learn both sides Is it the need to come to builder side"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2502.54,
+            "end": 2532.54,
+            "text": "So, first and foremost The obvious question that you are going to be coming Is it the need to learn both sides Is it the need to come to builder side Is it the need to come to user side So, you should see this diagram So, what is the scene The builder side Where you are deploying a foundation model And you are deploying it This is a research scientist And a data scientist Where you need a machine learning engineering And MLOps skills"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2522.54,
+            "end": 2552.54,
+            "text": "And you are deploying it This is a research scientist And a data scientist Where you need a machine learning engineering And MLOps skills Whereas, this user side Where you are using a LLM And you are using a LLM Personally, I think If someone can do it If a software development is coming Then you can do 80-85% Using a user side That is why you will see A lot of people have become experts"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2542.54,
+            "end": 2572.54,
+            "text": "If a software development is coming Then you can do 80-85% Using a user side That is why you will see A lot of people have become experts Because they are operating in user side And through Communicate through the LLM applications So, you can do this software development But when you overlap these two fields Then you can get a new job role here And that job role is AI engineer Which is very popular now"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2562.54,
+            "end": 2592.54,
+            "text": "But when you overlap these two fields Then you can get a new job role here And that job role is AI engineer Which is very popular now So, AI engineer is a engineer Which is the main work To make LLM based applications That means, that a foundation model Has been given A LLM has been given And above that LLM, it is making an application But, what is the advantage of this person Is that he has a very big idea A builder side"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2582.54,
+            "end": 2612.54,
+            "text": "A LLM has been given And above that LLM, it is making an application But, what is the advantage of this person Is that he has a very big idea A builder side Means, he knows that foundation models How to make it? And this knowledge is important Because if you have this knowledge Then you will be able to operate better in user side So, no doubt A software development is very easy to make AI applications in today's rate Which is the knowledge of both fields That will always be able to demand better salary"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2602.54,
+            "end": 2632.54,
+            "text": "So, no doubt A software development is very easy to make AI applications in today's rate Which is the knowledge of both fields That will always be able to demand better salary And that is why You should learn both sides But again It depends You can focus on user side If you want to be a research scientist Then you can focus on builder side But if you want to become an AI engineer Then you will have to work in both fields With and with"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2622.54,
+            "end": 2652.54,
+            "text": "If you want to be a research scientist Then you can focus on builder side But if you want to become an AI engineer Then you will have to work in both fields With and with So, the answer is yes The next question is You will be able to demand that Okay, you are right, we have divided the entire entire curriculum We have organized everything in two parts Now tell me How will you cover this whole thing? So, my answer is I will cover both sides"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2642.54,
+            "end": 2672.54,
+            "text": "We have organized everything in two parts Now tell me How will you cover this whole thing? So, my answer is I will cover both sides Okay Because, there is not much overlapping So, we can cover both things together In fact, I will also tell you So, if we focus on builder side I have planned this That we have already read the architecture in the transform Okay, I have covered this in deep learning playlist"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2660.54,
+            "end": 2690.54,
+            "text": "So, if we focus on builder side I have planned this That we have already read the architecture in the transform Okay, I have covered this in deep learning playlist In the detail, I have covered this in deep learning playlist From the prerequisites point of view I had to read one thing It was a PyTorch So, I have added 10-12 lectures Within 2-3 weeks I will complete the PyTorch And once the PyTorch will be completed I will release the playlists"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2680.54,
+            "end": 2710.54,
+            "text": "So, I have added 10-12 lectures Within 2-3 weeks I will complete the PyTorch And once the PyTorch will be completed I will release the playlists As I have one plan To get the playlists On types of transformers Where I will discuss the encoder Only the decoder And encoder decoder based transformers But, GPT will discuss all this Once it is done Then we will make one playlist On pre-training part"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2700.54,
+            "end": 2730.54,
+            "text": "And encoder decoder based transformers But, GPT will discuss all this Once it is done Then we will make one playlist On pre-training part Then we will make another playlist And then we will make another playlist So, basically, the idea is Big playlist But have small playlist Where we will make one and cover small modules If we want to say small, it is wrong But yes, I have to make a dedicated playlist To make my plan In the builder side"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2720.54,
+            "end": 2750.54,
+            "text": "Where we will make one and cover small modules If we want to say small, it is wrong But yes, I have to make a dedicated playlist To make my plan In the builder side Now, let's talk about the user side So, on the user side My plan is similar First of all, I am planning That the basic LLM application part On this list I will release a playlist By the end of this month And then, I will cover the prompt engineering Ragn Fine tuning"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2740.54,
+            "end": 2770.54,
+            "text": "On this list I will release a playlist By the end of this month And then, I will cover the prompt engineering Ragn Fine tuning So, again, the plan is To cover both sides And to make a big playlist Then, we will cover small and small playlist One topic Because, what is the problem in big playlist It is a little bit of a commitment At least, in small and small chunks We will cover it And some questions"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2760.54,
+            "end": 2790.54,
+            "text": "Because, what is the problem in big playlist It is a little bit of a commitment At least, in small and small chunks We will cover it And some questions You can come in the morning In fact, this question is very difficult for me So, I have put it here That I am not going to do paid course In paid course, I am going to focus How to do more classes I get more time, doubts, clearance I do not get paid for youtube pay So, why are you not going to do paid course So, I will talk to you"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2780.54,
+            "end": 2812.54,
+            "text": "How to do more classes I get more time, doubts, clearance I do not get paid for youtube pay So, why are you not going to do paid course So, I will talk to you I have come to messages I have come to messages And comments And comments And comments Please, come to the top of the generative In a course And honestly, this was a very big earning opportunity Which means, I could earn a lot of money"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2802.54,
+            "end": 2832.54,
+            "text": "In a course And honestly, this was a very big earning opportunity Which means, I could earn a lot of money In fact, not only this I have approached many big tech companies In the last six months To teach them the generative course But Finally I have come to the top of the generative course And I have come to the top of the generative course But finally, I did not get paid And the biggest reason behind this"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2822.54,
+            "end": 2852.54,
+            "text": "Finally I have come to the top of the generative course And I have come to the top of the generative course But finally, I did not get paid And the biggest reason behind this I think that I am not able to master this technology And since I am not able to master this technology I think If I will get paid course I will be able to justify it And I do not want to give you all the experience"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2842.54,
+            "end": 2872.54,
+            "text": "I think If I will get paid course I will be able to justify it And I do not want to give you all the experience So, that is why I like to read you on YouTube And I like to read you on YouTube And the best thing about YouTube Is that It reaches a very wide spread audience So, instantly you receive feedback You can improve on its basis So, my goal is That I am learning this technology In and out"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2862.54,
+            "end": 2892.54,
+            "text": "So, instantly you receive feedback You can improve on its basis So, my goal is That I am learning this technology In and out And read you Once I will do this I can have a paid course But right now I am learning this technology To teach you on YouTube I guess it is okay You are getting free to read One more question I can come to your mind"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2882.54,
+            "end": 2912.54,
+            "text": "To teach you on YouTube I guess it is okay You are getting free to read One more question I can come to your mind Everything is fine Starts when are you doing it Because we are already late So, the answer is now I have already started my work I have already started my work I have already started my work I have already made 3-4 videos And the last question is What is the timeline"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2902.54,
+            "end": 2932.54,
+            "text": "I have already started my work I have already started my work I have already made 3-4 videos And the last question is What is the timeline The whole curriculum I have shown you Builder, side, user, side I think how many times you should cover this So, again You should give you an estimate Not possible for me Because I have not made it Already full content, so it is flexible My goal is To make 2-3 videos in a week"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2922.54,
+            "end": 2952.54,
+            "text": "Not possible for me Because I have not made it Already full content, so it is flexible My goal is To make 2-3 videos in a week And one video is a big video That means it will cover a lot If I am able to see a rough timeline I think that this year will be completed It will be completed in this season Which is not very long In order to master this At least one year It will be completed in a year But what I can do is"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2942.54,
+            "end": 2972.54,
+            "text": "Which is not very long In order to master this At least one year It will be completed in a year But what I can do is I can promise you That I will be able to make content Around the generated channel That will be a very in-depth research And if you see it You will be very helpful I can promise you And let's see how this whole thing turns out I am super excited"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2962.54,
+            "end": 2992.54,
+            "text": "You will be very helpful I can promise you And let's see how this whole thing turns out I am super excited Because There is an inherent curiosity To learn this whole thing And to become an expert I also want to see How to learn this technology In single day One trillion dollar You can wipe out some share markets And I am pretty sure you are very excited"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 2982.54,
+            "end": 3012.54,
+            "text": "How to learn this technology In single day One trillion dollar You can wipe out some share markets And I am pretty sure you are very excited I am open to feedback If you have any feedback Or suggestion Please tell me in the comments And Let's start this journey Let's crack Generative way If you like this video Please like, share and subscribe"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 3002.54,
+            "end": 3014.54,
+            "text": "Let's start this journey Let's crack Generative way If you like this video Please like, share and subscribe See you in the next video"
+        },
+        {
+            "video_name": "Video 01 Introduction to Generative AI | CampusX.mp3",
+            "start": 3004.54,
+            "end": 3014.54,
+            "text": "Let's crack Generative way If you like this video Please like, share and subscribe See you in the next video"
+        }
+    ]
+}

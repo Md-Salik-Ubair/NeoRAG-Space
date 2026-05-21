@@ -1,0 +1,1859 @@
+{
+    "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+    "chunks": [
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 0.0,
+            "end": 31.76,
+            "text": "Hi guys, my name is Nitesh and you are welcome to my YouTube channel. In this video also we will continue our Lang chain playlist. Till now I have uploaded two videos in this playlist. And mostly the discussions we have done are theoretical. Because I had told you that I want to create a conceptual foundation in your mind about this library. But I feel that now we have learned as much as we wanted to learn. And from today's video we will start the practical part. And today we will discuss the first component of the Lang chain."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 20.240000000000002,
+            "end": 51.88,
+            "text": "But I feel that now we have learned as much as we wanted to learn. And from today's video we will start the practical part. And today we will discuss the first component of the Lang chain. Which is the model component. So all the types of models you can use in the Lang chain, we will learn all of them today. And not only that, we will also code all of them. So on the whole you will enjoy a lot because you will build something and interact with things. So seeing something happening is a good feeling."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 41.760000000000005,
+            "end": 73.32,
+            "text": "So on the whole you will enjoy a lot because you will build something and interact with things. So seeing something happening is a good feeling. So yeah, with that let's start the video. So guys, before starting the video, let's take a quick recap of what we have covered in this playlist. Till now I have uploaded two videos in this playlist. In the first video, I had given you a detailed introduction of the Lang chain. I had told you what exactly is the Lang chain and why it is needed."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 60.76,
+            "end": 94.36,
+            "text": "Till now I have uploaded two videos in this playlist. In the first video, I had given you a detailed introduction of the Lang chain. I had told you what exactly is the Lang chain and why it is needed. Then I also told you how you can build applications with the help of the Lang chain and what are the alternatives of the Lang chain. After that, in the second video, we covered a very important topic. That what components exist in the Lang chain. We saw different components like models, prompts, agents, chains etc."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 84.36,
+            "end": 114.64,
+            "text": "That what components exist in the Lang chain. We saw different components like models, prompts, agents, chains etc. And I tried to explain to you in depth about each component. What is the need of that component and I also gave you relevant examples so that you get an idea of where different components are used. Now today's video is on one of those components."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 100.36,
+            "end": 132.64,
+            "text": "What is the need of that component and I also gave you relevant examples so that you get an idea of where different components are used. Now today's video is on one of those components. In fact, the first component that we had studied, models. Today's video is completely on the models. So if you watch this video end to end, then we will cover the models in depth. And how you can use every type of model in the Lang chain, I will tell you in detail."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 121.64,
+            "end": 157.92,
+            "text": "So if you watch this video end to end, then we will cover the models in depth. And how you can use every type of model in the Lang chain, I will tell you in detail. But before discussing the whole plan of action, I want to quickly tell you what models are. Although I had told you in the last video, but we can revise this thing again. So it is written here, the model component in Lang chain is a crucial part of the framework designed to facilitate interactions with various language models and embedding models."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 144.92,
+            "end": 180.2,
+            "text": "So it is written here, the model component in Lang chain is a crucial part of the framework designed to facilitate interactions with various language models and embedding models. In simple words, there are different types of AI models in the world right now. And the problem is that when you go to interact with different AI models, as in you try to write your code on them, then different AI models of different companies behave differently."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 165.2,
+            "end": 199.48,
+            "text": "And the problem is that when you go to interact with different AI models, as in you try to write your code on them, then different AI models of different companies behave differently. So the Lang chain model component provides you with a common interface, which helps you to connect with any type of AI model very easily. So in short, the model component in the Lang chain is nothing but an interface which helps you to connect with different kinds of AI models."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 180.48,
+            "end": 211.76,
+            "text": "So the Lang chain model component provides you with a common interface, which helps you to connect with any type of AI model very easily. So in short, the model component in the Lang chain is nothing but an interface which helps you to connect with different kinds of AI models. Which kinds? Language models and embedding models. So this is one important thing and this diagram is very important. You have to remember that there are two types of models in the Lang chain."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 199.48,
+            "end": 230.76,
+            "text": "Which kinds? Language models and embedding models. So this is one important thing and this diagram is very important. You have to remember that there are two types of models in the Lang chain. One is language models and the other is embedding models. I will tell you about both of them quickly. So language models are such models where you give this model some text input, like what is the capital of India."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 219.76,
+            "end": 252.04,
+            "text": "So language models are such models where you give this model some text input, like what is the capital of India. And this model understands that text, processes it and gives you a text in return, like New Delhi. So these types of AI models are called language models. So there is a lot of support to work with these models in the Lang chain."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 240.04,
+            "end": 270.32,
+            "text": "So these types of AI models are called language models. So there is a lot of support to work with these models in the Lang chain. And the second type of model that we will work with and the Lang chain can work very well is the embedding models. So what happens in embedding models is that you give a text as input. You gave a text from here. Suppose your text was the same again."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 259.32,
+            "end": 293.59999999999997,
+            "text": "So what happens in embedding models is that you give a text as input. You gave a text from here. Suppose your text was the same again. What is the capital of India? Now this time what will happen is that this model will try to understand what your text is. But this time it will not give you text in return but will give you a series of numbers. And we call these numbers embeddings. We have talked about this in detail. Embeddings are nothing but vectors, set of numbers."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 283.32000000000005,
+            "end": 313.6,
+            "text": "And we call these numbers embeddings. We have talked about this in detail. Embeddings are nothing but vectors, set of numbers. And these numbers represent this text or the contextual meaning of this text. So you will get these two types of models in the Lang chain. There are different models and they have different tasks. With the help of these language models, you make applications like chatbots."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 301.6,
+            "end": 332.88,
+            "text": "So you will get these two types of models in the Lang chain. There are different models and they have different tasks. With the help of these language models, you make applications like chatbots. Because you are sending text here, it is understanding the text and replying to it in the format of text. So this helps you in making chatbot applications. Embedding models help you in semantic search. I have talked about this topic in detail in the last two videos."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 322.88,
+            "end": 360.15999999999997,
+            "text": "Embedding models help you in semantic search. I have talked about this topic in detail in the last two videos. So they help you in conducting semantic search. And that is why with their help you can make rag-based applications. We have not talked about rag but it does not matter. I have given you a good example of this in video number 1. Where I told you how you can get your documents chatted with the help of an LLM."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 348.15999999999997,
+            "end": 382.44,
+            "text": "I have given you a good example of this in video number 1. Where I told you how you can get your documents chatted with the help of an LLM. So that was a rag-based application. And there you need semantic search. And with the help of these embedding models you can do that semantic search. So if we summarize our discussion, there is a component in the Lang chain. Models component. Which is basically an interface with which you can interact with different types of AI models."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 371.44,
+            "end": 404.71999999999997,
+            "text": "So if we summarize our discussion, there is a component in the Lang chain. Models component. Which is basically an interface with which you can interact with different types of AI models. It is a common interface. Now how many types of AI models can you interact with? With two types of AI models. One is language, second is embedding. Language is such a model where you send text and you get the text output. Embedding is such a model where you send text input. And you get the numbers of the polyt to do semantic search."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 392.44000000000005,
+            "end": 425.72,
+            "text": "Language is such a model where you send text and you get the text output. Embedding is such a model where you send text input. And you get the numbers of the polyt to do semantic search. So I hope you understood what models component is in the Lang chain. Now if you understood this, I will tell you what our plan of action is going to be in this video. So my plan of action is very simple. Today's video is absolutely coding based. We will actually write code and interact with these models."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 415.72,
+            "end": 447.0,
+            "text": "So my plan of action is very simple. Today's video is absolutely coding based. We will actually write code and interact with these models. So in the first part of the video, I will teach you how to work with language models. Ok? And I will teach you how to work with different types of language models. So I will teach you how to work with closed source models. Closed source models means such models which are paid."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 435.0,
+            "end": 468.28,
+            "text": "And I will teach you how to work with different types of language models. So I will teach you how to work with closed source models. Closed source models means such models which are paid. In this we will interact with OpenAI's GPD models. Then we will interact with Anthropic's Claude model. And we will interact with Gemini model of Google. And then we will learn to interact with open source model in language models. Open source models will be generally available on Huggingface."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 455.28,
+            "end": 487.55999999999995,
+            "text": "And we will interact with Gemini model of Google. And then we will learn to interact with open source model in language models. Open source models will be generally available on Huggingface. So we will learn to interact with these open source models with the help of Huggingface library and Lang chain. And along the way we will also make a small chatbot application. Once the language models are covered, then we will move towards embedding models."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 476.28,
+            "end": 508.84,
+            "text": "And along the way we will also make a small chatbot application. Once the language models are covered, then we will move towards embedding models. And in embedding models, I will teach you how to work with both types of embedding models. Closed source where we will work with OpenAI's embedding model. And then we will work with open source embedding model. And then we will go to Huggingface and find an embedding model."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 493.55999999999995,
+            "end": 524.84,
+            "text": "Closed source where we will work with OpenAI's embedding model. And then we will work with open source embedding model. And then we will go to Huggingface and find an embedding model. And we will download it on our machine and generate embeddings. And lastly I will make a small document similarity application. Where we will generate a score by taking out the similarity between two documents."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 513.84,
+            "end": 545.12,
+            "text": "And lastly I will make a small document similarity application. Where we will generate a score by taking out the similarity between two documents. Which documents are the most similar. So roughly this is going to be the plan of action for this video. So I really hope I was able to give you the full context of the video. Now we will start deep dive and we will start with our first topic. That is language models. So now we will shift our focus towards language models."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 534.12,
+            "end": 565.4,
+            "text": "Now we will start deep dive and we will start with our first topic. That is language models. So now we will shift our focus towards language models. So as I told you earlier that language models are such AI models. Where you give a text in the input. These language models understand that text, process it and give you a text output by flipping it. Now the thing to understand is that there are two types of language models."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 553.12,
+            "end": 586.4,
+            "text": "These language models understand that text, process it and give you a text output by flipping it. Now the thing to understand is that there are two types of language models. One which we call LLMs and the other which we call chat models. Now if I tell you the distinction between these two. So there is a very simple distinction between them. LLMs are general purpose models."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 574.4,
+            "end": 606.68,
+            "text": "So there is a very simple distinction between them. LLMs are general purpose models. Which means that you can use them in any kind of NLP application. You can use them to generate text, text summarization, code generation and question answering. These are general purpose language models."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 591.68,
+            "end": 621.9599999999999,
+            "text": "You can use them to generate text, text summarization, code generation and question answering. These are general purpose language models. And what is their speciality is that you give a string to LLMs in plain text. And they give you a string in plain text by flipping it."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 606.9599999999999,
+            "end": 639.24,
+            "text": "And what is their speciality is that you give a string to LLMs in plain text. And they give you a string in plain text by flipping it. Now the interesting thing is that you don't need to read LLMs much. Because they are kind of old. And in the language chain also you will notice that their support is getting over."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 627.9599999999999,
+            "end": 664.52,
+            "text": "Because they are kind of old. And in the language chain also you will notice that their support is getting over. And in the new version of the language chain you are told that if you are working on a new code base. If you are starting a new project then please don't work on LLMs. Because who is replacing LLMs now? Chat models. Now I will explain you what chat models are. Chat models are these language models which are used for conversational tasks."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 654.24,
+            "end": 689.8,
+            "text": "Now I will explain you what chat models are. Chat models are these language models which are used for conversational tasks. Means if you want to make a chatbot then chat models are great for that purpose. Here it is written that language models that are specialized for conversational tasks. They take a sequence of messages as inputs and return chat messages as output. So here what happens is that in your chat model you can send multiple messages in one input."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 675.52,
+            "end": 709.8,
+            "text": "They take a sequence of messages as inputs and return chat messages as output. So here what happens is that in your chat model you can send multiple messages in one input. And your chat model can understand the whole conversation. And then it can also reply to a series of messages. So the most important difference between a LLM and a chat model is that LLMs are a general purpose model."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 695.8,
+            "end": 726.0799999999999,
+            "text": "And then it can also reply to a series of messages. So the most important difference between a LLM and a chat model is that LLMs are a general purpose model. Which you can use in any kind of NLP application. Chat models are specialized models which are used more in conversational tasks. So if you want to make chatbots, agents, coding assistants. So chat models are used more for such things."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 713.0799999999999,
+            "end": 744.36,
+            "text": "Chat models are specialized models which are used more in conversational tasks. So if you want to make chatbots, agents, coding assistants. So chat models are used more for such things. So if you talk about today's date, then in the language chain it is said that you have to work more with chat models. And the support of LLMs is slowly getting over. Here this table beautifully represents the difference between the two types of models."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 726.0799999999999,
+            "end": 756.36,
+            "text": "So if you talk about today's date, then in the language chain it is said that you have to work more with chat models. And the support of LLMs is slowly getting over. Here this table beautifully represents the difference between the two types of models. If you talk about the purpose of LLMs, then the purpose of LLMs was free form text generation. Do anything. Do question answering, do text summarization, do translation, it will work."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 744.36,
+            "end": 777.64,
+            "text": "If you talk about the purpose of LLMs, then the purpose of LLMs was free form text generation. Do anything. Do question answering, do text summarization, do translation, it will work. Whereas the purpose of making chat models was that you can do multi-turn conversations between the user and the AI. If you talk about how the training of these two models was done. So the training of LLMs has been done in a very general type of training. Where you have trained your model by picking up a lot of text."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 764.64,
+            "end": 798.92,
+            "text": "If you talk about how the training of these two models was done. So the training of LLMs has been done in a very general type of training. Where you have trained your model by picking up a lot of text. Like books, articles, Wikipedia, text etc. Whereas what happened in the process of making chat models is that not only this training was done on a lot of text. But once this training was done, it was fine-tuned on chat datasets. Where we fed such a dataset in this model where multiple people were having a conversation."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 787.64,
+            "end": 820.92,
+            "text": "But once this training was done, it was fine-tuned on chat datasets. Where we fed such a dataset in this model where multiple people were having a conversation. Like WhatsApp chat was done or Reddit conversations were done. Or you never know, the conversation between the AI and the user was also trained. Then if you talk about memory, then there is no concept of memory in LLM models. Means when you talk to it, it doesn't remember the last thing."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 808.92,
+            "end": 841.1999999999999,
+            "text": "Then if you talk about memory, then there is no concept of memory in LLM models. Means when you talk to it, it doesn't remember the last thing. Whereas chat models support conversation history. Means there you will get a little feature that what is happening in your conversation will remember your AI model. Then comes the role awareness. If you want, you can assign a role to chat models."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 825.1999999999999,
+            "end": 857.48,
+            "text": "Means there you will get a little feature that what is happening in your conversation will remember your AI model. Then comes the role awareness. If you want, you can assign a role to chat models. You may have seen it. In this way, many people design prompts that you are a very knowledgeable doctor. Now tell me about this particular disease and its symptoms. So here when you are saying that you are a very qualified doctor."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 843.1999999999999,
+            "end": 873.48,
+            "text": "In this way, many people design prompts that you are a very knowledgeable doctor. Now tell me about this particular disease and its symptoms. So here when you are saying that you are a very qualified doctor. Then you are giving a message, a system level message where you are assigning a role to your AI. So you get the feature to do all this in chat model. Versus in LLM you don't get any such feature. You can't assign roles there."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 863.48,
+            "end": 896.76,
+            "text": "So you get the feature to do all this in chat model. Versus in LLM you don't get any such feature. You can't assign roles there. Chat models have this feature that they can understand what they are, who is the user and who is the AI. They know all this. If you talk about example models, then these are the example models that will come in the category of LLM. And these are the models that you will put in the category of chat models. And lastly, what time should you use which model."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 882.76,
+            "end": 915.04,
+            "text": "If you talk about example models, then these are the example models that will come in the category of LLM. And these are the models that you will put in the category of chat models. And lastly, what time should you use which model. If you want to do something text generation based or want to make a summarizer or want to use it for translation or want to use it for code generation. Then you may be able to use LLM. But if you want to make anything from conversational AI chatbots, virtual assistants or customer support chatbots or AI tutors,"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 905.04,
+            "end": 936.3199999999999,
+            "text": "Then you may be able to use LLM. But if you want to make anything from conversational AI chatbots, virtual assistants or customer support chatbots or AI tutors, then you use chat models. And you will notice that mostly the AI applications that are being made in today's date, they come in this category. That is why the entire gen AI industry is shifting towards chat models. And the support for LLMs is slowly getting over."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 925.3199999999999,
+            "end": 955.6,
+            "text": "That is why the entire gen AI industry is shifting towards chat models. And the support for LLMs is slowly getting over. It's not like that. You can still use LLM and make applications. But it is not recommended in the recent versions of Lang chain. So you will notice that in this particular tutorial, in this particular video, our focus will be more on chat models. But it does not mean that I will not teach you to work on LLMs."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 944.3199999999999,
+            "end": 974.6,
+            "text": "So you will notice that in this particular tutorial, in this particular video, our focus will be more on chat models. But it does not mean that I will not teach you to work on LLMs. In fact, first I will show you to work on LLMs. And then when you understand this a little, then we will discuss chat models. And then going forward, we will talk about chat models in the entire video. So I really hope you understood what language models are and what are their two types LLMs and chat models."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 963.6,
+            "end": 993.88,
+            "text": "And then going forward, we will talk about chat models in the entire video. So I really hope you understood what language models are and what are their two types LLMs and chat models. You also understood that. So now we are ready to dive into the coding part. So guys, before starting the code, we will create a setup that will help you in this entire video to run all the codes perfectly smoothly. So I have written a series of steps. We will follow that."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 979.88,
+            "end": 1012.16,
+            "text": "So guys, before starting the code, we will create a setup that will help you in this entire video to run all the codes perfectly smoothly. So I have written a series of steps. We will follow that. So first of all, what we have to do is we have to make a folder. So I am making a folder on my desktop. Let's call it Lang chain models. Now what I am doing is I am opening the VS code."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 997.88,
+            "end": 1030.16,
+            "text": "So I am making a folder on my desktop. Let's call it Lang chain models. Now what I am doing is I am opening the VS code. And in the VS code, I will open this folder. So for now, this folder is empty. Now here we will write our entire code."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1012.16,
+            "end": 1043.44,
+            "text": "And in the VS code, I will open this folder. So for now, this folder is empty. Now here we will write our entire code. So first of all, what we will do is we will create a new virtual environment here. And then we will install all the libraries in that virtual environment. So for that, you don't have to do anything."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1032.16,
+            "end": 1063.44,
+            "text": "So first of all, what we will do is we will create a new virtual environment here. And then we will install all the libraries in that virtual environment. So for that, you don't have to do anything. You have to go to the folder you have opened in the VS code and start a new terminal. And here you have to run this command. Python-m venv is the name of your virtual environment. For now, we are calling it venv. As you can see, our virtual environment is made. Now we will activate it."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1053.44,
+            "end": 1083.72,
+            "text": "Python-m venv is the name of your virtual environment. For now, we are calling it venv. As you can see, our virtual environment is made. Now we will activate it. So for that, our command is vnv slash script slash activate. And you can see our virtual environment is activated. Now what we have to do is we have to install some libraries in it. Now you don't have to manually go and search for things."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1072.72,
+            "end": 1106.0,
+            "text": "And you can see our virtual environment is activated. Now what we have to do is we have to install some libraries in it. Now you don't have to manually go and search for things. For this, I have written all the libraries in fact, their names in one place. For this particular lecture, we will need all these libraries. So what I will do is I am copying all of them and we are creating a new file in our folder. And we are calling this file requirements.txt."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1094.0,
+            "end": 1124.28,
+            "text": "So what I will do is I am copying all of them and we are creating a new file in our folder. And we are calling this file requirements.txt. And in this file, I am pasting the names of all these libraries. So I will recommend you to go and see what libraries are there. You can also go to chat gpt and search about it. But whenever we use any library in this lecture, I will explain it to you."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1112.0,
+            "end": 1143.28,
+            "text": "So I will recommend you to go and see what libraries are there. You can also go to chat gpt and search about it. But whenever we use any library in this lecture, I will explain it to you. Now what you have to do is install all these libraries. For that, you have a simple command pip install minus r requirements.txt. You will run it. And one by one, all these libraries will be installed in your virtual environment."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1129.28,
+            "end": 1161.56,
+            "text": "For that, you have a simple command pip install minus r requirements.txt. You will run it. And one by one, all these libraries will be installed in your virtual environment. And you can see the installation process has started. Since it will take some time, I am pausing the video. And when it is done, I will show you that the whole setup is working or not. And you can see guys, all our packages have been installed."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1150.56,
+            "end": 1182.84,
+            "text": "Since it will take some time, I am pausing the video. And when it is done, I will show you that the whole setup is working or not. And you can see guys, all our packages have been installed. Let's check once that if the lang chain is installed properly or not. So we will create a new test file. Let's call it test.py. We will import the lang chain. You can see the suggestion is coming. And we will print lang chain dot version."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1170.84,
+            "end": 1203.12,
+            "text": "We will import the lang chain. You can see the suggestion is coming. And we will print lang chain dot version. Just to print out the version. If this code gives the correct output, it means the lang chain has been installed. So we will run python test dot py. And you can see this is the output, 0.3. This is the most recent version of the lang chain. And we have installed it on our system."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1188.84,
+            "end": 1219.12,
+            "text": "So we will run python test dot py. And you can see this is the output, 0.3. This is the most recent version of the lang chain. And we have installed it on our system. Now we can start coding. So first of all, I am creating three folders here. My first folder is LLMs. My second folder will be chat models."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1208.12,
+            "end": 1238.12,
+            "text": "My first folder is LLMs. My second folder will be chat models. And my third folder will be embedded. And we will do all the work in these three folders. So now let's start with LLMs. So guys, our setup is ready."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1228.12,
+            "end": 1259.3999999999999,
+            "text": "And we will do all the work in these three folders. So now let's start with LLMs. So guys, our setup is ready. Now we will see our first demo. My plan is that first I will show you LLMs. And in LLMs, I will only show you open AI models. Because you don't need to read LLMs much. But after this, I will show you chat models."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1246.12,
+            "end": 1279.3999999999999,
+            "text": "And in LLMs, I will only show you open AI models. Because you don't need to read LLMs much. But after this, I will show you chat models. Where we will touch all the major API providers. So open AI, anthropic, google and then we will work with hugging face. So first of all, let's discuss how LLMs work alongside lang chain."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1266.3999999999999,
+            "end": 1298.68,
+            "text": "So open AI, anthropic, google and then we will work with hugging face. So first of all, let's discuss how LLMs work alongside lang chain. There is only one problem. Since we are going to use open AI API to run LLMs, So we will need open AI API keys first. So what will have to be done for this is that you will have to go to this URL first."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1286.68,
+            "end": 1318.96,
+            "text": "So we will need open AI API keys first. So what will have to be done for this is that you will have to go to this URL first. platform.openai.com And here you will have to make an account if you have not already made an account. Now the problem is that you can access the API keys of open AI only when you have some credit available in your account. And it should be a minimum of $5."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1306.96,
+            "end": 1339.24,
+            "text": "Now the problem is that you can access the API keys of open AI only when you have some credit available in your account. And it should be a minimum of $5. Unfortunately, you will have to recharge this. Open AI used to give free credits to new users a year ago. But now as far as I know, they don't give any free credits. Which means you will have to pay money and buy credits. So if you can try, then it's very good. Otherwise, you can also contribute by meeting two or three people if you are a student."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1326.96,
+            "end": 1361.24,
+            "text": "But now as far as I know, they don't give any free credits. Which means you will have to pay money and buy credits. So if you can try, then it's very good. Otherwise, you can also contribute by meeting two or three people if you are a student. So what you have to do is you have to go and recharge your account. I have already recharged $5 in my account. And trust me, $5 is more than sufficient. You can do a lot of things in $5. Why am I telling you to recharge and to become a paid user? The reason is that you will have to pay money and buy credits."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1351.24,
+            "end": 1382.52,
+            "text": "Why am I telling you to recharge and to become a paid user? The reason is that you will have to pay money and buy credits. The reason is that most of the companies still use open AI APIs to make LLM applications. So even if I am going to show you something free after a while using Hug-In Face, but there is a chance that you will not get to use it when you work as an AI engineer in a company."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1370.52,
+            "end": 1402.8,
+            "text": "So even if I am going to show you something free after a while using Hug-In Face, but there is a chance that you will not get to use it when you work as an AI engineer in a company. There is a chance that you will have to work on open AI. So that is why if you want to practice in that sense, then I would recommend that you can invest $5. Once you have topped up this in your account, now you can go to the settings button and go to API keys."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1390.8,
+            "end": 1423.08,
+            "text": "Once you have topped up this in your account, now you can go to the settings button and go to API keys. Here you will see the already available API keys. I have only one. Now what I can do is if I want, I can create a new secret key. Here I can give it a name. Let's give it a name. My test key 2."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1410.08,
+            "end": 1441.36,
+            "text": "Now what I can do is if I want, I can create a new secret key. Here I can give it a name. Let's give it a name. My test key 2. You can create a project and select it if you are working on a particular project. For now, I don't have such a plan, so I am using a default project. And you can set permissions from here. Now I am clicking on the Create Secret key and here is my secret key."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1429.08,
+            "end": 1462.36,
+            "text": "For now, I don't have such a plan, so I am using a default project. And you can set permissions from here. Now I am clicking on the Create Secret key and here is my secret key. I will copy it and we have to use it in our project. So what you will do is not write this secret key in your code directly and save it in a .env file. So what you will do is you will create a .env file in your project."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1446.36,
+            "end": 1477.6399999999999,
+            "text": "So what you will do is not write this secret key in your code directly and save it in a .env file. So what you will do is you will create a .env file in your project. .env file is a file where you keep your environment variables, secret keys etc. So here we will keep our OpenAI API key. How to keep it? It is very simple. You will create a variable."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1467.6399999999999,
+            "end": 1497.92,
+            "text": "So here we will keep our OpenAI API key. How to keep it? It is very simple. You will create a variable. Its name will be OpenAI API key. And you will store it in a string. And you would save it. Now going forward, whenever I want to use OpenAI API, I can use this key."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1484.92,
+            "end": 1516.2,
+            "text": "And you will store it in a string. And you would save it. Now going forward, whenever I want to use OpenAI API, I can use this key. Obviously, there is no need to say that you have to hide this key from everyone. I will also delete this key after launching this video on YouTube so that no one else can use it. Now what we will do is we will create an LLM application."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1502.92,
+            "end": 1539.2,
+            "text": "I will also delete this key after launching this video on YouTube so that no one else can use it. Now what we will do is we will create an LLM application. Its not an application honestly. We will write a small code with the help of which we will access an LLM of OpenAI. So for that what I will do is I will go to my LLM folder and I will create a new file there. And we will name this file as LLM demo.py."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1523.2,
+            "end": 1558.48,
+            "text": "So for that what I will do is I will go to my LLM folder and I will create a new file there. And we will name this file as LLM demo.py. And now we have to write the code here. So the code is very simple. There may be some parts that you have not seen before but I will explain it to you. So first of all you have to import a package whose name is langchain openai."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1544.48,
+            "end": 1574.76,
+            "text": "There may be some parts that you have not seen before but I will explain it to you. So first of all you have to import a package whose name is langchain openai. So this is the integration package between langchain and OpenAI. The code is written here so that the langchain understands how to talk to the OpenAI API. From here we will import OpenAI. Ok."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1562.48,
+            "end": 1594.04,
+            "text": "The code is written here so that the langchain understands how to talk to the OpenAI API. From here we will import OpenAI. Ok. And the next thing you have to import is .env library. We also installed this when we were working on requirements.txt. You can see here if you go down then we are loading this package that we have installed. So what is the function of .env?"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1579.76,
+            "end": 1611.04,
+            "text": "We also installed this when we were working on requirements.txt. You can see here if you go down then we are loading this package that we have installed. So what is the function of .env? It loads your secret keys from your environment file to your current file. So that's why we are using it here. So from .env import load.env is a function that will load the environment variable."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1600.04,
+            "end": 1634.32,
+            "text": "So that's why we are using it here. So from .env import load.env is a function that will load the environment variable. So first of all we will invoke this function like this. Now our OpenAI key has come to us. Once you have loaded your API here, now the main work starts from here. Now what you will do is you will make an object of OpenAI. And we are putting that object in a variable."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1620.32,
+            "end": 1652.6,
+            "text": "Once you have loaded your API here, now the main work starts from here. Now what you will do is you will make an object of OpenAI. And we are putting that object in a variable. We are calling it llm. And here you will tell us which model you want to communicate with OpenAI. So the model we want to communicate with is called GPT 3.5 Turbo Instruct."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1641.6,
+            "end": 1671.8799999999999,
+            "text": "So the model we want to communicate with is called GPT 3.5 Turbo Instruct. I will show you what models are available in OpenAI and what features are there. But for now we are going to use this model. Once you make this object, now you can call a very important function with the help of this object. And it's name is invoke."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1661.6,
+            "end": 1694.8799999999999,
+            "text": "Once you make this object, now you can call a very important function with the help of this object. And it's name is invoke. Invoke is a very important function in the Lank chain. And you will know this later. You talk about models, chains, prompts, all the core components have this invoke method. And we will communicate with this invoke method with this particular model, GPT 3.5."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1678.8799999999999,
+            "end": 1709.16,
+            "text": "You talk about models, chains, prompts, all the core components have this invoke method. And we will communicate with this invoke method with this particular model, GPT 3.5. So you don't have to do anything, you just have to send a prompt inside invoke. You have to send that question which you want to ask the model. For now I am asking this question, what is the capital of India?"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1699.16,
+            "end": 1732.44,
+            "text": "You have to send that question which you want to ask the model. For now I am asking this question, what is the capital of India? So what will happen behind the scenes? This invoke method will go and hit this model and give it this prompt. This model will process this prompt, generate a reply and we will get that reply back. And we will store that in a variable, let's call that variable result."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1719.16,
+            "end": 1754.44,
+            "text": "This model will process this prompt, generate a reply and we will get that reply back. And we will store that in a variable, let's call that variable result. And now we will print that result. And that's it guys, you can see how simple the flow is. Here we imported the libraries, here we loaded the API key of OpenAI. Here we made an object of OpenAI and with the help of that object we called the invoke function."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1740.44,
+            "end": 1771.72,
+            "text": "Here we imported the libraries, here we loaded the API key of OpenAI. Here we made an object of OpenAI and with the help of that object we called the invoke function. Inside that we sent our prompt, we got our response by flipping it and we stored it in the result. And now we are printing the result. Now let's run this code. So we are running our file in python.llms folder. Hit enter."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1759.72,
+            "end": 1795.0,
+            "text": "And now we are printing the result. Now let's run this code. So we are running our file in python.llms folder. Hit enter. And you can see guys, this is the output. The capital of India is New Delhi. Our model gave us a reply. And that's it guys, this is how simple it is to use LLMs. Now I would like to remind you again that LLMs are old and now no one uses LLMs."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1783.0,
+            "end": 1816.28,
+            "text": "And that's it guys, this is how simple it is to use LLMs. Now I would like to remind you again that LLMs are old and now no one uses LLMs. Even the Lank chain forces you to use chat models instead of LLMs. This code you are seeing, you might see it in some old YouTube videos. If you are working on a new project, please make sure you don't use this code. I showed you this only because I wanted to cover everything."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1805.0,
+            "end": 1835.28,
+            "text": "If you are working on a new project, please make sure you don't use this code. I showed you this only because I wanted to cover everything. But now the chat models that I will show you will be the most important and relevant piece of code. So now let's shift our attention to chat models. I forgot to tell you one thing. If you remember, earlier I told you about LLMs."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1823.28,
+            "end": 1854.56,
+            "text": "So now let's shift our attention to chat models. I forgot to tell you one thing. If you remember, earlier I told you about LLMs. LLMs take one string as input, plain text and one string as output. So notice here that we have sent one string to this LLM and the other string is also a string. So now we can understand that this is an LLM."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1842.56,
+            "end": 1876.84,
+            "text": "So notice here that we have sent one string to this LLM and the other string is also a string. So now we can understand that this is an LLM. Now let's talk about chat model interface. So what we will do is, first of all we will go to the second folder, chat models folder. And here we will create a new file. Let's call it chat model openai.py"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1864.84,
+            "end": 1899.12,
+            "text": "And here we will create a new file. Let's call it chat model openai.py Now the good thing about LLM is that its entire interface is very consistent. So you have to make very few changes in the previous code and your code will be modified for the chat model. So the first thing that you have to do is, you will import again. So you will import again from langchain.openai."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1885.12,
+            "end": 1916.3999999999999,
+            "text": "So you have to make very few changes in the previous code and your code will be modified for the chat model. So the first thing that you have to do is, you will import again. So you will import again from langchain.openai. This time instead of openai, you will do chat openai. This is a big difference. So let me tell you the difference between the two. If you go to openai, press control and click, then here you will see the source code of this class."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1906.12,
+            "end": 1942.68,
+            "text": "So let me tell you the difference between the two. If you go to openai, press control and click, then here you will see the source code of this class. Here you will notice that it inherits from base openai class. Whereas if you go here and go to its code, then here you will see that it inherits from base chat openai class. If you click on this, then here you will see that the chat model class is inheriting from base chat model."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1932.68,
+            "end": 1964.96,
+            "text": "If you click on this, then here you will see that the chat model class is inheriting from base chat model. So this is the kind of mother class for all chat models. When we use google chat model or anthropic chat model, then all of them are inheriting from this base chat model. Whereas if you talk about this, then it inherits from base LLM class."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1947.68,
+            "end": 1979.96,
+            "text": "When we use google chat model or anthropic chat model, then all of them are inheriting from this base chat model. Whereas if you talk about this, then it inherits from base LLM class. This is the main difference between LLM and chat model in langchain. That all your LLMs inherit base LLM class. Whereas all your chat models inherit base chat model class."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1969.96,
+            "end": 2001.24,
+            "text": "That all your LLMs inherit base LLM class. Whereas all your chat models inherit base chat model class. Again, this is a little technical. If you don't know, then it's okay. I just wanted to show you how the code is written inside. We first imported from LLM chat openai. Here also you will import from .env"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 1990.24,
+            "end": 2021.52,
+            "text": "We first imported from LLM chat openai. Here also you will import from .env load.env function. First of all, let's call load.env and bring our openai key here. Now we will make an object of chat openai and provide our model here."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2005.24,
+            "end": 2037.52,
+            "text": "First of all, let's call load.env and bring our openai key here. Now we will make an object of chat openai and provide our model here. I will show you the models available. If you want to check this, then you will have to go to openai website. There you will see all the models available in model section."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2025.52,
+            "end": 2056.8,
+            "text": "If you want to check this, then you will have to go to openai website. There you will see all the models available in model section. Now you have to go to gpt models. You can see these are the models that are available. Not only the name of the model, but also the context window and max output token. You can decide which one to use. We will discuss this later."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2043.8,
+            "end": 2074.0800000000004,
+            "text": "Not only the name of the model, but also the context window and max output token. You can decide which one to use. We will discuss this later. For now we are just using this. I will use GPT-4. We will store this object in a variable. Let's call it model. Earlier we called it LLM."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2063.0800000000004,
+            "end": 2093.36,
+            "text": "We will store this object in a variable. Let's call it model. Earlier we called it LLM. Here we are calling it model because it is a chat model. Now you have a method with this model object. The same invoke method as I said in the link chain. You will see this in many places because it is very important. We will discuss the story behind this later."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2082.0800000000004,
+            "end": 2112.36,
+            "text": "The same invoke method as I said in the link chain. You will see this in many places because it is very important. We will discuss the story behind this later. We will read the runnable interface in future. For now we will call this function. Here we will send what is the capital of India. Same question. We will store the result in a variable."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2099.36,
+            "end": 2129.6400000000003,
+            "text": "Here we will send what is the capital of India. Same question. We will store the result in a variable. Let's call it result. Now let's print whatever is inside. Let's print whatever is inside. Save it. Let's change it here."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2118.6400000000003,
+            "end": 2151.6400000000003,
+            "text": "Let's print whatever is inside. Save it. Let's change it here. We are in chat-models folder. The name of this file is chat model openai. Let's run this code. It says it can't open this file. The reason is that it will be 2.chat model."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2139.6400000000003,
+            "end": 2171.6400000000003,
+            "text": "Let's run this code. It says it can't open this file. The reason is that it will be 2.chat model. Let's run this file. You can see this is the result. You will notice that the result is not plain text. You can see many things here. First of all you can see the key called content."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2160.6400000000003,
+            "end": 2192.92,
+            "text": "You will notice that the result is not plain text. You can see many things here. First of all you can see the key called content. Your actual answer is hidden in it. There are many other key word arguments with it. There are many other key word arguments with it. There are many other key word arguments with it. Like how many completion tokens were there, how many tokens were there in prompt, how many total tokens were there and many more information. So you can clearly see that chat models are behaving differently."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2180.92,
+            "end": 2211.2000000000003,
+            "text": "There are many other key word arguments with it. Like how many completion tokens were there, how many tokens were there in prompt, how many total tokens were there and many more information. So you can clearly see that chat models are behaving differently. So you can clearly see that chat models are behaving differently. In terms of output provided by them. Generally what you do is that if you want to see only the answer, then rather than printing result, you fetch the content from the result. you fetch the content from the result."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2198.92,
+            "end": 2229.2000000000003,
+            "text": "Generally what you do is that if you want to see only the answer, then rather than printing result, you fetch the content from the result. you fetch the content from the result. You fetch this content and what it does is that it gives you the answer. You fetch this content and what it does is that it gives you the answer. So you will have to run this code again. To see the answer. And you can see this is the output. It says the capital of India is New Delhi."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2217.2000000000003,
+            "end": 2247.48,
+            "text": "So you will have to run this code again. To see the answer. And you can see this is the output. It says the capital of India is New Delhi. So I hope you are getting an idea of the difference between chat models and LLM. So I hope you are getting an idea of the difference between chat models and LLM. You might not be able to understand the difference now. But you will understand it slowly. So what we did is that we wrote our first piece of code. We used chat model interface and talked to OpenAI's GPT-4 model."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2235.48,
+            "end": 2265.76,
+            "text": "You might not be able to understand the difference now. But you will understand it slowly. So what we did is that we wrote our first piece of code. We used chat model interface and talked to OpenAI's GPT-4 model. We used chat model interface and talked to OpenAI's GPT-4 model. Now I will talk to you with two other language models. Now I will talk to you with two other language models. I will talk to you with two other language models. I will talk to you with two other language models. Now before using the cloud and Gemini,"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2253.48,
+            "end": 2283.76,
+            "text": "Now I will talk to you with two other language models. I will talk to you with two other language models. I will talk to you with two other language models. Now before using the cloud and Gemini, Now before using the cloud and Gemini, I want to tell you a very nice thing. So you can improve this code a little bit. You have the power that when you are creating this object you have the power that when you are creating this object you can set some more parameters here."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2271.76,
+            "end": 2302.0400000000004,
+            "text": "So you can improve this code a little bit. You have the power that when you are creating this object you have the power that when you are creating this object you can set some more parameters here. The first parameter is called temperature. The value of temperature varies from 0 to 2. The value of temperature varies from 0 to 2. In simple words, this is a creativity parameter. In simple words, this is a creativity parameter. You can tell how much creative response you need from your language model."
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2290.0400000000004,
+            "end": 2320.32,
+            "text": "The value of temperature varies from 0 to 2. In simple words, this is a creativity parameter. In simple words, this is a creativity parameter. You can tell how much creative response you need from your language model. In fact, I have written a formal definition here. In fact, I have written a formal definition here. Temperature is a parameter that controls the randomness of a language model's output. It affects how creative and deterministic the responses are. It affects how creative and deterministic the responses are. If you set values in the lower range, say 0 to 0.3"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2308.0400000000004,
+            "end": 2338.32,
+            "text": "Temperature is a parameter that controls the randomness of a language model's output. It affects how creative and deterministic the responses are. It affects how creative and deterministic the responses are. If you set values in the lower range, say 0 to 0.3 then your responses will be more deterministic and predictable then your responses will be more deterministic and predictable Whereas if you set higher values, let's say 1.5 then they are very random and creative and diverse. In fact, I have made a table here In fact, I have made a table here"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2326.32,
+            "end": 2356.6000000000004,
+            "text": "Whereas if you set higher values, let's say 1.5 then they are very random and creative and diverse. In fact, I have made a table here In fact, I have made a table here which will help you to set the right temperature value. If you are looking for factual answers from your language model like you are working with maths, codes then 0 to 0.3 is a good range If you are looking for general question answer explanations then 0.5 to 0.7"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2344.6000000000004,
+            "end": 2374.88,
+            "text": "like you are working with maths, codes then 0 to 0.3 is a good range If you are looking for general question answer explanations then 0.5 to 0.7 If you are working a little creative like writing, storytelling, jokes etc. then 0.9 to 1.2 If you want some randomness and creativity then you can try values above 1.5 during brainstorming etc. Let me show you how"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2362.6000000000004,
+            "end": 2392.88,
+            "text": "If you want some randomness and creativity then you can try values above 1.5 during brainstorming etc. Let me show you how the outputs come if you use different temperature values Let's say I set 0 to 0 and now what I will do is I am changing my prompt and I am writing here suggest me 5 Indian male names"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2380.88,
+            "end": 2411.1600000000003,
+            "text": "and now what I will do is I am changing my prompt and I am writing here suggest me 5 Indian male names just to see what names are suggested here just to see what names are suggested here and I am running this code with a temperature value of 0 and you can see Arjun, Ravi, Sanjay, Anil, Prakash are very regular names"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2399.1600000000003,
+            "end": 2429.44,
+            "text": "and I am running this code with a temperature value of 0 and you can see Arjun, Ravi, Sanjay, Anil, Prakash are very regular names and let's do one thing let's set 1.8 and now let's run it I can't see any difference still, Arnab, Kartik maybe I don't know"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2417.1600000000003,
+            "end": 2447.44,
+            "text": "and now let's run it I can't see any difference still, Arnab, Kartik maybe I don't know maybe this is not the right prompt to understand this write a 5 line poem on cricket we can try this one let's start with 0"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2435.44,
+            "end": 2465.44,
+            "text": "write a 5 line poem on cricket we can try this one let's start with 0 cricket a game of bat and ball under the sun standing tall cheers echo as wickets fall in this sport love by all a sixers flight captivates us all"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2453.44,
+            "end": 2483.7200000000003,
+            "text": "under the sun standing tall cheers echo as wickets fall in this sport love by all a sixers flight captivates us all let's make it 1.5 and let's run this code one more time in the field under the sun's boys and girls with love for cricket I don't know I am not able to judge it properly"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2471.44,
+            "end": 2501.7200000000003,
+            "text": "in the field under the sun's boys and girls with love for cricket I don't know I am not able to judge it properly but whatever it is it is a parameter that you use in simple words if I summarize then if you want to do a deterministic task like generating code words stay on the side of 0"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2489.7200000000003,
+            "end": 2520.0,
+            "text": "in simple words if I summarize then if you want to do a deterministic task like generating code words stay on the side of 0 do more creative tasks then you can keep it on the side of 1.5 it is advised another important parameter is max completion tokens with this you can tell"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2508.0,
+            "end": 2538.28,
+            "text": "it is advised another important parameter is max completion tokens with this you can tell how many tokens you need in output you can roughly consider the tokens as words so I will get a response from language model if I want I can restrict I can say that I need 10 words in my response 50 words or 100 words"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2526.0,
+            "end": 2556.28,
+            "text": "so I will get a response from language model if I want I can restrict I can say that I need 10 words in my response 50 words or 100 words it is helpful because when you are talking to a paid language model then you have to pay on a per token basis so if you go to openai's website if you go to pricing section"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2544.28,
+            "end": 2574.5600000000004,
+            "text": "then you have to pay on a per token basis so if you go to openai's website if you go to pricing section then whatever pricing you see here is per 1 million tokens so it means that you have to pay on the basis of the words or tokens you will order so sometimes it can happen that"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2562.5600000000004,
+            "end": 2592.84,
+            "text": "so it means that you have to pay on the basis of the words or tokens you will order so sometimes it can happen that as a developer you want to restrict that you don't want to show more than this in output like what I can do is I can give 10 here so in this you will have maximum 10 tokens as I will show you"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2580.5600000000004,
+            "end": 2610.84,
+            "text": "like what I can do is I can give 10 here so in this you will have maximum 10 tokens as I will show you I will run this code again and this time you will notice that we will see only 10 tokens in output you can see these are the tokens you can roughly say the words but not exactly words"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2598.84,
+            "end": 2629.1200000000003,
+            "text": "we will see only 10 tokens in output you can see these are the tokens you can roughly say the words but not exactly words there are many other things considered tokenization in itself is a big topic so we will study that later for now roughly you can say that tokens are equal to words so these are the two important parameters that I wanted to show you"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2617.1200000000003,
+            "end": 2647.4,
+            "text": "so we will study that later for now roughly you can say that tokens are equal to words so these are the two important parameters that I wanted to show you now that you understand these parameters now let's move on to the next chat model that is Claude so if we talk about Claude then it is a popular language model so if we talk about Claude performance level then it has also beaten GPT models"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2635.1200000000003,
+            "end": 2665.4,
+            "text": "that is Claude so if we talk about Claude then it is a popular language model so if we talk about Claude performance level then it has also beaten GPT models so that's why Claude is also used in many places there is a chance that the company you work for in the future will use Claude's APIs instead of OpenAI so it's possible Claude comes from a company called Anthropic maybe you have heard the name"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2653.4,
+            "end": 2683.6800000000003,
+            "text": "will use Claude's APIs instead of OpenAI so it's possible Claude comes from a company called Anthropic maybe you have heard the name now we will write a code in which we will use the help of Lang chain to hit the APIs of Claude the process is the same we will have to create a new file and we will name this file"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2671.6800000000003,
+            "end": 2701.96,
+            "text": "to hit the APIs of Claude the process is the same we will have to create a new file and we will name this file chat model underscore anthropic dot py now as I said the process is the same now you will need an API key as you need in the case of OpenAI"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2689.6800000000003,
+            "end": 2719.96,
+            "text": "now as I said the process is the same now you will need an API key as you need in the case of OpenAI now the problem is that just like OpenAI Anthropic also provides a paid service which means you will have to pay to use their API now again this is on you if you want you can pay"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2707.96,
+            "end": 2738.2400000000002,
+            "text": "which means you will have to pay to use their API now again this is on you if you want you can pay otherwise I would suggest you skip and just watch the video you can also go to the website and you can get a top up recharge I have made it $5 just so that I can make this video here you have to go to get API keys I already have a key"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2726.2400000000002,
+            "end": 2756.52,
+            "text": "and you can get a top up recharge I have made it $5 just so that I can make this video here you have to go to get API keys I already have a key so what I will do is I will click on create key and I will create a new key again here you can create a workspace or project here I am creating a key by the name of my secret key 2"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2744.2400000000002,
+            "end": 2774.52,
+            "text": "and I will create a new key again here you can create a workspace or project here I am creating a key by the name of my secret key 2 click on add and here is my key I have copied it now I will go back to my environment file and here we have to create"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2762.52,
+            "end": 2792.8,
+            "text": "I have copied it now I will go back to my environment file and here we have to create a new variable here we have to create a new variable Anthropic API key I forgot to tell you one thing here you have to write exactly the same name as I have written openai API key"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2780.8,
+            "end": 2811.0800000000004,
+            "text": "Anthropic API key I forgot to tell you one thing here you have to write exactly the same name as I have written openai API key so you have to write the same name you can't change it if you change it your loadenv function and your code will not work similarly for the Anthropic API key"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2798.8,
+            "end": 2829.0800000000004,
+            "text": "if you change it your loadenv function and your code will not work similarly for the Anthropic API key you have to write the same name now you will paste the key now you can see the main benefit of using Langchain we will write code in the same format as we have written for openai API"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2817.0800000000004,
+            "end": 2847.36,
+            "text": "now you can see the main benefit of using Langchain we will write code in the same format as we have written for openai API and you will notice that the same code is working for Anthropic API first you will import from langchain.entropic chat.entropic here chat.entropic is there then you will import from .env"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2835.36,
+            "end": 2865.6400000000003,
+            "text": "langchain.entropic chat.entropic here chat.entropic is there then you will import from .env load.env you will call load.env now you have done the Anthropic API key now again you will create a model and this will be an instance of chat.entropic"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2853.36,
+            "end": 2883.6400000000003,
+            "text": "now you have done the Anthropic API key now again you will create a model and this will be an instance of chat.entropic and the model we will use here its name is a little big name so let's do one thing we go to console.entropic.com again and click on explore documentation"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2871.6400000000003,
+            "end": 2901.92,
+            "text": "a little big name so let's do one thing we go to console.entropic.com again and click on explore documentation user guides here we can see the models here we have multiple models the most recent is Claude 3.5 we are using this particular model here you can set"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2889.92,
+            "end": 2920.2000000000003,
+            "text": "here we have multiple models the most recent is Claude 3.5 we are using this particular model here you can set temperature, max token etc I am not doing that and again you call model.inv and after that you can ask your question what is the capital of India"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2907.92,
+            "end": 2938.2000000000003,
+            "text": "and again you call model.inv and after that you can ask your question what is the capital of India and we are storing the result in result and then we are printing out result.content as we did earlier now we are going to run this code"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2926.2000000000003,
+            "end": 2956.48,
+            "text": "and then we are printing out result.content as we did earlier now we are going to run this code let's run chat models this is the second file and you can see this is the output and here you can see extra output but again model to model"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2944.48,
+            "end": 2974.76,
+            "text": "this is the second file and you can see this is the output and here you can see extra output but again model to model varies but this is the main power of lang chain this is the code to talk to Claude and this is the code to talk to openAI and you can see minimal difference very consistent code structuring"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2962.48,
+            "end": 2992.76,
+            "text": "this is the code to talk to Claude and this is the code to talk to openAI and you can see minimal difference very consistent code structuring and this helps you in talking to different APIs so we have seen these two models let's see another one GEMINI model GEMINI is a language model from Google"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2980.76,
+            "end": 3011.0400000000004,
+            "text": "so we have seen these two models let's see another one GEMINI model GEMINI is a language model from Google which in fact also powers your phones and in this model you can see many capabilities in Google GEMINI model so in that regard this model is important because you never know which company you will work for"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 2999.0400000000004,
+            "end": 3029.32,
+            "text": "you can see many capabilities in Google GEMINI model so in that regard this model is important because you never know which company you will work for will use openAI or GEMINI so in any case you have to follow same structure again you need a key of API here you will find GEMINI API documentation"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3017.0400000000004,
+            "end": 3049.32,
+            "text": "same structure again you need a key of API here you will find GEMINI API documentation and here you can click on this button get a GEMINI API key and from here you can create an API key for that you need to create a Google Cloud project I have already made it so I will use it"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3037.32,
+            "end": 3067.6000000000004,
+            "text": "and from here you can create an API key for that you need to create a Google Cloud project I have already made it so I will use it I will copy this and again I will go back to my .env file and there I will create a new variable by the name of Google API key you need to write the exact same name"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3055.6000000000004,
+            "end": 3085.68,
+            "text": "to my .env file and there I will create a new variable by the name of Google API key you need to write the exact same name save now we will create a new file in chatmodels folder and we will name this file under score google dot py"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3073.6000000000004,
+            "end": 3103.68,
+            "text": "in chatmodels folder and we will name this file under score google dot py and again we will start writing the same code from lengthen underscore google underscore genai this is the package name we will import chat google generative AI and again from dot env"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3091.68,
+            "end": 3123.68,
+            "text": "google underscore genai this is the package name we will import chat google generative AI and again from dot env we will import load.env we will call load.env we have our api and now we will make a model which will be an instance of chat google generative ai"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3112.68,
+            "end": 3147.68,
+            "text": "we have our api and now we will make a model which will be an instance of chat google generative ai here we have to provide model name the model we are using is gemini 1.5 pro and now we will call model.env and here we will ask what is the capital of india"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3133.68,
+            "end": 3166.68,
+            "text": "and now we will call model.env and here we will ask what is the capital of india whatever result we get we will store it in this variable and then we will print the result.content save let's run this and you can see this is the output from our gemini model"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3151.68,
+            "end": 3187.68,
+            "text": "and then we will print the result.content save let's run this and you can see this is the output from our gemini model just like that we have called 3 different api and sent prompt and generated the result and in this process you have learned to talk to 3 most important closed source language models"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3177.68,
+            "end": 3211.68,
+            "text": "and in this process you have learned to talk to 3 most important closed source language models now i know you are thinking that this is ok but the biggest problem with these models is that they are all paid and we have to work with open source model so next we will do the same with open source model now guys before working with open source models i want to tell you about open source models"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3198.68,
+            "end": 3231.68,
+            "text": "so next we will do the same with open source model now guys before working with open source models i want to tell you about open source models you will get some perspective from this here i have added a line, let's go through it open source models are freely available ai models that can be downloaded, modified, fine tuned and deployed without restrictions from a central provider unlike closed source models such as gpt, clod and gemini"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3216.68,
+            "end": 3248.68,
+            "text": "open source models are freely available ai models that can be downloaded, modified, fine tuned and deployed without restrictions from a central provider unlike closed source models such as gpt, clod and gemini open source models allow full control and customization so basic funda is that we have worked with 3 models till now and those 3 were closed source models from a proprietary model of a company so in such a setup the ai model is on the company's server"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3238.68,
+            "end": 3270.68,
+            "text": "and those 3 were closed source models from a proprietary model of a company so in such a setup the ai model is on the company's server and then the company creates an api to talk to this model now the whole world can talk to this model through this api but there are 2 flaws in this process first flaw is that you have to pay to use this api and second flaw is that since this model is on another server"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3260.68,
+            "end": 3293.68,
+            "text": "first flaw is that you have to pay to use this api and second flaw is that since this model is on another server and we can talk to it only through api so we don't have control to change things so these are 2 major flaws and who solves these flaws? open source models so what is funda in open source models? that an ai model is a company or an organization that is properly trained and left on the internet"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3282.68,
+            "end": 3313.68,
+            "text": "so what is funda in open source models? that an ai model is a company or an organization that is properly trained and left on the internet now as a user you can download this model on your machine and then you have the freedom to do whatever you want with it so basically first of all the cost of using api is not being charged"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3302.68,
+            "end": 3333.68,
+            "text": "on your machine and then you have the freedom to do whatever you want with it so basically first of all the cost of using api is not being charged because you have downloaded it on your machine so you don't have to use api or pay second, since this model is on your machine you can fine tune it, modify it and even if you want you can deploy it so you have full control so this is the biggest selling point of open source ai models"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3323.68,
+            "end": 3355.68,
+            "text": "and even if you want you can deploy it so you have full control so this is the biggest selling point of open source ai models I will give you a side by side comparison first point cost you don't have to pay to use open source models you can run them locally on your machine without using an api so you have to pay to use api in closed source model talking about control since open source models are on your machine or laptop"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3342.68,
+            "end": 3375.68,
+            "text": "you can run them locally on your machine without using an api so you have to pay to use api in closed source model talking about control since open source models are on your machine or laptop so it is easy to fine tune them or deploy them at your own place whereas in closed source model you can only use the provider's infrastructure you have zero control if we talk about data privacy which is again a very important point let's say you are working on a very confidential data"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3364.68,
+            "end": 3396.68,
+            "text": "you have zero control if we talk about data privacy which is again a very important point let's say you are working on a very confidential data which you can't share with anyone your company has not allowed you so obviously you can't use that data with chat gpt or open ai gpt models because in that case you have to send your data to their servers right? this is a problem but in open source case you are downloading the model on your machine"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3386.68,
+            "end": 3416.68,
+            "text": "because in that case you have to send your data to their servers right? this is a problem but in open source case you are downloading the model on your machine and you are processing everything on your machine so here this problem gets solved you can integrate LLMs with your confidential documents so this is a very big selling point of open source models after that I have told you about customization you can fine tune it on your data sets if you want"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3406.68,
+            "end": 3440.68,
+            "text": "so this is a very big selling point of open source models after that I have told you about customization you can fine tune it on your data sets if you want in closed source model some providers give you this feature but it is very limited and finally let's talk about deployment so you can deploy open source models on your servers or cloud there is no such thing in closed source so this is very important to understand why open source models are useful now if you talk about which open source models are very famous in today's date"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3429.68,
+            "end": 3460.68,
+            "text": "so this is very important to understand why open source models are useful now if you talk about which open source models are very famous in today's date so the most famous open source model is Lama from Facebook Lama comes from Facebook Facebook is a big company other tech giants have also created language models but they have kept closed source"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3447.68,
+            "end": 3479.68,
+            "text": "Lama comes from Facebook Facebook is a big company other tech giants have also created language models but they have kept closed source like open AI, Google, Anthropic but Facebook decided that no, we will open source our model anyone can download it and use it on their machine so at this point this is the most strong open source model for the purpose of text generation apart from this there is Mistral, Falcon"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3467.68,
+            "end": 3499.68,
+            "text": "anyone can download it and use it on their machine so at this point this is the most strong open source model for the purpose of text generation apart from this there is Mistral, Falcon and some very domain specific models like Bloom so these are some of your famous models in today's date which you will see everywhere if you search for open source language models next question that may come to your mind is I think open source language models are right"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3489.68,
+            "end": 3520.68,
+            "text": "if you search for open source language models next question that may come to your mind is I think open source language models are right where will I get these models? from where can I download them? so the answer is hugging face so if you have not heard about hugging face so hugging face is the largest repository of open source LLMs you have to go to their website and you will find thousands of models in one place this is the website of hugging face"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3509.68,
+            "end": 3540.68,
+            "text": "so hugging face is the largest repository of open source LLMs you have to go to their website and you will find thousands of models in one place this is the website of hugging face here you have to click on simply models and you will find that there are thousands of AI models hosted on this platform there are different types of models there are multi-modal models where you can send all kinds of input audio input, video input, text input, speech input you can send anything there are computer version specific models"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3529.68,
+            "end": 3559.68,
+            "text": "there are multi-modal models where you can send all kinds of input audio input, video input, text input, speech input you can send anything there are computer version specific models which perform your image classification, object detection type tasks and there are NLP based applications where we will work on text generation and if you go to text generation you will see some very famous names like deep sea khua if you go down you will see llama"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3546.68,
+            "end": 3576.68,
+            "text": "where we will work on text generation and if you go to text generation you will see some very famous names like deep sea khua if you go down you will see llama and if you explore more you will see this quen which is new from china so you will find all these open source models at one place and that is hugging face infact we will also work with an open source model we will use the hugging face library only"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3564.68,
+            "end": 3594.68,
+            "text": "so you will find all these open source models at one place and that is hugging face infact we will also work with an open source model we will use the hugging face library only so I hope this question of yours has been answered that where will we get open source LLMs now the next question is what are the various ways in which you can use open source models I have told you one way I have told you that you simply download them on your machine"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3583.68,
+            "end": 3616.68,
+            "text": "what are the various ways in which you can use open source models I have told you one way I have told you that you simply download them on your machine you download them from hugging face and run them on your machine this is the most popular way but there is one more way and that is you use the inference API of hugging face so just like open AI, just like Google Gemini what hugging face does is it provides you an API and the good thing is that this API has a free tier"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3604.68,
+            "end": 3634.68,
+            "text": "so just like open AI, just like Google Gemini what hugging face does is it provides you an API and the good thing is that this API has a free tier which means you can use this API for small testing purposes or for making small projects it is free to use after a limit you have to pay but again as students or if you are making small projects then it will not make much difference"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3622.68,
+            "end": 3652.68,
+            "text": "it is free to use after a limit you have to pay but again as students or if you are making small projects then it will not make much difference you will be able to make it using their API the best part is that through their API you can use thousands of models you have a lot of options that is the best part about hugging face I hope you understood we will see both the ways"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3640.68,
+            "end": 3671.68,
+            "text": "you can use thousands of models you have a lot of options that is the best part about hugging face I hope you understood we will see both the ways first we will run open source model through API and then we will download it on our machine and run it on our machine we will run open source model in both the ways lastly, everything is not good there are some bad things so if we talk about disadvantages of open source models"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3660.68,
+            "end": 3690.68,
+            "text": "we will run open source model in both the ways lastly, everything is not good there are some bad things so if we talk about disadvantages of open source models there are some big disadvantages the first disadvantage is if you want to run open source model on your machine then it would require solid hardware infact I will show you a small model on my machine not a big model and you will see that my machine will start crying"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3678.68,
+            "end": 3709.68,
+            "text": "then it would require solid hardware infact I will show you a small model on my machine not a big model and you will see that my machine will start crying because my machine's hardware specification is not that strong so to run big models you need very expensive GPUs which generally are not available to any individual after that you will have to handle the complexity of the setup when you will bring the model and run it on your machine"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3698.68,
+            "end": 3729.68,
+            "text": "which generally are not available to any individual after that you will have to handle the complexity of the setup when you will bring the model and run it on your machine you will have to prepare things and that is a little hectic after that you will notice the third thing about open source models that they have less refinement there is a technical reason for that when open source models are made then human feedback is not fine tuned this is called RLHF"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3719.68,
+            "end": 3750.68,
+            "text": "there is a technical reason for that when open source models are made then human feedback is not fine tuned this is called RLHF we will talk about this later but now you will feel that in comparison to closed source models the response of open source models is less refined infact I will show you the model we will use there you will feel that the answers I am getting are not as good as I get from open AI but again you can figure it out"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3740.68,
+            "end": 3770.68,
+            "text": "infact I will show you the model we will use there you will feel that the answers I am getting are not as good as I get from open AI but again you can figure it out because you have the option of fine tuning and lastly you will get limited multimodal abilities at least at this point of time you will be able to work with text if you want to work with images and audio then maybe you will get less models like this now that you have an idea about open source models"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3759.68,
+            "end": 3790.68,
+            "text": "you will be able to work with text if you want to work with images and audio then maybe you will get less models like this now that you have an idea about open source models now we will start working with them first I will show you the inference API of huggingface and then I will show you a model which I will download locally on my machine so guys now we will work with an open source model and first we will use this approach where we will use that model with the help of"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3779.68,
+            "end": 3809.68,
+            "text": "which I will download locally on my machine so guys now we will work with an open source model and first we will use this approach where we will use that model with the help of huggingface inference API we are not downloading the model locally this particular model is on the servers of huggingface and huggingface has an API with the help of that we will implement the whole flow so since again we have to interact with an API"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3798.68,
+            "end": 3831.68,
+            "text": "and huggingface has an API with the help of that we will implement the whole flow so since again we have to interact with an API so for that we will need API key and API key will be available from the website of huggingface so here is the website of huggingface here you have to create an account after creating an account, after logging in you will go to your account from there you will go to access tokens and you can see already I have created an access token"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3820.68,
+            "end": 3850.68,
+            "text": "after creating an account, after logging in you will go to your account from there you will go to access tokens and you can see already I have created an access token I will create one more just to show you how this whole thing works here there is a create new token button we will click on it here we have options fine grained, read, write we are currently reading so we are creating a token for read let's call this token"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3840.68,
+            "end": 3870.68,
+            "text": "here we have options fine grained, read, write we are currently reading so we are creating a token for read let's call this token langchain underscore token underscore 2 create token and I will copy this now I will go to my project and here I will go to the environment file and here I will create a new website create a new variable"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3860.68,
+            "end": 3892.68,
+            "text": "and here I will go to the environment file and here I will create a new website create a new variable huggingface hub underscore access token this is the name that you have to keep and here we will paste our access token fine, now what we have to do we have to create a new file in our chatmodel folder"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3880.68,
+            "end": 3910.68,
+            "text": "and here we will paste our access token fine, now what we have to do we have to create a new file in our chatmodel folder I will call this file 4 underscore chatmodel underscore huggingface underscore api dot py now here flow will be roughly the same just a few things will look different to you"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3900.68,
+            "end": 3942.68,
+            "text": "huggingface underscore api dot py now here flow will be roughly the same just a few things will look different to you but it's ok, nothing much different you have to import from langchain underscore huggingface you have to import two classes one is chat huggingface like chat openai and second you have to import huggingface endpoint"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3932.68,
+            "end": 3966.68,
+            "text": "and second you have to import huggingface endpoint you have to use this when you want to use api and second you have to import from dot env load dot env and then we will call load dot env function"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3956.68,
+            "end": 3988.68,
+            "text": "load dot env and then we will call load dot env function all this is still running similar now the main thing starts from here here also you have to create a model which will be a chat huggingface object but here you have to provide a parameter called llm you have to configure llm and send it"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3974.68,
+            "end": 4006.68,
+            "text": "which will be a chat huggingface object but here you have to provide a parameter called llm you have to configure llm and send it and how will you make that llm so to make that llm you will use huggingface endpoint class here you have to tell two things first you have to tell repo id repo id means which model you want to use in huggingface"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 3996.68,
+            "end": 4028.68,
+            "text": "here you have to tell two things first you have to tell repo id repo id means which model you want to use in huggingface there are thousands of models in huggingface which model you want to use so first I will show you which model I am going to use so I will go to huggingface there in models if you go to text generation here is text generation"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4018.68,
+            "end": 4048.68,
+            "text": "there in models if you go to text generation here is text generation so we are going to use all these models are little big we can use these models there is no problem like that but I want to show you a small model the model we are using is called tiny llama this one this is a small model"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4038.68,
+            "end": 4068.68,
+            "text": "but I want to show you a small model the model we are using is called tiny llama this one this is a small model it has 1.1 billion parameters and this llama which is facebook model there is a fine tuned model above that with less number of parameters we want to use this particular model so I will copy this"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4056.68,
+            "end": 4088.68,
+            "text": "there is a fine tuned model above that with less number of parameters we want to use this particular model so I will copy this this path which you can see this is your kind of repo id of this particular model so we have to paste this here second you have to tell here which task you want to perform from this model so the task you want to perform is text generation"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4078.68,
+            "end": 4108.68,
+            "text": "second you have to tell here which task you want to perform from this model so the task you want to perform is text generation ok and that's it guys we have configured our LLM now we will send this LLM here that's it now you have your model you will invoke the model and in invoke you will ask who is or what is"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4098.68,
+            "end": 4130.68,
+            "text": "now you have your model you will invoke the model and in invoke you will ask who is or what is what is the capital of capital of India ok whatever the response will be we will store it in result and will print the result print result.content"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4120.68,
+            "end": 4150.68,
+            "text": "and will print the result print result.content and that's it guys it's that simple we will run this code so now we are running the fourth file chat model underscore hugging phase underscore API"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4138.68,
+            "end": 4168.68,
+            "text": "so now we are running the fourth file chat model underscore hugging phase underscore API let's run this one and you can see guys this is the result that we are getting from our tiny llama model once again I would like to tell you that this model is currently on the hugging phase servers"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4158.68,
+            "end": 4188.68,
+            "text": "once again I would like to tell you that this model is currently on the hugging phase servers and we are talking through an API we haven't downloaded this model on our machine now I will show you the second approach where I will download this model on my machine and we will interact with the model on our machine so that will give you the flavor how to work with open source model"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4178.68,
+            "end": 4208.68,
+            "text": "on my machine and we will interact with the model on our machine so that will give you the flavor how to work with open source model so guys now we will write the code with which we will download this tiny llama model on our machine and then we will run it so for this I am making a new file and the name of this file is chat model underscore hugging phase underscore local dot py now this code is also kind of similar"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4198.68,
+            "end": 4228.68,
+            "text": "and the name of this file is chat model underscore hugging phase underscore local dot py now this code is also kind of similar there will be a small difference I will tell you first of all you have to import two classes from from lang chain underscore hugging phase first is first is chat hugging phase which we saw earlier"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4218.68,
+            "end": 4248.68,
+            "text": "hugging phase first is first is chat hugging phase which we saw earlier and second is hugging phase pipeline this is different last time we used hugging phase end point now we are using hugging phase pipeline now next what we have to do is we have to make a model and the model will be chat hugging phase object and here we have to provide"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4238.68,
+            "end": 4268.68,
+            "text": "what we have to do is we have to make a model and the model will be chat hugging phase object and here we have to provide an LLM so like this we will configure an LLM so for this we will use hugging phase pipeline so hugging phase pipeline dot here there is a function from model underscore id you have to call this and in this you will tell the model's id"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4258.68,
+            "end": 4288.68,
+            "text": "dot here there is a function from model underscore id you have to call this and in this you will tell the model's id model's id will be the same as tiny llama repo id so I will copy this URL not URL repo id and paste it here"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4278.68,
+            "end": 4308.68,
+            "text": "this URL not URL repo id and paste it here and here also you have to tell task and task is text generation apart from this you have some option to send keyword arguments here there is a parameter pipeline underscore keyword arguments and here you can send different things"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4298.68,
+            "end": 4328.68,
+            "text": "you have some option to send keyword arguments here there is a parameter pipeline underscore keyword arguments and here you can send different things like if you want you can set temperature here suppose I set 0.5 here you can set max token so max new tokens is equal to let's say I set 100 so we will see 100 tokens only"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4318.68,
+            "end": 4348.68,
+            "text": "set max token so max new tokens is equal to let's say I set 100 so we will see 100 tokens only ok and yeah next what we can do is here error is coming it's because this is a dictionary my bad yeah we defined dictionary this way but yeah we defined dictionary here and this is our"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4338.68,
+            "end": 4368.68,
+            "text": "it's because this is a dictionary my bad yeah we defined dictionary this way but yeah we defined dictionary here and this is our LLM configured we will send this LLM here and that's it guys once you have done this then you have to simply model dot invoke and here you will send your question"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4358.68,
+            "end": 4388.68,
+            "text": "then you have to simply model dot invoke and here you will send your question what is the capital of India whatever will come we will store it in a variable and we will print result dot content so once you run this code what will happen"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4378.68,
+            "end": 4408.68,
+            "text": "and we will print result dot content so once you run this code what will happen whatever your model is tiny llama and the configuration files and tokenizers around it will download everything together on your machine around 500 MB all these files if I remember correctly 500 or 300 MB files then it will load everything"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4398.68,
+            "end": 4428.68,
+            "text": "around 500 MB all these files if I remember correctly 500 or 300 MB files then it will load everything in your ram and everything will work on your machine it helps if you have a gpu in your machine there will be a faster inference if you run on the cpu then the inference will be slow and you will see my machine will have slow processing because my machine's configuration is not that strong"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4418.68,
+            "end": 4448.68,
+            "text": "then the inference will be slow and you will see my machine will have slow processing because my machine's configuration is not that strong so let's run this before running this I just want to add one code here and you don't need to add this this is the limitation of my machine so what happens is by default all the files are downloaded and stored in your machine's C drive if you are using windows then all the files are stored in your machine"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4438.68,
+            "end": 4468.68,
+            "text": "so what happens is by default all the files are downloaded and stored in your machine's C drive if you are using windows then all the files are stored in your machine but my c drive is full so I want to give an explicit command that I don't want to store the files in c drive and store them in d drive because storage is available in d drive so we have to import os module from there we have to set an environment variable hf"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4458.68,
+            "end": 4488.68,
+            "text": "so we have to import os module from there we have to set an environment variable hf underscore home and its value will be d slash hugging face underscore cache here my entire folder will be downloaded"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4478.68,
+            "end": 4508.68,
+            "text": "hugging face underscore cache here my entire folder will be downloaded you don't need to do this in your case everything will be downloaded in default location now let's run this code this is our fifth code and here local as you run this"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4498.68,
+            "end": 4528.68,
+            "text": "this is our fifth code and here local as you run this now you will see that some files are downloaded in your system and you can see guys this is the output that we are getting the whole output is being formatted very nicely first the user's question and then the answer given by AI assistant"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4518.68,
+            "end": 4548.68,
+            "text": "the whole output is being formatted very nicely first the user's question and then the answer given by AI assistant source is also telling us so this is a very fine tuned model tiny lama that is why you are getting this kind of response also I would like to tell you even though in the video you might be thinking that I just run the code and got the response but its not like that it took around 10 minutes to run the code on my machine"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4538.68,
+            "end": 4568.68,
+            "text": "even though in the video you might be thinking that I just run the code and got the response but its not like that it took around 10 minutes to run the code on my machine it was very slow, my machine was bad I was not able to do anything else I had to shut down, restart and then I am shooting this video so I just want to tell you that the inference of such big models is very heavy on small machines especially if your machine is like mine where there is 8GB RAM and less SSD"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4558.68,
+            "end": 4588.68,
+            "text": "the inference of such big models is very heavy on small machines especially if your machine is like mine where there is 8GB RAM and less SSD then everything is very problematic you need a good configuration locally to run these models on your machine also I would like to tell you the way we run this particular model in the same way you can go from the hugging phase and pick up any model and you can download it"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4578.68,
+            "end": 4608.68,
+            "text": "the way we run this particular model in the same way you can go from the hugging phase and pick up any model and you can download it and use it in the coming lectures we will do this but for now I just wanted to show you how you can download open source models on your machine and run it I hope you understood this also I would like to clarify one thing I told you that you will see the model downloaded"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4598.68,
+            "end": 4628.68,
+            "text": "on your machine and run it I hope you understood this also I would like to clarify one thing I told you that you will see the model downloaded and then your output will be visible so this happened but the first time my machine got stuck and I had to close it and then I ran this code again so the second time the model was not downloaded because it was already downloaded in my machine in this folder so there was caching that is why the second time when I run this code"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4618.68,
+            "end": 4650.68,
+            "text": "so the second time the model was not downloaded because it was already downloaded in my machine in this folder so there was caching that is why the second time when I run this code you can't see the output how the whole thing was downloaded on our machine when you run this code on your machine then everything will be visible on your machine on the first time so now if we summarize our progress so far so we have learnt how to work with language models and in language models we have"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4640.68,
+            "end": 4670.68,
+            "text": "summarize our progress so far so we have learnt how to work with language models and in language models we have learnt to work with both LLMs and also with chat models and in chat models we have worked with both kinds of chat models closed source as in propriety models and open source we have worked with both types of models"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4660.68,
+            "end": 4693.04,
+            "text": "we have worked with both kinds of chat models closed source as in propriety models and open source we have worked with both types of models we have done the work so now we will move towards the second part of the lecture where I will show you how you work with the embedding model in this too first we will work with the embedding model of open AI and then I will show you an embedding model from the hugging"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4677.64,
+            "end": 4711.12,
+            "text": "I will show you how you work with the embedding model in this too first we will work with the embedding model of open AI and then I will show you an embedding model from the hugging phase by downloading it on your machine and running it ok so yeah let's start now so before interacting with the embedding model I would like to remind you that we use the embedding model to convert a text into a vector so that the contextual understanding of that"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4699.44,
+            "end": 4742.52,
+            "text": "so before interacting with the embedding model I would like to remind you that we use the embedding model to convert a text into a vector so that the contextual understanding of that particular text comes in that vector ok so what we will do first is we will go to our third folder and in this third folder we will create a new file let's call this embedding underscore open AI underscore query dot py so first of all you have to import a class from"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4727.92,
+            "end": 4767.16,
+            "text": "underscore open AI underscore query dot py so first of all you have to import a class from lang chain underscore open AI whose name is open AI embeddings second you have to import load dot env from load dot env and then you will call load dot env ok you have already seen all this"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4755.72,
+            "end": 4788.120000000001,
+            "text": "load dot env from load dot env and then you will call load dot env ok you have already seen all this now what we have to do is we have to make an object of open AI embedding class and here we have to tell which embedding model we have to use ok so multiple embedding models are available if you go to the open AI website then you will see on this page that these are the models that"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4774.92,
+            "end": 4807.4800000000005,
+            "text": "tell which embedding model we have to use ok so multiple embedding models are available if you go to the open AI website then you will see on this page that these are the models that are available so let's say we use this text embedding 3 large here after that you have to tell that you want the vector output to be how many dimensions do you want by flipping it ok so here"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4796.6,
+            "end": 4827.04,
+            "text": "tell that you want the vector output to be how many dimensions do you want by flipping it ok so here you can write 200 300 500 anything right now I am expecting 32 dimension vector if you take a larger vector then more context will be captured in the smaller vector less context will be captured the benefit of using a smaller vector is that you will feel less cost ok after the cost a little"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4815.48,
+            "end": 4853.76,
+            "text": "larger vector then more context will be captured in the smaller vector less context will be captured the benefit of using a smaller vector is that you will feel less cost ok after the cost a little later I will tell you again for now whatever it is this object is made and I call it embedding ok now what can you do with its help you can perform the operation of embedding so what you have to do is call embedding and here you have a function which we call embed query and in this embed"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4835.6,
+            "end": 4872.2,
+            "text": "ok now what can you do with its help you can perform the operation of embedding so what you have to do is call embedding and here you have a function which we call embed query and in this embed query you can send a single sentence like you sent this Delhi is the capital of India ok and now what will happen this query will go to our embedding model there will be processing"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4853.76,
+            "end": 4887.0,
+            "text": "query you can send a single sentence like you sent this Delhi is the capital of India ok and now what will happen this query will go to our embedding model there will be processing there will be a vector generated 32 dimension and it will come back to me I am storing it in one variable and now I am printing it and to print it I am just converting it into a string so"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4872.2,
+            "end": 4905.8,
+            "text": "there will be a vector generated 32 dimension and it will come back to me I am storing it in one variable and now I am printing it and to print it I am just converting it into a string so that we can see it properly and now we will run this code let's run this code and you can see guys this is our output this is the 32 dimensional vector which represents the contextual meaning of this particular sentence"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4895.28,
+            "end": 4925.96,
+            "text": "guys this is our output this is the 32 dimensional vector which represents the contextual meaning of this particular sentence ok you can play around with this number instead of 32 you can also do 100 200 you can also do it here it is written your max here somewhere it will be written that your maximum dimension is how much it is written here by default the length of the embedding vector will be 1536"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4912.0,
+            "end": 4950.240000000001,
+            "text": "you can also do it here it is written your max here somewhere it will be written that your maximum dimension is how much it is written here by default the length of the embedding vector will be 1536 for small model and 3072 for the large model so you can order a very big vector again, the bigger the vector, the more contextual meaning it will capture, the smaller the model, the smaller the vector, the less contextual meaning it will capture, so we have just run the code which generates the embedding of a single query"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4935.52,
+            "end": 4977.4800000000005,
+            "text": "vector, the more contextual meaning it will capture, the smaller the model, the smaller the vector, the less contextual meaning it will capture, so we have just run the code which generates the embedding of a single query now I will show you how you can generate the embedding of multiple queries together basically how you can generate the embedding of multiple documents together so what I will do is I will create one more file let's call it embedding underscore open AI underscore docs dot py and what you"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4964.6,
+            "end": 5001.92,
+            "text": "create one more file let's call it embedding underscore open AI underscore docs dot py and what you have to do is copy this whole code as it is just a little bit you have to do changes this embedding will be exactly the same here what you will do you will make a document or you will make a list let's call it documents or this list we will have multiple statements here text so Delhi is the"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 4991.24,
+            "end": 5024.36,
+            "text": "let's call it documents or this list we will have multiple statements here text so Delhi is the capital of India Kolkata is the capital of West Bengal Paris is the capital of France Malo these three are our documents and we have to process all three of them together and we have to generate the embedding vector so now in this case what you will do is instead of embed"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5013.96,
+            "end": 5048.679999999999,
+            "text": "Malo these three are our documents and we have to process all three of them together and we have to generate the embedding vector so now in this case what you will do is instead of embed query there is another function here called embed documents you will call it this function has the capability to generate the embedding of multiple documents together here we will pass the documents and here is the result and we are printing that result ok everything is the same now we run this code"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5031.12,
+            "end": 5067.92,
+            "text": "has the capability to generate the embedding of multiple documents together here we will pass the documents and here is the result and we are printing that result ok everything is the same now we run this code so instead of query it will come docs and instead of one it will come to let's run this code and you can see in this case we have everything converted into a string but if you look carefully then you"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5048.68,
+            "end": 5083.28,
+            "text": "so instead of query it will come docs and instead of one it will come to let's run this code and you can see in this case we have everything converted into a string but if you look carefully then you have a 2d list and there are three lists in that list every list is an embedding vector of a document so this is how you generate embeddings for any document ok these are very small sentences"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5067.92,
+            "end": 5100.360000000001,
+            "text": "have a 2d list and there are three lists in that list every list is an embedding vector of a document so this is how you generate embeddings for any document ok these are very small sentences I have written now you can generate proper paragraphs of embedding and we will do that when we will make rag based applications so for now we have learned to generate embeddings by working with a proprietary model as in a closed source model now what we will do is that we will use an open"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5087.4400000000005,
+            "end": 5121.5199999999995,
+            "text": "when we will make rag based applications so for now we have learned to generate embeddings by working with a proprietary model as in a closed source model now what we will do is that we will use an open source model to generate embeddings so the open source model we are going to use is called sentence transformer if you search here then this is the model that we are going to use its name is all mini lm l6v2 ok here it is written this is a sentence transformer model it maps sentences"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5106.0,
+            "end": 5136.24,
+            "text": "sentence transformer if you search here then this is the model that we are going to use its name is all mini lm l6v2 ok here it is written this is a sentence transformer model it maps sentences and paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering and semantic search ok so we will use this particular model this is not very big this is a small"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5121.5199999999995,
+            "end": 5158.04,
+            "text": "and paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering and semantic search ok so we will use this particular model this is not very big this is a small model around 90 MB if I know it correctly then let's do one thing once we copy its path or whatever repo idea we copy it and now we go to our folder and here let's create a file embedding"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5145.64,
+            "end": 5177.0,
+            "text": "repo idea we copy it and now we go to our folder and here let's create a file embedding underscore hf underscore local you can use it through the inference api but it is better to download such a small model so first of all you have to import a class from the huggin phase"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5158.04,
+            "end": 5188.04,
+            "text": "underscore hf underscore local you can use it through the inference api but it is better to download such a small model so first of all you have to import a class from the huggin phase class which is called hugging face embeddings and then what you have to do is that you have to make an"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5177.0,
+            "end": 5218.48,
+            "text": "class which is called hugging face embeddings and then what you have to do is that you have to make an embedding object of the hugging face embeddings class here you just have to tell your model name ok and what will be the model name that we have just copied once when you have made this object now you create a text Delhi is the capital of India ok and the rest of the work is exactly the same"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5203.4,
+            "end": 5239.5199999999995,
+            "text": "now you create a text Delhi is the capital of India ok and the rest of the work is exactly the same you have the same function here too embed query in which you send this text you will get your vector and we are printing that vector by converting it into a string that's it guys this is the code"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5228.24,
+            "end": 5264.599999999999,
+            "text": "vector and we are printing that vector by converting it into a string that's it guys this is the code once we run it this is our third file hugging face local let's run this and you can see guys here it is downloading on our machine and different parts are different files are downloading"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5239.5199999999995,
+            "end": 5273.16,
+            "text": "once we run it this is our third file hugging face local let's run this and you can see guys here it is downloading on our machine and different parts are different files are downloading so you can see this model of 90 MBs and it has been downloaded the tokenizer is being downloaded and"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5255.12,
+            "end": 5287.16,
+            "text": "here it is downloading on our machine and different parts are different files are downloading so you can see this model of 90 MBs and it has been downloaded the tokenizer is being downloaded and yes guys this is the output this is a 384 dimensional vector that's why it looks big but yes this is the output ok now you can do the same work here too if you want you can generate multiple documents"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5273.16,
+            "end": 5304.8,
+            "text": "yes guys this is the output this is a 384 dimensional vector that's why it looks big but yes this is the output ok now you can do the same work here too if you want you can generate multiple documents together with embedding so I will replace this text with this document and here instead of text we will send the documents and obviously instead of embed query will come embed documents the rest"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5287.16,
+            "end": 5326.68,
+            "text": "together with embedding so I will replace this text with this document and here instead of text we will send the documents and obviously instead of embed query will come embed documents the rest will be exactly the same let's run this code one more time now what will happen this time will not be downloaded because we are running it for the second time so the cached version will generate this whole embedding and you can see guys this is the output this is a 2d list and 3 384 dimensional"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5310.84,
+            "end": 5346.8,
+            "text": "because we are running it for the second time so the cached version will generate this whole embedding and you can see guys this is the output this is a 2d list and 3 384 dimensional vectors so you can see a lot of output but you can easily extract all three and you can do processing on it ok so we have learned to use both types of embedding models now let's do one thing I will make a small application for you where I will show you by searching semantics on the documents"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5333.12,
+            "end": 5367.88,
+            "text": "you can do processing on it ok so we have learned to use both types of embedding models now let's do one thing I will make a small application for you where I will show you by searching semantics on the documents ok one more thing I said a little while ago that I will tell you about the cost of the paid embedding model so the cost is actually very less 1 million process cost is roughly 1 rupee so the cost is very less because obviously the model gives very little output in numbers so here you can generally"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5352.68,
+            "end": 5387.320000000001,
+            "text": "so the cost is actually very less 1 million process cost is roughly 1 rupee so the cost is very less because obviously the model gives very little output in numbers so here you can generally do that since it is so cheap you can use the embeddings of open AI and the embeddings of open AI generally make you a better context ok you can also do the free one free one generally in my experience it is a little less accurate and the results are a little less good ok so"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5374.6,
+            "end": 5413.96,
+            "text": "generally make you a better context ok you can also do the free one free one generally in my experience it is a little less accurate and the results are a little less good ok so yeah now let's create that document similarity application so let's go guys now we will make a very simple document similarity search application where I have a set of documents ok suppose we have five documents and then what will happen that our user will ask a question and that question"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5402.12,
+            "end": 5439.76,
+            "text": "have five documents and then what will happen that our user will ask a question and that question will be related to any of these documents ok we have to find out which of these documents is related to this question ok how will this whole process work I will tell you we will generate the embeddings of all these documents and keep it with us and then when this question comes we will generate the embeddings of this question"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5423.92,
+            "end": 5457.4800000000005,
+            "text": "related to this question ok how will this whole process work I will tell you we will generate the embeddings of all these documents and keep it with us and then when this question comes we will generate the embeddings of this question ok embeddings means vectors so here we have five vectors and here we have one vector and all these vectors are of the same dimension for a while let's assume that 300 dimensions so now what we"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5439.76,
+            "end": 5471.4,
+            "text": "ok embeddings means vectors so here we have five vectors and here we have one vector and all these vectors are of the same dimension for a while let's assume that 300 dimensions so now what we have to do is that we have five vectors in a three-dimensional three-dimensional space and now suppose this new vector comes suppose this new vector comes so what we have to do is find out that"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5457.4800000000005,
+            "end": 5492.76,
+            "text": "have to do is that we have five vectors in a three-dimensional three-dimensional space and now suppose this new vector comes suppose this new vector comes so what we have to do is find out that this new vector is the closest to all the other vectors in comparison so we will get the cosine similarity basically we will get the angle of the red vector with all the black vectors and with which the similarity score will be the highest that will be our answer ok so this is what we are going to do in this"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5479.52,
+            "end": 5510.4800000000005,
+            "text": "basically we will get the angle of the red vector with all the black vectors and with which the similarity score will be the highest that will be our answer ok so this is what we are going to do in this small application in the future you will notice that this is the funda that you need when you make rag based applications ok so the code is very simple let's go to VS code and let's create a new file let's"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5497.56,
+            "end": 5539.08,
+            "text": "based applications ok so the code is very simple let's go to VS code and let's create a new file let's call it document similarity dot py so first of all you have to do is that we will use openAI so we will write from lang chain underscore open AI import open AI embeddings from dot ENV import"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5524.32,
+            "end": 5556.36,
+            "text": "so we will write from lang chain underscore open AI import open AI embeddings from dot ENV import load dot ENV apart from this we will need one more thing and that is from the scikit-learn we will need cosine similarity so we will go into the matrix in the matrix pairwise we will"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5539.08,
+            "end": 5570.16,
+            "text": "load dot ENV apart from this we will need one more thing and that is from the scikit-learn we will need cosine similarity so we will go into the matrix in the matrix pairwise we will import cosine similarity ok and maybe we need to import number as NP ok now first of all"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5556.36,
+            "end": 5599.28,
+            "text": "import cosine similarity ok and maybe we need to import number as NP ok now first of all load dot ENV call and after that we will create an embedding model embedding is equal to open AI embeddings model we are using text embedding 3 large copy paste and dimensions let's say we are using 300 ok"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5580.96,
+            "end": 5620.68,
+            "text": "embeddings model we are using text embedding 3 large copy paste and dimensions let's say we are using 300 ok now we will create our document where all our documents will be in one list I have written here is that document documents ok so these are five strings every string is about one cricketer ok"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5607.64,
+            "end": 5642.12,
+            "text": "here is that document documents ok so these are five strings every string is about one cricketer ok and now my user came and he wrote this query tell me about virat Kohli ok this is his query and now in return of this query we have to get the answer from here ok so the most"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5620.68,
+            "end": 5657.24,
+            "text": "and now my user came and he wrote this query tell me about virat Kohli ok this is his query and now in return of this query we have to get the answer from here ok so the most similar document should be our answer obviously it is visible that this first one should be our answer let's try how this whole thing works so first of all we will do is that we will take out the"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5642.12,
+            "end": 5677.28,
+            "text": "similar document should be our answer obviously it is visible that this first one should be our answer let's try how this whole thing works so first of all we will do is that we will take out the so we will write document embeddings is equal to here we will write embedding dot embed documents and here we will send all our documents so in this step I will have five vectors every"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5658.24,
+            "end": 5697.16,
+            "text": "so we will write document embeddings is equal to here we will write embedding dot embed documents and here we will send all our documents so in this step I will have five vectors every vector will be in your 300 dimensional space and then similarly we will take out the embedding of the query and to do this we will use the embed query and here we will send our query ok now here"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5686.4,
+            "end": 5724.88,
+            "text": "and to do this we will use the embed query and here we will send our query ok now here I will get a single vector at this point I have a set of five vectors and then a red vector set ok now what we have to do is to get the similarity of the red vector with five vectors and for this we will use the cosine similarity function here first you have to send your query embedding basically the query embedding vector ok and that too you have to make a 2D list and then"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5714.64,
+            "end": 5746.36,
+            "text": "embedding basically the query embedding vector ok and that too you have to make a 2D list and then you will send all your document embeddings which are already a 2D list so always remember that in cosine similarity you should have two 2D list and by doing this you get similarity scores between your red vector and all the black vectors once we will run this code"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5732.08,
+            "end": 5769.52,
+            "text": "that in cosine similarity you should have two 2D list and by doing this you get similarity scores between your red vector and all the black vectors once we will run this code and we will see that we are getting similarity scores or not and you can see guys here are our similarity scores basically our red vector's first black vector is similar to this or then we can say that the similarity with this first text is 0.66 and with this second text is 0.34"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5758.88,
+            "end": 5792.28,
+            "text": "then we can say that the similarity with this first text is 0.66 and with this second text is 0.34 and so on ok now you will notice that the result is a 2D list we don't want a 2D list we want a simple list also we will do one thing instead of printing it we will store it in a variable let's call it scores ok now what we have to do is to see that the first one is the highest"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5777.28,
+            "end": 5818.280000000001,
+            "text": "want a simple list also we will do one thing instead of printing it we will store it in a variable let's call it scores ok now what we have to do is to see that the first one is the highest scoring thing but we have to fetch relevant documents for that we have to sort this whole list but by sorting it can mess up the positioning so what we will do first is before that we will send this whole 1D list to the enumerate function and we will put the output that we will get in a list"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5803.64,
+            "end": 5834.080000000001,
+            "text": "before that we will send this whole 1D list to the enumerate function and we will put the output that we will get in a list I will show you in a while what is the benefit of this so pay attention to what output will be shown now see now what happened that with every similarity score I have attached a number 012345 this is our"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5818.280000000001,
+            "end": 5853.120000000001,
+            "text": "I will show you in a while what is the benefit of this so pay attention to what output will be shown now see now what happened that with every similarity score I have attached a number 012345 this is our index position ok now this can't be changed if I also sort this whole thing so now I am doing the next thing I am sorting and sorting there are two numbers inside one is the index number and one is the similarity"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5841.4800000000005,
+            "end": 5878.28,
+            "text": "I am sorting and sorting there are two numbers inside one is the index number and one is the similarity score I am sorting on the basis of similarity score so I will write here sort on the basis of lambda x colon x one basically second item is not sorted it is sorted on the basis of this second"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5862.8,
+            "end": 5894.599999999999,
+            "text": "lambda x colon x one basically second item is not sorted it is sorted on the basis of this second argument we will do sorting so if I run it see it is sorted in ascending order this is the smallest this is the first one and the biggest one is the last one ok now what we want is the biggest one"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5878.28,
+            "end": 5913.639999999999,
+            "text": "argument we will do sorting so if I run it see it is sorted in ascending order this is the smallest this is the first one and the biggest one is the last one ok now what we want is the biggest one so we will extract minus one so if I run this code again then I will get two things first I will get the highest similarity score 0.66 and which index position is that document that is"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5894.599999999999,
+            "end": 5926.959999999999,
+            "text": "so we will extract minus one so if I run this code again then I will get two things first I will get the highest similarity score 0.66 and which index position is that document that is zero so now instead of printing I will save the index and score in two variables and now what I"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5913.639999999999,
+            "end": 5956.24,
+            "text": "zero so now instead of printing I will save the index and score in two variables and now what I have to do is I have to print this index from inside my documents see this is the documents I will extract the index from it and at the same time I have to print similarity score is colon score"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5938.96,
+            "end": 5975.5199999999995,
+            "text": "I will extract the index from it and at the same time I have to print similarity score is colon score save it and run it also here I can print the query that the user asked save it and run it and you can see tell me about Virat Kohli"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5956.24,
+            "end": 5993.84,
+            "text": "save it and run it also here I can print the query that the user asked save it and run it and you can see tell me about Virat Kohli so Virat Kohli is an Indian cricketer known for his aggressive approach and similarity score is 0.66 now let's do one thing instead of Virat Kohli we will write tell me about Bumrah and save it and run it and you can see tell me about Bumrah"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5981.68,
+            "end": 6012.72,
+            "text": "now let's do one thing instead of Virat Kohli we will write tell me about Bumrah and save it and run it and you can see tell me about Bumrah our output is coming Jaspreet Bumrah is an Indian fast bowler known for his and here is our similarity score ok so here now what is happening we are asking any question we are searching a semantic from this set of documents and we are finding out which document is the most similar and we are getting it out"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 5999.84,
+            "end": 6030.72,
+            "text": "ok so here now what is happening we are asking any question we are searching a semantic from this set of documents and we are finding out which document is the most similar and we are getting it out so this is what we will do when we make rag based applications there this whole thing becomes a little more complex because the embeddings that we are generating here we are not storing them anywhere right but this is not a good thing now next time when I run this code again"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 6016.72,
+            "end": 6051.6,
+            "text": "there this whole thing becomes a little more complex because the embeddings that we are generating here we are not storing them anywhere right but this is not a good thing now next time when I run this code again I am getting the embeddings from my model so this is a costly operation right so what is a good thing that the embeddings of the document you can generate it once and store it somewhere so to store it you need a database we call that database vector database which we will read further"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 6037.6,
+            "end": 6068.4800000000005,
+            "text": "that the embeddings of the document you can generate it once and store it somewhere so to store it you need a database we call that database vector database which we will read further and then when the new query comes then on the go we generate its embedding and ask the model and then we take out the similarity score we call this the retrieval process so whatever it is you just have to give a small perspective on why embedding models are useful"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 6058.4800000000005,
+            "end": 6089.36,
+            "text": "and then we take out the similarity score we call this the retrieval process so whatever it is you just have to give a small perspective on why embedding models are useful so the simple answer is to conduct a semantic search so I hope you understood so with that I will conclude this video it is a little long video my plan was something else to teach here I was planning to make a small chatbot application but then I thought that it would be better if I would teach you a little prompt first"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 6078.4800000000005,
+            "end": 6109.36,
+            "text": "my plan was something else to teach here I was planning to make a small chatbot application but then I thought that it would be better if I would teach you a little prompt first so I will cover that in the next video where we will read prompts in this video we have covered in detail all the models in the line chain and I really hope you have a very good visual diagram in your mind that how many types of models are there and then how to work with them"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 6093.36,
+            "end": 6122.24,
+            "text": "in this video we have covered in detail all the models in the line chain and I really hope you have a very good visual diagram in your mind that how many types of models are there and then how to work with them if you liked this video please like it and if you have not subscribed to this channel please do subscribe we will put a lot of AI related content in the future see you in the next video bye"
+        },
+        {
+            "video_name": "Video_05_LangChain Models \uff5c Indepth Tutorial with Code Demo \uff5c Video 3 \uff5c CampusX.mp3",
+            "start": 6110.24,
+            "end": 6122.24,
+            "text": "if you liked this video please like it and if you have not subscribed to this channel please do subscribe we will put a lot of AI related content in the future see you in the next video bye"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.bin
+*.pkl
+vault_manager/
+audios/
+videos/
+.DS_Store
+_ARCHIVE/

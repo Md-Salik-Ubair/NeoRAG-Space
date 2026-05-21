@@ -1,0 +1,1085 @@
+{
+    "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+    "chunks": [
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 0.0,
+            "end": 33.0,
+            "text": "Hi guys, my name is Nitesh and you are welcome to my YouTube channel. In this video, we will continue our land chain playlist. And now we are going to cover a very important topic. And the topic of today's video is RAG. I am pretty sure you must have heard about this term. Since the wave of generative AI has come, people are making a lot of applications. But the most common and useful application among them is RAG. So I have planned to teach you about RAG in two videos."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 18.5,
+            "end": 51.5,
+            "text": "Since the wave of generative AI has come, people are making a lot of applications. But the most common and useful application among them is RAG. So I have planned to teach you about RAG in two videos. In today's video, I will explain the theoretical background you need to understand RAG. And in the next video, we will make a RAG-based system with the help of land chain. On the whole, today's video will be a little different from the other RAG videos."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 41.0,
+            "end": 73.0,
+            "text": "And in the next video, we will make a RAG-based system with the help of land chain. On the whole, today's video will be a little different from the other RAG videos. Because I will try to explain RAG in a little more in-depth. Not only that, I will also give you a historical perspective on RAG. Which means how RAG came into the picture. What were the problems that RAG was trying to solve. What kind of systems were used before RAG to solve those problems."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 61.0,
+            "end": 95.0,
+            "text": "Which means how RAG came into the picture. What were the problems that RAG was trying to solve. What kind of systems were used before RAG to solve those problems. I will provide you all this in this video. On the whole, I feel the video would be interesting because we will discuss things with a lot of real-world examples. So I am super excited. I really hope you are also there. Now let's start the video. Before starting the video, let's recap what we have been doing in this playlist."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 84.0,
+            "end": 114.0,
+            "text": "So I am super excited. I really hope you are also there. Now let's start the video. Before starting the video, let's recap what we have been doing in this playlist. So around 4 videos ago, we started reading RAG. And I told you that the best way to read RAG is to understand the components used in RAG. And that is why in the last 4 videos, we covered the most important 4 components of RAG in great detail."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 99.0,
+            "end": 129.0,
+            "text": "And I told you that the best way to read RAG is to understand the components used in RAG. And that is why in the last 4 videos, we covered the most important 4 components of RAG in great detail. We first covered document loaders. With the help of which you can load data from any data source. Then we read about text splitters. With the help of which you can divide a very large text into chunks. Then we read about vector stores."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 117.0,
+            "end": 147.0,
+            "text": "With the help of which you can load data from any data source. Then we read about text splitters. With the help of which you can divide a very large text into chunks. Then we read about vector stores. Where you can convert your text into embeddings and store it. And finally, we read about retrievers. With the help of which you can perform semantic search in your vector store. So now that we have a good idea about these 4 components."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 137.0,
+            "end": 171.0,
+            "text": "With the help of which you can perform semantic search in your vector store. So now that we have a good idea about these 4 components. Now it is a good time to read about RAG. So this is my plan. In today's video and the next video, I will explain in great detail what RAG is. And how you can make RAG based applications with the help of Lang chain. So in today's video, we will cover the conceptual part."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 161.0,
+            "end": 198.0,
+            "text": "And how you can make RAG based applications with the help of Lang chain. So in today's video, we will cover the conceptual part. I will explain with examples what RAG is. What is its need and how it works. And then in the next video, I will show you how to make a RAG system with a scratch in Lang chain. So I hope you have a clear roadmap. Now let's start the video. Now to understand the concept of RAG, we will use our typical why, what, how flow."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 188.0,
+            "end": 218.0,
+            "text": "Now let's start the video. Now to understand the concept of RAG, we will use our typical why, what, how flow. First of all, I will explain to you why RAG was needed. Then I will explain to you what RAG exactly is. And then we will try to understand in great detail how RAG based systems work. So let's start with the why part. Now for the why part, I will explain everything like a story."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 205.0,
+            "end": 238.0,
+            "text": "And then we will try to understand in great detail how RAG based systems work. So let's start with the why part. Now for the why part, I will explain everything like a story. So first of all, let's talk about LLMs. So as you know, after the arrival of LLMs, there has been a revolution in the field of AI. But if you talk about LLMs, what are technically speaking, then I guess you know that LLMs are giant transformer based neural network architectures."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 227.0,
+            "end": 262.0,
+            "text": "But if you talk about LLMs, what are technically speaking, then I guess you know that LLMs are giant transformer based neural network architectures. Where there are many parameters, that is, there are many weights and biases. Now what we do is we train these LLMs or the concept is called pre-training. We pre-train LLMs on huge amounts of data. Like literally, we pre-train LLMs on the data of the scale of the data on the internet."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 250.0,
+            "end": 280.0,
+            "text": "We pre-train LLMs on huge amounts of data. Like literally, we pre-train LLMs on the data of the scale of the data on the internet. And the result of this pre-training is that your LLM has a kind of worldwide knowledge. Now if I ask you here, what do you think LLMs store this worldwide knowledge?"
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 262.0,
+            "end": 294.0,
+            "text": "And the result of this pre-training is that your LLM has a kind of worldwide knowledge. Now if I ask you here, what do you think LLMs store this worldwide knowledge? So what would you say? I guess you already know the answer. The answer is that LLMs store all their knowledge in parameters. The number of weights and biases."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 284.0,
+            "end": 317.0,
+            "text": "The answer is that LLMs store all their knowledge in parameters. The number of weights and biases. So the numbers stored in them, in the form of those numbers, this whole knowledge is stored in LLMs. And that is why this knowledge is called parametric knowledge. So that's why it is said that the more parameters there are in a model, the more powerful that model is. Like a model with more than 7 billion parameters would be a model with 13 billion parameters."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 305.0,
+            "end": 338.0,
+            "text": "So that's why it is said that the more parameters there are in a model, the more powerful that model is. Like a model with more than 7 billion parameters would be a model with 13 billion parameters. A model with 13 billion parameters would be more powerful than the one with 70 billion parameters and so on. So basically, the more parameters, the larger the model, the more parametric knowledge that model can contain in itself. So now let's say we have an LLM whose parameters have a lot of knowledge hidden."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 321.0,
+            "end": 354.0,
+            "text": "So basically, the more parameters, the larger the model, the more parametric knowledge that model can contain in itself. So now let's say we have an LLM whose parameters have a lot of knowledge hidden. Now the question is how can you access that knowledge as a user? The answer is by prompting. So what can you do? As a user, you can send a query to the LLM, which we call prompt in technical language."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 343.0,
+            "end": 373.0,
+            "text": "The answer is by prompting. So what can you do? As a user, you can send a query to the LLM, which we call prompt in technical language. Now as soon as this prompt goes to the LLM, the LLM tries to understand this prompt. And then it enters its parametric knowledge and tries to print the correct answer word by word. This is how LLMs work, right?"
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 361.0,
+            "end": 393.0,
+            "text": "And then it enters its parametric knowledge and tries to print the correct answer word by word. This is how LLMs work, right? Now in most of the situations, this flow where you are sending a prompt and accessing the parametric knowledge of the LLM and generating the correct response works mostly in the right way. But there are certain situations where this particular flow doesn't help you."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 381.0,
+            "end": 415.0,
+            "text": "and generating the correct response works mostly in the right way. But there are certain situations where this particular flow doesn't help you. So let's discuss those scenarios where you can't generate the best response with the help of prompting and parametric knowledge of LLM. I will tell you three situations. Situation number one, where I am asking a question about my private data from LLM."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 404.0,
+            "end": 438.0,
+            "text": "I will tell you three situations. Situation number one, where I am asking a question about my private data from LLM. Suppose our website is learnwith.campusx.in. There are our courses and our videos are shown in those courses. Now I got a doubt while watching the video. Now what I did was I opened the chat GPT and asked what is explained in this video."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 425.0,
+            "end": 458.0,
+            "text": "Now I got a doubt while watching the video. Now what I did was I opened the chat GPT and asked what is explained in this video. Obviously chat GPT can't answer this question because in the pre-training stage of chat GPT, chat GPT never accessed our video data. So in simple words, if you want to ask questions about your private data from LLM, it won't be able to answer you."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 438.0,
+            "end": 471.0,
+            "text": "Obviously chat GPT can't answer this question because in the pre-training stage of chat GPT, chat GPT never accessed our video data. So in simple words, if you want to ask questions about your private data from LLM, it won't be able to answer you. Because the obvious reason is that during the pre-training stage, LLM didn't see that data. So the work of directly prompting on private data will never help you."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 458.0,
+            "end": 493.0,
+            "text": "Because the obvious reason is that during the pre-training stage, LLM didn't see that data. So the work of directly prompting on private data will never help you. Situation number two, if I go to LLM and tell them what is the biggest news in India today. Most likely your LLM won't be able to answer this question because every LLM has a knowledge cut off date."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 471.0,
+            "end": 503.0,
+            "text": "Situation number two, if I go to LLM and tell them what is the biggest news in India today. Most likely your LLM won't be able to answer this question because every LLM has a knowledge cut off date. Suppose a LLM was pre-trained on 1st January and then released to the public."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 493.0,
+            "end": 524.0,
+            "text": "Suppose a LLM was pre-trained on 1st January and then released to the public. So this model won't have current affairs or recent information related to the current date. Which means that if you ask questions about the recent data from LLM, most likely your LLM won't be able to answer you. Now I know you might be thinking that we can ask all this from chat GPT."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 511.0,
+            "end": 541.0,
+            "text": "Which means that if you ask questions about the recent data from LLM, most likely your LLM won't be able to answer you. Now I know you might be thinking that we can ask all this from chat GPT. It's because chat GPT has access to search the internet. But if you download an open source model from Huggingface, most likely your LLM won't be able to answer you."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 531.0,
+            "end": 565.0,
+            "text": "But if you download an open source model from Huggingface, most likely your LLM won't be able to answer you. Because the knowledge cut off date of that LLM is in the past. And scenario number three is hallucination. So many people have observed that if you send a prompt and try to access this parametric knowledge. Then your LLM gives you factually incorrect information."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 549.0,
+            "end": 582.0,
+            "text": "So many people have observed that if you send a prompt and try to access this parametric knowledge. Then your LLM gives you factually incorrect information. And that too with a lot of confidence. This is called hallucination. Suppose I asked a question about Einstein. And the model said very confidently that Einstein used to play football for Germany in his early years."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 570.0,
+            "end": 601.0,
+            "text": "Suppose I asked a question about Einstein. And the model said very confidently that Einstein used to play football for Germany in his early years. Now this information is totally made up. This was never true. But the way LLM works is very probabilistic. And that is why there is a probability that instead of giving factually correct information, they will imagine something and tell you."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 588.0,
+            "end": 621.0,
+            "text": "But the way LLM works is very probabilistic. And that is why there is a probability that instead of giving factually correct information, they will imagine something and tell you. And this is called hallucination. So there are many chances of hallucination. And if hallucination is happening, then basically the user is not getting the right answer for his question. So there are these three situations where you send this flow, where you send a prompt to LLM"
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 606.0,
+            "end": 638.0,
+            "text": "And if hallucination is happening, then basically the user is not getting the right answer for his question. So there are these three situations where you send this flow, where you send a prompt to LLM and you expect a response by accessing the knowledge. This does not work. There are three situations. First, when you are working with your private data. When you are working with some recent data. And the scenario number three is hallucination."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 627.0,
+            "end": 659.0,
+            "text": "First, when you are working with your private data. When you are working with some recent data. And the scenario number three is hallucination. So now the question is that is there any way to solve these three problems. And in these three scenarios, you can get the right answer from LLM. The answer is yes. There is a way to solve these three problems at least on a small level."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 647.0,
+            "end": 685.0,
+            "text": "And in these three scenarios, you can get the right answer from LLM. The answer is yes. There is a way to solve these three problems at least on a small level. And the name of that method is fine tuning. I hope you have heard about this term sometime. Especially in the context of LLMs. Let me tell you quickly what fine tuning is. So what you do in fine tuning is that you pick up a pre-trained LLM and train it again on a smaller domain specific data set."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 671.0,
+            "end": 702.0,
+            "text": "So what you do in fine tuning is that you pick up a pre-trained LLM and train it again on a smaller domain specific data set. The idea behind fine tuning is very simple. You have an LLM which is pre-trained on a huge data set. Which means that LLM has a general knowledge of many things."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 689.0,
+            "end": 725.0,
+            "text": "You have an LLM which is pre-trained on a huge data set. Which means that LLM has a general knowledge of many things. But you want that LLM has knowledge of your domain or your task. So what you do is you curate a small data set which is of your domain. For example, you want your LLM to give good quality answers in the medical field."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 710.0,
+            "end": 741.0,
+            "text": "So what you do is you curate a small data set which is of your domain. For example, you want your LLM to give good quality answers in the medical field. So you will curate a small domain specific data of the medical field. And you will train your LLM on that data set. As soon as this training is complete, not only LLM has the knowledge of the whole world."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 731.0,
+            "end": 762.0,
+            "text": "And you will train your LLM on that data set. As soon as this training is complete, not only LLM has the knowledge of the whole world. But at the same time, it will also have the knowledge of the medical domain. And it will also be able to answer some difficult questions of the medical domain. If you want to understand this from an analogy, Let's take an example of a student who is an engineering student. And he has completed his engineering degree."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 750.0,
+            "end": 785.0,
+            "text": "If you want to understand this from an analogy, Let's take an example of a student who is an engineering student. And he has completed his engineering degree. Now he has studied many things in engineering. He has studied English, he has studied chemistry, he has studied physics. He has studied engineering subjects like computer science, electronics. But when he gets a job in a company, he doesn't start working on the basis of this education."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 770.0,
+            "end": 803.0,
+            "text": "He has studied engineering subjects like computer science, electronics. But when he gets a job in a company, he doesn't start working on the basis of this education. Generally, when a student gets a job, he also has a 2-3 months training in his company. And the idea of this 2-3 months training is that even though you have learned many things in engineering, But how to work in the company, we will teach you in 2-3 months."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 792.0,
+            "end": 823.0,
+            "text": "And the idea of this 2-3 months training is that even though you have learned many things in engineering, But how to work in the company, we will teach you in 2-3 months. So in this example, your student is like your LLM. The engineering studies are like pre-training. And the company's 2-3 months training is like fine-tuning."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 810.0,
+            "end": 845.0,
+            "text": "The engineering studies are like pre-training. And the company's 2-3 months training is like fine-tuning. So I hope you got an idea of what fine-tuning is. Fine-tuning is a big topic in itself. And we can't cover everything here. But I can tell you that there are different ways to fine-tune. One of them is a very popular way, supervised fine-tuning."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 834.0,
+            "end": 865.0,
+            "text": "But I can tell you that there are different ways to fine-tune. One of them is a very popular way, supervised fine-tuning. Where you provide your model with a labelled data set. Which looks like this. You provide your model with prompt and desired output. You provide data in this format."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 855.0,
+            "end": 887.0,
+            "text": "You provide your model with prompt and desired output. You provide data in this format. For example, you try to tell the model in prompt that the user can ask you this question. And in the desired output, you try to tell the model that if the user asks you this question, you have to answer like this. And in this way, you provide pairs between 1000-10 lakhs."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 877.0,
+            "end": 909.0,
+            "text": "you have to answer like this. And in this way, you provide pairs between 1000-10 lakhs. And you train your model on this kind of data. So this is called supervised fine-tuning. Because here you are fine-tuning your model with the help of a labelled data set. There is another technique called continued pre-training. This is an unsupervised method of fine-tuning your model."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 899.0,
+            "end": 933.0,
+            "text": "There is another technique called continued pre-training. This is an unsupervised method of fine-tuning your model. Here also you provide a data set. But this data set is unsupervised. Meaning there are no labels here. So for example, I have to make a LLM-based chat board for my campusX website. And I want the lectures to be on our website. If students have any doubts, they can ask LLM."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 917.0,
+            "end": 947.0,
+            "text": "So for example, I have to make a LLM-based chat board for my campusX website. And I want the lectures to be on our website. If students have any doubts, they can ask LLM. So for this, I will take the transcript of my lectures. Basically, I will take the subtitle file. And I will feed it to my model, to my LLM."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 933.0,
+            "end": 965.0,
+            "text": "So for this, I will take the transcript of my lectures. Basically, I will take the subtitle file. And I will feed it to my model, to my LLM. And this training will be done in the same way as the pre-training stage. Now this method is called continued pre-training. Because in a way, you are doing the pre-training continuation. But on a smaller domain specific data set."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 953.0,
+            "end": 983.0,
+            "text": "Now this method is called continued pre-training. Because in a way, you are doing the pre-training continuation. But on a smaller domain specific data set. Apart from this, there are other techniques. Like RLHF is a very famous technique. Where you form a technique by combining reinforcement learning and human feedback. And you form a model by which you explain the model. How to behave in real world scenarios."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 970.0,
+            "end": 1000.0,
+            "text": "Where you form a technique by combining reinforcement learning and human feedback. And you form a model by which you explain the model. How to behave in real world scenarios. Apart from this, there are many other techniques or terms you must have heard. Why was it lowered? All this comes under fine tuning. So this was just a brief introduction about what fine tuning is. Now I will give you a kind of walkthrough."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 989.0,
+            "end": 1019.0,
+            "text": "All this comes under fine tuning. So this was just a brief introduction about what fine tuning is. Now I will give you a kind of walkthrough. How to carry out the process of fine tuning exactly. We will take the example of supervised fine tuning. Because generally you will see that supervised fine tuning is preferred. So this is precisely the process of 4 steps. What do you do in step 1? You collect data of your domain."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1007.0,
+            "end": 1038.0,
+            "text": "Because generally you will see that supervised fine tuning is preferred. So this is precisely the process of 4 steps. What do you do in step 1? You collect data of your domain. And since this is supervised fine tuning, you should have labeled data. In the format of prompts and desired outputs. You should have many such question answers. With the help of this, you train the model. In step 2, you choose a method. How to apply fine tuning."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1027.0,
+            "end": 1057.0,
+            "text": "You should have many such question answers. With the help of this, you train the model. In step 2, you choose a method. How to apply fine tuning. Do you want to do full parameter fine tuning? Or do you want to use parameter efficient methods like Laura and QLaura? Once you choose your method, then you start training. You don't train for a lot of epochs. Because it is computationally very expensive."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1047.0,
+            "end": 1080.0,
+            "text": "Once you choose your method, then you start training. You don't train for a lot of epochs. Because it is computationally very expensive. So you train your model for some epochs. Depending on which method you have chosen. If you have chosen full parameter fine tuning. Then you retrain all your weights. If you have chosen a technique like Laura or QLaura. Then you freeze your base weights. And you train the remaining weights."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1069.0,
+            "end": 1099.0,
+            "text": "If you have chosen a technique like Laura or QLaura. Then you freeze your base weights. And you train the remaining weights. And lastly, when this training is done. In the last step, you evaluate that training. You apply safety test. Here you can use many techniques. For example, you see the exact match. That I provided this prompt. This should be my desired output."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1089.0,
+            "end": 1119.0,
+            "text": "Here you can use many techniques. For example, you see the exact match. That I provided this prompt. This should be my desired output. My model gave this output. So on this basis, you can find out the quality of your fine tuning. You can decide on the basis of factuality. You can decide on the basis of hallucination rate. There are many evaluation methods. But in nutshell, in these 4 steps, you carry out supervised fine tuning."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1109.0,
+            "end": 1141.0,
+            "text": "You can decide on the basis of hallucination rate. There are many evaluation methods. But in nutshell, in these 4 steps, you carry out supervised fine tuning. Now that you have some idea about fine tuning. Let's discuss how fine tuning helps in solving these 3 problems. So how is the first problem being solved is very obvious. You wanted LLM to be able to answer your questions on your private data. So you solved this problem."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1129.0,
+            "end": 1163.0,
+            "text": "So how is the first problem being solved is very obvious. You wanted LLM to be able to answer your questions on your private data. So you solved this problem. As soon as you trained your LLM on your private data. Now your private data is also a part of its parametric knowledge. It means that whatever you ask related to your private data. The model will be able to answer those questions. The second problem was that you wanted answers on recent data."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1151.0,
+            "end": 1182.0,
+            "text": "It means that whatever you ask related to your private data. The model will be able to answer those questions. The second problem was that you wanted answers on recent data. This is a tricky part. But at least you can solve this problem of your company, domain. Let's say I had done fine tuning on my website. I had done fine tuning on my courses data. And suddenly I got a new course."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1171.0,
+            "end": 1201.0,
+            "text": "Let's say I had done fine tuning on my website. I had done fine tuning on my courses data. And suddenly I got a new course. So I will have to do fine tuning again. And I will have to provide the data of the new course. For the fine tuning. And you will have to do the same thing repeatedly. If you are updating your courses frequently on your website. You will have to do fine tuning frequently. But whenever you do fine tuning."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1190.0,
+            "end": 1220.0,
+            "text": "And you will have to do the same thing repeatedly. If you are updating your courses frequently on your website. You will have to do fine tuning frequently. But whenever you do fine tuning. Your model will get updated information. Right. And lastly you can solve the hallucination problem. So what can you do in your training data set. You can add such examples. Where you can show some tricky prompts to LLM."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1209.0,
+            "end": 1239.0,
+            "text": "So what can you do in your training data set. You can add such examples. Where you can show some tricky prompts to LLM. Where it used to get confused. And you can tell it that since this is a tricky prompt. You don't need to answer it. You can just say I don't know. So this way you are explicitly training your LLM. That stick to the facts. Don't create new facts from yourself."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1227.0,
+            "end": 1257.0,
+            "text": "You can just say I don't know. So this way you are explicitly training your LLM. That stick to the facts. Don't create new facts from yourself. So you can use your training data smartly. So that hallucinations reduce with the help of it. So in nutshell fine tuning is a technique. Which if you use smartly. If you use it smartly. Then you can solve these three problems at some level."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1247.0,
+            "end": 1278.0,
+            "text": "So in nutshell fine tuning is a technique. Which if you use smartly. If you use it smartly. Then you can solve these three problems at some level. But there are also some major problems with fine tuning. Because of which fine tuning is not logical to use everywhere. So I will tell you with fine tuning. What are some major problems. The first big problem is with fine tuning."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1268.0,
+            "end": 1301.0,
+            "text": "So I will tell you with fine tuning. What are some major problems. The first big problem is with fine tuning. That you are training such a big model. Even though you are training on a small data set. But you are training such a big model. So this whole process is computationally expensive. You will have to pay for it. Second problem is that to conduct this fine tuning process."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1291.0,
+            "end": 1322.0,
+            "text": "You will have to pay for it. Second problem is that to conduct this fine tuning process. You will need strong technical expertise. It is not everyone's power to do fine tuning. You need proper AI engineers and data scientists. Who will conduct this process for you. Problem number three is. If I take the example of my website and courses."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1312.0,
+            "end": 1342.0,
+            "text": "Who will conduct this process for you. Problem number three is. If I take the example of my website and courses. So the more I update my course catalog. I am adding new courses. The more I have to perform fine tuning. And to perform fine tuning every time. I have to pay for it. It is computationally expensive. And suppose I am removing a course from my catalog. It is old."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1332.0,
+            "end": 1364.0,
+            "text": "And to perform fine tuning every time. I have to pay for it. It is computationally expensive. And suppose I am removing a course from my catalog. It is old. So I have to do fine tuning for that. And I have to remove that course from my model's parametric knowledge. So basically, updating a lot of times is a problem. If you are working in a domain where. New information is coming on a very fast frequency. If fine tuning is not a suitable technique for such scenarios."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1350.0,
+            "end": 1380.0,
+            "text": "So basically, updating a lot of times is a problem. If you are working in a domain where. New information is coming on a very fast frequency. If fine tuning is not a suitable technique for such scenarios. So these are some problems. Because of which fine tuning is not used. To solve these three problems. Now again we have come to the same question. Is there any other technique."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1370.0,
+            "end": 1401.0,
+            "text": "To solve these three problems. Now again we have come to the same question. Is there any other technique. Which can help us solve these problems easily. And again the answer is yes. There is another technique. Which can help us solve these three problems. And the name of this technique is. In Context Learning. So first of all I will explain to you."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1389.0,
+            "end": 1420.0,
+            "text": "Which can help us solve these three problems. And the name of this technique is. In Context Learning. So first of all I will explain to you. What is this technique? And then we will discuss. How in context learning can solve these three problems. So here is a definition. We will read this definition once. So here it is written. In context learning is a core capability. Of a large language model like. GPT-3, Claude, Lama."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1409.0,
+            "end": 1439.0,
+            "text": "So here is a definition. We will read this definition once. So here it is written. In context learning is a core capability. Of a large language model like. GPT-3, Claude, Lama. Where the model learns to solve a task. Purely by seeing examples in the prompt. Without updating its weight. So till now what we have learnt. That your knowledge of LLM. Is parametric knowledge. Means stored in the parameters of LLM."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1429.0,
+            "end": 1459.0,
+            "text": "So till now what we have learnt. That your knowledge of LLM. Is parametric knowledge. Means stored in the parameters of LLM. And then when you send a prompt. So on the basis of that prompt. LLM enters in its parametric knowledge. And then gives the answer. But these big models. GPT-3, Claude, Lama. With these. This thing was observed. That if you inside the prompt. Explain through examples."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1449.0,
+            "end": 1487.0,
+            "text": "GPT-3, Claude, Lama. With these. This thing was observed. That if you inside the prompt. Explain through examples. How to solve a given task. So by seeing those examples. Our LLM learns. How to solve the task. For example. You are sending this prompt. In your LLM. See what you have written here. Here it is written. So we told the first text."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1475.0,
+            "end": 1505.0,
+            "text": "Here it is written. So we told the first text. I love this phone. It's so smooth. And we told the sentiment. That it is positive. Then we gave the next text. And we told the sentiment. Then we gave the next text. The camera is amazing. We told sentiment is positive. Now I am giving it a new text."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1495.0,
+            "end": 1525.0,
+            "text": "And we told the sentiment. Then we gave the next text. The camera is amazing. We told sentiment is positive. Now I am giving it a new text. I hate the battery life. And I am asking it. Based on These previous examples. What do you think? Sentiment is positive or negative? Now what will happen here. That your LLM. By seeing these examples. Will learn."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1515.0,
+            "end": 1545.0,
+            "text": "Sentiment is positive or negative? Now what will happen here. That your LLM. By seeing these examples. Will learn. How to do sentiment analysis. And from there. By learning. It will apply its learning on this question. And will give you the opposite answer. That the sentiment is negative. So this is called. In context learning. Here are some more examples. Like you have to do named entity recognition."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1535.0,
+            "end": 1565.0,
+            "text": "That the sentiment is negative. So this is called. In context learning. Here are some more examples. Like you have to do named entity recognition. So you told. Label the named entities in the sentence. You told a sentence. Entities from that were taken out. And then you asked. Tell me what are the entities in this sentence. Again it will learn from the example. And will apply that learning. On the question. On the task."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1555.0,
+            "end": 1585.0,
+            "text": "Tell me what are the entities in this sentence. Again it will learn from the example. And will apply that learning. On the question. On the task. So this is called in context learning. And these examples. These prompts. This is called few short prompting. Maybe you have heard your name. So similarly you can teach LLM. To solve maths problem. Or you can teach to solve your domain problem. This particular technique. Is known as."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1575.0,
+            "end": 1605.0,
+            "text": "So similarly you can teach LLM. To solve maths problem. Or you can teach to solve your domain problem. This particular technique. Is known as. In context learning. Now you understood. What is in context learning. What is few short prompting. Now I will tell you a very interesting thing. About in context learning. In context learning. Is. An emergent property of LLM. What is emergent property?"
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1595.0,
+            "end": 1625.0,
+            "text": "About in context learning. In context learning. Is. An emergent property of LLM. What is emergent property? See it is written here. An emergent property is a behavior. Or ability. That suddenly appears. In a system. When it reaches a certain scale. Or complexity. Even though it was not explicitly. Programmed or expected from the individual. Components."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1615.0,
+            "end": 1645.0,
+            "text": "When it reaches a certain scale. Or complexity. Even though it was not explicitly. Programmed or expected from the individual. Components. Means to say. That when people were training. These LLMs. They did not plan it beforehand. That LLM in context learning. Will show the feature. And as. LLMs were made bigger. More parameters were added. And they were trained on bigger data sets."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1635.0,
+            "end": 1665.0,
+            "text": "Will show the feature. And as. LLMs were made bigger. More parameters were added. And they were trained on bigger data sets. In LLMs. This feature automatically appeared. So the whole story is. That till. GPT 1. Came. Or GPT 2. Which are not that big language models. So in these models. In context learning was not there."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1655.0,
+            "end": 1685.0,
+            "text": "Came. Or GPT 2. Which are not that big language models. So in these models. In context learning was not there. So if you. In prompts. Give examples. To solve the task. There is no guarantee that these models. Will learn from those examples. And solve the task. But as soon as GPT 3 came. Which had around 175 billion parameters. Which is a very big scale model."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1675.0,
+            "end": 1705.0,
+            "text": "Will learn from those examples. And solve the task. But as soon as GPT 3 came. Which had around 175 billion parameters. Which is a very big scale model. So automatically. It was observed. That GPT 3 can learn from. The examples that are given in the prompt. And can also learn from them. And solve the task. And then. An important paper came. Which was called. Language models are few short learners."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1695.0,
+            "end": 1725.0,
+            "text": "And solve the task. And then. An important paper came. Which was called. Language models are few short learners. And in this paper. For the first time. About in context learning. So if you read the abstract. Of this paper. You will get an idea. Of what happens in context learning. Which the author has written. To solve the tasks. What we do."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1715.0,
+            "end": 1745.0,
+            "text": "You will get an idea. Of what happens in context learning. Which the author has written. To solve the tasks. What we do. We pre train an LLM. And then. To solve a particular task. We perform fine tuning. Now. Although this thing is giving good results. But the problem is fine tuning. You need a data set. Which should be at least 10,000 to 10,00,000. Daily."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1735.0,
+            "end": 1765.0,
+            "text": "Although this thing is giving good results. But the problem is fine tuning. You need a data set. Which should be at least 10,000 to 10,00,000. Daily. And to generate such a data set. Is a little costly. Then the authors. Compared this technique. With humans. By contrast. Humans can generally perform. A new language task. From only a few examples. Or few simple instructions."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1755.0,
+            "end": 1785.0,
+            "text": "By contrast. Humans can generally perform. A new language task. From only a few examples. Or few simple instructions. Here the authors are saying. If you give a task to humans. Like you tell it some examples. 5-6 examples. Then humans automatically. Solve the given task. Now we are talking about NLP tasks. So can language models do the same work? So then they. Took the GPT-3 model."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1775.0,
+            "end": 1805.0,
+            "text": "Solve the given task. Now we are talking about NLP tasks. So can language models do the same work? So then they. Took the GPT-3 model. Which had around. 175 billion parameters. And. This particular model. They gave some prompts. Where they gave examples. On how to solve the task. And they observed. That GPT-3 scale model. Actually."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1795.0,
+            "end": 1825.0,
+            "text": "Where they gave examples. On how to solve the task. And they observed. That GPT-3 scale model. Actually. By learning from the examples given in the prompt. Can solve any task. And this was the biggest learning. Of this paper. So I would recommend first of all. You go and read this paper. Because this paper is like a landmark paper. And it made in-context learning. Very popular. Now about in-context learning."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1815.0,
+            "end": 1845.0,
+            "text": "You go and read this paper. Because this paper is like a landmark paper. And it made in-context learning. Very popular. Now about in-context learning. One more thing I would like to tell you. Although it is an emergent property. But it is not necessary. That it gives you good results. So to solve this. In the future. I mean after this paper. The data scientists. Research scientists. They applied different."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1835.0,
+            "end": 1865.0,
+            "text": "In the future. I mean after this paper. The data scientists. Research scientists. They applied different. Types of alignment techniques. Which would enhance this property. Which would improve it. So they. Supervised fine tuning. RLHF. Which made the models. 3.5, 4 etc. Which were really very good. At in-context learning."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1855.0,
+            "end": 1885.0,
+            "text": "RLHF. Which made the models. 3.5, 4 etc. Which were really very good. At in-context learning. But yeah the basic funda is. That if you want. Then in the prompt. By giving examples. How to solve a task. You can send this instruction to LLM. And LLM. By looking at those examples. Can learn how to solve the task. Now I have explained you in-context learning."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1875.0,
+            "end": 1905.0,
+            "text": "You can send this instruction to LLM. And LLM. By looking at those examples. Can learn how to solve the task. Now I have explained you in-context learning. Along with that I gave. A little historical perspective. How did in-context learning come in picture. Now I. Show you that if you. Improve in-context learning. A little. How can you solve your three problems. About which we are talking. So what are we doing so far."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1895.0,
+            "end": 1925.0,
+            "text": "Improve in-context learning. A little. How can you solve your three problems. About which we are talking. So what are we doing so far. In-context learning. We are doing few short prompting. Which means we are in prompt. By giving some examples. We want to explain the model. How to solve a given task. Now what if. I instead of few short prompting. Rather than giving examples. In my prompt."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1915.0,
+            "end": 1945.0,
+            "text": "How to solve a given task. Now what if. I instead of few short prompting. Rather than giving examples. In my prompt. To solve a task. I will send the full context. Let's take an example. Suppose. Our website is there. Our videos are played there. And these videos. Are long long videos. And I want that here. We have a chatbot."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1935.0,
+            "end": 1965.0,
+            "text": "Our videos are played there. And these videos. Are long long videos. And I want that here. We have a chatbot. Which will help students. In solving their doubts. So suppose. This is a lecture on linear regression. A two hour lecture. Now what happened to the student. That in some specific part. There was a doubt. Suppose in gradient descent part. So he asked this doubt."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1955.0,
+            "end": 1985.0,
+            "text": "Now what happened to the student. That in some specific part. There was a doubt. Suppose in gradient descent part. So he asked this doubt. To this LLM. So now what we will do. Not only LLM will send the student's question. To the doubt. Along with that. We will send the part of the lecture. Where gradient descent is being taught. Suppose. From 5 minutes to 25 minutes. Gradient descent is being taught."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1975.0,
+            "end": 2005.0,
+            "text": "We will send the part of the lecture. Where gradient descent is being taught. Suppose. From 5 minutes to 25 minutes. Gradient descent is being taught. So the transcript of this part. That I will send as context. In this model. Okay. So means in the model. I am sending two things. During prompting. One is student's doubt. And in between. 5 minutes to 25 minutes."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 1995.0,
+            "end": 2025.0,
+            "text": "I am sending two things. During prompting. One is student's doubt. And in between. 5 minutes to 25 minutes. The gradient descent is being taught. In this lecture. That whole duration transcript. And this transcript will work as context. Which will see. Our model. Will try to solve the user's query. So here we are not sending an example. On how to solve the task. But."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2015.0,
+            "end": 2045.0,
+            "text": "Our model. Will try to solve the user's query. So here we are not sending an example. On how to solve the task. But. To solve a question. The context required. The context is being injected. In our prompt. By which our model's knowledge. Parametric knowledge. Is getting enhanced. So this example. That I gave you. Is called."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2035.0,
+            "end": 2065.0,
+            "text": "Parametric knowledge. Is getting enhanced. So this example. That I gave you. Is called. RAAG. Retrieval Augmented Generation. Here it is written. RAAG is a way. To make a language model smarter. By giving it extra information. And you ask your question. In our example. What was the extra information? Between 5 minutes to 25."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2055.0,
+            "end": 2085.0,
+            "text": "By giving it extra information. And you ask your question. In our example. What was the extra information? Between 5 minutes to 25. The whole text transcript. With the help of which. Our model will understand. What was taught in the gradient descent. And with the help of that context. It will solve the user's query. So if you see this flow diagram. This flow diagram represents. RAAG. So what you do in RAAG."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2075.0,
+            "end": 2105.0,
+            "text": "It will solve the user's query. So if you see this flow diagram. This flow diagram represents. RAAG. So what you do in RAAG. When you come. While making that prompt. You give two things. First. User's query. And second. Context. To solve that query. All the knowledge required. You inject it inside the prompt. And send it to the model. Now the model has its own parametric knowledge."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2095.0,
+            "end": 2125.0,
+            "text": "To solve that query. All the knowledge required. You inject it inside the prompt. And send it to the model. Now the model has its own parametric knowledge. What does it do? This context. And its parametric knowledge. By combining both. And it gives you a response. I will quickly show you an example. How this prompt will look. See here. You design the prompt in this way. You are a helpful assistant."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2115.0,
+            "end": 2145.0,
+            "text": "I will quickly show you an example. How this prompt will look. See here. You design the prompt in this way. You are a helpful assistant. Answer the question. Only from the provided context. Which I have sent the gradient descent transcript. If the context is insufficient. Just say you don't know. So that there is no hallucination. And what are you doing here? You are sending your full context. And here you are sending your question. And with this prompt."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2135.0,
+            "end": 2165.0,
+            "text": "So that there is no hallucination. And what are you doing here? You are sending your full context. And here you are sending your question. And with this prompt. The model solves our question. And gives it to us. So we had a very long discussion. Where we started. Why do we need a rack? I told you three problems. Then I told you how to solve it. You do fine tuning. Then we discussed fine tuning. And what were the problems in fine tuning."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2155.0,
+            "end": 2185.0,
+            "text": "I told you three problems. Then I told you how to solve it. You do fine tuning. Then we discussed fine tuning. And what were the problems in fine tuning. We discussed that. And then to solve those problems. We discussed a new technique. Which is called in context learning. And then we enhanced in context learning. In that we learned to put context. Instead of examples. And this is called rag. So now going forward. What I will do is."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2175.0,
+            "end": 2205.0,
+            "text": "In that we learned to put context. Instead of examples. And this is called rag. So now going forward. What I will do is. Why I explained to you. What I explained to you. Now we will focus on how. I will teach you how exactly rag works. On a how level. And then when we learn. Finally I will tell you. How rag is solving these three problems. So I hope. Till now you are finding this video interesting."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2195.0,
+            "end": 2225.0,
+            "text": "And then when we learn. Finally I will tell you. How rag is solving these three problems. So I hope. Till now you are finding this video interesting. You are not getting bored. Now let's move on to the next part. So guys in this video. Our next goal is. That we will try to understand in detail. How a rag based system works. Now if we talk on a high level. Then rag. Is made of two concepts. First concept is."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2215.0,
+            "end": 2245.0,
+            "text": "How a rag based system works. Now if we talk on a high level. Then rag. Is made of two concepts. First concept is. Information retrieval. Which is a very old topic. In the domain of computer science. And the second concept is. Text generation. Which became famous after the arrival of LLMs. Rag is essentially made of. These two concepts. And we will see that now."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2235.0,
+            "end": 2265.0,
+            "text": "Which became famous after the arrival of LLMs. Rag is essentially made of. These two concepts. And we will see that now. So broadly speaking. Rag. Can be divided into four steps. In four steps. In four steps. You make rag based systems. Indexing, retrieval. Augmentation, generation. Once I give you. About these four."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2255.0,
+            "end": 2285.0,
+            "text": "You make rag based systems. Indexing, retrieval. Augmentation, generation. Once I give you. About these four. Kind of a summarized view. Then we will try to understand every step. In detail with the help of block diagrams. Will try to understand. So indexing is that step. In rag. When you create an external. Knowledge base. With this external knowledge base. You."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2275.0,
+            "end": 2305.0,
+            "text": "In rag. When you create an external. Knowledge base. With this external knowledge base. You. Derive this context. Which you eventually. Send inside prompt. So in simple words. This context. Which is required to solve a query. Where does this context come from? From external knowledge base. And this external knowledge base. The process of making."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2295.0,
+            "end": 2325.0,
+            "text": "Which is required to solve a query. Where does this context come from? From external knowledge base. And this external knowledge base. The process of making. We call it indexing. Step number two is retrieval. So what you do in retrieval. That you understand this query. And you. Go to this external knowledge base. And try to find. That in the entire. External knowledge base. Which are the chunks."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2315.0,
+            "end": 2345.0,
+            "text": "Go to this external knowledge base. And try to find. That in the entire. External knowledge base. Which are the chunks. Which are the parts. Which will help in. Answering this query. And from there. You derive the context. If you understand this with an example. So I told you a little while ago. That. There is a two hour lecture on linear regression. Right."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2335.0,
+            "end": 2365.0,
+            "text": "If you understand this with an example. So I told you a little while ago. That. There is a two hour lecture on linear regression. Right. My user asked a question. Around gradient descent. Now obviously. To answer the question. Of gradient descent. I will not send a two hour. Video text. Transcript. To LLM. Instead what I will do is."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2355.0,
+            "end": 2385.0,
+            "text": "I will not send a two hour. Video text. Transcript. To LLM. Instead what I will do is. I will go to the video's transcript. And search. Which are the segments of the video. Where we are talking about gradient descent. Suppose we are talking in two places. One is between 5 to 25 minutes. And then one minute. Between 1 minute 43 to 47. So these are the two chunks. Where."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2375.0,
+            "end": 2405.0,
+            "text": "One is between 5 to 25 minutes. And then one minute. Between 1 minute 43 to 47. So these are the two chunks. Where. We are talking about gradient descent. So what I will do is. Rather than sending the entire. Transcript of the two hour long video. I will just send. These two parts. As my context. So this process where you are. Searching for the whole. Transcript."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2395.0,
+            "end": 2425.0,
+            "text": "These two parts. As my context. So this process where you are. Searching for the whole. Transcript. Because that is your question. We call this retrieval. Right. Third step is. Augmentation. When you. Query your user. And make a prompt. So. This prompt creation."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2415.0,
+            "end": 2445.0,
+            "text": "When you. Query your user. And make a prompt. So. This prompt creation. Is the stage of augmentation. Because what you are doing here. On your parameterized knowledge. And add on extra knowledge. So that LLM. Can give you the proper answer. And the last step is. Generation. When this prompt. Comes to LLM."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2435.0,
+            "end": 2465.0,
+            "text": "Can give you the proper answer. And the last step is. Generation. When this prompt. Comes to LLM. LLM uses. Its text generation capability. And. Use in context learning. To answer this query. And finally. Generates a response. So broadly speaking. These are the four steps. Which you will get to see in any rag based system."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2455.0,
+            "end": 2485.0,
+            "text": "And finally. Generates a response. So broadly speaking. These are the four steps. Which you will get to see in any rag based system. So now that you have. Got a little intro. Now we will see these steps in detail. So let's start with indexing. Which is our first step. So here it is written. Indexing is the process of. Preparing your knowledge base. So that it can be efficiently. Searched at the query time."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2475.0,
+            "end": 2505.0,
+            "text": "So here it is written. Indexing is the process of. Preparing your knowledge base. So that it can be efficiently. Searched at the query time. As I told you. That the context you have to provide. In the prompt. You get this context from an external knowledge base. And indexing. Is the process where you. Create or prepare this external knowledge base. Now indexing is made by itself."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2495.0,
+            "end": 2525.0,
+            "text": "And indexing. Is the process where you. Create or prepare this external knowledge base. Now indexing is made by itself. Let's see all the steps one by one. First step is document ingestion. This is the step where. You load your source knowledge. In your memory. Obviously. Your data. Which you have to answer. Is somewhere. So you have to."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2515.0,
+            "end": 2545.0,
+            "text": "Obviously. Your data. Which you have to answer. Is somewhere. So you have to. Bring it to your memory first. Like the example we are taking. Website. Where we need video transcript. So where is the video transcript. It is on our server. So we have to fetch it from there. Similarly. You have to. Create a rag based system."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2535.0,
+            "end": 2565.0,
+            "text": "It is on our server. So we have to fetch it from there. Similarly. You have to. Create a rag based system. On your company's documents. So it is possible that the company's documents. Are on Google drive. Or AWS S3 service. So fetching those documents from there. Is the first step of indexing. And we call it document ingestion. Okay. Now here you use. A tool like Langchain."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2555.0,
+            "end": 2585.0,
+            "text": "Is the first step of indexing. And we call it document ingestion. Okay. Now here you use. A tool like Langchain. There are many built in. Document loaders in Langchain. So Pi PDF loader. YouTube loader. Web based loader. There are different loaders. We saw this in the document loader video. So the main idea of document ingestion. Is that wherever you have. Source knowledge. You have to bring it from there."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2575.0,
+            "end": 2605.0,
+            "text": "We saw this in the document loader video. So the main idea of document ingestion. Is that wherever you have. Source knowledge. You have to bring it from there. And you have to load it. In memory so that we can. Process it. So once you ingested the document. And your step 1 is complete. So you have your document. Stored in the format of a string. Okay. Now you can process. Any type of document on this string."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2595.0,
+            "end": 2625.0,
+            "text": "So you have your document. Stored in the format of a string. Okay. Now you can process. Any type of document on this string. Now here comes step number 2. Which we call text chunking. So in this text chunking. What you do is. This big document. You convert it into small. Documents. And you do this. Because if you. Want to process."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2615.0,
+            "end": 2645.0,
+            "text": "You convert it into small. Documents. And you do this. Because if you. Want to process. A single big document. So the first problem. Will come that your LLM. Its context length. Will not allow you. To send such a big document. In prompt. Right. There is a limitation. On how much tokens. LLM can process in the prompt."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2635.0,
+            "end": 2665.0,
+            "text": "To send such a big document. In prompt. Right. There is a limitation. On how much tokens. LLM can process in the prompt. So you. Will not want to send a big document. Okay. Second problem is. After a while we. Will perform semantic search. And it is said that. The quality of semantic search. Is not good. If you apply it on a big document."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2655.0,
+            "end": 2685.0,
+            "text": "Will perform semantic search. And it is said that. The quality of semantic search. Is not good. If you apply it on a big document. So what you do. Because of these two major reasons. That you break down. This big document. Is a semantically meaningful. Chunks. So again. If we take an example of our two hours. Video. Imagine. Text transcript."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2675.0,
+            "end": 2705.0,
+            "text": "Chunks. So again. If we take an example of our two hours. Video. Imagine. Text transcript. How big will it be. What you will do. Divide it into small chunks. You have to just make sure. That the chunks you are making. Are meaningful. It would be great if. In the first chunk. You are talking about. In the second chunk."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2695.0,
+            "end": 2725.0,
+            "text": "Are meaningful. It would be great if. In the first chunk. You are talking about. In the second chunk. You are talking about another topic. You should not be chunking abruptly. Right. We discussed this point in detail. In the video of text splitters. So to perform text chunking. Again we have. Many types of text splitters in Lanchain. The most famous is. Recursive character text splitter. Apart from this you have semantic chunker."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2715.0,
+            "end": 2745.0,
+            "text": "Again we have. Many types of text splitters in Lanchain. The most famous is. Recursive character text splitter. Apart from this you have semantic chunker. And. According to the document. You will get text splitters. If you are dealing with HTML. You will get text splitters. If you are dealing with markdown. You will get text splitters. So far we have done two things. First of all. From the source."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2735.0,
+            "end": 2765.0,
+            "text": "If you are dealing with markdown. You will get text splitters. So far we have done two things. First of all. From the source. We are loading our document. In memory. And since this document is very big. So with the help of a text splitter. We are dividing the document into small chunks. Now here comes step number three. Where we. For all our chunks. We generate embeddings. So I told you."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2755.0,
+            "end": 2785.0,
+            "text": "Now here comes step number three. Where we. For all our chunks. We generate embeddings. So I told you. What are embeddings. Embeddings is a very powerful deep learning technique. Where you. Unstructured document. Like text. To capture the semantic meaning. You convert that document. Into vectors. Into dense vectors. And this dense vector is called embedding."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2775.0,
+            "end": 2805.0,
+            "text": "To capture the semantic meaning. You convert that document. Into vectors. Into dense vectors. And this dense vector is called embedding. Now we are doing this. Because in future. We have to search these documents. That the question the user has asked. Let's say about gradient descent. So which part of the video. Is matching the most. So this searching is semantic searching. And semantic searching. Always."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2795.0,
+            "end": 2825.0,
+            "text": "So which part of the video. Is matching the most. So this searching is semantic searching. And semantic searching. Always. Between vectors. So that is why what we will do next is. That we will. All our text chunks. Through the model. We will convert them into embedding vectors. Here it is written. Convert each chunk into a dense vector. That captures its meaning. And to perform this step."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2815.0,
+            "end": 2845.0,
+            "text": "We will convert them into embedding vectors. Here it is written. Convert each chunk into a dense vector. That captures its meaning. And to perform this step. We can use any. Embedding model. Like open AI embeddings. Or sentence transformer embedding. Or any other famous embedding. We can use. And after doing this. What will happen. Against each chunk. A dense vector will come."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2835.0,
+            "end": 2865.0,
+            "text": "We can use. And after doing this. What will happen. Against each chunk. A dense vector will come. Okay. And now comes the fourth step. Fourth and final step of indexing. Where we save all these vectors. In a vector store. We save them. Because in future. We have to perform semantic search on these vectors. Okay. So the next step is."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2855.0,
+            "end": 2885.0,
+            "text": "We save them. Because in future. We have to perform semantic search on these vectors. Okay. So the next step is. That you store these vectors. Along with the original chunk text. In a vector database. So what we do is. We take the original text. And its corresponding vector. And store it in a vector database. In a vector store. You have many options. FIAS."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2875.0,
+            "end": 2905.0,
+            "text": "And its corresponding vector. And store it in a vector database. In a vector store. You have many options. FIAS. Or chroma. Cloud based vector stores. You have. Pine cone, VV8, Milvers, Quadrant. These are the options. If you want to go cloud based. So what happened. In a vector store. All the chunks. And its corresponding."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2895.0,
+            "end": 2925.0,
+            "text": "If you want to go cloud based. So what happened. In a vector store. All the chunks. And its corresponding. Embedding vector. Stored in one place. Now what I can do is. I can use this vector store. As my. External knowledge base. So the final state. That we had to achieve in indexing. That we wanted to achieve. With the help of indexing process."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2915.0,
+            "end": 2945.0,
+            "text": "External knowledge base. So the final state. That we had to achieve in indexing. That we wanted to achieve. With the help of indexing process. We have achieved that. We have made an external knowledge base. Now in future. We will enter in this external knowledge base. And search. What should be our context. Which we will inject in prompt. So we have read. First step. We have now our."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2935.0,
+            "end": 2965.0,
+            "text": "What should be our context. Which we will inject in prompt. So we have read. First step. We have now our. External knowledge base. Set up. Now what will happen at this point. That user will send us a query. Suppose he asked a question. That how do we. Perform the optimization step. In gradient descent. So now here. Second step is triggered."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2955.0,
+            "end": 2985.0,
+            "text": "That how do we. Perform the optimization step. In gradient descent. So now here. Second step is triggered. Retrieval. So now what is our goal. That we have to understand. On the basis of this query. Which of these. Vector will be the best option. To become the context. Now suppose here. We have discussed. Multiple linear regression."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2975.0,
+            "end": 3005.0,
+            "text": "Vector will be the best option. To become the context. Now suppose here. We have discussed. Multiple linear regression. We have discussed. Here we have discussed gradient descent. And here we have discussed gradient descent. So the retrieval step. There will be decision making. Since. In my query. I am asked about gradient descent. So I will not use this chunk. I will not use this chunk."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 2995.0,
+            "end": 3025.0,
+            "text": "Since. In my query. I am asked about gradient descent. So I will not use this chunk. I will not use this chunk. But this and this chunk. I will create a context. I will create a context. So in retrieval step. This is the exact work. So here it is written. Retrieval is the real time process. Of finding the most. Relevant pieces of information. From a prebuilt index."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3015.0,
+            "end": 3045.0,
+            "text": "So here it is written. Retrieval is the real time process. Of finding the most. Relevant pieces of information. From a prebuilt index. Which is our vector store. Based on the user's question. It's like asking. From all the knowledge. That I have. Which 3 to 5 chunks are most. Helpful to answer this query. So what you do here. That you pick up your query. And send it to your."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3035.0,
+            "end": 3065.0,
+            "text": "Which 3 to 5 chunks are most. Helpful to answer this query. So what you do here. That you pick up your query. And send it to your. Retriever. So you have a retriever component. Now the retriever component. It does 3-4 things. First of all in step 1. What the retriever does. That your query. For that. It generates an embedding vector. And to generate this embedding vector."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3055.0,
+            "end": 3085.0,
+            "text": "What the retriever does. That your query. For that. It generates an embedding vector. And to generate this embedding vector. Exactly the same embedding model is used. With the help of which. We have created. Embedding vectors of our chunks. So in step 1. We are converting our query. In the same dimension. In step 2. What you do is. That you search."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3075.0,
+            "end": 3105.0,
+            "text": "We are converting our query. In the same dimension. In step 2. What you do is. That you search. That which is the closest. Of this particular embedding vector. In your vector store. So here you perform. Or you can do simple. Semantic search. Or you can do. More advanced. Complex searches. Like we discussed in the retrieval video."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3095.0,
+            "end": 3125.0,
+            "text": "Semantic search. Or you can do. More advanced. Complex searches. Like we discussed in the retrieval video. You can use MMR. You can use contextual compression. So you use different techniques. But the idea is. That you search. Those vectors. Which are. The closest to your query vector. So here you are performing. Semantic search."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3115.0,
+            "end": 3145.0,
+            "text": "Those vectors. Which are. The closest to your query vector. So here you are performing. Semantic search. In step 3. As soon as you. Kind of all your. Relevant vectors. Which are the closest. You perform a ranking. On them. In order. Which is the closest. Now this can be a very simple."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3135.0,
+            "end": 3165.0,
+            "text": "You perform a ranking. On them. In order. Which is the closest. Now this can be a very simple. Similarity search. On the basis of a metric. Or you can use. Very advanced re-ranking algorithms. But the idea is. That you rank your results. And then what you do. Of your top results. Which are text chunks. You fetch them."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3155.0,
+            "end": 3185.0,
+            "text": "That you rank your results. And then what you do. Of your top results. Which are text chunks. You fetch them. And that is your context. So in these 4 steps. Your retriever is operating. So guys we have done 2 steps. Indexing step is complete. Retrieval stage is complete. Which means now I have my query. And my context. So now our next stage. Is argumentation."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3175.0,
+            "end": 3205.0,
+            "text": "Retrieval stage is complete. Which means now I have my query. And my context. So now our next stage. Is argumentation. Where we will create. A prompt. Which we will not only. Provide our query. But at the same time. We will inject our context. So here we come. In this block diagram. Now what you do is. With the help of retriever."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3195.0,
+            "end": 3225.0,
+            "text": "We will inject our context. So here we come. In this block diagram. Now what you do is. With the help of retriever. Most relevant chunks. Which we are calling context. Has come. Now what you do is. You pick up this query. And you bring it here. And by mixing the query and context. You create a prompt. Which looks like this. You are a helpful assistant."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3215.0,
+            "end": 3245.0,
+            "text": "And you bring it here. And by mixing the query and context. You create a prompt. Which looks like this. You are a helpful assistant. Answer the questions only from the provided context. If the context is insufficient. Just say you don't know. Here you have provided your context. And your query. And this is our. Step number 3. Now comes the final part. Of this entire pipeline. Which is generation."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3235.0,
+            "end": 3265.0,
+            "text": "And this is our. Step number 3. Now comes the final part. Of this entire pipeline. Which is generation. So what you do in generation. Is you pick up a LLM. And you bring it here. And there you send your prompt. So that. Your LLM. By reading the prompt. By reading the context. And by doing this. You can generate the right response."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3255.0,
+            "end": 3285.0,
+            "text": "Your LLM. By reading the prompt. By reading the context. And by doing this. You can generate the right response. So according to the flow diagram. This is the flow. Here you have created your query. And with the help of context. You made a prompt. And you sent that prompt to LLM. And that LLM. Based on your parametric knowledge. And this additional knowledge. Gave you a response."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3275.0,
+            "end": 3305.0,
+            "text": "And you sent that prompt to LLM. And that LLM. Based on your parametric knowledge. And this additional knowledge. Gave you a response. And this is how. A rag pipeline works. So I really hope. This entire diagram. Which you can see on the screen. With the help of this diagram. You can visually and conceptually. Understand both ways. How a rag based system is made. Now this is a very basic setup."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3295.0,
+            "end": 3325.0,
+            "text": "With the help of this diagram. You can visually and conceptually. Understand both ways. How a rag based system is made. Now this is a very basic setup. By making improvements in this. You can make very advanced. Rag based systems. Which we will discuss in the future. So now you have a good idea. About the rag architecture. Now let's go back to those three problems. Which we are taking in this video. And now let's discuss. How this particular architecture."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3315.0,
+            "end": 3345.0,
+            "text": "About the rag architecture. Now let's go back to those three problems. Which we are taking in this video. And now let's discuss. How this particular architecture. This particular system. Solves those three problems. Let's talk about the three problems. One by one. So the first problem was. That our LLMs. Can't give us answers. On our private data. This problem is solved in a very obvious way. Rag."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3335.0,
+            "end": 3365.0,
+            "text": "That our LLMs. Can't give us answers. On our private data. This problem is solved in a very obvious way. Rag. Because the external knowledge base. Which you have made. From where you are deriving context. That external knowledge base. Is made from your data. So obviously. Whatever context is derived. Will also come from your data. And the answers that will also come from LLM. Will also come from your data."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3355.0,
+            "end": 3385.0,
+            "text": "So obviously. Whatever context is derived. Will also come from your data. And the answers that will also come from LLM. Will also come from your data. So the first problem. Is easily and obviously solved. Rag. The second problem was. That the knowledge cut off date. Of any LLM. And if you ask what is happening today. From LLM. Then LLM will not be able to answer you. So you can solve this problem."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3375.0,
+            "end": 3405.0,
+            "text": "Of any LLM. And if you ask what is happening today. From LLM. Then LLM will not be able to answer you. So you can solve this problem. You don't have to do anything. The recent articles. Or news. Or the current affairs. Or the current information. You have to put that in your external knowledge base. And automatically. When you ask questions. Then your LLM. Will also be able to give you answers around that."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3395.0,
+            "end": 3425.0,
+            "text": "You have to put that in your external knowledge base. And automatically. When you ask questions. Then your LLM. Will also be able to give you answers around that. Now here. What is the benefit of fine tuning. What was to be done in fine tuning. That as soon as new information is coming. In the system. You had to do fine tuning again and again. Which was costly. Here this is not a problem. You simply have to bring a new document. And bring it here."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3415.0,
+            "end": 3445.0,
+            "text": "You had to do fine tuning again and again. Which was costly. Here this is not a problem. You simply have to bring a new document. And bring it here. And put it in the vector store. You don't have to retrain the model again. You don't have to do anything. So in that sense. It is much less costly. So. You can easily tackle this problem. Around the recent development. With the help of RAG. And the problem number 3 is."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3435.0,
+            "end": 3465.0,
+            "text": "So. You can easily tackle this problem. Around the recent development. With the help of RAG. And the problem number 3 is. Hallucination. So again we are solving the problem of hallucination. Because we are providing. Exact context. Around our query. And we are explicitly saying to our model. That whatever answer you will give. You will only give it. With the provided context. If you have."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3455.0,
+            "end": 3485.0,
+            "text": "And we are explicitly saying to our model. That whatever answer you will give. You will only give it. With the provided context. If you have. Insufficient information. In the context. You have to say I don't know. So in a way you are. Grounded your LLM response. Against the context. So this. Because of this particular step. That with the RAG based system. The chances of hallucination."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3475.0,
+            "end": 3505.0,
+            "text": "Against the context. So this. Because of this particular step. That with the RAG based system. The chances of hallucination. Will be very reduced. So I hope you. Roughly understood. How RAG based system. Is tackling these three problems. And how RAG. Is a better solution than fine tuning. To solve these problems. So. Yeah."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3495.0,
+            "end": 3525.0,
+            "text": "And how RAG. Is a better solution than fine tuning. To solve these problems. So. Yeah. Fourth point I would like to tell you. In comparison to fine tuning. RAG is a cheaper solution. Because you don't have to train the model. You don't have to bring a data set. Where you are asking for. The data. You simply have to. Bring your company's documents. And put it in a vector store."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3515.0,
+            "end": 3545.0,
+            "text": "Where you are asking for. The data. You simply have to. Bring your company's documents. And put it in a vector store. So it's a cheaper alternative. And it is less complex. In comparison to fine tuning. In fine tuning you are getting proper training. Of your model. There is no training here. So in that sense it is a cheaper. And simpler alternative to. Fine tuning. In the next video I will."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3535.0,
+            "end": 3565.0,
+            "text": "There is no training here. So in that sense it is a cheaper. And simpler alternative to. Fine tuning. In the next video I will. Write code from scratch. And teach you how to make a RAG based system. In the lang chain. So whatever you learned today. You will get its practical implementation. In the next video. So if you liked the video. Please like. If you haven't subscribed to the channel. Please do subscribe."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3555.0,
+            "end": 3569.0,
+            "text": "In the next video. So if you liked the video. Please like. If you haven't subscribed to the channel. Please do subscribe. See you in the next video. Bye."
+        },
+        {
+            "video_name": "Video_16_Retrieval Augmented Generation \uff5c What is RAG \uff5c How does RAG Work \uff5c RAG Explained \uff5c CampusX.mp3",
+            "start": 3559.0,
+            "end": 3569.0,
+            "text": "Please like. If you haven't subscribed to the channel. Please do subscribe. See you in the next video. Bye."
+        }
+    ]
+}

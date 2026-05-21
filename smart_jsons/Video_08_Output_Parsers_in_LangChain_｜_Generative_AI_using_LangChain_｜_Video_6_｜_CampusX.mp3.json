@@ -1,0 +1,965 @@
+{
+    "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+    "chunks": [
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 0.0,
+            "end": 32.0,
+            "text": "Hi guys, my name is Nityesh and you are welcome to my YouTube channel. In this video also we will continue our Lang chain playlist. So today's topic is output parsers and this topic is considered very important in Lang chain. So in that sense today's video is very important. Before starting the video, there is a disclaimer. Today's video is much more connected than the previous video. If you remember, I had put a video in this playlist a few days ago on the topic of structured output. Today's video is very deeply connected to that video."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 20.0,
+            "end": 58.0,
+            "text": "Today's video is much more connected than the previous video. If you remember, I had put a video in this playlist a few days ago on the topic of structured output. Today's video is very deeply connected to that video. So I would request that if you have not seen the previous video, then first watch that video and then you will understand today's video completely. So in today's video, I will start with the fundamentals. First I will tell you what are the output parsers and what are their needs. And then I will give you the end-to-end information about the four most important output parsers in the Lang chain."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 44.0,
+            "end": 75.0,
+            "text": "First I will tell you what are the output parsers and what are their needs. And then I will give you the end-to-end information about the four most important output parsers in the Lang chain. How to use them, when to use them and all the related code I will provide you. So I guess you got the idea about this video. Now let's start the video. So guys, before starting the video, let's take a recap of the previous video because today's video is a little connected to the previous video."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 63.0,
+            "end": 98.0,
+            "text": "So I guess you got the idea about this video. Now let's start the video. So guys, before starting the video, let's take a recap of the previous video because today's video is a little connected to the previous video. In the previous video, we talked about the structure output. I told you that whenever you talk to LLM, then the LLM response that it gives you is textual and being textual means it is unstructured. And since this response is unstructured, you cannot send it to any other system."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 80.0,
+            "end": 111.0,
+            "text": "I told you that whenever you talk to LLM, then the LLM response that it gives you is textual and being textual means it is unstructured. And since this response is unstructured, you cannot send it to any other system. Systems like database or API, you cannot send this unstructured response to such systems. And then the concept of structured output comes here. What do you do in structured output?"
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 98.0,
+            "end": 129.0,
+            "text": "Systems like database or API, you cannot send this unstructured response to such systems. And then the concept of structured output comes here. What do you do in structured output? You force your LLM to give you structured output instead of textual output. Structured output means giving you an output that has some type of structure, some scheme. Like you can force your LLM to give you a reply by flipping the JSON."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 117.0,
+            "end": 150.0,
+            "text": "Structured output means giving you an output that has some type of structure, some scheme. Like you can force your LLM to give you a reply by flipping the JSON. And now if JSON comes to you, you can easily send it to a database or API. So basically the idea was that with the help of structured output, you can make your LLM talk to any other system. Like databases and API. So this was the whole idea that we discussed in the previous video."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 136.0,
+            "end": 173.0,
+            "text": "So basically the idea was that with the help of structured output, you can make your LLM talk to any other system. Like databases and API. So this was the whole idea that we discussed in the previous video. Now I told you that generally you will get two types of LLMs. There are LLMs that support by default structured output. These LLMs are fine-tuned in such a way that if you tell them that you want structured output, they will give you structured output."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 162.0,
+            "end": 193.0,
+            "text": "These LLMs are fine-tuned in such a way that if you tell them that you want structured output, they will give you structured output. So this is the category of CAN. They can give you structured output. Then I told you that generally open source models that you get are not that fine-tuned to give structured output in response. So these models can't give you structured output."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 178.0,
+            "end": 209.0,
+            "text": "Then I told you that generally open source models that you get are not that fine-tuned to give structured output in response. So these models can't give you structured output. Then we studied a function in the lang chain to work with the models that can give structured output. We studied with the GPD models how the output works."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 193.0,
+            "end": 224.0,
+            "text": "Then we studied a function in the lang chain to work with the models that can give structured output. We studied with the GPD models how the output works. Now today's video will be all about working with these models that can't give structured output by default. Output parsers help us in this whole thing."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 209.0,
+            "end": 240.0,
+            "text": "Now today's video will be all about working with these models that can't give structured output by default. Output parsers help us in this whole thing. Which we are going to read today. How it helps, what are the different output parsers, when and who should use it. We are going to cover all this in today's video. So I really hope that before starting the video, you have cleared the agenda."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 226.0,
+            "end": 264.0,
+            "text": "How it helps, what are the different output parsers, when and who should use it. We are going to cover all this in today's video. So I really hope that before starting the video, you have cleared the agenda. Now we will discuss step by step. First of all, we will discuss what are output parsers. So here I have written a definition. Let's read the definition first. Then I will explain it to you. So output parsers in lang chain help convert raw LLM responses, textual responses into structured format like JSON, CSV, Pydantic models and more."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 251.0,
+            "end": 283.0,
+            "text": "So output parsers in lang chain help convert raw LLM responses, textual responses into structured format like JSON, CSV, Pydantic models and more. They ensure consistency, validation and ease of use in applications. So the basic idea is that output parsers are some classes in the lang chain. With the help of which you can work with any type of LLM and derive structured output from it."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 269.0,
+            "end": 300.0,
+            "text": "So the basic idea is that output parsers are some classes in the lang chain. With the help of which you can work with any type of LLM and derive structured output from it. Here you don't have to be confused. You can work with output parsers with the CAN models. You can use the model that gives the default structured output and also with the CAN model that does not give the default structured output."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 290.0,
+            "end": 325.0,
+            "text": "You can use the model that gives the default structured output and also with the CAN model that does not give the default structured output. I will show you both in this video. I will work with open source models and I will work with GPT model. And you would see how seamlessly output parsers work with both types of models. Now I would like to tell you one more thing. Although there are many types of output parsers in the lang chain, we will discuss the four most used output parsers."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 313.0,
+            "end": 345.0,
+            "text": "Now I would like to tell you one more thing. Although there are many types of output parsers in the lang chain, we will discuss the four most used output parsers. So let me tell you about the four output parsers. The first output parser that we will see is called string output parser. This is the first output parser. Second is JSON output parser. Third is structured output parser."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 333.0,
+            "end": 367.0,
+            "text": "This is the first output parser. Second is JSON output parser. Third is structured output parser. And the last one is Pydantic output parser. Apart from this, you will get more types of output parsers in the lang chain. Like CSV output parser, list output parser. There are different types of parsers in the lang chain to deal with different data formats."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 353.0,
+            "end": 385.0,
+            "text": "Apart from this, you will get more types of output parsers in the lang chain. Like CSV output parser, list output parser. There are different types of parsers in the lang chain to deal with different data formats. But we will focus on these four parsers because you will be using one of these in most of the use cases. So now going forward, I will pick one parser, explain it and then write its code and show you."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 367.0,
+            "end": 398.0,
+            "text": "But we will focus on these four parsers because you will be using one of these in most of the use cases. So now going forward, I will pick one parser, explain it and then write its code and show you. That will be the flow of this video. So now let's talk about our first output parser, which is string output parser. String output parser is the simplest output parser."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 387.0,
+            "end": 419.0,
+            "text": "So now let's talk about our first output parser, which is string output parser. String output parser is the simplest output parser. It has a very simple function. It takes the LLM response and converts it into string and gives it to you. That's it. That's all the work of string output parser. Now I will explain its working. So you must have seen in past videos that whenever we talk to any LLM, chat model,"
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 407.0,
+            "end": 439.0,
+            "text": "That's it. That's all the work of string output parser. Now I will explain its working. So you must have seen in past videos that whenever we talk to any LLM, chat model, we don't get only textual response. Apart from that, we get a lot of metadata. You can see how much is the token usage, how much is the completion usage, how much is the audio tokens used. We get all this metadata by flipping it. And then what do we have to do? We have to get this content attribute."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 425.0,
+            "end": 461.0,
+            "text": "You can see how much is the token usage, how much is the completion usage, how much is the audio tokens used. We get all this metadata by flipping it. And then what do we have to do? We have to get this content attribute. That's why we always print result.content to see the actual textual response. Now if you use string output parser, you don't need to print this result.content separately. You can directly print the textual response with the help of this parser in string format."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 446.0,
+            "end": 477.0,
+            "text": "Now if you use string output parser, you don't need to print this result.content separately. You can directly print the textual response with the help of this parser in string format. Now I know what's coming to your mind. You must be thinking that this is not a big deal. If I can easily print result.content, then why do I need to make an output parser separately?"
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 465.0,
+            "end": 495.0,
+            "text": "You must be thinking that this is not a big deal. If I can easily print result.content, then why do I need to make an output parser separately? It's very important to understand why string output parser is useful and in what kind of scenarios it is useful. So I will show you a use case, a scenario where you will prefer to use string output parser instead of result.content."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 484.0,
+            "end": 522.0,
+            "text": "So I will show you a use case, a scenario where you will prefer to use string output parser instead of result.content. So our use case is something like this that we want to talk to our LLM twice. So what I want to do first time is I want to give a topic to my LLM. And I want this LLM to make a detailed report on this topic."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 510.0,
+            "end": 545.0,
+            "text": "And I want this LLM to make a detailed report on this topic. So if my topic is black hole, then LLM should make a detailed report on black hole. And as soon as I get this detailed report, then I want to send this detailed report back to that LLM. And then this time I am telling my LLM to summarize this detailed report in five lines."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 530.0,
+            "end": 564.0,
+            "text": "And as soon as I get this detailed report, then I want to send this detailed report back to that LLM. And then this time I am telling my LLM to summarize this detailed report in five lines. So this is my whole use case. Now first I will make this use case using result.content and then I will make it using string output parser. And we will compare it side by side and you will automatically understand what is the benefit."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 550.0,
+            "end": 580.0,
+            "text": "Now first I will make this use case using result.content and then I will make it using string output parser. And we will compare it side by side and you will automatically understand what is the benefit. So let's do one thing, let's go to code. Here we have made a file string output parser.py. And I have already written some code because I didn't feel like writing this code."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 569.0,
+            "end": 600.0,
+            "text": "Here we have made a file string output parser.py. And I have already written some code because I didn't feel like writing this code. What we have done is we have imported chat hugging face and hugging face endpoint from lang chain underscore hugging face. And we have made a chat hugging face model in which we are using this particular LLM, tiny llama. We have worked with this in the past."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 588.0,
+            "end": 619.0,
+            "text": "And we have made a chat hugging face model in which we are using this particular LLM, tiny llama. We have worked with this in the past. So this is an open source model and it can't give you the default structure output. I told you this in the last video. So we will work with this particular model. Now see what is our flow step by step. First we have to write our first prompt."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 608.0,
+            "end": 640.0,
+            "text": "So we will work with this particular model. Now see what is our flow step by step. First we have to write our first prompt. After that we have to write our second prompt. So we have written our first prompt. First prompt is detailed report one and second prompt is summary one. And once both of them are done, then what we will do is we will send the first prompt to the model."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 624.0,
+            "end": 656.0,
+            "text": "First prompt is detailed report one and second prompt is summary one. And once both of them are done, then what we will do is we will send the first prompt to the model. We will extract the response. We will send it back to the same model. We will extract the response and then we will show the final response to the user. So let's do one thing. Since we want to make our prompt dynamic, we will use prompt template."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 644.0,
+            "end": 676.0,
+            "text": "We will extract the response and then we will show the final response to the user. So let's do one thing. Since we want to make our prompt dynamic, we will use prompt template. So we will write rank chain underscore core dot prompts import prompt template. And this is our template one. So in prompt template, you have to tell first what is your template."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 664.0,
+            "end": 700.0,
+            "text": "And this is our template one. So in prompt template, you have to tell first what is your template. Our template is write a detailed report on topic. Our topic will be provided by our user. And here I will set the topic in input variables."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 688.0,
+            "end": 725.0,
+            "text": "And here I will set the topic in input variables. This is my first prompt. And similarly, I will make my second prompt. My second prompt will be write a five line summary on the following text."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 707.0,
+            "end": 741.0,
+            "text": "My second prompt will be write a five line summary on the following text. Here we will change the line and provide our text. And here our input variable name is text."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 725.0,
+            "end": 771.0,
+            "text": "Here we will change the line and provide our text. And here our input variable name is text. So these are our two prompts. Now what we will do is we will send template one for the first time in our prompt. So we will write prompt one is equal to template one dot format and we will write invoke."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 751.0,
+            "end": 781.0,
+            "text": "So we will write prompt one is equal to template one dot format and we will write invoke. And here I am telling the topic is black hole. So this is my first prompt."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 771.0,
+            "end": 802.0,
+            "text": "And here I am telling the topic is black hole. So this is my first prompt. Now I have to send this first prompt to the model. So I am doing model dot invoke and here I am sending my first prompt. This will give me a result. And now what I am doing is I am making prompt two."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 791.0,
+            "end": 829.0,
+            "text": "This will give me a result. And now what I am doing is I am making prompt two. What will be prompt two? Template two dot invoke and here it will come in the text which is result dot content. So this is the first prompt. And now I am sending the second prompt to my model."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 817.0,
+            "end": 848.0,
+            "text": "And now I am sending the second prompt to my model. And this will give me a result. I am finally printing the content. And this is the entire flow guys. So you can see we have made the entire flow."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 835.0,
+            "end": 866.0,
+            "text": "I am finally printing the content. And this is the entire flow guys. So you can see we have made the entire flow. Now let's run it. So guys it went wrong. When we are running this code, we are getting this read timeout error. Which basically means when we are using the API of hugging face, the API is not responding."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 854.0,
+            "end": 886.0,
+            "text": "When we are running this code, we are getting this read timeout error. Which basically means when we are using the API of hugging face, the API is not responding. And this is the problem with free APIs that they are not reliable. So I would recommend you to run this code in your machine. It might work in the future. Meanwhile what I will do is instead of using hugging face, I will use chat open AI."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 875.0,
+            "end": 906.0,
+            "text": "It might work in the future. Meanwhile what I will do is instead of using hugging face, I will use chat open AI. Which will not cause any problem. But don't worry, this code works perfectly. There is no problem with this. So what I will do is I will just change this code a little bit. I will import the lang chain open AI here. And here I will import the chat open AI."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 893.0,
+            "end": 925.0,
+            "text": "So what I will do is I will just change this code a little bit. I will import the lang chain open AI here. And here I will import the chat open AI. And then I don't need this whole thing. And here also, chat open AI will come in place of chat hugging face. The rest of the code will remain the same. I will clear it once. And now let's run this code again to see the output."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 915.0,
+            "end": 948.0,
+            "text": "The rest of the code will remain the same. I will clear it once. And now let's run this code again to see the output. And you can see guys, directly I can see my output. This is a summary of two lines. Actually it is a summary of five lines. So this is how you work with result.content. Now I will rewrite this whole code with the help of string output parser."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 936.0,
+            "end": 966.0,
+            "text": "So this is how you work with result.content. Now I will rewrite this whole code with the help of string output parser. So let's make a new file. Let's call it string output parser 1.py. Let's take the same imports here also. In fact, what I will do is I am copying the code up to here."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 951.0,
+            "end": 984.0,
+            "text": "Let's call it string output parser 1.py. Let's take the same imports here also. In fact, what I will do is I am copying the code up to here. Where we have made prompts. Okay. I just need one thing here. That is from lang chain core.output parsers. I am going to import string output parser."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 974.0,
+            "end": 1005.0,
+            "text": "That is from lang chain core.output parsers. I am going to import string output parser. Okay. So now let me explain to you how you use string output parser. So the most common usage of string output parser is with chains. Okay. So I have told you that chains are a very important component in the lang chain. In fact, it is so important that the name of the chain is on the chain."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 990.0,
+            "end": 1021.0,
+            "text": "So the most common usage of string output parser is with chains. Okay. So I have told you that chains are a very important component in the lang chain. In fact, it is so important that the name of the chain is on the chain. So we will use chains. Now I know I have not read the details of chains. But I have already talked a lot about it. So you have roughly got an idea of what chain is. With the help of chain, you convert different steps into a pipeline."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1010.0,
+            "end": 1041.0,
+            "text": "But I have already talked a lot about it. So you have roughly got an idea of what chain is. With the help of chain, you convert different steps into a pipeline. In lang chain. Okay. So that's what we are going to do. So what I will do is I am creating a parser first. Okay. And what is this parser? String output parser. Okay. So now I have my model. My prompt templates and my parser."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1031.0,
+            "end": 1063.0,
+            "text": "And what is this parser? String output parser. Okay. So now I have my model. My prompt templates and my parser. Now what I will do is I will form a chain. Okay. Now this chain is basically a pipeline where we will execute this whole flow. So how is the flow being executed? First of all, template 1 is coming. Okay. In template 1, the user will send something. Basically black hole. Now as soon as our prompt is being formed from template 1."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1053.0,
+            "end": 1085.0,
+            "text": "Okay. In template 1, the user will send something. Basically black hole. Now as soon as our prompt is being formed from template 1. We are sending that prompt to our model. Our model is processing it and giving results. There is a lot of garbage in that result. Metadata is there. We don't want all that. We just want text from it. So who will do that work? My parser. So what is my parser doing? It is giving me a detailed report from it."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1074.0,
+            "end": 1104.0,
+            "text": "We just want text from it. So who will do that work? My parser. So what is my parser doing? It is giving me a detailed report from it. Now I have to pick up that detailed report and send it to template 2. Okay. So in the next step, I will add template 2 to this chain. Now this will generate my second prompt. And I have to send that second prompt back to my model."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1091.0,
+            "end": 1124.0,
+            "text": "So in the next step, I will add template 2 to this chain. Now this will generate my second prompt. And I have to send that second prompt back to my model. Now again what will my model do? It will generate a 5 line summary along with a lot of metadata. We don't want metadata. It is only related to the summary. So then we will call the parser in this pipeline again in the last. Okay. And guys, this is how our chain will look."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1114.0,
+            "end": 1144.0,
+            "text": "So then we will call the parser in this pipeline again in the last. Okay. And guys, this is how our chain will look. This is the pipeline. This is the entire flow. Okay. Now you don't have to do anything. You just have to simply invoke chain. And here you just have to send that what is your topic? And your topic is black hole."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1134.0,
+            "end": 1166.0,
+            "text": "And here you just have to send that what is your topic? And your topic is black hole. Okay. This will give you your result. And you can directly print this result. Like this. Save and run. And you can see guys, this is the output. Same type of output came."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1156.0,
+            "end": 1186.0,
+            "text": "Save and run. And you can see guys, this is the output. Same type of output came. Okay. Now you can compare both the codes side by side. This is the second code and this was the last code. And you will realize that this is a much easier way to do this particular application. Okay. Now why was this possible?"
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1175.0,
+            "end": 1208.0,
+            "text": "And you will realize that this is a much easier way to do this particular application. Okay. Now why was this possible? Because of parsers. If there were no parsers, you could have made this chain. But then you would have to extract the result from the model. And then you would have to make this second chain separately. You could make this whole chain because this parser came in the middle. And it extracted the string output from the result."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1196.0,
+            "end": 1227.0,
+            "text": "And then you would have to make this second chain separately. You could make this whole chain because this parser came in the middle. And it extracted the string output from the result. And passed it in the next step. So this is the main benefit of using string output parser. You use it with chains. I know I haven't read the chains in detail. But roughly you have an idea what I am saying. One more thing I would like to remind you. This particular piece of code that I have written here."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1216.0,
+            "end": 1249.0,
+            "text": "I know I haven't read the chains in detail. But roughly you have an idea what I am saying. One more thing I would like to remind you. This particular piece of code that I have written here. This will not only work with chat open AI but also with hugging face APIs. In fact, if you are downloading your model locally, it can work. Okay. I haven't done that because in my case, the API is cheating. But hopefully, in your case, it will work. Okay. So now we have completed our first output parser."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1238.0,
+            "end": 1271.0,
+            "text": "I haven't done that because in my case, the API is cheating. But hopefully, in your case, it will work. Okay. So now we have completed our first output parser. That is string output parser. Now let's move on to the second one. That is JSON output parser. Okay. Before reading JSON output parser, I would like to show you one thing. The code that I had written earlier. Chat hugging face is now working. So what I did. I paused the video and used another LLM here."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1260.0,
+            "end": 1290.0,
+            "text": "The code that I had written earlier. Chat hugging face is now working. So what I did. I paused the video and used another LLM here. Okay. I used Google's gamma model. The one with 2 billion parameters. And when I ran this code. So this code is working properly. Okay. You can see this is the output. Five pointer summary on black holes. Okay. So you can run this. If your tiny llama doesn't work."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1280.0,
+            "end": 1312.0,
+            "text": "So this code is working properly. Okay. You can see this is the output. Five pointer summary on black holes. Okay. So you can run this. If your tiny llama doesn't work. So you can try this one. This will work most likely. Okay. Now let's talk about JSON output parser. So JSON output parser name. You must be understanding what it does. It forces an LLM. That it sends its output in JSON format."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1302.0,
+            "end": 1332.0,
+            "text": "You must be understanding what it does. It forces an LLM. That it sends its output in JSON format. That's it. So if you are working with an application. That is expecting output in JSON format. Then you can use this particular parser. This is the quickest possible way to get JSON output from your LLM. Okay. So let's do one thing."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1320.0,
+            "end": 1350.0,
+            "text": "Then you can use this particular parser. This is the quickest possible way to get JSON output from your LLM. Okay. So let's do one thing. Let's see how it works through code. So I have made a new file. And what I do. I copy this much code. Like this. Okay. Now what I will do is. I will write a prompt."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1340.0,
+            "end": 1371.0,
+            "text": "I copy this much code. Like this. Okay. Now what I will do is. I will write a prompt. With the help of prompt template. And after that I will call the model. And this time the parser I will use. That will be JSON output parser. Okay. Let me show you how it will work. First of all we are creating a prompt template. So using the prompt template class. We are creating a template. In the template we have written."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1360.0,
+            "end": 1390.0,
+            "text": "Let me show you how it will work. First of all we are creating a prompt template. So using the prompt template class. We are creating a template. In the template we have written. Give me the name of. Name. Age. And city of a fictional person. Okay."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1380.0,
+            "end": 1411.0,
+            "text": "Name. Age. And city of a fictional person. Okay. And what I have done next. By changing the line. I have added a variable. By saying format instruction. Okay. After that. Input."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1399.0,
+            "end": 1429.0,
+            "text": "I have added a variable. By saying format instruction. Okay. After that. Input. In variables. There is nothing. But here you have to add a new thing. And that is. Partial variables. Okay. And in partial variable. We will write."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1417.0,
+            "end": 1448.0,
+            "text": "But here you have to add a new thing. And that is. Partial variables. Okay. And in partial variable. We will write. In a dictionary. We will write. Format. Instruction. Colon. Which is your parser. So here we have. Imported JSON output parser. We will first. Form a parser here."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1438.0,
+            "end": 1468.0,
+            "text": "Which is your parser. So here we have. Imported JSON output parser. We will first. Form a parser here. This is the object of JSON output parser. And we will add the value of. Format instruction. Parser. Get. Format instructions function. Okay. Now I know at this point you may not understand the code. But I will explain to you what is happening here."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1458.0,
+            "end": 1488.0,
+            "text": "Get. Format instructions function. Okay. Now I know at this point you may not understand the code. But I will explain to you what is happening here. So whenever you. JSON output parser or going forward. Which we will read the two parsers in the future. You use them. So you. While forming. Send additional instructions. That you need to know. What kind of output you need from your LLM. Okay."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1478.0,
+            "end": 1508.0,
+            "text": "While forming. Send additional instructions. That you need to know. What kind of output you need from your LLM. Okay. And this output. This instruction you are sending. It tells you your parser. When you call. Get format instruction function. Okay. So this is the basic funda. And we. We are calling format instruction. Because it is not being filled on runtime."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1498.0,
+            "end": 1528.0,
+            "text": "Okay. So this is the basic funda. And we. We are calling format instruction. Because it is not being filled on runtime. User is not telling us. It. Fills before runtime. With the help of this function call. That is why we are calling it partial variable. Okay. So we made a prompt template. Now we will. Make our prompt. Make."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1518.0,
+            "end": 1548.0,
+            "text": "Okay. So we made a prompt template. Now we will. Make our prompt. Make. Prompt is going to be. Template. Format. Okay. And here in format. We are not using. Because we have not kept any input variable. Here. We are sending prompt. We want to send it as it is."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1538.0,
+            "end": 1568.0,
+            "text": "We are not using. Because we have not kept any input variable. Here. We are sending prompt. We want to send it as it is. It is a static prompt. And after doing this. I want to show you how prompt looks. Okay. Saved. Run this code. Okay. So here I have done a spelling mistake. Instruction should be. R will be here. My bad."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1558.0,
+            "end": 1588.0,
+            "text": "Run this code. Okay. So here I have done a spelling mistake. Instruction should be. R will be here. My bad. Let's run it again. Look at this guys. Here is our prompt. Which we are sending to LLM. It is writing. Give me the name, age and city of the fictional person. This much. After that line changed. And format instruction. Is written ahead."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1578.0,
+            "end": 1608.0,
+            "text": "Give me the name, age and city of the fictional person. This much. After that line changed. And format instruction. Is written ahead. Return a JSON object. Now where did this come from? This came because of this code. So when I run this code. Its value automatically returned. And it came here. And it fit. Now this is the complete prompt. Which I am sending to LLM. Okay."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1598.0,
+            "end": 1628.0,
+            "text": "And it came here. And it fit. Now this is the complete prompt. Which I am sending to LLM. Okay. We could have written this. That we want to return JSON object. But this is a better way. Because going forward you will notice. That in the parsers we are reading. You will use the same format. That is why I did it this way. Now what I will do is. I will write model.invoke. And here I will send my prompt."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1618.0,
+            "end": 1650.0,
+            "text": "You will use the same format. That is why I did it this way. Now what I will do is. I will write model.invoke. And here I will send my prompt. With this. I will get my result. Let's print it once. And see if the result is coming properly. In JSON format. Means we have to parse it now. But for now I just want to run it. And you can see. We are getting our content."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1640.0,
+            "end": 1670.0,
+            "text": "Means we have to parse it now. But for now I just want to run it. And you can see. We are getting our content. It seems JSON object is coming in our content. Okay. Now we don't have to do anything. We have to parse the response from LLM. With the help of parse method. So we will write. parser.parse And inside we will send the result.content. Okay. And with this we will get our final result."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1660.0,
+            "end": 1690.0,
+            "text": "So we will write. parser.parse And inside we will send the result.content. Okay. And with this we will get our final result. Which we can display. Print. Final result. Print. Final result. Along with this. I want to print it. Type of. Final result. Just to show you that."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1680.0,
+            "end": 1710.0,
+            "text": "Along with this. I want to print it. Type of. Final result. Just to show you that. We are getting JSON object. And you can see guys. This is our response. Name is coming. Age is coming. And the data type is dictionary. Python.JSON object. Treats like a dictionary. Okay. So this is not a string first of all. This is a dictionary."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1700.0,
+            "end": 1730.0,
+            "text": "And the data type is dictionary. Python.JSON object. Treats like a dictionary. Okay. So this is not a string first of all. This is a dictionary. Which you can use in this way. From the final result. You can fetch name. If I run it again. Now you can see only name. See. You can see the name. Okay. Now you can write this code in another way. You can take the help of chains."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1720.0,
+            "end": 1750.0,
+            "text": "See. You can see the name. Okay. Now you can write this code in another way. You can take the help of chains. Which we saw earlier. So what you can do is. You don't need to write this much code. Instead of writing these three lines. You will write chain. Is equal to. First of all your template will come. After that your model will come. And after that your. Parser."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1740.0,
+            "end": 1770.0,
+            "text": "Is equal to. First of all your template will come. After that your model will come. And after that your. Parser. Okay. And you just have to do this. Chain.invoke. That's it. And. With this you will get result. And. Basically. Print the result. This is all happening automatically."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1760.0,
+            "end": 1790.0,
+            "text": "With this you will get result. And. Basically. Print the result. This is all happening automatically. Template is getting made automatically. The template is getting prompt automatically. It is going to the model. Result is coming from the model. Automatically parser is also happening. When you are using this syntax. So behind the scenes parser method is getting called automatically. So you don't need to do this. This is an easier way. After that when we read chains."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1780.0,
+            "end": 1810.0,
+            "text": "When you are using this syntax. So behind the scenes parser method is getting called automatically. So you don't need to do this. This is an easier way. After that when we read chains. After that you will notice that I will always write this code. So let me show you. Okay. There is one error. In chain.invoke. It says missing one positional argument. Input. So what happened. Although we haven't used any input variable. But still."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1800.0,
+            "end": 1830.0,
+            "text": "It says missing one positional argument. Input. So what happened. Although we haven't used any input variable. But still. When you call chain.invoke. You have to send a dictionary. Either you send some value in dictionary. Or if you have If you don't have any input variable. Then you have to send a blank dictionary. Then this error doesn't come. Okay. So if we run this again. You can see we are getting the output. Okay."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1820.0,
+            "end": 1850.0,
+            "text": "Then you have to send a blank dictionary. Then this error doesn't come. Okay. So if we run this again. You can see we are getting the output. Okay. So I hope you understood Jason Output Parser. Now the biggest problem of Jason Output Parser. Is that. You. With the help of Jason Output Parser. You order Jason objects. From your LLM. But you can't enforce any schema. You can't enforce schema. Means you."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1840.0,
+            "end": 1870.0,
+            "text": "You order Jason objects. From your LLM. But you can't enforce any schema. You can't enforce schema. Means you. Can't tell. What will be the structuring of your Jason object. Okay. That LLM decides by itself. Okay. Like I give you an example. Suppose. I am writing here. Give me. Five."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1860.0,
+            "end": 1890.0,
+            "text": "Suppose. I am writing here. Give me. Five. Facts. About. Topic. Okay. And here our input variable. Topic. And here we are. Sending in return. Black hole. Save."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1880.0,
+            "end": 1910.0,
+            "text": "And here we are. Sending in return. Black hole. Save. Run. See this is the output. This is my. Jason object. But see here. How is the structuring. One single item. Facts about black holes. And after that in one list. All the facts."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1900.0,
+            "end": 1930.0,
+            "text": "How is the structuring. One single item. Facts about black holes. And after that in one list. All the facts. Okay. But what if. I need some such structure. That. Write first. Fact. One. And then. That fact is written. Then. Fact two. And then that fact is written. Then fact three. Basically fact one. Fact two. Fact three. These are your keys. And its corresponding."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1920.0,
+            "end": 1950.0,
+            "text": "That fact is written. Then. Fact two. And then that fact is written. Then fact three. Basically fact one. Fact two. Fact three. These are your keys. And its corresponding. Facts. Your values. Suppose I need JSON in this structure. So this work. You can't do. JSON output parser. Doesn't give you this flexibility. You can specify a little bit. In the template. But again. There is no guarantee. That the format you want. You get in the same format."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1940.0,
+            "end": 1970.0,
+            "text": "Doesn't give you this flexibility. You can specify a little bit. In the template. But again. There is no guarantee. That the format you want. You get in the same format. So basically the biggest flaw. Of JSON output parser is. That it does not. Enforce. A schema. Okay. If you want to enforce schema. Then you have to. Use some other output parser. And we will learn that next. Structured output parser."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1960.0,
+            "end": 1990.0,
+            "text": "If you want to enforce schema. Then you have to. Use some other output parser. And we will learn that next. Structured output parser. Now let's quickly discuss. What is structured output parser. And then we will code it. So here it is written. Structured output parser is an output parser. In Lang chain. That helps. Extract structured JSON. Data from LLM responses. Based on predefined. Field schemas."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 1980.0,
+            "end": 2010.0,
+            "text": "In Lang chain. That helps. Extract structured JSON. Data from LLM responses. Based on predefined. Field schemas. So. In this and JSON. Output parser. You provide a schema. You tell LLM. That I want a response. According to this schema. And then LLM. Watches the schema. And it gives you a response."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2000.0,
+            "end": 2030.0,
+            "text": "That I want a response. According to this schema. And then LLM. Watches the schema. And it gives you a response. So here you have. Schema. Enforce. This is the biggest benefit of using. Structured output parser. Okay. Now I will show you how to use this in code. So. I have made a file here. What I will do is. I will take some code from here."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2020.0,
+            "end": 2050.0,
+            "text": "Now I will show you how to use this in code. So. I have made a file here. What I will do is. I will take some code from here. I am. Reusing. This much code. And now what we will do. First of all we will import. Structured output parser. You have to pay attention. If you go to. Lang chain core. To search for structured output parser."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2040.0,
+            "end": 2070.0,
+            "text": "Structured output parser. You have to pay attention. If you go to. Lang chain core. To search for structured output parser. You will not get it. Structured output parser. Actually you get in the main library. Output parser. Import. Structured output parser. And response schema. Now if you are getting a question in your mind. That all the parsers we have read. All those."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2060.0,
+            "end": 2090.0,
+            "text": "Structured output parser. And response schema. Now if you are getting a question in your mind. That all the parsers we have read. All those. If you were in the core. Then why. Structured output parser is in the chain. Because the chain is your kind of. Overall library. This is the umbrella library. The core. The most important reusable components. That is put in the core. So."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2080.0,
+            "end": 2110.0,
+            "text": "This is the umbrella library. The core. The most important reusable components. That is put in the core. So. Structured. Output parser. It is so. Kind of important. It is not reusable. Like JSON output parser. That is why it is put in the chain. Not in the core. So you have to remember. The chain core is like this."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2100.0,
+            "end": 2130.0,
+            "text": "Like JSON output parser. That is why it is put in the chain. Not in the core. So you have to remember. The chain core is like this. Small library. Which has the most used components. That is put in the core. So now we can remove this code. JSON output parser. And. Our work starts from here. So what you have to do first. First of all. You have to make a schema."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2120.0,
+            "end": 2150.0,
+            "text": "And. Our work starts from here. So what you have to do first. First of all. You have to make a schema. Which. Will guide LLM. To produce the output. Here the schema we make. We make it with the help of response schema class. So what you do in response schema. You send list of schema objects. So. Since I. Have to generate facts."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2140.0,
+            "end": 2170.0,
+            "text": "So what you do in response schema. You send list of schema objects. So. Since I. Have to generate facts. Suppose I have to generate three facts. About a topic. Here. Three response schema objects. And it will look like this. So I would write response schema. Name of the first. Schema object. It would be fact underscore one. And its description will be."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2160.0,
+            "end": 2190.0,
+            "text": "So I would write response schema. Name of the first. Schema object. It would be fact underscore one. And its description will be. Fact one. About the topic. Okay. Then what I will do. I. Copy paste. Here. Fact two."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2180.0,
+            "end": 2210.0,
+            "text": "Then what I will do. I. Copy paste. Here. Fact two. Fact three. Fact two. Fact three. About the topic. So I made my schema. Now I will get output. So now what I will do is. I am creating my parser. My parser is. Structured output parser."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2200.0,
+            "end": 2230.0,
+            "text": "Now I will get output. So now what I will do is. I am creating my parser. My parser is. Structured output parser. From. Response schema. Here I have to send my schema object. This is my parser. So now my model is ready. Now what I have to do is. Prepare my prompt. So I will write template is equal to. Prompt template. Inside that I will write my template."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2220.0,
+            "end": 2250.0,
+            "text": "Now what I have to do is. Prepare my prompt. So I will write template is equal to. Prompt template. Inside that I will write my template. Give. Five. Instead of five let's do three. Because we have made three schema objects in schema. Give three. Facts. About. The topic. Okay."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2240.0,
+            "end": 2270.0,
+            "text": "Give three. Facts. About. The topic. Okay. After that. Line change. And here we have to insert our format instruction. After that. Our input variables. In which we will put. Topic. And after that. Partial variables. Inside which we will send in a dictionary."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2260.0,
+            "end": 2290.0,
+            "text": "In which we will put. Topic. And after that. Partial variables. Inside which we will send in a dictionary. That format. Instruction. Value. Should be. Whatever we are getting from parser. Get format instructions. Okay. It is exactly same code. Now what we will do here. First of all."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2280.0,
+            "end": 2310.0,
+            "text": "Get format instructions. Okay. It is exactly same code. Now what we will do here. First of all. We will write. We will make our prompt. Prompt is equal to. Template. You can do format. You can do invoke. We did invoke. And we said. The topic is black hole. Okay."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2300.0,
+            "end": 2330.0,
+            "text": "You can do invoke. We did invoke. And we said. The topic is black hole. Okay. Now. We will write model. Invoke. And here we will send our prompt. And. With this we will get. And with this we will get. Some result. And that result."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2320.0,
+            "end": 2350.0,
+            "text": "With this we will get. And with this we will get. Some result. And that result. We will send it to parser. Parser dot. Pars result. And with this we will get our. Final result. Which we will print. Saved."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2340.0,
+            "end": 2370.0,
+            "text": "Which we will print. Saved. And run. Okay. My bad. We have to send result.content. So we will send result.content. Again. This confusion is happening. Because we are doing it in chain way. And without chain way. Generally going forward. You will do it in chain way."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2360.0,
+            "end": 2390.0,
+            "text": "Again. This confusion is happening. Because we are doing it in chain way. And without chain way. Generally going forward. You will do it in chain way. So you will not face this problem. Whatever it is. This is our response. You can see. Fact 1. Its value. Fact 2. Its value. And Fact 3. Its value. We. We are able to enforce our schema. Okay. If you have to do this same thing. Through chain. What would you do? You write this code."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2380.0,
+            "end": 2412.0,
+            "text": "We. We are able to enforce our schema. Okay. If you have to do this same thing. Through chain. What would you do? You write this code. You make a chain. In which template comes first. After that comes model. After that comes. Parser. Okay. And you simply. Invoke the chain. You invoke. With this help. Like this."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2402.0,
+            "end": 2432.0,
+            "text": "Invoke the chain. You invoke. With this help. Like this. You don't need to make prompt. You simply. Do this. Much cleaner. Run. And you can see. You are getting the same result. Okay. So this is what happens. Structured output parser. The benefit is."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2422.0,
+            "end": 2452.0,
+            "text": "And you can see. You are getting the same result. Okay. So this is what happens. Structured output parser. The benefit is. We are able to enforce schema. Now I will tell you. What is the down side. What is the disadvantage. Of structured output parser. The biggest disadvantage of structured output parser. Is that. You can't get data validation done. You can only tell. In which structure. You need JSON."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2442.0,
+            "end": 2472.0,
+            "text": "Is that. You can't get data validation done. You can only tell. In which structure. You need JSON. But. If. You want data validation done. Structured output parser won't be able to do that. Suppose. You said in your schema. You want to give a person's name. A person's age. And a person's city. Okay. Now you were trying to. Name is string."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2462.0,
+            "end": 2492.0,
+            "text": "A person's age. And a person's city. Okay. Now you were trying to. Name is string. City is also string. But age is integer. But. The response you got. In age. 35 years. So obviously. This is a string. But you don't have any way. To stop this. You can write in prompt."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2482.0,
+            "end": 2512.0,
+            "text": "35 years. So obviously. This is a string. But you don't have any way. To stop this. You can write in prompt. But if LLM still. Sent this output. Then. You will have to accept. Or you will have to manually process it. So. The biggest advantage of structured output parser. Is that. It can enforce schema. It forces the structure to give. To LLM. But."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2502.0,
+            "end": 2532.0,
+            "text": "So. The biggest advantage of structured output parser. Is that. It can enforce schema. It forces the structure to give. To LLM. But. You can't do data validation. And this is why. So. The fourth. Output parser. Which is. Pydantic. Output parser. Which we will discuss next. So let's discuss. Pydantic output parser. So."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2522.0,
+            "end": 2552.0,
+            "text": "Pydantic. Output parser. Which we will discuss next. So let's discuss. Pydantic output parser. So. Pydantic output parser is a structured. Output parser in Lang chain. That uses. Pydantic models. To enforce schema. Validation. When processing. LLM responses. When you are. Forming schema. In this parser. You send a Pydantic object."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2542.0,
+            "end": 2572.0,
+            "text": "LLM responses. When you are. Forming schema. In this parser. You send a Pydantic object. Instead of schema. And since it is a Pydantic object. So you. Not only enforce schema. But at the same time. You can also do validation. And that is the best part about this. Output parser. Here are some core features. Strict schema enforcement."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2562.0,
+            "end": 2592.0,
+            "text": "You can also do validation. And that is the best part about this. Output parser. Here are some core features. Strict schema enforcement. You can strictly tell. What data type should be. What constraints should be. Type safety. If data type is wrong. You can. Change it by using type coercion. Easy validation. And seamless integration. Works with other components."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2582.0,
+            "end": 2612.0,
+            "text": "You can. Change it by using type coercion. Easy validation. And seamless integration. Works with other components. So let's do one thing. Let's write a code. Where we. Name of a person. Age. City. We will ask for this in JSON format. From LLM. And here. There will be a constraint."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2602.0,
+            "end": 2632.0,
+            "text": "City. We will ask for this in JSON format. From LLM. And here. There will be a constraint. Age should always be integer. And should be more than 18. We will apply this constraint. The good thing is. If you have seen the previous video. You will find this code very easy. Because you have to make the same Pydantic object. Like you made in the previous video. I have made a file. By using PydanticOutputParser.py"
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2622.0,
+            "end": 2652.0,
+            "text": "You will find this code very easy. Because you have to make the same Pydantic object. Like you made in the previous video. I have made a file. By using PydanticOutputParser.py And here. We have taken all the imports. So you can see. Here we have. Imported PydanticOutputParser from LangenCore.outputParser. This is available in core. Because it is a very. Reused component. And we have imported Pydantic. BaseModel and field function."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2642.0,
+            "end": 2672.0,
+            "text": "This is available in core. Because it is a very. Reused component. And we have imported Pydantic. BaseModel and field function. We have seen this in the last video. After that. We have seen this. Now our main work starts from here. Now what we have to do first. We have to make a Pydantic object. Which will work as our schema. So we are making a class. Let's call this class Person. And it will inherit."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2662.0,
+            "end": 2692.0,
+            "text": "We have to make a Pydantic object. Which will work as our schema. So we are making a class. Let's call this class Person. And it will inherit. From base model. Now here. We have to tell the attributes of that class. So our first attribute is name. Which will be a string. And. We will set a description of that. Description will be name of the person. Name of the person. After that."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2682.0,
+            "end": 2712.0,
+            "text": "And. We will set a description of that. Description will be name of the person. Name of the person. After that. Age. Age will be an integer. And first. I am setting a constraint here. It should be greater than 18. And its description. And its description. Will be. Age of the person. Age of the person."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2702.0,
+            "end": 2732.0,
+            "text": "And its description. And its description. Will be. Age of the person. Age of the person. And finally. Your city will come. Which will again be a string. And. Here. I am setting a field. In description. City. Name. Of the city."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2722.0,
+            "end": 2752.0,
+            "text": "I am setting a field. In description. City. Name. Of the city. The person. Belongs to. Belongs to. Belongs to. Ok. So this is my pydantic object. Now what I will do. I will make a parser. And this parser. Will be a pydantic output parser."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2742.0,
+            "end": 2772.0,
+            "text": "So this is my pydantic object. Now what I will do. I will make a parser. And this parser. Will be a pydantic output parser. And in the process of making this pydantic output parser. I will tell here. That my pydantic object is. Person class object. Ok. And now we are ready. Now what we have to do. We have to write a prompt. For this we are using prompt template. Lets write a template."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2762.0,
+            "end": 2792.0,
+            "text": "And now we are ready. Now what we have to do. We have to write a prompt. For this we are using prompt template. Lets write a template. Template will be. Generate. The name. Age. And city. Of a. Fictional. Place. Person. Here I have intentionally introduced a variable."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2782.0,
+            "end": 2812.0,
+            "text": "Of a. Fictional. Place. Person. Here I have intentionally introduced a variable. By saying place. Where we will put the name of a country. Indian person. Nepali person. British person. Ok. And after that. Line change. And here will be our. Format instruction."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2802.0,
+            "end": 2834.0,
+            "text": "Ok. And after that. Line change. And here will be our. Format instruction. Ok. After this. Will be input variables. Which is currently. Only place. And after that. Partial variables. In which we. Format. Instruction."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2824.0,
+            "end": 2854.0,
+            "text": "Partial variables. In which we. Format. Instruction. Will put. Get format. Instructions. Ok. You can see we are working in similar format. Now what we will do. We will form our prompt. Our prompt will be. Template. Format or invoke. And here."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2844.0,
+            "end": 2874.0,
+            "text": "We will form our prompt. Our prompt will be. Template. Format or invoke. And here. We will tell in a dictionary. Place. Indian. And then we. Will invoke the model. By sending prompt. With this we will get a result. That result."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2864.0,
+            "end": 2896.0,
+            "text": "By sending prompt. With this we will get a result. That result. We will send it to parser. And call parse function. And result. We will take out the prompt content. And this will be our. Final result. And this final result. We will print. Ok."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2886.0,
+            "end": 2916.0,
+            "text": "And this final result. We will print. Ok. And that's it guys. This is our code. I will save it and run it. And you can see. Here is our output. Ok. Now I will show you an interesting thing. I will show you. This entire template. This entire prompt. I will show you."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2906.0,
+            "end": 2936.0,
+            "text": "Now I will show you an interesting thing. I will show you. This entire template. This entire prompt. I will show you. So if I print and show you. Prompt. Then you will understand. That behind the scenes. What is going on. What we are sending. To our LLM. See guys. This is the entire prompt. Which is going to our LLM. If you want. You can pause the video and try to read it."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2926.0,
+            "end": 2956.0,
+            "text": "See guys. This is the entire prompt. Which is going to our LLM. If you want. You can pause the video and try to read it. First. What we have written. Generate the name, age and city of. A fictional Indian person. Slash n. Now in front of it. This entire thing. This is your. Parser. The output should be formatted as a JSON. Instance that confirms to the JSON."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2946.0,
+            "end": 2976.0,
+            "text": "This entire thing. This is your. Parser. The output should be formatted as a JSON. Instance that confirms to the JSON. JSON schema below. As an example for the schema. We have explained some technical things. And then in the future. We need exactly. This type of thing. Required. This will be everything. And so on. So this entire thing. Is going to our LLM."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2966.0,
+            "end": 2996.0,
+            "text": "This type of thing. Required. This will be everything. And so on. So this entire thing. Is going to our LLM. Then we are getting a response. And we are parsing it. And getting this output. I hope you understood. I will do one last thing. I will show you the entire thing. So what we have to do. We don't have to do so much. So what we have to do. Chain is equal to."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 2986.0,
+            "end": 3016.0,
+            "text": "I will show you the entire thing. So what we have to do. We don't have to do so much. So what we have to do. Chain is equal to. Template. Model. Parser. After that. Final result is equal to. Chain dot. Invoke. And here we will pass. Place. Indian."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 3006.0,
+            "end": 3036.0,
+            "text": "Chain dot. Invoke. And here we will pass. Place. Indian. Or let's write something different. Save. And run. And you can see guys. This is the output. Much easier. So. Yeah guys. These were the four parsers."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 3026.0,
+            "end": 3056.0,
+            "text": "This is the output. Much easier. So. Yeah guys. These were the four parsers. I will summarize for you. We read four parsers. First was string output parser. You use this when you need string output. From your LLM. And generally you use it with chains. Then we read. JSON output parser. You need this when you. Need JSON."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 3046.0,
+            "end": 3076.0,
+            "text": "And generally you use it with chains. Then we read. JSON output parser. You need this when you. Need JSON. Output from your LLM. The problem is. This schema doesn't enforce. Then we read. Structured output parser. The biggest feature of this. Structured. JSON gives you. Which schema you will tell. But the problem is."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 3066.0,
+            "end": 3096.0,
+            "text": "The biggest feature of this. Structured. JSON gives you. Which schema you will tell. But the problem is. It doesn't have validation. Then we read. PyDantic output parser. Which. Not only gives you structured JSON. But also validates it. So these four. The most used. You will see. Parsers in the chain."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 3086.0,
+            "end": 3116.0,
+            "text": "But also validates it. So these four. The most used. You will see. Parsers in the chain. And one more thing you need to remember. This whole code. You can run it with any LLM. Here we have. API used. But if you want you can do it with chat. With open AI. You can do it with cloud. You can do it with Gemini. So this is applicable."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 3106.0,
+            "end": 3136.0,
+            "text": "But if you want you can do it with chat. With open AI. You can do it with cloud. You can do it with Gemini. So this is applicable. So on the whole. Very important topic. I hope you understood. One more thing. There are many more parsers. If you go and see. From Lang chain. Output parsers. So you will see. That there are many parsers."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 3126.0,
+            "end": 3156.0,
+            "text": "If you go and see. From Lang chain. Output parsers. So you will see. That there are many parsers. Available. You can check. And see the documentation. Like comma separated list. CSV. List output. Markdown. Numbered list. XML output parser. There are many parsers. So this is also."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 3146.0,
+            "end": 3176.0,
+            "text": "List output. Markdown. Numbered list. XML output parser. There are many parsers. So this is also. Enum output parser. Date time parser. If there is no response. How to fix it. So you can go and study. Documentation. Main idea I have explained. Every output parser. Studying or teaching. I hope you understand."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 3166.0,
+            "end": 3192.0,
+            "text": "Documentation. Main idea I have explained. Every output parser. Studying or teaching. I hope you understand. If you study a little. You will understand things. Basic funda you have understood. So with that. I will conclude this video. If you liked this video. Please do subscribe. See you in next video. Bye."
+        },
+        {
+            "video_name": "Video_08_Output Parsers in LangChain \uff5c Generative AI using LangChain \uff5c Video 6 \uff5c CampusX.mp3",
+            "start": 3182.0,
+            "end": 3192.0,
+            "text": "So with that. I will conclude this video. If you liked this video. Please do subscribe. See you in next video. Bye."
+        }
+    ]
+}

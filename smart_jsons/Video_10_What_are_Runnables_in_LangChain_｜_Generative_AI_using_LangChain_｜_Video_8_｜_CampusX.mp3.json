@@ -1,0 +1,1391 @@
+{
+    "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+    "chunks": [
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 0.0,
+            "end": 31.14,
+            "text": "Hi guys, my name is Nitish and you are welcome to my YouTube channel. In this video, we will continue our chain playlist. In the last video, we read about chains. And I told you how chains work internally. If you want to understand this, you have to read runnables. And in today's video, we will cover runnables. Now if I give you a little introduction about today's video, then it is a very technical video. And in this sense, it is very important that if you watch the whole video today,"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 19.5,
+            "end": 53.260000000000005,
+            "text": "Now if I give you a little introduction about today's video, then it is a very technical video. And in this sense, it is very important that if you watch the whole video today, then you will have a deeper understanding about the chain. As a framework, I can say that you will be friends with the chain. The only problem is that after making this video, I am not really sure what kind of video I made. Because I did a lot of research in the process of making this video."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 40.58,
+            "end": 71.28,
+            "text": "The only problem is that after making this video, I am not really sure what kind of video I made. Because I did a lot of research in the process of making this video. I read the documentation of the 3rd version of the chain. And tried to understand why runnables exist in the chain. What were the problems. And I tried to put all that research in this video."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 59.4,
+            "end": 91.86,
+            "text": "And tried to understand why runnables exist in the chain. What were the problems. And I tried to put all that research in this video. And then I wrote the code and explained it to you. The only problem is that after making this video, I don't know if this video has been good or not. So I request you to watch the whole video and give me some feedback. Because right now I am a bit confused about this video."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 78.97999999999999,
+            "end": 111.58,
+            "text": "I don't know if this video has been good or not. So I request you to watch the whole video and give me some feedback. Because right now I am a bit confused about this video. But whatever it is, if you understand this video, then you will enjoy it a lot. So let's start the video. So guys, before starting the video, let's take a recap of the last video. Because today's video is very much connected to the last video. So in the last video, we learned to make chains in the chain."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 98.76,
+            "end": 133.66,
+            "text": "So guys, before starting the video, let's take a recap of the last video. Because today's video is very much connected to the last video. So in the last video, we learned to make chains in the chain. I have told you that chains are a very important component of the chain. So in the last video, we saw what chains are and why they are needed. And then we learned to make 3 different types of chains. First we learned how can you build a sequential chain. Then parallel chain and then conditional chain."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 120.67999999999999,
+            "end": 154.5,
+            "text": "And then we learned to make 3 different types of chains. First we learned how can you build a sequential chain. Then parallel chain and then conditional chain. Right? Now in today's video, we are going to learn a concept called runnables. And runnables are important because behind the scenes chains can work because they are made with the help of runnables."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 143.66,
+            "end": 173.94,
+            "text": "And runnables are important because behind the scenes chains can work because they are made with the help of runnables. Okay? So I know at this point, you might not be able to understand what I am saying. Just understand that you should know the concept of runnables to run chains. If you don't know the concept of runnables, then you won't be able to use chains in such a good way."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 160.36,
+            "end": 191.32000000000002,
+            "text": "Just understand that you should know the concept of runnables to run chains. If you don't know the concept of runnables, then you won't be able to use chains in such a good way. Okay? So going forward, in today's video, I will tell you what runnables are, what they need. And then I will cover the different types of runnables available in the chain. Okay? So let's start the video."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 174.44,
+            "end": 207.46,
+            "text": "So going forward, in today's video, I will tell you what runnables are, what they need. And then I will cover the different types of runnables available in the chain. Okay? So let's start the video. Now guys, before understanding what runnables are, you have to understand why runnables exist. And for this, we have to go into a little flashback. So it is about 2022 when the chat GPT was released."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 192.04000000000002,
+            "end": 227.12,
+            "text": "Now guys, before understanding what runnables are, you have to understand why runnables exist. And for this, we have to go into a little flashback. So it is about 2022 when the chat GPT was released. Around November. Around this time, OpenAI had also opened its APIs for the general public. Which meant that you can interact with OpenAI APIs and make your own LLM based applications."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 212.24,
+            "end": 244.96,
+            "text": "Around this time, OpenAI had also opened its APIs for the general public. Which meant that you can interact with OpenAI APIs and make your own LLM based applications. Right? Around this time, the team of Lanchain, I mean, the people who have made Lanchain, they realized that going forward, in the future, there will be a lot of demand for LLM based applications."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 230.04,
+            "end": 262.88,
+            "text": "Around this time, the team of Lanchain, I mean, the people who have made Lanchain, they realized that going forward, in the future, there will be a lot of demand for LLM based applications. Because LLMs will become more powerful and they have the capability to understand human text, but can also reply to it. In the future, it will definitely happen that a lot of applications will use LLMs to do their work."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 245.96,
+            "end": 282.68,
+            "text": "Because LLMs will become more powerful and they have the capability to understand human text, but can also reply to it. In the future, it will definitely happen that a lot of applications will use LLMs to do their work. And this is also true. If you look at today's date, then every company has its own chatbot that is actually a LLM based application. There are a lot of PDF readers where you can not only read a PDF, but you can also ask questions."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 264.72,
+            "end": 301.04,
+            "text": "If you look at today's date, then every company has its own chatbot that is actually a LLM based application. There are a lot of PDF readers where you can not only read a PDF, but you can also ask questions. Apart from this, a lot of AI agents have come to the market who use LLMs to do their work. So the team of Lanchain felt that if in the future, the demand for making such applications as in LLM based applications is going to increase,"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 283.32,
+            "end": 319.6,
+            "text": "Apart from this, a lot of AI agents have come to the market who use LLMs to do their work. So the team of Lanchain felt that if in the future, the demand for making such applications as in LLM based applications is going to increase, then we should make a framework here that will make it easier to make LLM based applications. Now just think what can we offer in our framework that will help the developers."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 301.68,
+            "end": 342.92,
+            "text": "then we should make a framework here that will make it easier to make LLM based applications. Now just think what can we offer in our framework that will help the developers. So here the Lanchain team observed that OpenAI is just one company that is making LLMs. Apart from this, there are other companies that are making LLMs like Anthropic, Google, Mistral, etc."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 331.64000000000004,
+            "end": 372.76,
+            "text": "Apart from this, there are other companies that are making LLMs like Anthropic, Google, Mistral, etc. A lot of such companies have started coming to the market slowly, whose own LLMs were there. Now the problem was that every company's API behaved differently. So the Lanchain team thought that what if we make such a framework that can help you talk to any company's API, as in any company's LLM."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 362.40000000000003,
+            "end": 396.24,
+            "text": "that can help you talk to any company's API, as in any company's LLM. And then they made Lanchain and they built classes for different companies that you can talk to any company's LLM API quickly by doing minimal code changes. So this was the first problem solved by the Lanchain team."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 382.92,
+            "end": 416.44,
+            "text": "that you can talk to any company's LLM API quickly by doing minimal code changes. So this was the first problem solved by the Lanchain team. And what happened was that Lanchain became popular and people started using Lanchain to build LLM based applications. Now the Lanchain team slowly identified another problem. The Lanchain team saw that when people make LLM based applications,"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 406.40000000000003,
+            "end": 438.2,
+            "text": "Now the Lanchain team slowly identified another problem. The Lanchain team saw that when people make LLM based applications, then obviously in the process of making it, you interact with LLM with the help of APIs. But interacting with LLM is a very small part of building this whole application. Apart from this, you have to do a lot of work. For example, if you are making a PDF reader,"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 425.12,
+            "end": 455.6,
+            "text": "But interacting with LLM is a very small part of building this whole application. Apart from this, you have to do a lot of work. For example, if you are making a PDF reader, then you will execute a lot of tasks to make this whole application. You will first load the PDF. You will load the PDF from the cloud."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 440.28000000000003,
+            "end": 472.36,
+            "text": "then you will execute a lot of tasks to make this whole application. You will first load the PDF. You will load the PDF from the cloud. After that, you will split it into small parts. On the basis of chapters, pages, and paragraphs. You will generate embedding for each part. You will store those embeddings in a database."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 460.52,
+            "end": 494.56,
+            "text": "On the basis of chapters, pages, and paragraphs. You will generate embedding for each part. You will store those embeddings in a database. As in a vector database. After that, you will use a retriever. It will search for the most relevant chunk for future searches. Right? After that, you will send the relevant chunk to LLM."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 479.32,
+            "end": 513.44,
+            "text": "It will search for the most relevant chunk for future searches. Right? After that, you will send the relevant chunk to LLM. The LLM response will come back. You will parse it and show it to the user. So you can see, In this whole flow, talking to LLM is just one task. It is just one component. Apart from this, there are so many other important components."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 502.76,
+            "end": 533.72,
+            "text": "In this whole flow, talking to LLM is just one task. It is just one component. Apart from this, there are so many other important components. For example, loading the document, splitting it, generating its embeddings, storing it in the vector database, retrieval process where you are searching for semantics, and finally showing the output to the user in the right way. So, the team of Lanchain realized that we are focusing on this aspect only."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 521.04,
+            "end": 551.36,
+            "text": "retrieval process where you are searching for semantics, and finally showing the output to the user in the right way. So, the team of Lanchain realized that we are focusing on this aspect only. But what if we can help the developers for other things as well? Then Lanchain will become a more powerful framework. And more people will adopt it. So, this is what the Lanchain team did. What did they do?"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 534.48,
+            "end": 568.12,
+            "text": "But what if we can help the developers for other things as well? Then Lanchain will become a more powerful framework. And more people will adopt it. So, this is what the Lanchain team did. What did they do? They created components for all the important parts in the process of making LLM application. For example, they made a document loader component to load the documents."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 551.4,
+            "end": 586.76,
+            "text": "They created components for all the important parts in the process of making LLM application. For example, they made a document loader component to load the documents. A different component of the text splitter was created to split the data. Different embedding models components were created for embedding. Different components were created for vector databases and retrievers. A component called parser was created to parse the output."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 573.44,
+            "end": 607.12,
+            "text": "Different embedding models components were created for embedding. Different components were created for vector databases and retrievers. A component called parser was created to parse the output. So, basically, over time, what did the Lanchain team do? They saw and understood different types of LLM applications and broke them down into different components. And then they wrote helper classes for all those components. Now, Lanchain not only had the support to talk to LLM,"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 596.0799999999999,
+            "end": 629.68,
+            "text": "and broke them down into different components. And then they wrote helper classes for all those components. Now, Lanchain not only had the support to talk to LLM, but also had the support to make LLM applications. They had all the relevant components like document loaders, retrievers, embedded models, text splitters, output parsers, memory components. All these components made Lanchain a very powerful library."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 617.76,
+            "end": 649.92,
+            "text": "embedded models, text splitters, output parsers, memory components. All these components made Lanchain a very powerful library. Now, if I am an AI developer, what I can do is, I can build my application, pick up all these components and connect them together to make any type of LLM based application. Now, I will show you two code examples of how you can easily make LLM based applications"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 637.04,
+            "end": 667.16,
+            "text": "pick up all these components and connect them together to make any type of LLM based application. Now, I will show you two code examples of how you can easily make LLM based applications with the help of these Lanchain components. So, the first code example is of a very simple LLM application where you are asking a user for a topic and then using that topic to make a prompt."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 653.48,
+            "end": 683.8,
+            "text": "So, the first code example is of a very simple LLM application where you are asking a user for a topic and then using that topic to make a prompt. And then you are sending that prompt to LLM and then you are displaying the response of LLM to the user. Very simple LLM application. I will show you this one. And second, the whole flow of the PDF reader that I showed you,"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 671.04,
+            "end": 703.1600000000001,
+            "text": "and then you are displaying the response of LLM to the user. Very simple LLM application. I will show you this one. And second, the whole flow of the PDF reader that I showed you, in which a lot of things are happening, how you can make this with the help of Lanchain components, I will show you that through the code. Just to show you how easy it is to write this code by making these components. So, let's first see this simple LLM application."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 691.4000000000001,
+            "end": 722.28,
+            "text": "I will show you that through the code. Just to show you how easy it is to write this code by making these components. So, let's first see this simple LLM application. So, here is its code. You have already seen this code, but again, just to show you the revision in this flow, so, here you are forming an LLM with the help of the LLM component of Lanchain."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 710.72,
+            "end": 741.88,
+            "text": "but again, just to show you the revision in this flow, so, here you are forming an LLM with the help of the LLM component of Lanchain. So, here we are not using the chat model, because I am talking about the old days, we are in the flashback when LLMs were used instead of chat models. So, here we are creating an LLM with the help of LLM component. What you see here is that we are making a prompt with the help of prompt template component."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 730.88,
+            "end": 761.4,
+            "text": "So, here we are creating an LLM with the help of LLM component. What you see here is that we are making a prompt with the help of prompt template component. After that, we are asking the user for a topic. We are sending that topic to the prompt, through which we are getting our formatted prompt. And as soon as we are getting our formatted prompt, we are sending it to LLM and asking it to predict our response."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 749.4,
+            "end": 779.92,
+            "text": "through which we are getting our formatted prompt. And as soon as we are getting our formatted prompt, we are sending it to LLM and asking it to predict our response. Whatever response we are getting, we are printing it to the user. Right? So, you can see with the help of these two components, LLM component and prompt template component, how easily we have made this simple LLM application. Now, I will show you the PDF reader component, PDF reader application."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 769.4,
+            "end": 801.92,
+            "text": "LLM component and prompt template component, how easily we have made this simple LLM application. Now, I will show you the PDF reader component, PDF reader application. So, here, see, step by step, what I have drawn here, all the things will be exactly the same. First of all, we have to load the document. So, suppose we have a text file without PDF. So, what we did here, this text loader is a component of LLM, in document loader. We used that and quickly loaded our document."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 790.92,
+            "end": 821.4399999999999,
+            "text": "So, what we did here, this text loader is a component of LLM, in document loader. We used that and quickly loaded our document. After that, this recursive character text splitter is a component, with the help of which we have divided our entire document into parts. After that, there is a component called vector store, you can see, vector store is a component which has different types of vector stores. With the help of that, we have"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 810.4399999999999,
+            "end": 841.96,
+            "text": "After that, there is a component called vector store, you can see, vector store is a component which has different types of vector stores. With the help of that, we have generated the embedding of all the small chunks, with the help of this component. And we have stored the embeddings in this vector database. So, we have come this far. This thing is done, this thing is done, this thing is done, this thing is done. Now, what we have to do,"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 829.96,
+            "end": 860.48,
+            "text": "And we have stored the embeddings in this vector database. So, we have come this far. This thing is done, this thing is done, this thing is done, this thing is done. Now, what we have to do, we have to form a retriever which will do semantic search. So, here, we have formed a retriever. Now, the user's query has come. So, what we did, with the help of retriever, we immediately embedded this query and did a semantic search in our vector database."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 848.96,
+            "end": 879.48,
+            "text": "So, what we did, with the help of retriever, we immediately embedded this query and did a semantic search in our vector database. And with that, we got our relevant text, which is the closest to the query. Now, we have this retrieved text, so, we called back the LLM component, in that, we sent this prompt, where we sent the user's query, and the retrieved document, which came out of PDF, we sent that too,"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 869.48,
+            "end": 899.48,
+            "text": "in that, we sent this prompt, where we sent the user's query, and the retrieved document, which came out of PDF, we sent that too, and we got the answer predicted again and displayed it. So, even if you are not understanding this code, because we have not discussed the rag, we have not discussed the code, but still, I am able to understand that you can see that after these components were formed, literally, with the help of 36 lines of code,"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 889.48,
+            "end": 919.48,
+            "text": "but still, I am able to understand that you can see that after these components were formed, literally, with the help of 36 lines of code, you are able to make such a complex application. So, I just want to show you that after these different components were formed, for us developers, for AI engineers, it became so easy to make such LLM based applications. I really hope that you have understood that it became so easy. I really hope that I am able to prove this point to you."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 909.48,
+            "end": 939.48,
+            "text": "it became so easy to make such LLM based applications. I really hope that you have understood that it became so easy. I really hope that I am able to prove this point to you. So, the story is going very smoothly so far. The team of Lanchain has made different components, and the AI engineers are connecting these components in different ways, and plugging them, and making different types of LLM applications. Now, here comes"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 929.48,
+            "end": 959.48,
+            "text": "these components in different ways, and plugging them, and making different types of LLM applications. Now, here comes the real eureka moment, when the team of Lanchain noticed a very interesting thing. The team of Lanchain noticed that when AI engineers are connecting different components in different ways and building LLM applications, then there are"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 949.48,
+            "end": 979.48,
+            "text": "when AI engineers are connecting different components in different ways and building LLM applications, then there are some common things in every application, in every type of LLM application, some things are common. Like, one common thing is that you make prompts in every LLM application, and then you send that prompt to LLM."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 969.48,
+            "end": 999.48,
+            "text": "that you make prompts in every LLM application, and then you send that prompt to LLM. This is a task which you will see in every type of LLM application. Whether you are making a chart board, or a PDF reader, or an AI agent, you will make a prompt and send it to LLM. Now, here comes"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 989.48,
+            "end": 1019.48,
+            "text": "or an AI agent, you will make a prompt and send it to LLM. Now, here comes an idea from the Lanchain team. They thought that till now, making this prompt and sending it to LLM, AI engineers are doing this manually. Meaning, if I show you in the code, then you first make a prompt template,"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1009.48,
+            "end": 1039.48,
+            "text": "AI engineers are doing this manually. Meaning, if I show you in the code, then you first make a prompt template, make an LLM, then you call the format function with the help of that prompt template and then you send that prompt to LLM.predict function and then you generate the result. Now, all this work is done manually by coding by hand."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1029.48,
+            "end": 1059.48,
+            "text": "to LLM.predict function and then you generate the result. Now, all this work is done manually by coding by hand. But, what if I automate this task? It means, what if we make a built-in function in which you send your LLM and prompt template"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1049.48,
+            "end": 1079.48,
+            "text": "what if we make a built-in function in which you send your LLM and prompt template and you call this function. Behind the scenes, this function automatically generates prompt from prompt template and then sends that generated prompt to LLM and gives you the result directly. Then,"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1069.48,
+            "end": 1099.48,
+            "text": "and then sends that generated prompt to LLM and gives you the result directly. Then, AI engineers work will be easier. Because, now, we have the abstraction. So, this thought process where you were connecting multiple components with the help of some built-in function, was named by the chain team."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1089.48,
+            "end": 1119.48,
+            "text": "were connecting multiple components with the help of some built-in function, was named by the chain team. Because, essentially, you are connecting more than two components and giving the form of a pipeline, a chain. That is why, they called the work of connecting more than two components with the help of chains. And, the most simple chain among them is"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1109.48,
+            "end": 1139.48,
+            "text": "That is why, they called the work of connecting more than two components with the help of chains. And, the most simple chain among them is called LLM chain. The work of which is if you provide LLM and a prompt, it can generate prompt and send it to LLM. So, now, I will show you that the code we wrote where we were doing all this manually, how can you do it"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1129.48,
+            "end": 1159.48,
+            "text": "and send it to LLM. So, now, I will show you that the code we wrote where we were doing all this manually, how can you do it with the help of a chain. So, here is our code. This is our LLM. This is our prompt template. Now, notice what we are doing. We are calling a built-in function which is called LLM chain. We are giving it two things. Our LLM and our prompt template. And, we did not do anything"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1149.48,
+            "end": 1179.48,
+            "text": "We are calling a built-in function which is called LLM chain. We are giving it two things. Our LLM and our prompt template. And, we did not do anything apart from this. We did not call the format function or the predict function manually. We simply created a new function. And, behind the scenes, prompt was automatically generated. And, it went to LLM. And, I got the result which I displayed here. So, essentially,"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1169.48,
+            "end": 1199.48,
+            "text": "And, behind the scenes, prompt was automatically generated. And, it went to LLM. And, I got the result which I displayed here. So, essentially, using this chain, I had to do this manual work. I did not have to do this. And, my work became easy. And, this was a very big Eureka moment. Because, this is a very simple chain. The team of LLM chain showed that there are some complex tasks which are being reused"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1189.48,
+            "end": 1219.48,
+            "text": "Eureka moment. Because, this is a very simple chain. The team of LLM chain showed that there are some complex tasks which are being reused across different kinds of LLMs. So, what if we create a built-in chain function for those complex tasks as well? Like, your PDF reader task. Now, in this PDF reader task, you are essentially implementing the rag. Right?"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1209.48,
+            "end": 1239.48,
+            "text": "PDF reader task. Now, in this PDF reader task, you are essentially implementing the rag. Right? Now, the team of LLM chain saw that any kind of rag application which you make, you do a retrieval. Retrieval means the user gives you a query. You search this query in your entire vector database."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1229.48,
+            "end": 1259.48,
+            "text": "the user gives you a query. You search this query in your entire vector database. And, you try to find out which particular chunk this query is related to. Right? Like, there is a whole book on machine learning. And, we have a whole page in the embedding form stored in the vector database. Now, someone asked the query that what is the"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1249.48,
+            "end": 1279.48,
+            "text": "And, we have a whole page in the embedding form stored in the vector database. Now, someone asked the query that what is the what are the five assumptions of linear regression? So, clearly, the question that is being asked is related to linear regression. So, we will not search the entire book but first, we will search which part of the query is applicable. So, this will be the searching and it will be found that this question"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1269.48,
+            "end": 1299.48,
+            "text": "but first, we will search which part of the query is applicable. So, this will be the searching and it will be found that this question is related to linear regression. So, this is what happens in retrieval. You get a query, you have a vector database, you have a document. You extract relevant text from it. Then, the relevant text that comes out and this query you use both of them and make a new prompt."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1289.48,
+            "end": 1319.48,
+            "text": "Then, the relevant text that comes out and this query you use both of them and make a new prompt. Where you say that, brother, from this relevant document, answer this query. And then, you send the prompt to LLM. Right? And then, LLM responds to you. If you notice, here exactly the same code is written. This is the query."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1309.48,
+            "end": 1339.48,
+            "text": "Right? And then, LLM responds to you. If you notice, here exactly the same code is written. This is the query. We extracted our retrieved text from here. We made our prompt based on the following text. Answer the questions. This is my query. This is my retrieved text. We sent it to LLM and LLM answered it. Right? Now, this task you will see in every rag application."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1329.48,
+            "end": 1359.48,
+            "text": "and LLM answered it. Right? Now, this task you will see in every rag application. And this is called retrieval task. So, again, the Langchain team got the idea that what if I convert this entire task into a chain and I make a function for AI engineers where"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1349.48,
+            "end": 1379.48,
+            "text": "entire task into a chain and I make a function for AI engineers where while calling that function you have to tell only two things. One is LLM and the other is retriever. And as soon as you tell these two things, you will call this chain. Automatically, behind the scenes, all this will be done. So, they made a chain for this too, whose name was"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1369.48,
+            "end": 1399.48,
+            "text": "tell these two things, you will call this chain. Automatically, behind the scenes, all this will be done. So, they made a chain for this too, whose name was Retriever QA Chain. Now, I will show you that with the help of this chain, how you can make this same application. Look here. It is the same flow. You are loading it, you are splitting it. Here you made your vector store. Here you made your retriever. Here you made your LLM."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1389.48,
+            "end": 1419.48,
+            "text": "It is the same flow. You are loading it, you are splitting it. Here you made your vector store. Here you made your retriever. Here you made your LLM. Now, look here. What are you doing? You are using this chain. You are sending your LLM. You are sending your retriever. And your user's query came and you just run your chain. You got the answer. You didn't need to do all this. Where you were manually doing semantic search, then"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1409.48,
+            "end": 1439.48,
+            "text": "run your chain. You got the answer. You didn't need to do all this. Where you were manually doing semantic search, then you were joining all the text. Then you were designing the prompt. You didn't need to do all this. First, where you were getting 36 lines in doing this code. Now, you are doing the same thing in 32 lines of code. So, this was a very big idea, which made Langchain very popular."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1429.48,
+            "end": 1459.48,
+            "text": "Now, you are doing the same thing in 32 lines of code. So, this was a very big idea, which made Langchain very popular. And then, the team of Langchain didn't just stop at LLM chain and Retriever QA chain. After that, they made a lot of more chains. They analyzed a lot more use cases. And wherever they felt that there is a task that is being"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1449.48,
+            "end": 1479.48,
+            "text": "They analyzed a lot more use cases. And wherever they felt that there is a task that is being reused everywhere, they started making chain functions to execute that task. So, here I have added a list of top 10 most used chains. But trust me, this is not a complete list. Apart from this, there are many more chains that exist in Langchain."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1469.48,
+            "end": 1499.48,
+            "text": "top 10 most used chains. But trust me, this is not a complete list. Apart from this, there are many more chains that exist in Langchain. For example, this chain, Simple Sequential Chain. In Simple Sequential Chain, what you do is you combine two or more LLM chains together and make a big chain. Suppose, you want to make this application where"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1489.48,
+            "end": 1519.48,
+            "text": "two or more LLM chains together and make a big chain. Suppose, you want to make this application where the user will tell you a topic and you will generate a joke from that topic. And then, with the help of that joke, you will generate the explanation of that joke. So, here you notice that you have to talk to LLM twice. Once to generate a joke"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1509.48,
+            "end": 1539.48,
+            "text": "you will generate the explanation of that joke. So, here you notice that you have to talk to LLM twice. Once to generate a joke and the second time to generate its explanation. So, this part is handling one LLM chain and this part is handling another LLM chain. And then you are combining these two with the help of Simple Sequential Chain. So, in these use cases where the Langchain team thought that yes, we can execute this task"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1529.48,
+            "end": 1559.48,
+            "text": "And then you are combining these two with the help of Simple Sequential Chain. So, in these use cases where the Langchain team thought that yes, we can execute this task through a chain, the Langchain team started creating chain functions. Similarly, a sequential chain was introduced where you can again combine multiple LLM chains but here you can work with multiple inputs and multiple outputs. Apart from that,"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1549.48,
+            "end": 1579.48,
+            "text": "where you can again combine multiple LLM chains but here you can work with multiple inputs and multiple outputs. Apart from that, if you want to work with multiple databases, then a separate chain was introduced. If you want to work with APIs, then an API chain was introduced. If you want to work with maths-based problems, then an LLM maths chain was introduced. So, you get my point. The Langchain team thought that they have cracked a very big idea"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1569.48,
+            "end": 1599.48,
+            "text": "then an LLM maths chain was introduced. So, you get my point. The Langchain team thought that they have cracked a very big idea that by combining components they can form different different chains and by using those chains, engineers can easily create their LLM based applications. But, the Langchain team did not anticipate that they will get stuck in a big problem. What was that problem?"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1589.48,
+            "end": 1619.48,
+            "text": "create their LLM based applications. But, the Langchain team did not anticipate that they will get stuck in a big problem. What was that problem? I will tell you. The problem was that over time, the Langchain team created many chains. Too many chains. They saw many use cases and to solve every use case, they created chains. In fact,"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1609.48,
+            "end": 1639.48,
+            "text": "They saw many use cases and to solve every use case, they created chains. In fact, if you go to the Langchain documentation, you will see how many chains they have. You can see. Right? Now, there are two major disadvantages of having so many chain functions. The first disadvantage is that the code base of the Langchain"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1629.48,
+            "end": 1659.48,
+            "text": "Right? Now, there are two major disadvantages of having so many chain functions. The first disadvantage is that the code base of the Langchain has grown too much. It is problematic to have a big code base because now you will have to actively maintain such a large code base. Right? That is a big problem. The second problem is that the new AI engineers"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1649.48,
+            "end": 1679.48,
+            "text": "such a large code base. Right? That is a big problem. The second problem is that the new AI engineers learning Langchain did not understand which use case and which chain is used. Basically, the learning curve of learning Langchain became very steep. Right? Now, if I have 50 types of chains available, I should know when to use every chain."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1669.48,
+            "end": 1699.48,
+            "text": "of learning Langchain became very steep. Right? Now, if I have 50 types of chains available, I should know when to use every chain. So, it took a lot of time to learn. So, what happened is that where the Langchain team thought that chains are a very powerful concept and with their help, Langchain will become a very powerful library, after some time, the whole thing turned upside down."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1689.48,
+            "end": 1719.48,
+            "text": "concept and with their help, Langchain will become a very powerful library, after some time, the whole thing turned upside down. Due to many chains, their code base became heavy and it became difficult for new AI engineers to learn Langchain. Now, let's talk about this situation. Because, according to me, it is a little funny that the Langchain team wanted to help AI engineers but in the process of helping,"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1709.48,
+            "end": 1739.48,
+            "text": "Because, according to me, it is a little funny that the Langchain team wanted to help AI engineers but in the process of helping, they turned upside down and they made learning Langchain more difficult for new learners. Now, let's try to understand why this happened. So, if I try to understand what was the intent of Langchain team, what they wanted, so, their intent"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1729.48,
+            "end": 1759.48,
+            "text": "why this happened. So, if I try to understand what was the intent of Langchain team, what they wanted, so, their intent was that they had made many components in Langchain, LLM component, prompt component, and many more components and they wanted that AI engineers, these components could seamlessly plug in each other"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1749.48,
+            "end": 1779.48,
+            "text": "and many more components and they wanted that AI engineers, these components could seamlessly plug in each other and make any type of flexible workflow. Kind of like Lego blocks. They wanted that every component should be treated like a Lego block and then you could combine multiple Lego blocks and form any structure. This was the goal of Langchain team."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1769.48,
+            "end": 1799.48,
+            "text": "should be treated like a Lego block and then you could combine multiple Lego blocks and form any structure. This was the goal of Langchain team. But, to make this thing, they took the support of chains and made many more chains and made many more chains and made the code heavy and learning curve steep. So, let's understand why they had to make"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1789.48,
+            "end": 1819.48,
+            "text": "and made many more chains and made the code heavy and learning curve steep. So, let's understand why they had to make many more chains. The biggest reason for this is that all these components of Langchain, LLM, prompt, parsers, retrievers, all these components are not standardized. By standardized, I mean that all these components"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1809.48,
+            "end": 1839.48,
+            "text": "retrievers, all these components are not standardized. By standardized, I mean that all these components do not follow the same set of standards. They are independently developed and they behave differently. Like I will explain you through an example. If you talk about LLM component, then to interact with it, you have to call the predict function."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1829.48,
+            "end": 1859.48,
+            "text": "through an example. If you talk about LLM component, then to interact with it, you have to call the predict function. See, to call LLM, you use the predict function. Whereas, for prompt template, you use format function. For retriever, you call get relevant documents function. And if you have made a parser,"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1849.48,
+            "end": 1879.48,
+            "text": "format function. For retriever, you call get relevant documents function. And if you have made a parser, then to deal with it, there is a method called pars. So, the funda is that these components were not designed by the guru in such a way that they could seamlessly connect with each other. And that is why when the pressure came on the Langchain team"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1869.48,
+            "end": 1899.48,
+            "text": "in such a way that they could seamlessly connect with each other. And that is why when the pressure came on the Langchain team that they have to seamlessly connect two or more than two components, then they had to write manual functions to do this work. Like LLM and prompt. These two components have to connect with each other. But since these two interfaces"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1889.48,
+            "end": 1919.48,
+            "text": "Like LLM and prompt. These two components have to connect with each other. But since these two interfaces are not designed to connect with each other, then to connect with each other, you write manual code, you make your own function, LLM chain. Similarly, for retrieval, you had to make a chain by mixing many things together. But since all those components are not compatible with each other,"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1909.48,
+            "end": 1939.48,
+            "text": "Similarly, for retrieval, you had to make a chain by mixing many things together. But since all those components are not compatible with each other, then to create compatibility, you had to write custom code. So, that code took the shape of a function retrieval QA chain. And the same Langchain team had to do it again and again. They had to create a new custom code as in a new function for every new use case."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1929.48,
+            "end": 1959.48,
+            "text": "had to do it again and again. They had to create a new custom code as in a new function for every new use case. Ideally, the best scenario would be that all these components follow the same standards. And by following the same standards, it would be beneficial that if they could connect seamlessly without writing custom code, then you don't have to write such custom functions."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1949.48,
+            "end": 1979.48,
+            "text": "it would be beneficial that if they could connect seamlessly without writing custom code, then you don't have to write such custom functions. And this was the biggest mistake of the Langchain team. When they made these components, they didn't make standard components. And that is why in the future, when they had to make chains by mixing them together, they had to write a lot of custom code and a lot of custom functions."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1969.48,
+            "end": 1999.48,
+            "text": "standard components. And that is why in the future, when they had to make chains by mixing them together, they had to write a lot of custom code and a lot of custom functions. So, I was able to convey this point. So, finally, the Langchain team realized their mistake and they understood that they have to make all these components again and this time they have to make sure that all these components are standardized"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 1989.48,
+            "end": 2019.48,
+            "text": "that they have to make all these components again and this time they have to make sure that all these components are standardized and can seamlessly connect with each other. And how will this work be possible? I guess you are able to understand the reason behind this mistake with the help of Runnables. So, now I have taken a lot of time to explain the why part. Now, let's move"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2009.48,
+            "end": 2039.48,
+            "text": "with the help of Runnables. So, now I have taken a lot of time to explain the why part. Now, let's move towards what? What is a Runnable? Now, guys, I will try to explain what a Runnable is. So, in simple words, if I say, you can call a Runnable a unit of work. So, all the Runnables you will see in Langchain, every Runnable has"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2029.48,
+            "end": 2059.48,
+            "text": "if I say, you can call a Runnable a unit of work. So, all the Runnables you will see in Langchain, every Runnable has a purpose. It does a work and gives you. Which means that you send Runnables to some input. So, guys, let me try to explain what Runnables are. In simple words, if I say, then you can take Runnables as a unit of work."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2049.48,
+            "end": 2079.48,
+            "text": "what Runnables are. In simple words, if I say, then you can take Runnables as a unit of work. All the Runnables you will see in Langchain, every Runnable has a purpose. It does a work. Which means that you can give an input to that Runnable. That Runnable processes that input and gives you a reverse output. This is the first"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2069.48,
+            "end": 2099.48,
+            "text": "give an input to that Runnable. That Runnable processes that input and gives you a reverse output. This is the first characteristic of a Runnable. The second characteristic is that every Runnable that exists in Langchain follows a common interface. Which means that in every Runnable, you will see the same set of methods. Like, a very popular method"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2089.48,
+            "end": 2119.48,
+            "text": "Which means that in every Runnable, you will see the same set of methods. Like, a very popular method that you will see in every Runnable is called Invoke. Using Invoke, you can give an input to a Runnable and then a reverse output to a Runnable. Similarly, there is another method which we call Batch. With the help of Batch, a Runnable can process multiple inputs"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2109.48,
+            "end": 2139.48,
+            "text": "and then a reverse output to a Runnable. Similarly, there is another method which we call Batch. With the help of Batch, a Runnable can process multiple inputs and give multiple outputs at the same time. Similarly, there is a method called Stream. With the help of Stream, you can get a streaming output from a Runnable. The basic idea is that every Runnable that exists in Langchain all follow a common interface. Which means"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2129.48,
+            "end": 2159.48,
+            "text": "from a Runnable. The basic idea is that every Runnable that exists in Langchain all follow a common interface. Which means that in every Runnable, the same set of methods exist. Invoke will be the same in every Runnable. Point no. 3 Since all Runnables are made from a common interface, you can connect these Runnables and"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2149.48,
+            "end": 2179.48,
+            "text": "Since all Runnables are made from a common interface, you can connect these Runnables and execute a complex workflow. So, suppose you have a Runnable R1 and a Runnable R2. Both are designed in such a way that you can connect them together. The biggest benefit of connecting is that automatically"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2169.48,
+            "end": 2199.48,
+            "text": "Both are designed in such a way that you can connect them together. The biggest benefit of connecting is that automatically the output of R1 will work as an input for R2. If there is another Runnable R3 and you want to connect it too, then automatically the output of R2 will work as an input for R3. So, you can connect Runnables in any way"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2189.48,
+            "end": 2219.48,
+            "text": "then automatically the output of R2 will work as an input for R3. So, you can connect Runnables in any way and make a complex workflow. The fourth point is that when you connect Runnables together and make a workflow, then this workflow is a Runnable itself. Which means that suppose"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2209.48,
+            "end": 2239.48,
+            "text": "and make a workflow, then this workflow is a Runnable itself. Which means that suppose I made two workflows. One R1, one R2 and one R3. Then I combined R4 and R5 and made another workflow. So, now by nature what is there that this workflow is also a Runnable and this workflow is also a Runnable. Which means"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2229.48,
+            "end": 2259.48,
+            "text": "So, now by nature what is there that this workflow is also a Runnable and this workflow is also a Runnable. Which means that you can connect these two together. And this is the best part about this entire concept. That you can connect things in this way and form a big structure. If you want to understand Runnables through an analogy, visually, then the best way is"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2249.48,
+            "end": 2279.48,
+            "text": "and form a big structure. If you want to understand Runnables through an analogy, visually, then the best way is to imagine Lego blocks. Lego blocks follow exactly these four principles. I will tell you about them quickly. First principle, just like Runnables, Lego blocks are also a unit of work. So, in a Lego kit, you will see different types of blocks."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2269.48,
+            "end": 2299.48,
+            "text": "just like Runnables, Lego blocks are also a unit of work. So, in a Lego kit, you will see different types of blocks. Like this single one, this veg one, this U shape one, this L shape one. Every block has its own purpose. Just like a Runnable. It will execute one task for you. Point number two, like every Runnable follows a common interface, similarly, Lego blocks also"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2289.48,
+            "end": 2319.48,
+            "text": "It will execute one task for you. Point number two, like every Runnable follows a common interface, similarly, Lego blocks also even if their structure is different, they follow the same interface. You will notice that on all Lego blocks these connecting structures are formed. And you will see this in all Lego blocks. And point number three is the way you can connect Runnables, similarly, you can connect Lego blocks"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2309.48,
+            "end": 2339.48,
+            "text": "in all Lego blocks. And point number three is the way you can connect Runnables, similarly, you can connect Lego blocks you can connect these two you can connect these two. Right? And point four is also true. When you connect Lego blocks, suppose you connect these two Lego blocks and make one structure, and then you connect these two Lego blocks and make one structure."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2329.48,
+            "end": 2359.48,
+            "text": "suppose you connect these two Lego blocks and make one structure, and then you connect these two Lego blocks and make one structure. So, this resultant structure has a Lego block in itself. And this also has a Lego block because in this also these interfaces are available. It means that you can connect these two together and make a more complex structure. So, basically, you imagine Lego blocks"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2349.48,
+            "end": 2379.48,
+            "text": "these interfaces are available. It means that you can connect these two together and make a more complex structure. So, basically, you imagine Lego blocks as the same thing in the universe of Lank chain. Right? Now, I know, maybe you still don't feel the same about Runnables. The best part is that we will now move from what to how. And I will code it with a scratch and show you"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2369.48,
+            "end": 2399.48,
+            "text": "The best part is that we will now move from what to how. And I will code it with a scratch and show you how to make Runnables. And when you write that code with your hand, then you will feel what Runnables are. So, guys, my plan is that whatever I have told you in this video, I will show you all those scenarios through code. So, we will start from the beginning. And first of all, I will"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2389.48,
+            "end": 2419.48,
+            "text": "whatever I have told you in this video, I will show you all those scenarios through code. So, we will start from the beginning. And first of all, I will make two classes and show you. One for LLM and another one for Prom Template. And with the help of those classes, we will try to make a small LLM application. Okay? So, I will code it and explain it to you. You will automatically understand what I am doing."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2409.48,
+            "end": 2439.48,
+            "text": "we will try to make a small LLM application. Okay? So, I will code it and explain it to you. You will automatically understand what I am doing. So, first of all, what I want is that I want to make a LLM component in Lank chain which AI engineers will use in the future to interact with any LLM. Okay? So, obviously, the LLM component that I will make now will not be a real world component."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2429.48,
+            "end": 2459.48,
+            "text": "to interact with any LLM. Okay? So, obviously, the LLM component that I will make now will not be a real world component. It will be a dummy component. Okay? So, what I will do is I will first of all create a class. I will call it, let's say, Nucle LLM. And in this LLM class, I am adding two methods. One is obviously the constructor."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2449.48,
+            "end": 2479.48,
+            "text": "And in this LLM class, I am adding two methods. One is obviously the constructor. And in the constructor, just a small code is written that as soon as someone calls this constructor, we will print it. LLM created. Okay? After that, I am making a second method"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2469.48,
+            "end": 2499.48,
+            "text": "we will print it. LLM created. Okay? After that, I am making a second method which is called predict because LLM component has a predict method. We saw this a while ago. And this predict will get a prompt to do its work. And as soon as it gets this prompt, our LLM will generate a response"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2489.48,
+            "end": 2519.48,
+            "text": "a prompt to do its work. And as soon as it gets this prompt, our LLM will generate a response according to that prompt. Now, obviously, we are not using the real LLM here. So, I will create a dummy response. So, I will create a list which I will call response list. In this, I will add"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2509.48,
+            "end": 2539.48,
+            "text": "So, I will create a list which I will call response list. In this, I will add two or three responses already. And every time when the predict function is called, a response will be randomly selected and printed. For example, the first response is, Delhi is the capital of India."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2529.48,
+            "end": 2559.48,
+            "text": "For example, the first response is, Delhi is the capital of India. This is one response. Second response will be, IPL is a cricket league. And the third response will be, AI stands for artificial intelligence. Okay?"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2549.48,
+            "end": 2579.48,
+            "text": "And the third response will be, AI stands for artificial intelligence. Okay? And what I will do is that I will import random module from here. And here, in return, I will do this. Response is random."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2569.48,
+            "end": 2599.48,
+            "text": "And here, in return, I will do this. Response is random. choice. And here, I am sending the response list. This is my simple LLM class. Okay? This is a dummy class. The real LLM class will not be visible. Now, if I make an object of this, let's say like this,"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2589.48,
+            "end": 2619.48,
+            "text": "Okay? This is a dummy class. The real LLM class will not be visible. Now, if I make an object of this, let's say like this, fake LLM. So, LLM is created. Now, if I predict LLM. and here, I say, what is the capital of India. So, the response is coming back. IPL is a cricket league."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2609.48,
+            "end": 2639.48,
+            "text": "capital of India. So, the response is coming back. IPL is a cricket league. And obviously, we cannot expect that we are generating randomly from these three. Like, if I run it again, something else will happen. Like, Delhi is the capital of India is selected. Okay? You get the idea. I have made a dummy LLM class. Which behaves exactly"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2629.48,
+            "end": 2659.48,
+            "text": "is selected. Okay? You get the idea. I have made a dummy LLM class. Which behaves exactly like an actual LLM class behaves. Okay? So, this is our first component. Now, we make our second component. Which is our prompt template. So, I am making another class. And I am calling it, fake prompt template. There is also a constructor"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2649.48,
+            "end": 2679.48,
+            "text": "Which is our prompt template. So, I am making another class. And I am calling it, fake prompt template. There is also a constructor in this. And this time, we are giving some output to the constructor. First output is template. Second output is input. We are saying variables. And we are writing self.template is equal to template and self."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2669.48,
+            "end": 2699.48,
+            "text": "We are saying variables. And we are writing self.template is equal to template and self. input variables is equal to input variables. Okay? This is my constructor. And since this is a prompt template class, it will have a format function. And the format function will get"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2689.48,
+            "end": 2719.48,
+            "text": "And since this is a prompt template class, it will have a format function. And the format function will get a dictionary in the input. And this function will return self.template. template. format And here, what we will do is we will unpack that input dictionary. Like this. And this is our"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2709.48,
+            "end": 2739.48,
+            "text": "And here, what we will do is we will unpack that input dictionary. Like this. And this is our fake prompt template. Let's try out this too. Suppose, I am making a template. And this is a fake prompt template class object. I am giving it a template. write a"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2729.48,
+            "end": 2759.48,
+            "text": "is a fake prompt template class object. I am giving it a template. write a poem about topic input variables topic Okay? So, first of all, this object is created. Now, I will do"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2749.48,
+            "end": 2779.48,
+            "text": "topic Okay? So, first of all, this object is created. Now, I will do template. So, I am getting the option of format function. Here, if I send a dictionary that topic is India. So, see this. Write a poem about India is coming. Now, suppose we add"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2767.48,
+            "end": 2797.48,
+            "text": "India. So, see this. Write a poem about India is coming. Now, suppose we add one more variable. write a length poem about topic. And here, you can add length, short, long. So, now, what I will do is"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2787.48,
+            "end": 2817.48,
+            "text": "And here, you can add length, short, long. So, now, what I will do is here, I will add length short and run. And you can see, write a short poem about India. So, you can see, again, we made a second class. Which is behaving exactly like your"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2807.48,
+            "end": 2837.48,
+            "text": "short poem about India. So, you can see, again, we made a second class. Which is behaving exactly like your prompt template class. Okay? So, now, suppose I am an AI engineer. And I have two components from Langchain. One is LLM component. And one is prompt template component. Now, with the help of these two classes, I have to make a"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2827.48,
+            "end": 2857.48,
+            "text": "One is LLM component. And one is prompt template component. Now, with the help of these two classes, I have to make a small LLM application. Where I will ask a topic from the user. And on that topic, I will print a poem. Obviously, it will not be an actual poem. But, you get the idea. So, see, what you have to do is you have to make a template like this. With this template, you have to make a prompt. Like, I have made it."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2847.48,
+            "end": 2877.48,
+            "text": "So, see, what you have to do is you have to make a template like this. With this template, you have to make a prompt. Like, I have made it. Okay? After that, you need an LLM. So, to make an LLM, you will call the fake LLM class. And now, what will you send in LLM.predict? Your prompt. Prompt is not defined. Once you run the prompt,"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2865.48,
+            "end": 2895.48,
+            "text": "call the fake LLM class. And now, what will you send in LLM.predict? Your prompt. Prompt is not defined. Once you run the prompt, you run this as well. And you run this as well. And you can see, now, you are getting your response. You can assume it like a poem. So, this is the initial step that we discussed. We covered that we have some components and our AI engineers"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2885.48,
+            "end": 2915.48,
+            "text": "You can assume it like a poem. So, this is the initial step that we discussed. We covered that we have some components and our AI engineers are working hard, writing code, manually connecting those components and making their AI application. Okay? Now, what we will do is we will come in the shoes of the Langchain team and we will make an LLM chain class which will kind of"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2905.48,
+            "end": 2935.48,
+            "text": "we will come in the shoes of the Langchain team and we will make an LLM chain class which will kind of chain these two components. Let's build a fake LLM chain whose work will be to connect the prompt template and the LLM components so that our AI engineers can work a little easier. Okay? So, I am creating one more class by the name of fake LLM chain."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2925.48,
+            "end": 2955.48,
+            "text": "so that our AI engineers can work a little easier. Okay? So, I am creating one more class by the name of fake LLM chain. There will be two methods in this as well. One will be our constructor. This constructor will get two things to work on. One will be prompt and the other will be LLM. In this, we are storing LLM in the self.llm variable and in the self.prompt"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2945.48,
+            "end": 2975.48,
+            "text": "LLM. In this, we are storing LLM in the self.llm variable and in the self.prompt variable, we are saving the prompt. And since this is a chain, it will have a run method in which you will get an input. Let's call it input data. Actually,"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2965.48,
+            "end": 2995.48,
+            "text": "you will get an input. Let's call it input data. Actually, this will be a dictionary which we give to the prompt template. And here, internally, what we will do is first of all, we will form a prompt and we will write self.prompt.format because the prompt we are getting is the prompt template object. Here, we will send"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 2985.48,
+            "end": 3015.48,
+            "text": "and we will write self.prompt.format because the prompt we are getting is the prompt template object. Here, we will send the input dictionary. So, what will happen with this? This code will get triggered automatically. Okay? And then, we will get our final prompt which we will have to send to LLM. Here, we will write self.llm.predict and we will send the final prompt there."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3005.48,
+            "end": 3035.48,
+            "text": "our final prompt which we will have to send to LLM. Here, we will write self.llm.predict and we will send the final prompt there. And whatever result we get, we will store it in a variable. Now, the result that comes back from LLM we know that it is in a dictionary form. So, we will extract a string from it. We will write the response of return result."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3025.48,
+            "end": 3055.48,
+            "text": "it is in a dictionary form. So, we will extract a string from it. We will write the response of return result. And this is our fake LLM chain class. Using this, we will make a new application. So, first of all, you need a prompt template. So, we have copied this. You need an LLM. We have made it using a fake LLM"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3045.48,
+            "end": 3075.48,
+            "text": "So, we have copied this. You need an LLM. We have made it using a fake LLM class. And now, what we will do? We will make a chain object using a fake LLM chain. Okay? Here, we will send our LLM and in prompt, we will send the prompt template. Now, what we will do? We will call chain.run."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3065.48,
+            "end": 3095.48,
+            "text": "Okay? Here, we will send our LLM and in prompt, we will send the prompt template. Now, what we will do? We will call chain.run. And here, in a dictionary, we will tell that length will be short. And topic will be India. And as we run it, see, here is our output. Now, I don't have to format the prompt template"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3085.48,
+            "end": 3115.48,
+            "text": "And as we run it, see, here is our output. Now, I don't have to format the prompt template separately. And I don't have to predict LLM. Both of them are automatically handled in this single function call. Okay? So, now we have coded that perspective where the chain team thought that they can make a lot of chain functions"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3105.48,
+            "end": 3135.48,
+            "text": "So, now we have coded that perspective where the chain team thought that they can make a lot of chain functions which will make the work of AI engineers easier. But at this point, they realized that this is not the right way because the chain classes that you are making are not flexible. Now, in this, suppose I have to make a two-step chain."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3125.48,
+            "end": 3155.48,
+            "text": "the chain classes that you are making are not flexible. Now, in this, suppose I have to make a two-step chain. Suppose, first I have to generate a joke and then I have to generate the same joke's explanation in two steps. Basically, I have to call two LLMs. So, with the help of this chain, I can't call two LLMs. Think for yourself. What code will you write"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3145.48,
+            "end": 3175.48,
+            "text": "call two LLMs. So, with the help of this chain, I can't call two LLMs. Think for yourself. What code will you write that will make your code flexible that no matter how many calls it can make on LLM, if you think for yourself, you will realize that doing this is very difficult. And that is why this fake LLM chain is not flexible to create any kind of workflows."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3165.48,
+            "end": 3195.48,
+            "text": "very difficult. And that is why this fake LLM chain is not flexible to create any kind of workflows. Okay? So, the main problem is that your prompt is a template class. The format is the way to interact with it. And the LLM class is the way to interact with it. We have to somehow standardize these two classes"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3185.48,
+            "end": 3215.48,
+            "text": "And the LLM class is the way to interact with it. We have to somehow standardize these two classes and only then we will be able to make flexible chains. Okay? So, so far, I have coded the whole problem for you. Which I theoretically told you in the beginning of the video. I will show you the solution code how we can use the help of runnables to create"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3205.48,
+            "end": 3235.48,
+            "text": "Which I theoretically told you in the beginning of the video. I will show you the solution code how we can use the help of runnables to create standardized components and how you can chain those standardized components together. So, guys, to create standardized components you need components. So, I am doing one thing. First of all, these two classes that we have created I will keep them here."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3225.48,
+            "end": 3255.48,
+            "text": "you need components. So, I am doing one thing. First of all, these two classes that we have created I will keep them here. Because we need components. How to standardize them? We will see in a while. So, I have copied and pasted these two classes here. Let's discuss how we can standardize these two classes. So, according to the discussion that we have done, what should happen is"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3245.48,
+            "end": 3275.48,
+            "text": "Let's discuss how we can standardize these two classes. So, according to the discussion that we have done, what should happen is first of all, we have to convert these two classes or components into runnables. And second, all runnables should have common methods. And the most important method is invoke. So, how can we make sure that all our components have all"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3265.48,
+            "end": 3295.48,
+            "text": "And the most important method is invoke. So, how can we make sure that all our components have all the same methods in them? This is a very solid method to make sure in object-oriented programming, which we call abstraction. So, what I will do is that I will create an abstract class whose name will be runnable. And then all my other component classes"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3285.48,
+            "end": 3315.48,
+            "text": "abstraction. So, what I will do is that I will create an abstract class whose name will be runnable. And then all my other component classes will inherit all the classes from the runnable class. So, automatically all my component classes will become runnable. And in my runnable class, all the abstract methods will have to be implemented in my component classes. And this way, I can make sure that everyone"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3305.48,
+            "end": 3335.48,
+            "text": "all the abstract methods will have to be implemented in my component classes. And this way, I can make sure that everyone has a common structure. Let's understand this by giving a code. So, first of all, what I will do is I will import from ABC abstract-based classes and abstract method. I am sure you have read OOP"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3325.48,
+            "end": 3355.48,
+            "text": "from ABC abstract-based classes and abstract method. I am sure you have read OOP very well. Otherwise, you might not understand this. Now, see what I am doing. I am making a class whose name is runnable. And this is an abstract class because it is inheriting from ABC. Okay? And what I did in class is I made a method called invoke."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3345.48,
+            "end": 3375.48,
+            "text": "it is inheriting from ABC. Okay? And what I did in class is I made a method called invoke. And this invoke is getting some input. But this method doesn't do anything. This is an abstract method. It means that there is no code written in it. And we will label it separately as abstract method decorator. That it is an abstract method."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3365.48,
+            "end": 3395.48,
+            "text": "It means that there is no code written in it. And we will label it separately as abstract method decorator. That it is an abstract method. Okay? Now, let's see what happens. I have my runnable class. Now, my fake LLM class will inherit from this runnable class. So, now what will happen is that the fake LLM class also"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3385.48,
+            "end": 3415.48,
+            "text": "will inherit from this runnable class. So, now what will happen is that the fake LLM class also got runnable in a way. Okay? Now, let's see what is interesting. When I run this code and I will try to make an LLM object. Like this. So, error throw will happen. Why is error throw happening? Because here you are being told that can't instantiate"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3405.48,
+            "end": 3435.48,
+            "text": "Like this. So, error throw will happen. Why is error throw happening? Because here you are being told that can't instantiate abstract class, fake LLM with abstract method invoke. This means that you have inherited runnable abstract class but you haven't implemented its abstract methods in your class. So, what you have to do is you have to make an invoke method"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3425.48,
+            "end": 3455.48,
+            "text": "but you haven't implemented its abstract methods in your class. So, what you have to do is you have to make an invoke method by making a mistake here. Which will get something in input. Suppose, it is getting prompt. And what is the work of this invoke method? That the work that predicts, it will invoke. So, basically what I can do is I can copy this entire code and paste it here."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3445.48,
+            "end": 3475.48,
+            "text": "That the work that predicts, it will invoke. So, basically what I can do is I can copy this entire code and paste it here. So, in a way, the work that was predicting earlier is now invoking. So, should we remove predict? The answer is not exactly. You should not remove predict immediately because it is possible that the old AI engineers"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3465.48,
+            "end": 3495.48,
+            "text": "The answer is not exactly. You should not remove predict immediately because it is possible that the old AI engineers are still using predict in their code. So, if you remove predict directly, then their code will start to break. Right? So, here ideally, you should print a message that this method is going to be deprecated. Don't use it."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3485.48,
+            "end": 3515.48,
+            "text": "ideally, you should print a message that this method is going to be deprecated. Don't use it. So, you can put a message like this. So, as soon as someone calls this method, the output will be visible. But, it will get a warning message that this method is going to be removed in future and you have to call instead invoke. I hope you are understanding what I did. I made a runnable abstract class and made a fake LLM"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3505.48,
+            "end": 3535.48,
+            "text": "and you have to call instead invoke. I hope you are understanding what I did. I made a runnable abstract class and made a fake LLM its child. So, we have implemented the invoke method here. So, in a way, I forced this LLM component to follow this structure. And I will do the same with prompt template class. So, I will write here that this is also a runnable class child"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3525.48,
+            "end": 3555.48,
+            "text": "to follow this structure. And I will do the same with prompt template class. So, I will write here that this is also a runnable class child and since this is a runnable class child, it should also have invoke. And invoke is getting a fake input dictionary. And what is it doing? It is doing exactly the same thing which is written in the format. And here also, you can attach"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3545.48,
+            "end": 3575.48,
+            "text": "a fake input dictionary. And what is it doing? It is doing exactly the same thing which is written in the format. And here also, you can attach a warning with the format that in future, this will be removed. Use invoke instead. So, now what I did is that I standardized both my components. I made both runnable and I made sure that the way to talk is"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3565.48,
+            "end": 3595.48,
+            "text": "both my components. I made both runnable and I made sure that the way to talk is invoke method. Now, what is the benefit of this? That you can easily combine both of them and make a very long chain. How? I will show you. So, now that we have standardized our components, now we will compose them into chains. We will connect them"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3585.48,
+            "end": 3615.48,
+            "text": "How? I will show you. So, now that we have standardized our components, now we will compose them into chains. We will connect them and form chains. Now, to do this, we will have to make another class. The purpose of that class is that with the help of that class you can combine more than two components into a chain. So, I am making a new class called"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3605.48,
+            "end": 3635.48,
+            "text": "you can combine more than two components into a chain. So, I am making a new class called runnable connector. And this also will be a child of runnable class. Now, in this class we have to write two methods. First will be a constructor."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3623.48,
+            "end": 3653.48,
+            "text": "a child of runnable class. Now, in this class we have to write two methods. First will be a constructor. In this particular class constructor will get a list of runnable components in the input. I mean, a list of components. How many components can be in that list? And"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3643.48,
+            "end": 3673.48,
+            "text": "in the input. I mean, a list of components. How many components can be in that list? And I am storing that in a variable. self.runnable runnable list is equal to runnable list. Okay? After that, here also since this is a runnable then here also there will be an invoke function."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3663.48,
+            "end": 3693.48,
+            "text": "Okay? After that, here also since this is a runnable then here also there will be an invoke function. It will get some input data in the input. And here is the main code. So, what we will do is that we have all the runnables in this runnable list. We will run loop on all of them. So, I would write for"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3683.48,
+            "end": 3713.48,
+            "text": "is that we have all the runnables in this runnable list. We will run loop on all of them. So, I would write for runnable in runnable list and what I will do is here self.runnable list will be here. And what I will do is that I will call every runnable's invoke function here."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3703.48,
+            "end": 3733.48,
+            "text": "here. And what I will do is that I will call every runnable's invoke function here. And I will pass my input data inside. Okay? So, try to understand what is happening here. Suppose while making this class object suppose I am making an object named chain"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3723.48,
+            "end": 3753.48,
+            "text": "Suppose while making this class object suppose I am making an object named chain and chain is runnable connector class object. And while making this I have sent two things here. One is my prompt template object and second is my LLM object. Okay? So, what will happen"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3743.48,
+            "end": 3773.48,
+            "text": "One is my prompt template object and second is my LLM object. Okay? So, what will happen is that this list has two runnables. One is prompt which is runnable and LLM which is runnable. And this list will be stored here. Okay? Now, what I am doing is I am running loop on this. When loop is running for the first time"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3763.48,
+            "end": 3793.48,
+            "text": "list will be stored here. Okay? Now, what I am doing is I am running loop on this. When loop is running for the first time we are removing the first runnable that is prompt. And we are calling the prompt's invoke function and passing input data from here. So, what will happen is prompt will do its work and final prompt will generate. Okay? So, whatever output came, I will store it"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3783.48,
+            "end": 3813.48,
+            "text": "prompt will do its work and final prompt will generate. Okay? So, whatever output came, I will store it in a variable. Let's call it input data. From this output whatever output came I have stored it in input data. Now, what will happen is loop will run next time and next runnable is LLM."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3803.48,
+            "end": 3833.48,
+            "text": "I have stored it in input data. Now, what will happen is loop will run next time and next runnable is LLM. So, now I am calling LLM.invoke. But what is LLM.invoke getting in input data? Output of the previous step. So, I hope you are understanding how we are smartly doing this. We are putting output of the previous step in input of the next step. Okay?"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3823.48,
+            "end": 3853.48,
+            "text": "how we are smartly doing this. We are putting output of the previous step in input of the next step. Okay? And as soon as this loop is finished I will return final step's output, input data. And guys this is the class. Now, see how I will do this whole thing smartly. First of all I made a prompt. This is the prompt."
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3843.48,
+            "end": 3873.48,
+            "text": "this is the class. Now, see how I will do this whole thing smartly. First of all I made a prompt. This is the prompt. Okay? After that I made an LLM. LLM is equal to fake LLM. Okay, I think I didn't run this code. Let's run all these codes. Okay? LLM is also made. Now, what am I doing? I am making an object of runnable connector"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3861.48,
+            "end": 3891.48,
+            "text": "Okay, I think I didn't run this code. Let's run all these codes. Okay? LLM is also made. Now, what am I doing? I am making an object of runnable connector and here I am sending instead of prompt the template I have made above and my LLM. Okay? Now, what I will do is I will write chain.invoke and here I will pass the dictionary"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3881.48,
+            "end": 3911.48,
+            "text": "Okay? Now, what I will do is I will write chain.invoke and here I will pass the dictionary that length will be long and topic will be India. And as soon as I run this see this. We are able to chain both and our final runnable"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3901.48,
+            "end": 3931.48,
+            "text": "And as soon as I run this see this. We are able to chain both and our final runnable output is visible to me. Now, the fun thing is that in this same code you can chain all the components together. For example, I will make another component here by saying string output parser whose work will be to get the string"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3921.48,
+            "end": 3951.48,
+            "text": "For example, I will make another component here by saying string output parser whose work will be to get the string from this output. So, what I will do is I will come here and here I will make another component whose name will be Nucleus str output parser. Okay? And this is also a kind of"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3941.48,
+            "end": 3971.48,
+            "text": "whose name will be Nucleus str output parser. Okay? And this is also a kind of runnable. In its constructor, nothing will happen and it will also have an invoke method which will get some input data and its simple work is to get the response"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3961.48,
+            "end": 3991.48,
+            "text": "will get some input data and its simple work is to get the response key from that input data so basically, you are getting this dictionary in the input and you have to get this particular string. Okay? So, this is my Nucleus str output parser. Now, see what I am doing. I am making another object"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 3981.48,
+            "end": 4011.48,
+            "text": "Okay? So, this is my Nucleus str output parser. Now, see what I am doing. I am making another object here by saying parser which is Nucleus str output parser object and now here, after template LLM I am sending parser. Chain is made and it is invoked and see now instead of getting the whole dictionary"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4001.48,
+            "end": 4031.48,
+            "text": "I am sending parser. Chain is made and it is invoked and see now instead of getting the whole dictionary only string is coming because what happened first in step 1, prompt was formed that prompt got invoked in LLM LLM made prediction in dictionary form and parser took out string from dictionary I hope you are understanding this way, no matter how long chain you can make"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4021.48,
+            "end": 4051.48,
+            "text": "and parser took out string from dictionary I hope you are understanding this way, no matter how long chain you can make you don't need to make custom functions now I am going to show you something very interesting till now what we have done more than 2 runnables connected and made chains now what I am going to do now I am going to connect these two together"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4041.48,
+            "end": 4071.48,
+            "text": "runnables connected and made chains now what I am going to do now I am going to connect these two together and make bigger chain so basically we are going to see this 4th principle I told you that when you connect runnables, chains are made and if you want you can make multiple chains and since all these chains are runnables themselves then you can connect those chains"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4061.48,
+            "end": 4091.48,
+            "text": "connect runnables, chains are made and if you want you can make multiple chains and since all these chains are runnables themselves then you can connect those chains just like these lego blocks so we are going to do a simple application so chain 1 will work to generate a joke about a topic with the help of prompt template we will send that topic to LLM and LLM will generate"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4081.48,
+            "end": 4113.48,
+            "text": "to generate a joke about a topic with the help of prompt template we will send that topic to LLM and LLM will generate a joke so the output of this chain is a joke then we will make a second chain this second chain will get a joke in input and this chain will explain the whole thing to us so here there will be another prompt"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4103.48,
+            "end": 4133.48,
+            "text": "will explain the whole thing to us so here there will be another prompt in which we will feed this joke we will send that prompt to LLM and will ask for explanation and LLM will explain and then what we will do we will connect these two chains together and make a big chain I hope you are getting the idea how this whole thing will work, it is very easy"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4123.48,
+            "end": 4153.48,
+            "text": "we will connect these two chains together and make a big chain I hope you are getting the idea how this whole thing will work, it is very easy we don't need to do anything new we have already written the code we just need to make two prompt templates so our first template will be a fake prompt template which will contain a template write a joke about topic"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4143.48,
+            "end": 4175.48,
+            "text": "a fake prompt template which will contain a template write a joke about topic and input will be in variables topic and prompt template and my second prompt template will be fake prompt template template value will be write a"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4165.48,
+            "end": 4195.48,
+            "text": "prompt template will be fake prompt template template value will be write a summary about the following joke and rather we can simply write it explain the following joke and here we will write response and here input will be in variables"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4185.48,
+            "end": 4215.48,
+            "text": "explain the following joke and here we will write response and here input will be in variables response this is my second template apart from this I need a LLM so that will be using a fake LLM class apart from this I need a parser which will print the final result so for that I am using fake string output parser now see"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4205.48,
+            "end": 4235.48,
+            "text": "apart from this I need a parser which will print the final result so for that I am using fake string output parser now see I will make two chains chain number one which will print the joke so chain one will be runnable connector and here I will pass template one"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4225.48,
+            "end": 4255.48,
+            "text": "runnable connector and here I will pass template one and after that LLM ok, so if you run chain one dot and here in topic AI, I am sorry it will not run we have done this whole effort so that invoke comes so you can see"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4245.48,
+            "end": 4275.48,
+            "text": "AI, I am sorry it will not run we have done this whole effort so that invoke comes so you can see this is generating joke obviously this is not joke we have made dummy model but you get the idea that a joke will come and its key name will be response similarly we will make a chain two which again will be runnable"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4265.48,
+            "end": 4295.48,
+            "text": "response similarly we will make a chain two which again will be runnable with the help of connector and we will pass three things we will pass template two back to LLM and parser now this chain two if you invoke and you give a joke here"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4285.48,
+            "end": 4315.48,
+            "text": "now this chain two if you invoke and you give a joke here this is a joke so what will this chain do it will print an explanation of a joke but obviously we don't want to manually invoke these two chains so what I will do is I will remove this and now with the help of these two chains I will create a final chain"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4305.48,
+            "end": 4335.48,
+            "text": "so what I will do is I will remove this and now with the help of these two chains I will create a final chain which again will be made with the help of runnable connector and here I will pass chain one and after that I will pass chain two and now in final chain I will call invoke function and here"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4325.48,
+            "end": 4355.48,
+            "text": "chain two and now in final chain I will call invoke function and here I will send a joke topic let's say cricket and now as I run it see here I can see only one string you consider it as if you can see the final joke explanation right now these LLMs are not working"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4345.48,
+            "end": 4375.48,
+            "text": "I can see only one string you consider it as if you can see the final joke explanation right now these LLMs are not working because we have made a dummy LLM class but you get the idea that how powerful idea we have just coded with scratch we first made components we standardized those components with the help of runnable interface and then with the help of runnable interface"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4365.48,
+            "end": 4395.48,
+            "text": "we standardized those components with the help of runnable interface and then with the help of runnable interface now we are able to form how many long chains in fact not only how many long chains we are able to chain multiple chains so this is the idea about which we were discussing in this video so I hope I was able to convey it was a very long video"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4385.48,
+            "end": 4415.48,
+            "text": "about which we were discussing in this video so I hope I was able to convey it was a very long video but I have theoretically made you do the whole journey what would have happened with the chain team what they would have thought and what changes they would have made and then I wrote all that code with scratch honestly I had to cover some other things in this video but I think the video is already long so the second part of this video will come"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4405.48,
+            "end": 4435.48,
+            "text": "and then I wrote all that code with scratch honestly I had to cover some other things in this video but I think the video is already long so the second part of this video will come where I will show you actual runnable classes for now what I can do is I will show you an interesting thing that if you open the code of the long chain then you will see that this is how it works let me show it to you"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4425.48,
+            "end": 4455.48,
+            "text": "that if you open the code of the long chain then you will see that this is how it works let me show it to you so if I go to the code and suppose this is our chat open AI class which we are using all the time so this chat open AI you can take it as our LLM class like this was our fake LLM class it was actually trying to copy this chat open AI now if you go to its code"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4445.48,
+            "end": 4475.48,
+            "text": "like this was our fake LLM class it was actually trying to copy this chat open AI now if you go to its code then you will see that chat open AI is inheriting from base chat open AI base chat open AI is inheriting from base chat model base chat model is inheriting from base language model now see base language model is inheriting from runnable serializable and runnable serializable is inheriting from runnable"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4465.48,
+            "end": 4495.48,
+            "text": "is inheriting from base language model now see base language model is inheriting from runnable serializable and runnable serializable is inheriting from runnable and this is our final runnable class which is our abstract class which we have made here now if you go down then you will see that somewhere there will be an invoke method which will be an abstract method so there are many things here but if you scroll down"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4485.48,
+            "end": 4515.48,
+            "text": "then you will see that somewhere there will be an invoke method which will be an abstract method so there are many things here but if you scroll down then you should see so you should see an invoke method it is not visible yet assign see this this is invoke method which is an abstract method just like us ok"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4505.48,
+            "end": 4535.48,
+            "text": "see this this is invoke method which is an abstract method just like us ok there is no code written in it this is an abstract method ok now whoever inherits runnable class will have to implement this method in their class just like we had to do in every class ok so this is what happened"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4525.48,
+            "end": 4555.48,
+            "text": "this method in their class just like we had to do in every class ok so this is what happened which I showed you in a simplified way langchain did the same thing in a complex code base but the whole story is the same which I told you in this video so I really hope I am not really sure I have shot this video bit by bit in last 24 hours I don't have a clear idea I just hope"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4545.48,
+            "end": 4575.48,
+            "text": "so I really hope I am not really sure I have shot this video bit by bit in last 24 hours I don't have a clear idea I just hope that I was able to explain you at a deeper level and now you have a solid kind of fundamental base created about this library we will explore runnables in the next video and if you liked the video"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4565.48,
+            "end": 4583.48,
+            "text": "base created about this library we will explore runnables in the next video and if you liked the video please like it if you haven't subscribed the channel please do subscribe thanks for watching"
+        },
+        {
+            "video_name": "Video_10_What are Runnables in LangChain \uff5c Generative AI using LangChain \uff5c Video 8 \uff5c CampusX.mp3",
+            "start": 4573.48,
+            "end": 4583.48,
+            "text": "and if you liked the video please like it if you haven't subscribed the channel please do subscribe thanks for watching"
+        }
+    ]
+}

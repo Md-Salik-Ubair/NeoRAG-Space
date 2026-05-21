@@ -1,0 +1,293 @@
+{
+    "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+    "chunks": [
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 0.0,
+            "end": 32.0,
+            "text": "Hi guys, my name is Nitesh and you are welcome to my YouTube channel. Now if you have seen my last video, then you might know that I have decided to put videos on this channel going forward, on Generative AI. In fact, I had promised you that this whole year of 2025 will be named as Generative AI. And I had promised you that I will cover the end to end of Generative AI here. Today we are taking the first step in this journey and we are going to launch the first playlist of the whole roadmap."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 19.0,
+            "end": 50.0,
+            "text": "And I had promised you that I will cover the end to end of Generative AI here. Today we are taking the first step in this journey and we are going to launch the first playlist of the whole roadmap. And the topic of this playlist is a very important topic and the name of that topic is Lang chain. If you have worked in Generative AI, then I am pretty sure you must have heard about Lang chain. Now if you think that this playlist will help you learn Lang chain, then trust me,"
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 38.0,
+            "end": 70.0,
+            "text": "If you have worked in Generative AI, then I am pretty sure you must have heard about Lang chain. Now if you think that this playlist will help you learn Lang chain, then trust me, today's video is very important to watch because in today's video, I am going to tell you a detailed roadmap that how I will cover Lang chain step by step in this playlist, what will be the curriculum, what frequency videos will come, everything I will discuss in this video. So please make sure you watch this video end to end."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 57.0,
+            "end": 94.0,
+            "text": "that how I will cover Lang chain step by step in this playlist, what will be the curriculum, what frequency videos will come, everything I will discuss in this video. So please make sure you watch this video end to end. Before starting the video, I would like to give you a quick recap of what I discussed with you in the last video. In the last video, I discussed a curriculum of Generative AI with you and I told you that the whole Generative AI can be divided into two parts. One is the builder side and the other is the user side. The builder side is the side where you develop the foundation models."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 76.0,
+            "end": 107.0,
+            "text": "In the last video, I discussed a curriculum of Generative AI with you and I told you that the whole Generative AI can be divided into two parts. One is the builder side and the other is the user side. The builder side is the side where you develop the foundation models. And the user side is the side where you use those foundation models to make your applications. Then I showed you the curriculum of both the sides. I showed you the curriculum of the builder side where you had to read the transformer architecture,"
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 94.0,
+            "end": 125.0,
+            "text": "And the user side is the side where you use those foundation models to make your applications. Then I showed you the curriculum of both the sides. I showed you the curriculum of the builder side where you had to read the transformer architecture, where you had to read the types of transformers, pre-training, fine tuning, optimization and then I showed you the curriculum of the user side. The Lang chain playlist that we are starting comes in the user side. This is the user side curriculum where I told you that"
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 107.0,
+            "end": 144.0,
+            "text": "where you had to read the types of transformers, pre-training, fine tuning, optimization and then I showed you the curriculum of the user side. The Lang chain playlist that we are starting comes in the user side. This is the user side curriculum where I told you that you have to learn how to build LLM based applications. After that I told you three ways to improve the response from LLM. Prompt engineering, rag and fine tuning. Then I told you that a completely new field is originating from this whole thing which we call Agentic AI."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 125.0,
+            "end": 160.0,
+            "text": "you have to learn how to build LLM based applications. After that I told you three ways to improve the response from LLM. Prompt engineering, rag and fine tuning. Then I told you that a completely new field is originating from this whole thing which we call Agentic AI. And apart from this, LLM Ops and Miscellaneous topics also come in this particular curriculum. Through this playlist, we will cover this particular portion of the curriculum. We will learn how to build LLM applications using the help of Lang chain."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 150.0,
+            "end": 186.0,
+            "text": "Through this playlist, we will cover this particular portion of the curriculum. We will learn how to build LLM applications using the help of Lang chain. So I just wanted to tell you in a whole picture that from where we are starting. After this, we will cover the rest of the topics. But Lang chain is going to be our starting point in the user side of the generative AI curriculum. I really hope that you are able to locate our starting point, our origin in this whole joint curriculum."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 172.0,
+            "end": 207.0,
+            "text": "But Lang chain is going to be our starting point in the user side of the generative AI curriculum. I really hope that you are able to locate our starting point, our origin in this whole joint curriculum. Now before discussing the plan, I would like to tell you what is Lang chain? In simple words, Lang chain is a framework through which you can build any LLM based application. LLM based applications means applications like chatbot, agents, etc. You can easily make this with the help of Lang chain."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 191.0,
+            "end": 228.0,
+            "text": "In simple words, Lang chain is a framework through which you can build any LLM based application. LLM based applications means applications like chatbot, agents, etc. You can easily make this with the help of Lang chain. See here it is written that Lang chain is an open source framework that helps in building LLM based applications. It provides modular components and end to end tools that help developers build complex AI applications such as chatbot, question answering systems, rag based applications, autonomous agents and much more."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 213.0,
+            "end": 245.0,
+            "text": "It provides modular components and end to end tools that help developers build complex AI applications such as chatbot, question answering systems, rag based applications, autonomous agents and much more. So this is the definition of Lang chain in nutshell. Now I will tell you some core features because of which Lang chain has become so popular and you should learn. So the biggest feature of Lang chain is that Lang chain supports almost all major LLMs."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 228.0,
+            "end": 259.0,
+            "text": "So this is the definition of Lang chain in nutshell. Now I will tell you some core features because of which Lang chain has become so popular and you should learn. So the biggest feature of Lang chain is that Lang chain supports almost all major LLMs. Whether it is open source or closed source, it does not matter. In Lang chain, you have the integration of every LLM. Whether it is OpenAI GPT models, Anthropic Cloud models or Google Gemini models."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 248.0,
+            "end": 283.0,
+            "text": "In Lang chain, you have the integration of every LLM. Whether it is OpenAI GPT models, Anthropic Cloud models or Google Gemini models. Apart from this, you can easily connect with many open source models that are in the hugging phase with the help of Lang chain. So this is the most important feature. Second feature is it simplifies developing LLM based applications. So here there are some very interesting things in Lang chain with the help of which you can easily make LLM based applications."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 267.0,
+            "end": 299.0,
+            "text": "So this is the most important feature. Second feature is it simplifies developing LLM based applications. So here there are some very interesting things in Lang chain with the help of which you can easily make LLM based applications. Like here there is a concept of chains with the help of which you can make very complex pipelines and with the help of those pipelines you can make very complex applications. So there are many such things available in Lang chain that help you in making LLM based applications."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 283.0,
+            "end": 318.0,
+            "text": "Like here there is a concept of chains with the help of which you can make very complex pipelines and with the help of those pipelines you can make very complex applications. So there are many such things available in Lang chain that help you in making LLM based applications. Third feature is that there are many integrations available in Lang chain. So in the process of making LLM based applications, you have to connect with many tools. For example, you have to connect with your database or work with a remote data source or you have to connect with AWS to deploy it."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 304.0,
+            "end": 336.0,
+            "text": "So in the process of making LLM based applications, you have to connect with many tools. For example, you have to connect with your database or work with a remote data source or you have to connect with AWS to deploy it. So Lang chain has written wrappers with the help of which you can easily connect with all these tools and services. You don't need to write a lot of boilerplate code. Fourth is that Lang chain is free. This is a very big reason behind Lang chain adoption."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 325.0,
+            "end": 355.0,
+            "text": "You don't need to write a lot of boilerplate code. Fourth is that Lang chain is free. This is a very big reason behind Lang chain adoption. That Lang chain is a free open source package and at this point it is being actively developed. In fact, within one or two years, three different versions of your Lang chain have come. So a lot of work is going on and a lot of new components are added on a daily basis."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 344.0,
+            "end": 375.0,
+            "text": "In fact, within one or two years, three different versions of your Lang chain have come. So a lot of work is going on and a lot of new components are added on a daily basis. So this is a very big reason why Lang chain is becoming so popular in the GenAI community. And lastly, it supports all major GenAI use cases, i.e. all the applications that can be made in generative AI. Chatbots, agents, rag based applications, Lang chain helps you in making all this."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 361.0,
+            "end": 395.0,
+            "text": "And lastly, it supports all major GenAI use cases, i.e. all the applications that can be made in generative AI. Chatbots, agents, rag based applications, Lang chain helps you in making all this. So it is kind of an all-rounder player. So these are the reasons why Lang chain has become so popular and you should definitely learn Lang chain. Now I want to discuss one more thing with you that why I decided to teach Lang chain in this whole user side curriculum."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 379.0,
+            "end": 409.0,
+            "text": "So these are the reasons why Lang chain has become so popular and you should definitely learn Lang chain. Now I want to discuss one more thing with you that why I decided to teach Lang chain in this whole user side curriculum. So if you look at this whole curriculum, you have to read a lot of things here. But Lang chain is a good starting point because if you read Lang chain first, then you can also take the flavor of other things."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 395.0,
+            "end": 426.0,
+            "text": "So if you look at this whole curriculum, you have to read a lot of things here. But Lang chain is a good starting point because if you read Lang chain first, then you can also take the flavor of other things. This means that you can do other things in Lang chain. For example, you can work with open source and closed source LLM with the help of Lang chain. You work with LLM API. You can integrate with Hugging Face in Lang chain."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 414.0,
+            "end": 446.0,
+            "text": "For example, you can work with open source and closed source LLM with the help of Lang chain. You work with LLM API. You can integrate with Hugging Face in Lang chain. You can also integrate with OlaMa in Lang chain. Plus you will get a little flavor of prompt engineering when you read Lang chain. You can develop rag applications and you can also make AI agents. In fact, I will show you a little bit that how you can take a little flavor of LLM Ops with the help of Lang chain."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 434.0,
+            "end": 465.0,
+            "text": "You can develop rag applications and you can also make AI agents. In fact, I will show you a little bit that how you can take a little flavor of LLM Ops with the help of Lang chain. So this was the reason because of which I started teaching Lang chain. I understood it right because you are getting a holistic view of this whole user side landscape. You will come to work in everything little by little."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 452.0,
+            "end": 484.0,
+            "text": "I understood it right because you are getting a holistic view of this whole user side landscape. You will come to work in everything little by little. Once we complete Lang chain, we will revisit these topics again. For example, after Lang chain is completed, my plan is to make a complete playlist on prompt engineering. Then my plan is to make a complete playlist on rags and advanced rag techniques."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 470.0,
+            "end": 501.0,
+            "text": "For example, after Lang chain is completed, my plan is to make a complete playlist on prompt engineering. Then my plan is to make a complete playlist on rags and advanced rag techniques. So this is my plan. First take a holistic view of the whole thing. And then we will cover everything in detail in separate playlist. That is why Lang chain is my first choice. Now I will tell you a little bit about the curriculum of this playlist."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 488.0,
+            "end": 522.0,
+            "text": "And then we will cover everything in detail in separate playlist. That is why Lang chain is my first choice. Now I will tell you a little bit about the curriculum of this playlist. What exactly are we going to cover in Lang chain. So I have mentally divided this entire Lang chain playlist into three parts. In the first part, we will cover the fundamentals of Lang chain. And this is the most important part because if you don't learn this, then obviously it will not make sense."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 510.0,
+            "end": 540.0,
+            "text": "In the first part, we will cover the fundamentals of Lang chain. And this is the most important part because if you don't learn this, then obviously it will not make sense. In the second part, we will learn to make rag applications and in the third part, we will learn to make AI agents. So if I show you a little more detailed curriculum, then I have written the curriculum here. That exactly what topics videos are going to come on."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 530.0,
+            "end": 565.0,
+            "text": "So if I show you a little more detailed curriculum, then I have written the curriculum here. That exactly what topics videos are going to come on. So part one is fundamentals where we will cover in the first video what is Lang chain. And I will give you a very detailed overview of Lang chain, its technical aspects and most importantly, I will tell you why Lang chain is needed. Second video will come on Lang chain components. This will be an overview video where we will discuss about all the components in Lang chain in detail."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 552.0,
+            "end": 584.0,
+            "text": "I will tell you why Lang chain is needed. Second video will come on Lang chain components. This will be an overview video where we will discuss about all the components in Lang chain in detail. After that, we will start practical things on the third model. Third model will be around models, how to integrate all the models in Lang chain, how to get response from them. We will cover all that here. Fourth video will be on prompts. We will discuss different types of techniques here."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 569.0,
+            "end": 600.0,
+            "text": "Third model will be around models, how to integrate all the models in Lang chain, how to get response from them. We will cover all that here. Fourth video will be on prompts. We will discuss different types of techniques here. Fourth would be around parsing output. You can also parse the output from LLM in different ways. We will cover that in this video. After that, there is a technical aspect of Lang chain which we call runnables and LCEL."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 590.0,
+            "end": 623.0,
+            "text": "We will cover that in this video. After that, there is a technical aspect of Lang chain which we call runnables and LCEL. After that, a very important video will come on chains which I told you earlier. We will cover this in video number 7. After that, we will cover how to integrate memory concepts in chatbots etc. So, all these 7-8 videos will come in fundamentals. After that, we will move ahead to the rag part where we will discuss about document loaders,"
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 608.0,
+            "end": 641.0,
+            "text": "After that, we will cover how to integrate memory concepts in chatbots etc. So, all these 7-8 videos will come in fundamentals. After that, we will move ahead to the rag part where we will discuss about document loaders, text splitters, embeddings, vector databases, retrievers and when we will read all this, we will build a rag application with scratch. Lastly, we will read about agents where we will learn about tools and toolkits,"
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 631.0,
+            "end": 661.0,
+            "text": "we will build a rag application with scratch. Lastly, we will read about agents where we will learn about tools and toolkits, we will see the concept of tool calling and after reading all this, we will finally make an AI agent. At this point, I am planning to have around 17 videos in this playlist. But, over time, it may happen that 1-2 more videos are added. So, roughly, this playlist of 17-18 videos will be there."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 651.0,
+            "end": 685.0,
+            "text": "But, over time, it may happen that 1-2 more videos are added. So, roughly, this playlist of 17-18 videos will be there. So, this is the curriculum which we will follow. Now, I will tell you what will be my focus in the process of making this playlist. So, my first focus is to give you the most updated information around the LANG chain. So, if you go to the website of the LANG chain, then there are 3 versions of it."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 671.0,
+            "end": 701.0,
+            "text": "So, my first focus is to give you the most updated information around the LANG chain. So, if you go to the website of the LANG chain, then there are 3 versions of it. So, now, we have got the points 1, 2 and 3. The interesting thing is that these 3 versions are quite different from each other. So, if you are learning about points 1, then it may happen that you don't understand the points 3."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 689.0,
+            "end": 722.0,
+            "text": "The interesting thing is that these 3 versions are quite different from each other. So, if you are learning about points 1, then it may happen that you don't understand the points 3. So, my goal will be to deliver the entire playlist on the latest version of points 3. So, you will have the most updated information. I will guide you a little bit about points 2 and 1 along the way. But, the entire playlist will be based on the LANG chain point 3 version."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 712.0,
+            "end": 742.0,
+            "text": "I will guide you a little bit about points 2 and 1 along the way. But, the entire playlist will be based on the LANG chain point 3 version. This is my first focus area. Second focus area is that I have to make sure that you get to see the clarity in this playlist. So, I have seen a lot of content around the LANG chain. I have seen it on YouTube and Udemy. But, I feel that it is not beginner friendly."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 732.0,
+            "end": 763.0,
+            "text": "So, I have seen a lot of content around the LANG chain. I have seen it on YouTube and Udemy. But, I feel that it is not beginner friendly. Generally, in videos, the fundamentals of the LANG chain are not taught. They are shown to build the application. So, even if you copy the code along with it, then your application will also work. But, you don't have the conceptual clarity in your mind that how this whole thing is working. What is happening behind the scenes in the LANG chain. So, I will try to give you that in this playlist."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 749.0,
+            "end": 780.0,
+            "text": "So, even if you copy the code along with it, then your application will also work. But, you don't have the conceptual clarity in your mind that how this whole thing is working. What is happening behind the scenes in the LANG chain. So, I will try to give you that in this playlist. So, the videos will be a little detailed. There are 17 videos in total. But, there is a good chance that every video will be 30-40 minutes long. Third, my goal will be to impart you a conceptual understanding. LANG chain is a practical thing. It is a framework through which you build applications."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 769.0,
+            "end": 803.0,
+            "text": "Third, my goal will be to impart you a conceptual understanding. LANG chain is a practical thing. It is a framework through which you build applications. But, there are some concepts in this as well. Like, the concept of runnables. Or, the concept of chains. So, I would like to tell you about these concepts. So that, if you get to see point 4 instead of point 3 tomorrow, then you don't have to worry about learning. And lastly, we will cover around 80% of the LANG chain. I am not covering the whole 100% because the whole 100% is not useful."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 793.0,
+            "end": 826.0,
+            "text": "And lastly, we will cover around 80% of the LANG chain. I am not covering the whole 100% because the whole 100% is not useful. So, we will cover the most useful part of the LANG chain. In the future, if I feel that some other things have become important, then I will update this playlist. But, right now, my focus is to cover the most important 80% of LANG chain. So, this is going to be my focus in this whole playlist. Now, let's discuss the timeline of this playlist."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 813.0,
+            "end": 843.0,
+            "text": "But, right now, my focus is to cover the most important 80% of LANG chain. So, this is going to be my focus in this whole playlist. Now, let's discuss the timeline of this playlist. The first question is, when are we starting? So, the answer is very soon. In fact, within a day or two, I am going to upload the first video. And after that, I have planned to upload two videos per week. And there are a total of 17 videos."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 830.0,
+            "end": 862.0,
+            "text": "In fact, within a day or two, I am going to upload the first video. And after that, I have planned to upload two videos per week. And there are a total of 17 videos. It means, roughly, it will take us around 8 weeks to cover this whole playlist. So, roughly speaking, it will take us two months to cover this whole playlist. It won't be able to be faster because I am doing other things on the channel."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 849.0,
+            "end": 879.0,
+            "text": "So, roughly speaking, it will take us two months to cover this whole playlist. It won't be able to be faster because I am doing other things on the channel. We have to continue the PyTorch playlist and then we have to go to the builder side. So, that is why, right now, I feel that two videos per week is a good speed. You will also get some time to practice. So, yeah, I had to discuss these things in this video. I think I have told you everything that was in my mind."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 866.0,
+            "end": 900.0,
+            "text": "So, that is why, right now, I feel that two videos per week is a good speed. You will also get some time to practice. So, yeah, I had to discuss these things in this video. I think I have told you everything that was in my mind. And I am sure you are excited because I am very excited. As I said in the last video, my biggest motivation is curiosity. And I want to learn a lot of this technology myself. So, Langchain is a good starting point. Once you learn Langchain, you will be able to make a lot of Gen.AI applications."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 889.0,
+            "end": 918.0,
+            "text": "And I want to learn a lot of this technology myself. So, Langchain is a good starting point. Once you learn Langchain, you will be able to make a lot of Gen.AI applications. So, in that sense, Langchain is very empowering. So, I am super excited. I really hope you are also excited. If you liked this video and you are excited for this playlist, please like this video. Share this with your friends who want to learn Langchain. And we will meet in the next video. Bye."
+        },
+        {
+            "video_name": "Video_02_Generative AI using LangChain \uff5c GENAI for Beginners \uff5c CampusX.mp3",
+            "start": 906.0,
+            "end": 918.0,
+            "text": "If you liked this video and you are excited for this playlist, please like this video. Share this with your friends who want to learn Langchain. And we will meet in the next video. Bye."
+        }
+    ]
+}

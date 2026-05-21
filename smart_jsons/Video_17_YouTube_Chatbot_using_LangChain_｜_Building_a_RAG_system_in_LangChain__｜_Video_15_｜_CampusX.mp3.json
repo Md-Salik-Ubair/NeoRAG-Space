@@ -1,0 +1,851 @@
+{
+    "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+    "chunks": [
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 0.0,
+            "end": 33.0,
+            "text": "Hi guys, my name is Nitesh and you are welcome to my YouTube channel. In this video also we will continue our Lang chain playlist. In the last video we started reading rag and we focused on the theory around rag. I told you what is rag and why it is needed. I compared rag with fine tuning technique and today's video is continuation of the last video. We will make practically a rag based system using the Lang chain."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 19.0,
+            "end": 49.0,
+            "text": "I compared rag with fine tuning technique and today's video is continuation of the last video. We will make practically a rag based system using the Lang chain. The plan is that I will pick up a problem statement and create a rag based system around that problem statement. And we will do all this code in the Lang chain. Till now whatever you have read in the last 4-5 videos, document loaders, text splitters, vector stores,"
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 33.0,
+            "end": 64.0,
+            "text": "The plan is that I will pick up a problem statement and create a rag based system around that problem statement. And we will do all this code in the Lang chain. Till now whatever you have read in the last 4-5 videos, document loaders, text splitters, vector stores, we will use all these in today's video and we will make a rag based system using them. So in the whole it's going to be a very interesting video. Let's start. So guys, first of all let's talk about problem statement. What are we going to make in this video?"
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 49.0,
+            "end": 81.0,
+            "text": "we will use all these in today's video and we will make a rag based system using them. So in the whole it's going to be a very interesting video. Let's start. So guys, first of all let's talk about problem statement. What are we going to make in this video? So we will work on a simple yet very important problem statement. And the name of our problem statement is YouTube chat. I don't know, maybe YouTube chat could be a good name. So basically what we are going to do is that we are going to make a rag based system"
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 69.0,
+            "end": 100.0,
+            "text": "And the name of our problem statement is YouTube chat. I don't know, maybe YouTube chat could be a good name. So basically what we are going to do is that we are going to make a rag based system with the help of which you can chat with any YouTube video in real time. So we all watch videos on YouTube. Some videos are very long, especially if you are watching a podcast, then they are 2-3 hours long. The problem is that if you want to understand the whole content of that video,"
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 89.0,
+            "end": 120.0,
+            "text": "Some videos are very long, especially if you are watching a podcast, then they are 2-3 hours long. The problem is that if you want to understand the whole content of that video, then you will have to watch the whole video. Our solution solves this problem for you. For example, suppose I am watching a podcast which is 3 hours long. Suppose I get a question about that podcast, that is, is AI being discussed in this podcast? So I will immediately put a question in our system."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 109.0,
+            "end": 142.0,
+            "text": "Suppose I get a question about that podcast, that is, is AI being discussed in this podcast? So I will immediately put a question in our system. And my rag based system will immediately reply to me that yes, AI has been discussed in this particular video and these are the key pointers. I can ask this quickly that can you summarize this whole video, in 5 bullet points, then my rag based system will quickly make a summary of the whole video"
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 131.0,
+            "end": 162.0,
+            "text": "I can ask this quickly that can you summarize this whole video, in 5 bullet points, then my rag based system will quickly make a summary of the whole video and give it to me. If you are watching a lecture tomorrow on data science and you suddenly have some doubt in some part, then you will immediately put that doubt in this system and this system will solve that doubt and give it to you. So basically this is a chat system with the help of which you can ask about any YouTube video"
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 150.0,
+            "end": 181.0,
+            "text": "then you will immediately put that doubt in this system and this system will solve that doubt and give it to you. So basically this is a chat system with the help of which you can ask about any YouTube video whatever you want to ask. So I am pretty sure you all can relate to what problem this system is solving. And that is why I thought this could be a very good problem statement for us. This system can be made in many ways. I mean, the final product can look like this."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 170.0,
+            "end": 200.0,
+            "text": "And that is why I thought this could be a very good problem statement for us. This system can be made in many ways. I mean, the final product can look like this. One option is that we make a Chrome plugin where the user will install this Chrome plugin. And when the video is running, it will click here and a chat interface will open and the user can chat here while watching the video."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 189.0,
+            "end": 220.0,
+            "text": "And when the video is running, it will click here and a chat interface will open and the user can chat here while watching the video. So this is the best solution if you can make it. But for this you will need the knowledge of HTML, CSS and JavaScript. The second option is if you do not know HTML, CSS and JavaScript, then what you can do is you can make a streamlit website where you will paste the link of the YouTube video"
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 208.0,
+            "end": 248.0,
+            "text": "The second option is if you do not know HTML, CSS and JavaScript, then what you can do is you can make a streamlit website where you will paste the link of the YouTube video and as soon as you click on submit, a chat window will open in a new window and you can chat about that video. So for this you should not need HTML, CSS and JavaScript, but you should be able to work with a tool like Streamlit. But since we are going to focus on rag, I will not focus on UI, but on functionality."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 237.0,
+            "end": 270.0,
+            "text": "But since we are going to focus on rag, I will not focus on UI, but on functionality. And that is why whatever we will make, we will make it in a Google Colab notebook. But I would recommend that when you run this project in Google Colab, then definitely you should try and build a UI around this project. This will make your project look better and more usable."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 259.0,
+            "end": 295.0,
+            "text": "then definitely you should try and build a UI around this project. This will make your project look better and more usable. So in nutshell, this is the problem statement that we are targeting and we are going to build a rag system that will solve this problem statement. Next I will discuss the exact plan of action that how we will solve this problem statement. Now the interesting thing is that to make this project, we will use exactly the same flow that we discussed in the last video."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 279.0,
+            "end": 314.0,
+            "text": "Next I will discuss the exact plan of action that how we will solve this problem statement. Now the interesting thing is that to make this project, we will use exactly the same flow that we discussed in the last video. If you remember, then I made this diagram in the last video and step by step I explained this diagram how a rag architecture works. Today's problem statement we will solve it on the basis of this flow, this architecture."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 304.0,
+            "end": 342.0,
+            "text": "how a rag architecture works. Today's problem statement we will solve it on the basis of this flow, this architecture. So I will tell you step by step how our entire flow of building this project will be. So first of all you will load the transcript of your YouTube video that you want to chat with. So transcript is a file where whatever is said in the YouTube video is recorded in a place sentence by sentence."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 322.0,
+            "end": 353.0,
+            "text": "So first of all you will load the transcript of your YouTube video that you want to chat with. So transcript is a file where whatever is said in the YouTube video is recorded in a place sentence by sentence. So our first goal is to fetch this transcript and bring it to our project. Now this work can be done in many ways."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 342.0,
+            "end": 372.0,
+            "text": "So our first goal is to fetch this transcript and bring it to our project. Now this work can be done in many ways. One way is that you can load a document loader in the lang chain which we call YT loader. Second option is that there are some APIs of YouTube that you can directly hit and load the transcript of any video."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 353.0,
+            "end": 385.0,
+            "text": "One way is that you can load a document loader in the lang chain which we call YT loader. Second option is that there are some APIs of YouTube that you can directly hit and load the transcript of any video. In our case we will use the APIs of YouTube. The reason for this is that I was trying to use the YouTube loader of the lang chain but it is a little buggy."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 372.0,
+            "end": 406.0,
+            "text": "In our case we will use the APIs of YouTube. The reason for this is that I was trying to use the YouTube loader of the lang chain but it is a little buggy. In some videos it was working properly, in some videos the code was getting broken. That is why I am going to use this YouTube API. So in step 1 we will give the video's ID and load the transcript of that video. Now the transcript of the video will be quite big depending on the video."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 393.0,
+            "end": 424.0,
+            "text": "So in step 1 we will give the video's ID and load the transcript of that video. Now the transcript of the video will be quite big depending on the video. Then what we will do is we will apply a text splitter and divide that transcript into multiple chunks. Once we have multiple chunks then we will generate the embeddings of all the chunks and store them in a vector store."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 413.0,
+            "end": 446.0,
+            "text": "Once we have multiple chunks then we will generate the embeddings of all the chunks and store them in a vector store. So in this step our whole indexing work will be completed. Which we discussed that step 1 is in any rag architecture. After that what we will do is we will create a retriever. For now we will use a simple similarity search based retriever."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 435.0,
+            "end": 467.0,
+            "text": "After that what we will do is we will create a retriever. For now we will use a simple similarity search based retriever. And we will send a query to that retriever. Now this retriever will do its work, embed this query and perform a semantic search in the vector store. And will bring you relevant documents. So this is step 2 retrieval."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 450.0,
+            "end": 482.0,
+            "text": "Now this retriever will do its work, embed this query and perform a semantic search in the vector store. And will bring you relevant documents. So this is step 2 retrieval. Once you have the relevant chunks and you have your query then you will merge these two and create a prompt. This will be step 3 which we call as argumentation."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 467.0,
+            "end": 501.0,
+            "text": "Once you have the relevant chunks and you have your query then you will merge these two and create a prompt. This will be step 3 which we call as argumentation. And once I have this prompt then I will send it to my LLM. And my LLM will understand the query, this context and will give me a response by flipping it. And this will be our fourth and final step that is generation."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 488.0,
+            "end": 520.0,
+            "text": "And my LLM will understand the query, this context and will give me a response by flipping it. And this will be our fourth and final step that is generation. So I will show you all this step by step. And when this whole thing will start working then I will convert this whole thing in a chain. So that automatically the output of one component will be made of another component."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 505.0,
+            "end": 538.0,
+            "text": "And when this whole thing will start working then I will convert this whole thing in a chain. So that automatically the output of one component will be made of another component. And this whole chain will be executed automatically with the call of one invoke function. So that is the goal for this video. So now that you have the big picture, now let's start the coding part. So guys I will give you a step by step walkthrough of this code."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 526.0,
+            "end": 558.0,
+            "text": "So that is the goal for this video. So now that you have the big picture, now let's start the coding part. So guys I will give you a step by step walkthrough of this code. First of all you will need your OpenAI key. We will use OpenAI models to build this project. So here I have my OpenAI key. Don't worry I have trimmed this key. So if you use this exact key then your project will not work."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 547.0,
+            "end": 581.0,
+            "text": "So here I have my OpenAI key. Don't worry I have trimmed this key. So if you use this exact key then your project will not work. So please make sure you paste your key here. After that you have to install some libraries. You have to run this code as it is. Here we have taken the necessary imports. And from here the main work starts. So as I told you we will use the same rag architecture that I showed you in the diagram."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 568.0,
+            "end": 598.0,
+            "text": "Here we have taken the necessary imports. And from here the main work starts. So as I told you we will use the same rag architecture that I showed you in the diagram. And first of all we will complete the indexing step. In indexing we will first target on step 1. That is we will use the YouTube API to load the transcript of any YouTube video."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 585.0,
+            "end": 619.0,
+            "text": "In indexing we will first target on step 1. That is we will use the YouTube API to load the transcript of any YouTube video. And we will bring it as a string in our code. So here this code is written. Which uses the YouTube Transcript API internally. As I told you there are many other ways to do this. But this method was the best for me because it was giving me the best results with every video."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 605.0,
+            "end": 638.0,
+            "text": "Which uses the YouTube Transcript API internally. As I told you there are many other ways to do this. But this method was the best for me because it was giving me the best results with every video. For example I have this video of 3blue1brown. And I have to load the transcript of this video. So what you have to do for this is first of all you have to pick the ID of this video from the URL. So this is the ID of your video. You have to simply paste that ID here."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 626.0,
+            "end": 656.0,
+            "text": "So what you have to do for this is first of all you have to pick the ID of this video from the URL. So this is the ID of your video. You have to simply paste that ID here. Please make sure you don't paste the whole URL. I have written it here. Only the ID not the full URL. After that we have simply written this code in the try accept block. We are calling the get transcript function from the YouTube Transcript API. And there you have to tell two things."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 645.0,
+            "end": 679.0,
+            "text": "After that we have simply written this code in the try accept block. We are calling the get transcript function from the YouTube Transcript API. And there you have to tell two things. First is the ID of your video. And then the language of the transcript you want. And then what happens is that the transcript you get. Let me run this code and show you. So the transcript you get first of all is in the basis of the timestamp. Which means that if you print this variable once."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 668.0,
+            "end": 698.0,
+            "text": "So the transcript you get first of all is in the basis of the timestamp. Which means that if you print this variable once. Then you will see that there is a list of dictionaries. So here you can see what text is on the screen. Which timestamp it is on. And how much time it will show on the screen. Basically see this. If you see here it is written."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 684.0,
+            "end": 715.0,
+            "text": "So here you can see what text is on the screen. Which timestamp it is on. And how much time it will show on the screen. Basically see this. If you see here it is written. The script has what the person asked the AI. But the AI's response has been torn off. This is one part of the whole transcript. It will appear on the screen at a certain time. And will remain on the screen for a certain duration. So the same thing is showing here. If I bring it up."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 703.0,
+            "end": 735.0,
+            "text": "This is one part of the whole transcript. It will appear on the screen at a certain time. And will remain on the screen for a certain duration. So the same thing is showing here. If I bring it up. See this. For now you can see this thing on the video. Now it will come after 7 seconds. And will remain on the screen for 5 seconds. Then when I play the video later. Then after a while the next line will load. Suppose you also have this magical power machine."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 724.0,
+            "end": 754.0,
+            "text": "And will remain on the screen for 5 seconds. Then when I play the video later. Then after a while the next line will load. Suppose you also have this magical power machine. Which is also there. See this. It will come at 13 seconds. And will remain on the screen for 3 seconds. So basically this API. It is loading the transcript. Kind of sentence by sentence. That after one sentence. Which next sentence will appear in the subtitle."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 744.0,
+            "end": 775.0,
+            "text": "It is loading the transcript. Kind of sentence by sentence. That after one sentence. Which next sentence will appear in the subtitle. Now what we have to do. That all these sentences are broken. We have to join it first. So I have done the same. I have run a loop on it. And basically. Called the join function. And we have concatenated that whole string. Which will give you a big string like this."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 764.0,
+            "end": 794.0,
+            "text": "And basically. Called the join function. And we have concatenated that whole string. Which will give you a big string like this. In which the complete transcript of your video. Is showing you all together. Ok. So this function is as it is. It is not a function. You have to run this chunk of code as it is. I will show you a couple of more videos. Like this is our video. Rag one."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 782.0,
+            "end": 813.0,
+            "text": "So this function is as it is. It is not a function. You have to run this chunk of code as it is. I will show you a couple of more videos. Like this is our video. Rag one. If you put it here. And run it. Then here an error will come. See what is the error. I will read it and show you. Here it is showing that. The video we have chosen. It does not have English transcript. And this is logical. Our videos are in Hindi. That is why English transcript is not available."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 803.0,
+            "end": 834.0,
+            "text": "The video we have chosen. It does not have English transcript. And this is logical. Our videos are in Hindi. That is why English transcript is not available. So what you can do. You can go here and write Hindi instead of English. And now you will run this code. So see guys. Hindi transcript is loaded. Which you will see in our video. If you will turn on the captions. Ok. I hope you are getting it roughly. What I will do is. In the process of making this project."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 823.0,
+            "end": 854.0,
+            "text": "Which you will see in our video. If you will turn on the captions. Ok. I hope you are getting it roughly. What I will do is. In the process of making this project. This podcast. This podcast. I will use the transcript of this podcast. This is a two hour podcast. So we will ask questions from this podcast. By the way if you have not seen this video. Which is on the screen. Please watch it. It is a very very good video. So what I will do is."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 844.0,
+            "end": 874.0,
+            "text": "By the way if you have not seen this video. Which is on the screen. Please watch it. It is a very very good video. So what I will do is. I will paste it here. Here I will write. Language as English. Ok. So now I have. Complete transcript of this two hour video. Ok. And it is stored in this variable. Right. So we have completed."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 864.0,
+            "end": 894.0,
+            "text": "Complete transcript of this two hour video. Ok. And it is stored in this variable. Right. So we have completed. This step one. We have completed this. We can bring the transcript. From YouTube video. In our code. Now we have. Step two. Since this is a two hour video. Transcript. So it will be very long."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 884.0,
+            "end": 914.0,
+            "text": "Now we have. Step two. Since this is a two hour video. Transcript. So it will be very long. We have to divide it in small chunks. And to do this. We will use a text splitter. And. The text splitter we are using. Is called recursive character text splitter. Ok. I have kept the chunk size 1000. I have kept chunk overlap 200. And I have run this code."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 904.0,
+            "end": 934.0,
+            "text": "Is called recursive character text splitter. Ok. I have kept the chunk size 1000. I have kept chunk overlap 200. And I have run this code. And. For now I have. 168 chunks. So here you can experiment with different chunks. For now. I was getting good results from this value. So I am keeping it as. 1200. If you want to see a particular chunk. Then you."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 924.0,
+            "end": 954.0,
+            "text": "I was getting good results from this value. So I am keeping it as. 1200. If you want to see a particular chunk. Then you. Put its. ID in chunks. And you will see that chunk. So at this point. We have done step number two. That we have. Our. Small chunks of the entire transcript. Ok. In the next step."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 944.0,
+            "end": 974.0,
+            "text": "That we have. Our. Small chunks of the entire transcript. Ok. In the next step. We have to convert all these chunks into vectors. And those vectors. Have to be stored in a vector store. So for that. I am going to use. Vector store. So first of all. We have chosen. OpenAI embedding model. We are using this model."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 964.0,
+            "end": 994.0,
+            "text": "Vector store. So first of all. We have chosen. OpenAI embedding model. We are using this model. And we are using. Vector store. And we have provided all our chunks. And our embedding model. And we have run it. So at this point. If you see. All the chunks against them. Each ID has been generated. And with this ID."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 984.0,
+            "end": 1014.0,
+            "text": "So at this point. If you see. All the chunks against them. Each ID has been generated. And with this ID. Those chunks are embedded. So in total there are 168 chunks. If you want to see a particular chunk. Then you can put its ID. And check. In this function. That how that chunk looks. So this is the last chunk. Ok. So we have completed this step."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1004.0,
+            "end": 1034.0,
+            "text": "In this function. That how that chunk looks. So this is the last chunk. Ok. So we have completed this step. So basically. The indexing part. We have completed it. We have loaded the document. We have text split. Now the main work starts from here. In the next step. We will form a retriever. And I will show you the retrieval process. So for retrieval."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1024.0,
+            "end": 1054.0,
+            "text": "Now the main work starts from here. In the next step. We will form a retriever. And I will show you the retrieval process. So for retrieval. First of all we have to make a retriever. And in that retriever. We have to send a query. What will this retriever do? That will embed this query. Will bring it in the form of a vector. And then will go to this vector store. And search. That which are the closest. Which vectors are in this vector store."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1044.0,
+            "end": 1074.0,
+            "text": "Will bring it in the form of a vector. And then will go to this vector store. And search. That which are the closest. Which vectors are in this vector store. And its corresponding. Chunks. Which are the documents. Will bring them and give you. Ok. So what I will do is. First of all I am forming a retriever. And we are making a very simple retriever. Our vector store. We are using that."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1064.0,
+            "end": 1094.0,
+            "text": "So what I will do is. First of all I am forming a retriever. And we are making a very simple retriever. Our vector store. We are using that. And making our retriever. Whose search type is. Similarity search. And will give you. Four similar vectors. And will search. So we have run this code. This is our retriever. Now. Retriever since it has a runnable."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1084.0,
+            "end": 1114.0,
+            "text": "And will search. So we have run this code. This is our retriever. Now. Retriever since it has a runnable. It has an invoke function. So we will call the invoke function. And here we will ask our query. So in our case. Our query is. What is deep mind. But you can ask any other question. So we searched. What is deep mind. So in total."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1104.0,
+            "end": 1134.0,
+            "text": "What is deep mind. But you can ask any other question. So we searched. What is deep mind. So in total. As I can see. Our retriever. Gave four documents. Because we have told him. That we have to give him four documents. And our retriever thinks. That these four documents. Are correct to answer this question. So basically our retrieval. That is working fine."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1124.0,
+            "end": 1154.0,
+            "text": "And our retriever thinks. That these four documents. Are correct to answer this question. So basically our retrieval. That is working fine. This query is going here. Retriever is searching here. And these documents are getting as output. Always remember. Retriever gets a query in input. And in output. We get list of documents. So this part is working fine. Now what we will do. We will go to the part of argumentation."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1144.0,
+            "end": 1174.0,
+            "text": "And in output. We get list of documents. So this part is working fine. Now what we will do. We will go to the part of argumentation. Where we have to make a prompt. Which. Merge these relevant documents. And this query. Kind of. Send that prompt. To LLM. Okay. Part of argumentation. So for that what we will do is. First of all we will form an LLM."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1164.0,
+            "end": 1194.0,
+            "text": "Send that prompt. To LLM. Okay. Part of argumentation. So for that what we will do is. First of all we will form an LLM. Although in this step. If we don't form an LLM. It would have been useful. But nevertheless. We have formed an LLM here. Here what we are doing. We are making a prompt template. Prompt template is very simple. It says you are a helpful assistant. Answer only from the provided."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1184.0,
+            "end": 1214.0,
+            "text": "Here what we are doing. We are making a prompt template. Prompt template is very simple. It says you are a helpful assistant. Answer only from the provided. Transcript context. If the context is insufficient. Just say you don't know. Here we are giving our context. Here we are giving our question. And there are two input variables. Context and question. Okay. We have run this code. Now here what we are doing. Again."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1204.0,
+            "end": 1234.0,
+            "text": "And there are two input variables. Context and question. Okay. We have run this code. Now here what we are doing. Again. We are doing the retrieval step again. So what we are doing is. We are asking a question. If yes then what was discussed. This is our question. And what we are doing. We are passing this question in retriever.invoke. And our retriever is giving us retrieved documents. By flipping it. If I show you."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1224.0,
+            "end": 1254.0,
+            "text": "And what we are doing. We are passing this question in retriever.invoke. And our retriever is giving us retrieved documents. By flipping it. If I show you. How these retrieved documents are. I will just create a new cell. You can see. These four documents are returned. So I can see the alien word. So now what I have to do. I have four documents. In all four documents. We have discussed about alien. This is what our retriever is telling us."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1244.0,
+            "end": 1274.0,
+            "text": "So now what I have to do. I have four documents. In all four documents. We have discussed about alien. This is what our retriever is telling us. So what we will do is. We can't send four different documents. In our prompt. So what we have to do. In all four documents. The page content. Basically this whole string. We have to concatenate it. So what we are doing is. We are writing a custom code."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1264.0,
+            "end": 1294.0,
+            "text": "The page content. Basically this whole string. We have to concatenate it. So what we are doing is. We are writing a custom code. Where we are going to every document. And we are joining it. Basically we are creating a big string. So if I show you. After this step. How that big string or context looks like. So this is the output. This is actually a trim. But this is a big text. So now I have both."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1284.0,
+            "end": 1314.0,
+            "text": "How that big string or context looks like. So this is the output. This is actually a trim. But this is a big text. So now I have both. I have both. I have both. I have both. I have both. So I had this. Now this is also here. I have converted it in the format of the string. Now what we can do is. We can do prompt.invoke. And in invoke."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1304.0,
+            "end": 1334.0,
+            "text": "Now this is also here. I have converted it in the format of the string. Now what we can do is. We can do prompt.invoke. And in invoke. We have to give two things. One is we have to give our context. So context is this big string. Which you can see on the screen. And question which was our upper question. And we will call it final prompt. So if I can show you. The final prompt. So look. You are a helpful assistant."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1324.0,
+            "end": 1354.0,
+            "text": "And we will call it final prompt. So if I can show you. The final prompt. So look. You are a helpful assistant. Answer only from the provided transcript. In context. The context starts from here. And in the last. Our question comes here. So this whole thing which you can see on the screen. This is going to be sent. To our LLM. So this one. This step is also done."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1344.0,
+            "end": 1374.0,
+            "text": "So this whole thing which you can see on the screen. This is going to be sent. To our LLM. So this one. This step is also done. This part is also done. The argumentation one. Now the last step is left. So. What you have to do in the last step. Simply invoke the LLM which you made. Ok. And. You have to send your final prompt. You will get an answer."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1364.0,
+            "end": 1394.0,
+            "text": "Simply invoke the LLM which you made. Ok. And. You have to send your final prompt. You will get an answer. If you will. Print that answer. Then you will get something like this. LLM is not defined. Maybe I didn't run the upper cell. I will run it. And. And. We will run this code again. So you can see."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1384.0,
+            "end": 1414.0,
+            "text": "I will run it. And. And. We will run this code again. So you can see. The topic of aliens was discussed. The speaker expresses their personal opinion. And after this. I am getting a lot of metadata. If I just want a string. I will fetch the content. And. Here is my answer. So now. This part is also working."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1404.0,
+            "end": 1434.0,
+            "text": "I will fetch the content. And. Here is my answer. So now. This part is also working. Generation is also happening. Ok. You can try out different questions. Like. You can ask. Is the topic of. Nuclear fusion. Discussed in this video. If yes then what was discussed. Since I have seen this video."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1424.0,
+            "end": 1454.0,
+            "text": "Is the topic of. Nuclear fusion. Discussed in this video. If yes then what was discussed. Since I have seen this video. So I know that we have talked about these topics. Again we are running the same code. And we have made the final prompt. Here is our final prompt. And here is our. Generation. Yes the topic of nuclear fusion is discussed in the video. And all these things are mentioned in this video."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1444.0,
+            "end": 1474.0,
+            "text": "And here is our. Generation. Yes the topic of nuclear fusion is discussed in the video. And all these things are mentioned in this video. Ok. How to control plasma etc. Through AI. So this was told to us point by point. So yeah. Our rag pipeline. It is working. Indexing step is done. Retrieval step is done. Augmentation step is done. So there is only one problem."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1464.0,
+            "end": 1494.0,
+            "text": "Our rag pipeline. It is working. Indexing step is done. Retrieval step is done. Augmentation step is done. So there is only one problem. The problem is that all these steps. Are working in different ways. Means we have to manually call every step. Right. If you notice. You will see. First we invoked the retriever separately. Then we. Invoked the prompt separately. And finally we. Invoked the LLM separately."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1484.0,
+            "end": 1514.0,
+            "text": "First we invoked the retriever separately. Then we. Invoked the prompt separately. And finally we. Invoked the LLM separately. Now this is not a good thing. What we can do is we can form a chain. Where. You will call the invoke function. And the entire pipeline will be triggered. Every step will be executed automatically. Every step. Output will work automatically for the next step. And you will see. Final result."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1504.0,
+            "end": 1534.0,
+            "text": "Every step will be executed automatically. Every step. Output will work automatically for the next step. And you will see. Final result. So what we are going to do next is. That we are going to build. A chain. Which we learned in this playlist. Now to make a chain. You have to understand the structure of the chain. So let's go back. To our. Rag architecture. Here. You can easily understand."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1524.0,
+            "end": 1554.0,
+            "text": "So let's go back. To our. Rag architecture. Here. You can easily understand. How your chain will look. The chain we will make. Will be made of two chains. One chain is very simple. If you focus on this chain. Then this is a very simple chain. Where. There is a prompt. Which you are sending to an LLM. And you are generating a response from that LLM."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1544.0,
+            "end": 1574.0,
+            "text": "Then this is a very simple chain. Where. There is a prompt. Which you are sending to an LLM. And you are generating a response from that LLM. So basically. It will be made of a prompt. An LLM. And a parser. This is the simple part. The problem is. This prompt. It needs two inputs. One is a question. And the other."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1564.0,
+            "end": 1594.0,
+            "text": "The problem is. This prompt. It needs two inputs. One is a question. And the other. Is a context. To answer the question. If you focus on this. You will see. That the prompt template we have made. Context and question. Ok. Now question. Is very easy. The user is giving me the question."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1584.0,
+            "end": 1614.0,
+            "text": "Context and question. Ok. Now question. Is very easy. The user is giving me the question. I can directly send it to the prompt. Context is a tricky part. How do you get the context. That you. First of all. You need a retriever. You send the question to the retriever. And the retriever. Processes the question. And the vector store."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1604.0,
+            "end": 1634.0,
+            "text": "You need a retriever. You send the question to the retriever. And the retriever. Processes the question. And the vector store. Takes the context. So in a way. This is the chain structure. So this is one part of the chain. Which is working in a simple linear flow. And then. This is the part. Where actually. There are two parallel chains. This is one chain."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1624.0,
+            "end": 1654.0,
+            "text": "And then. This is the part. Where actually. There are two parallel chains. This is one chain. And this is one chain. So what we have to do. We have to make both of them. So first of all what we will do is. We will make this chain. Which we will call parallel chain. Because here two chains. Working together. So. I will show you how to make a parallel chain."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1644.0,
+            "end": 1674.0,
+            "text": "Which we will call parallel chain. Because here two chains. Working together. So. I will show you how to make a parallel chain. So. First of all here. I have taken some necessary imports. We will use runnable parallel. To make a parallel chain. We will use runnable pass through. And we will use runnable lambda. Apart from this. I have done one more thing. That above."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1664.0,
+            "end": 1694.0,
+            "text": "We will use runnable pass through. And we will use runnable lambda. Apart from this. I have done one more thing. That above. This piece of code. Just one second. This piece of code. Where we. Returned documents. Merged together. And made a big string. We are putting it. In a function. So I made a function."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1684.0,
+            "end": 1714.0,
+            "text": "Merged together. And made a big string. We are putting it. In a function. So I made a function. Format docs. And we will give documents. And this function will. Remove all the strings. And concatenate. And return you. Now see here. Main work starts. We are making a chain. Which will be made."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1704.0,
+            "end": 1734.0,
+            "text": "And return you. Now see here. Main work starts. We are making a chain. Which will be made. With the help of runnable parallel. Now what you do in runnable parallel. You define a dictionary. And in that dictionary. You define keys. Context. Second key is question. Now the context key. In this we. Will put this chain."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1724.0,
+            "end": 1754.0,
+            "text": "Context. Second key is question. Now the context key. In this we. Will put this chain. So this chain is made with. With retriever. With this. And second. With format docs. Retriever is getting a question. And it is giving us. List of documents. But we can't send list of documents. We have to do some processing."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1744.0,
+            "end": 1774.0,
+            "text": "Retriever is getting a question. And it is giving us. List of documents. But we can't send list of documents. We have to do some processing. And who is doing the processing. This function. But this function can be made. Only when it is runnable. So that is why we put this function. In runnable lambda. So now this whole thing. What is it doing. As soon as it gets a question. It is going to retriever."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1764.0,
+            "end": 1794.0,
+            "text": "In runnable lambda. So now this whole thing. What is it doing. As soon as it gets a question. It is going to retriever. Retriever is searching. List of documents. And we are putting that list of documents. And it is giving us a big string. So basically. The output of this whole chain. Is a big context string. And second. Our chain is very simple. That is."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1784.0,
+            "end": 1814.0,
+            "text": "The output of this whole chain. Is a big context string. And second. Our chain is very simple. That is. We are getting a question in input. And we need a question in output. So that is why we are using runnable pass through. So I have run this chain. So what we will do is. We will run all these codes. Ok. We have made a chain here."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1804.0,
+            "end": 1834.0,
+            "text": "So what we will do is. We will run all these codes. Ok. We have made a chain here. Now let's test this chain. So we are calling parallelchain.invoke. And we are asking this question. Who is Demis. Ok. And we have run this. You will notice that. You will see a dictionary. And in this dictionary. You will see two keys. First key is context."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1824.0,
+            "end": 1854.0,
+            "text": "You will notice that. You will see a dictionary. And in this dictionary. You will see two keys. First key is context. Where this big string is. Which will work as context. Second key is question. Which we originally asked. So in short. We have formed this first part. This chain. We have formed this. We are getting two things from this chain. Our question and our context."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1844.0,
+            "end": 1874.0,
+            "text": "We have formed this first part. This chain. We have formed this. We are getting two things from this chain. Our question and our context. Now what we have to do is. Send these two things. In this second chain. So now what we will do is. We will form this chain. So before that we are making a string output parser. Because we have to see the output string format. So now what we will do is. We are making a main chain. Which will have three things."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1864.0,
+            "end": 1894.0,
+            "text": "So before that we are making a string output parser. Because we have to see the output string format. So now what we will do is. We are making a main chain. Which will have three things. Our prompt. Which we defined above. Our LLM which we created above. And our parser which we created now. And this chain. We will connect. With our parallelchain. So basically the two inputs from parallelchain. Context and question. Will be found in prompt."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1884.0,
+            "end": 1914.0,
+            "text": "We will connect. With our parallelchain. So basically the two inputs from parallelchain. Context and question. Will be found in prompt. And LLM will get one output from LLM. Which will be found in parser. So this is our main chain. Ok. And now what we can do is. We will directly call mainchain.invoke. And let's say we said. Can you summarize the video. In one go we are getting our output. So we have simplified."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1904.0,
+            "end": 1934.0,
+            "text": "We will directly call mainchain.invoke. And let's say we said. Can you summarize the video. In one go we are getting our output. So we have simplified. The whole flow. On one side we are performing indexing. And on the other side. With the help of this chain. We are performing generation plus. So this is a much cleaner code. Which you can easily. Manage. So I hope you. Got the whole code example."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1924.0,
+            "end": 1954.0,
+            "text": "So this is a much cleaner code. Which you can easily. Manage. So I hope you. Got the whole code example. The best thing will be. That you run this code. And see. If possible add an ID of another video. And chat with it. That would be the best way to learn. Now see the main thing. Which I had to teach you in this video. We have made a basic level. Rag system."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1944.0,
+            "end": 1974.0,
+            "text": "That would be the best way to learn. Now see the main thing. Which I had to teach you in this video. We have made a basic level. Rag system. To solve our problem statement. Now here I want to. Teach you one more thing. And this is truly optional. If you want you can skip. But I want to tell you. That this simple rag system. That we have made. How can we improve it. Rag systems implemented in the industry."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1964.0,
+            "end": 1994.0,
+            "text": "But I want to tell you. That this simple rag system. That we have made. How can we improve it. Rag systems implemented in the industry. Are very complex. And many techniques are used in it. So I just want to give you a little flavor. That how. We can improve a simple rag system. So much. That it can operate. At the industry grade level. So what I will do is. I will suggest you some improvements from my side."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 1984.0,
+            "end": 2014.0,
+            "text": "So much. That it can operate. At the industry grade level. So what I will do is. I will suggest you some improvements from my side. And I have divided all these improvements. In categories. So the first category. Is that. We can do some UI based. Enhancements in our simple rag system. At this point. Our rag system. Is running in a Google Colab notebook. Where the user has to manually."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2004.0,
+            "end": 2034.0,
+            "text": "Enhancements in our simple rag system. At this point. Our rag system. Is running in a Google Colab notebook. Where the user has to manually. Give the video ID. And run all the cells. Then he gets the answers to his questions. Obviously a finished product. A complete product. Will not work like this. So what can we do. We can improve our code. That the final product. Is shown in a website form."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2024.0,
+            "end": 2054.0,
+            "text": "Will not work like this. So what can we do. We can improve our code. That the final product. Is shown in a website form. Like. We can use streamlet. And the user. Will come to this website. And will add the video URL. And he can chat. Right. Second option is. That rather than building a website. Make a chrome plugin."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2044.0,
+            "end": 2074.0,
+            "text": "And he can chat. Right. Second option is. That rather than building a website. Make a chrome plugin. And this chrome plugin. Will install your user. As soon as he opens YouTube. Your plugin will get activated. Right. So you can do this enhancement. Second. Improvement comes from. Evaluation side. We have just learned."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2064.0,
+            "end": 2094.0,
+            "text": "So you can do this enhancement. Second. Improvement comes from. Evaluation side. We have just learned. How to make rag based systems. But we. Didn't talk about evaluating it. Means. How will we know. That our system. Is working properly or not. Because if you don't know. Then you can't do it. And that is why."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2084.0,
+            "end": 2114.0,
+            "text": "That our system. Is working properly or not. Because if you don't know. Then you can't do it. And that is why. Any industry grade. Rag system. Is evaluated very well. Now there are many evaluation strategies. Like there are certain libraries. Which do exactly the same. Evaluate rag based systems. One of them is a popular library. Ragas. Now it."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2104.0,
+            "end": 2134.0,
+            "text": "Which do exactly the same. Evaluate rag based systems. One of them is a popular library. Ragas. Now it. Evaluates your rag system. Like faithfulness. Your answer. Finally generated. Was it related to your context. Other than this. The answer. Was it related to the question. Context precision. The retrieve context."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2124.0,
+            "end": 2154.0,
+            "text": "Other than this. The answer. Was it related to the question. Context precision. The retrieve context. Which you extracted. With the help of retriever. Was it useful to answer. Context recall. The useful information. Which was in the vector store. Whether it was retrieved. So this library. Measures all these things. If you read this library."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2144.0,
+            "end": 2174.0,
+            "text": "Which was in the vector store. Whether it was retrieved. So this library. Measures all these things. If you read this library. You will get an idea. How to evaluate a rag based system. Apart from this. There is another library. Which you use for tracing. You can check. Every step of your rag system. By using these tracers. To check. That your pipeline."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2164.0,
+            "end": 2194.0,
+            "text": "You can check. Every step of your rag system. By using these tracers. To check. That your pipeline. The solution is one more thing. Which you should do. If you are building an industry grade rag system. Third is. Improvement indexing part. Where we bring the document. Split it. Embed it. Put it in the vector store. There are many improvement scopes. In this particular simple rag system."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2184.0,
+            "end": 2214.0,
+            "text": "Where we bring the document. Split it. Embed it. Put it in the vector store. There are many improvement scopes. In this particular simple rag system. Like when we. Are doing document ingestion. We are fetching the transcript. From YouTube. If you notice. The transcription we are bringing. Is kind of auto generated. Means there are many errors. Fixing those errors. Can be done."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2204.0,
+            "end": 2234.0,
+            "text": "The transcription we are bringing. Is kind of auto generated. Means there are many errors. Fixing those errors. Can be done. Then I showed you. When you uploaded the video of campus x. The transcript was in Hindi. If you have a Hindi transcript. Or any other language. Transcript. What you can do in this particular stage. First you can translate it into English. So all this preprocessing. You can do it in the document ingestion stage."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2224.0,
+            "end": 2254.0,
+            "text": "Transcript. What you can do in this particular stage. First you can translate it into English. So all this preprocessing. You can do it in the document ingestion stage. Similarly. We used recursive character text splitter. But in that. There is a problem. That in the middle of the paragraph. Your two chunks get divided. So here you can use semantic chunker. Which I told you in the video. In the text splitter. Similarly the vector store we used."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2244.0,
+            "end": 2274.0,
+            "text": "Your two chunks get divided. So here you can use semantic chunker. Which I told you in the video. In the text splitter. Similarly the vector store we used. Was 5s. Which is a basic level vector store. If you are making a rag system. For a proper company. Then you need a cloud based solution. So instead of using. 5s. You can use pine cone type solution. So you can already see. How many things you can improve."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2264.0,
+            "end": 2294.0,
+            "text": "So instead of using. 5s. You can use pine cone type solution. So you can already see. How many things you can improve. Other than this. I will tell you. After this comes retrieval. Where you take your query. And search the vectors related to it. So here you. Work in two or three stages. First stage is pre retrieval. Just before retrieval. Here you can."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2284.0,
+            "end": 2314.0,
+            "text": "So here you. Work in two or three stages. First stage is pre retrieval. Just before retrieval. Here you can. Re-write your user's query. Using LLM. Sometimes the user's query is vague. Or not that meaningful. So you can improve the query. By which your. Retrieval process. Will improve. You can do multi query generation. We read in the retrieval video."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2304.0,
+            "end": 2334.0,
+            "text": "By which your. Retrieval process. Will improve. You can do multi query generation. We read in the retrieval video. You can generate multiple queries. And if your original query is vague. Then multiple queries. Capture different perspectives. By which your retrieval process. Will improve. Similarly you can do domain aware routing. So basically. If you are making a very complex rag system. In which you have multiple retrievers."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2324.0,
+            "end": 2354.0,
+            "text": "Will improve. Similarly you can do domain aware routing. So basically. If you are making a very complex rag system. In which you have multiple retrievers. So this domain aware routing. Will do that depending on the query. It will trigger one retriever. And for another type of query. It will trigger another retriever. So you can do routing. For retriever. During retrieval. You can use search strategy. Like NMR."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2344.0,
+            "end": 2374.0,
+            "text": "So you can do routing. For retriever. During retrieval. You can use search strategy. Like NMR. Where you will get good results. And different results. You can do hybrid retrieval. We have done semantic search. Along with semantic search. You can do keyword search. And you can merge both results. And give to the user. You can also do reranking in your results. Okay."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2364.0,
+            "end": 2394.0,
+            "text": "You can do keyword search. And you can merge both results. And give to the user. You can also do reranking in your results. Okay. For now. We are arranging the similar results. On the basis of similarity score. And showing it to the user. Not showing it to the user. But in reranking. You create a new ranking. With the help of LLM. Of all retrieved documents. And with this."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2384.0,
+            "end": 2414.0,
+            "text": "But in reranking. You create a new ranking. With the help of LLM. Of all retrieved documents. And with this. Your retrieval performance improves. Post retrieval is also a lot of work. Contextual compression is also very important. Unnecessarily. The text in your documents. Is not useful. It is a little useful. Not very useful. You will remember the example of photosynthesis. So what you can do."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2404.0,
+            "end": 2434.0,
+            "text": "Is not useful. It is a little useful. Not very useful. You will remember the example of photosynthesis. So what you can do. By using contextual compression. You can keep only the meaningful part. And remove the rest of the content. So that when you create prompt. You will not waste your space. So in retrieval. Optimization is possible. And we will see this later. After that comes the argumentation. Where you."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2424.0,
+            "end": 2454.0,
+            "text": "So in retrieval. Optimization is possible. And we will see this later. After that comes the argumentation. Where you. Mix context plus question. And design a prompt. Here you can use prompt templating very well. The prompt you are writing. To explain LLM. That see this is the question. And this is the context. Answer this question from this context. You can explain this to your LLM very well. You can give examples."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2444.0,
+            "end": 2474.0,
+            "text": "That see this is the question. And this is the context. Answer this question from this context. You can explain this to your LLM very well. You can give examples. And this is the context. Answer grounding is a very important concept. You explicitly tell your LLM. That see. Whatever answer you give. Give it from context. Don't create answers by yourself. Don't create facts by yourself. Don't hallucinate. So this is called answer grounding."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2464.0,
+            "end": 2494.0,
+            "text": "Give it from context. Don't create answers by yourself. Don't create facts by yourself. Don't hallucinate. So this is called answer grounding. So a lot of work is done on this. And lastly. You also do something called. Context window optimization. You can only process certain level of tokens. Input. If you give more tokens. Then LLMs will not respond. But suppose. The context you sent."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2484.0,
+            "end": 2514.0,
+            "text": "Input. If you give more tokens. Then LLMs will not respond. But suppose. The context you sent. Is very big. Then your context window limit will cross. So in context window optimization. What you do. When you design the prompt. The context that is coming from the retriever. Trim it. In this way. The only thing that remains is that. So that you don't cross the context window limitation."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2504.0,
+            "end": 2534.0,
+            "text": "The context that is coming from the retriever. Trim it. In this way. The only thing that remains is that. So that you don't cross the context window limitation. So this is also a very important technique. So this came under argumentation. And then finally. The generation step. In the generation step. LLM gives you the answer. So here also a lot of things are done. Like answer with citation. You tell your LLM. That whenever you want to answer."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2524.0,
+            "end": 2554.0,
+            "text": "LLM gives you the answer. So here also a lot of things are done. Like answer with citation. You tell your LLM. That whenever you want to answer. Then also tell. That answer you gave. You gave it from the start of context. So we call it citation. So you can also get citation done. During the generation. Then comes guard railing. Guard railing is basically. That you. LLM doesn't give you anything."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2544.0,
+            "end": 2574.0,
+            "text": "During the generation. Then comes guard railing. Guard railing is basically. That you. LLM doesn't give you anything. Inverted. You stop it with this. So this is called guard railing. There are many practices around this. Again we will talk about this in a future video. But this is also very important. So the LLM. Say anything wrong to your user. That could be very very bad. So the concept of stopping it."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2564.0,
+            "end": 2594.0,
+            "text": "But this is also very important. So the LLM. Say anything wrong to your user. That could be very very bad. So the concept of stopping it. Is called guard railing. And lastly. The whole system you are designing. In that also. You can make different types of rag systems. Like you can make multi-modal rag system. Right now the rag system we have made. It only works on text. Means it takes text in input. And gives in text output."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2584.0,
+            "end": 2614.0,
+            "text": "Like you can make multi-modal rag system. Right now the rag system we have made. It only works on text. Means it takes text in input. And gives in text output. But what if I want to make. A rag system. Which can process images. Can process text. Can process videos. So this type of rag system. Is called multi-modal rag system. So in many companies. The rag systems you will see. Will be multi-modal rag systems."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2604.0,
+            "end": 2634.0,
+            "text": "So this type of rag system. Is called multi-modal rag system. So in many companies. The rag systems you will see. Will be multi-modal rag systems. Apart from this you can also build. Agentic rag. Is a rag system. Which not only operates in chatbot. It also operates in AI agent form. So when you ask it a question. It doesn't only answer your question. But in the process of answering the question. If it wants to do something else. Then it also does the work."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2624.0,
+            "end": 2654.0,
+            "text": "So when you ask it a question. It doesn't only answer your question. But in the process of answering the question. If it wants to do something else. Then it also does the work. For example you asked a question. And to answer that question. Not only it needs context. But at the same time. It needs to go on the internet. And browse it. So what will agentic rag do? It will go and. Connect with a web application. Browsing there."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2644.0,
+            "end": 2674.0,
+            "text": "And browse it. So what will agentic rag do? It will go and. Connect with a web application. Browsing there. And bring those results. And merge with context. And give you the answer. The way AI agents work. That flavor we are adding in rag system. Apart from that. You can make memory based rag system. With which you can make personalized rag. That I. As user."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2664.0,
+            "end": 2694.0,
+            "text": "Apart from that. You can make memory based rag system. With which you can make personalized rag. That I. As user. I asked a question today. But my rag system remembers. So it is answering me by capturing the context. That even a week back. We talked about this. So you can make memory based applications. So on the whole. I just want to tell you. That in the last video. And in today's video."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2684.0,
+            "end": 2714.0,
+            "text": "So you can make memory based applications. So on the whole. I just want to tell you. That in the last video. And in today's video. It was just the surface of rag. Rag is a big and powerful thing. And. When you make a proper. Industry grade rag system. Then you will face many problems. And to solve those problems. There are many techniques. That exist. So."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2704.0,
+            "end": 2734.0,
+            "text": "Then you will face many problems. And to solve those problems. There are many techniques. That exist. So. In the industry. A completely new field has been created. Which is called advanced rag. Many students were writing in the comments. That when will you teach these techniques. So I just want to clarify. That the techniques that I have told you. In 10-15 minutes. We will not cover them. In the lang chain playlist."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2724.0,
+            "end": 2754.0,
+            "text": "So I just want to clarify. That the techniques that I have told you. In 10-15 minutes. We will not cover them. In the lang chain playlist. My plan is. When the lang chain playlist is covered. After that. I will make a separate playlist. Called advanced rag. There we will do all these things. Which I have told you in this page. So super excited for that playlist as well. I hope you got a little. Glimpse."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2744.0,
+            "end": 2774.0,
+            "text": "There we will do all these things. Which I have told you in this page. So super excited for that playlist as well. I hope you got a little. Glimpse. That advanced rag system. Why exist. And what techniques are there. Rest I hope. I hope through this video. I was able to explain to you. How a simple functional rag system is made. If you liked the video. Please like it. If you have not subscribed to this channel."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2764.0,
+            "end": 2776.0,
+            "text": "I was able to explain to you. How a simple functional rag system is made. If you liked the video. Please like it. If you have not subscribed to this channel. Please do subscribe. See you in the next video. Bye."
+        },
+        {
+            "video_name": "Video_17_YouTube Chatbot using LangChain \uff5c Building a RAG system in LangChain  \uff5c Video 15 \uff5c CampusX.mp3",
+            "start": 2766.0,
+            "end": 2776.0,
+            "text": "How a simple functional rag system is made. If you liked the video. Please like it. If you have not subscribed to this channel. Please do subscribe. See you in the next video. Bye."
+        }
+    ]
+}
