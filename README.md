@@ -19,16 +19,12 @@ An advanced, 100% offline, privacy-centric **Retrieval-Augmented Generation (RAG
 ### 1. Production Web Dashboard Interface
 The live operational client-side dark UI workstation managing user queries, metadata responses, and source citation metrics.
 
-<p align="center">
-  <img src="src/neorag_look.png" width="100%" alt="NeoRAG Space Desktop Interface Workstation">
-</p>
+![NeoRAG Space Desktop Interface Workstation](neorag_look.png)
 
 ### 2. Desktop System Shortcut Integration
 The system launcher deployment optimized with a custom application icon identity footprint.
 
-<p align="center">
-  <img src="src/icon_neorag.png" width="40%" alt="System Desktop Shortcut Launcher">
-</p>
+![System Desktop Shortcut Launcher](icon_neorag.png)
 
 ---
 
@@ -73,7 +69,5 @@ read_chunks.py — Data debugging module validating vectorized embedding trackin
 .gitignore — Tracking interceptor layer protecting repo against staging cloud dump.
 
 README.md — Visual portfolio index providing system architecture blueprints online.
-
-SYSTEMS ENGINEERING ARCHITECTURE MANUAL.pdf — Full comprehensive printable production documentation manual.
 
 templates/index.html — Dark-theme premium UI workspace panel implementing session buffers.
