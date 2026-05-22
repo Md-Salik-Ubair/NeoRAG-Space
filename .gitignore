@@ -7,3 +7,5 @@ audios/
 videos/
 .DS_Store
 _ARCHIVE/
+src/__pycache__/
+vault_manager/vector_index.bin

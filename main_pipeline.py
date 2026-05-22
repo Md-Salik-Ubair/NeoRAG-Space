@@ -1,7 +1,7 @@
 import os
 import sys
 
-# Making sure path adjustments align perfectly across local directories
+# Ensuring path adjustments align perfectly across local directories
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 
 from src.ingestor import DataIngestor
@@ -14,15 +14,15 @@ def run_rag_production_pipeline():
     print("🚀 --- ENTERPRISE LOCAL RAG COMPILATION CORE START --- 🚀")
     print("=" * 60)
     
-    # Paths configurations
+    # Paths configurations matching your exact directory layout
     PDF_DIRECTORY = "./Knowledge_Source"
     JSON_DIRECTORY = "./smart_jsons"
     VECTOR_DB_FILE = "./vault_manager/vector_index.bin"
     
-    # ----------------------------------------------------
+    # ------------------------------------------------------------------
     # PHASE 1: DATA INGESTION
-    # ----------------------------------------------------
-    print("\n📥 Running Ingestion Engine over storage targets...")
+    # ------------------------------------------------------------------
+    print("\n📥 [PHASE 1] Running Ingestion Engine over storage targets...")
     ingestor = DataIngestor(pdf_dir=PDF_DIRECTORY, json_dir=JSON_DIRECTORY)
     ingestor.ingest_pdfs()
     ingestor.ingest_transcripts()
@@ -34,25 +34,29 @@ def run_rag_production_pipeline():
         print("[CRITICAL ERROR] Core payload returned empty. Refusing compilation.")
         return
 
-    # ----------------------------------------------------
+    # ------------------------------------------------------------------
     # PHASE 2: SLIDING WINDOW CHARACTER CHUNKING
-    # ----------------------------------------------------
-    print("\n✂️ Slicing text blocks into high-density sliding windows...")
+    # ------------------------------------------------------------------
+    print("\n✂️ [PHASE 2] Slicing text blocks into high-density sliding windows...")
     chunker = TextChunker(chunk_size=500, chunk_overlap=100)
     final_chunks = chunker.split_documents(raw_payload)
     print(f"📊 Generated Contextual Segments: {len(final_chunks)}")
 
-    # ----------------------------------------------------
-    # PHASE 3: HIGHDIMENSIONAL EMBEDDING TRANSFORM
-    # ----------------------------------------------------
-    print("\n🧬 Commencing floating matrix text-to-vector transformations...")
+    if not final_chunks:
+        print("[CRITICAL ERROR] Chunking core returned empty chunks array.")
+        return
+
+    # ------------------------------------------------------------------
+    # PHASE 3: HIGH-DIMENSIONAL EMBEDDING TRANSFORM
+    # ------------------------------------------------------------------
+    print("\n🧬 [PHASE 3] Commencing floating matrix text-to-vector transformations...")
     embedder = TextEmbedder(model_name="all-MiniLM-L6-v2")
     embedded_payload = embedder.generate_embeddings(final_chunks)
 
-    # ----------------------------------------------------
+    # ------------------------------------------------------------------
     # PHASE 4: DISK STORAGE SERIALIZATION
-    # ----------------------------------------------------
-    print("\n💾 Committing tensor matrices into active binary index file...")
+    # ------------------------------------------------------------------
+    print("\n💾 [PHASE 4] Committing tensor matrices into active binary index file...")
     vector_db = LocalVectorStore(storage_file=VECTOR_DB_FILE)
     vector_db.store_embeddings(embedded_payload)
 
