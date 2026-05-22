@@ -4,6 +4,12 @@ An advanced, 100% offline, privacy-centric **Retrieval-Augmented Generation (RAG
 
 ---
 
+## 📄 SYSTEM DOCUMENTATION DIRECT DOWNLOAD
+
+📥 **Click here to view the complete framework manual:** [SYSTEMS ENGINEERING ARCHITECTURE MANUAL.pdf](SYSTEMS%20ENGINEERING%20ARCHITECTURE%20MANUAL.pdf)
+
+---
+
 ## ⚡ Core Technical Features
 
 * **Complete Spatial Privacy:** Entire computing cluster runs locally on system memory and hardware loops. Zero external API execution pipelines or data exposure risk.
@@ -11,12 +17,6 @@ An advanced, 100% offline, privacy-centric **Retrieval-Augmented Generation (RAG
 * **Strict Parameter Control:** Configured inference boundaries at low temperature execution (`0.2`) to effectively eliminate contextual hallucinations.
 * **Contextual Sliding Window:** Documents parsed utilizing structured character chunk splits (Chunk Size: `500` characters | Overlap: `100` characters) to preserve micro-semantic structures.
 * **Source Attribution Matrix:** Every programmatic answer streams live with verifiable file metadata tracking, match percentages, and source citation parameters.
-
----
-
-## 📄 SYSTEM DOCUMENTATION DIRECT DOWNLOAD
-
-> 📥 **Click here to view the complete framework manual:** [SYSTEMS ENGINEERING ARCHITECTURE MANUAL.pdf](SYSTEMS%20ENGINEERING%20ARCHITECTURE%20MANUAL.pdf)
 
 ---
 
@@ -59,22 +59,22 @@ The system launcher deployment optimized with a custom application icon identity
              │
              ▼ 
 [NeoRAG Space Frontend UI Panel Live Client Render]
-💻 Codebase Compilation Architecture
-The local structural alignment layout managing sub-modules and core operational dependencies:
 
-📁 Repository Directory Taxonomy
-app.py — Operational application orchestration engine & API route manager.
+💻 Codebase Compilation Architecture & Directory Taxonomy
+The local structural alignment layout managing sub-modules, core operational dependencies, and system repository directory tracking files:
 
-query_engine.py — Advanced analytical mathematical matrix computing core (NumPy Engine).
+app.py — Operational application orchestration engine and API route manager.
 
-main_pipeline.py — System ingestion pipeline handler executing document tokenization loops.
+query_engine.py — Advanced analytical mathematical matrix computing core running the optimized local NumPy Engine.
 
-read_chunks.py — Data debugging module validating vectorized embedding tracking indices.
+main_pipeline.py — System ingestion pipeline handler executing sliding character window document tokenization loops.
 
-.gitignore — Tracking interceptor layer protecting repo against staging cloud dump.
+read_chunks.py — Internal data debugging module validating vectorized high-dimensional embedding tracking indices.
 
-README.md — Visual portfolio index providing system architecture blueprints online.
+.gitignore — Security tracking interceptor layer protecting repository against staging local or binary data cloud dump.
 
-SYSTEMS ENGINEERING ARCHITECTURE MANUAL.pdf — Full comprehensive printable production documentation manual.
+README.md — Visual production portfolio index providing system architecture blueprints and runtime guidelines online.
 
-templates/index.html — Dark-theme premium UI workspace panel implementing session buffers.
+SYSTEMS ENGINEERING ARCHITECTURE MANUAL.pdf — Full comprehensive printable systems engineering and documentation manual.
+
+templates/index.html — Dark-theme premium UI workspace web panel dashboard implementing rolling context session buffers.
