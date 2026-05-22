@@ -14,6 +14,12 @@ An advanced, 100% offline, privacy-centric **Retrieval-Augmented Generation (RAG
 
 ---
 
+## 📄 SYSTEM DOCUMENTATION DIRECT DOWNLOAD
+
+> 📥 **Click here to view the complete framework manual:** [SYSTEMS ENGINEERING ARCHITECTURE MANUAL.pdf](SYSTEMS%20ENGINEERING%20ARCHITECTURE%20MANUAL.pdf)
+
+---
+
 ## 🖼️ System Interface & Execution Workstation
 
 ### 1. Production Web Dashboard Interface
@@ -24,7 +30,7 @@ The live operational client-side dark UI workstation managing user queries, meta
 ### 2. Desktop System Shortcut Integration
 The system launcher deployment optimized with a custom application icon identity footprint.
 
-![System Desktop Shortcut Launcher](icon_neorag.png)
+![System Desktop Shortcut Launcher](NeoRAG_Space_Logo.ico)
 
 ---
 
@@ -53,7 +59,6 @@ The system launcher deployment optimized with a custom application icon identity
              │
              ▼ 
 [NeoRAG Space Frontend UI Panel Live Client Render]
-
 💻 Codebase Compilation Architecture
 The local structural alignment layout managing sub-modules and core operational dependencies:
 
@@ -69,5 +74,7 @@ read_chunks.py — Data debugging module validating vectorized embedding trackin
 .gitignore — Tracking interceptor layer protecting repo against staging cloud dump.
 
 README.md — Visual portfolio index providing system architecture blueprints online.
+
+SYSTEMS ENGINEERING ARCHITECTURE MANUAL.pdf — Full comprehensive printable production documentation manual.
 
 templates/index.html — Dark-theme premium UI workspace panel implementing session buffers.
