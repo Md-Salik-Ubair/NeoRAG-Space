@@ -173,4 +173,4 @@ __pycache__/
 src/__pycache__/
 vault_manager/vector_index.bin
 
-# Engineered and Developed as a Solo Standalone System Platform by Md Salik Ubair — Computer Science & AIML Portfolio Module (2026)
+#### Engineered and Developed as a Solo Standalone System Platform by Md Salik Ubair — Computer Science & AIML Portfolio Module (2026)
