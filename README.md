@@ -14,6 +14,24 @@ An advanced, 100% offline, privacy-centric **Retrieval-Augmented Generation (RAG
 
 ---
 
+## 🖼️ System Interface & Execution Workstation
+
+### 1. Production Web Dashboard Interface
+The live operational client-side dark UI workstation managing user queries, metadata responses, and source citation metrics.
+
+<p align="center">
+  <img src="src/neorag_look.png" width="100%" alt="NeoRAG Space Desktop Interface Workstation">
+</p>
+
+### 2. Desktop System Shortcut Integration
+The system launcher deployment optimized with a custom application icon identity footprint.
+
+<p align="center">
+  <img src="src/icon_neorag.png" width="40%" alt="System Desktop Shortcut Launcher">
+</p>
+
+---
+
 ## 🛠️ Architecture Blueprint Pipeline
 
 ```text
@@ -40,17 +58,22 @@ An advanced, 100% offline, privacy-centric **Retrieval-Augmented Generation (RAG
              ▼ 
 [NeoRAG Space Frontend UI Panel Live Client Render]
 
+💻 Codebase Compilation Architecture
+The local structural alignment layout managing sub-modules and core operational dependencies:
+
 📁 Repository Directory Taxonomy
-app.py — Core operational application controller executing server bindings and endpoint routing loops.
+app.py — Operational application orchestration engine & API route manager.
 
-query_engine.py — Analytical vector computational block managing distance matrices and context packaging.
+query_engine.py — Advanced analytical mathematical matrix computing core (NumPy Engine).
 
-main_pipeline.py — System ingestion core parsing raw files, token streams, and array operations.
+main_pipeline.py — System ingestion pipeline handler executing document tokenization loops.
 
-templates/index.html — Premium responsive dashboard panel designed with explicit dark theme configurations.
+read_chunks.py — Data debugging module validating vectorized embedding tracking indices.
 
-Knowledge_Source/ — Secure directory hosting raw engineering documentation, textbooks, and assets.
+.gitignore — Tracking interceptor layer protecting repo against staging cloud dump.
 
-transcripts/ — Storage array containing contextual multi-turn structured dialogue transcription inputs.
+README.md — Visual portfolio index providing system architecture blueprints online.
 
-smart_jsons/ — Production metadata configurations tracking high-density array reference nodes.
+SYSTEMS ENGINEERING ARCHITECTURE MANUAL.pdf — Full comprehensive printable production documentation manual.
+
+templates/index.html — Dark-theme premium UI workspace panel implementing session buffers.
