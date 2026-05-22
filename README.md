@@ -87,8 +87,9 @@ Activate the interactive terminal shell interface for real-time question-answeri
 #### Bash :
 python query_engine.py
 
-# Repository Blueprint & Taxonomy Mapping
+## 🗂️ Repository Blueprint & Taxonomy Mapping
 
+```text
 RAG_Master_Project/
 ├── .venv/                      # Isolated sandboxed environment dependencies cluster
 ├── assets/                     # Graphic resources and user dashboard layout preview captures
@@ -110,6 +111,7 @@ RAG_Master_Project/
 ├── app.py                      # Multi-threaded Flask orchestration engine web router server
 ├── main_pipeline.py            # Master vector matrix builder compiler script execution entrypoint
 └── query_engine.py             # Standalone interactive terminal prompt shell interface utility
+```
 
 # 🚀 Technical Setup & Deployment Sequence
 ###### Follow these engineering sequence parameters to compile and run the local private knowledge instance seamlessly:
