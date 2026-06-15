@@ -134,7 +134,7 @@ Ensure the underlying background model server container boundaries are initializ
 ollama serve
 
 # Pull down the required base model for the target language assets locally
-## ollama run llama3
+ollama run llama3
 ### 3. Running the Matrix Compilation Pipeline
 ###### Repopulate the vault_manager/vector_index.bin structure with any textbook or reference content, then run the master compiler script:
 
@@ -146,6 +146,7 @@ python main_pipeline.py
 
 ##### Bash
 python app.py
+
 Access the live dashboard at: 👉 http://127.0.0.1:5000
 
 ## 📊 System Performance & Optimization Metrics
