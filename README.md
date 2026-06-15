@@ -8,6 +8,17 @@ By leveraging decentralized Python modules combined with memory-cached NumPy mat
 
 ## 🖥️ Live Production Dashboard Preview & Core Assets
 
+### 🔍 Live System Inference & Response Attribution
+The system provides real-time, explainable AI responses by linking the local LLM generation directly to the source knowledge base via verifiable metadata attribution.
+
+![NeoRAG Response Demo](./assets/neo_rag_response_demo.png)
+
+#### Explanation of the Inference Flow:
+* **Context-Aware Generation:** Upon receiving a query (e.g., *"who is umar bin khattab"*), the engine retrieves highly relevant text chunks from the vector vault.
+* **Source Attribution:** Each response features a **Citations Block**, detailing the exact file (`15-my-beloved-prophet.pdf`), the specific page number (`Page 105`), and the mathematical **Similarity Match Score** (`62.9%`).
+* **Trust & Transparency:** By showing the match percentage, users can verify the relevance and factual grounding of the AI's response against the private document corpus.
+* **Real-Time Vectorization:** The dashboard sidebar monitors the system's operational health, dynamically displaying the **46,238 active vector nodes** indexed in the current memory matrix.
+
 The architecture maps local knowledge spaces onto an ultra-premium, dark-themed responsive enterprise user interface displaying similarity match confidence metrics, dynamic reference attribution badges, and text streaming capabilities.
 
 | 📊 CORE CLIENT INTERFACE PORTAL | 🧠 SYSTEM BRANDING ASSET |

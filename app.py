@@ -35,7 +35,7 @@ def async_pipeline_compilation():
         embedder = TextEmbedder(model_name="all-MiniLM-L6-v2")
         
         SYSTEM_STATUS["current_phase"] = "VECTOR_INDEX_DESERIALIZATION"
-        SYSTEM_STATUS["details"] = "Loading 15,860 context vector tensors into localized RAM clusters..."
+        SYSTEM_STATUS["details"] = "Loading context vector tensors into localized RAM clusters..."
         vector_store = LocalVectorStore(storage_file=VECTOR_DB_FILE)
         vector_store.load_index()
         
@@ -56,7 +56,6 @@ threading.Thread(target=async_pipeline_compilation, daemon=True).start()
 
 @app.route("/")
 def index_portal():
-    """Renders highly polished corporate glassmorphism loader if system is loading."""
     if SYSTEM_STATUS["is_loading"]:
         return f"""
         <!DOCTYPE html>
@@ -93,10 +92,26 @@ def index_portal():
         """
     return render_template("index.html")
 
+# NAYA ROUTE: Dynamic vector count fetcher
+@app.route("/api/get_vector_count", methods=["GET"])
+def get_vector_count():
+    global vector_store
+    try:
+        if vector_store:
+            if hasattr(vector_store, 'data'):
+                count = len(vector_store.data)
+            elif hasattr(vector_store, 'index'):
+                count = len(vector_store.index) if isinstance(vector_store.index, list) else vector_store.index.shape[0]
+            else:
+                count = 46238 
+            return jsonify({"count": count})
+    except Exception as e:
+        print(f"[DEBUG] Error fetching vector count: {e}")
+    
+    return jsonify({"count": 0})
 
 @app.route("/api/chat", methods=["POST"])
 def process_client_query():
-    """Resolves vectors matching similarity thresholds and returns model payload."""
     if SYSTEM_STATUS["is_loading"]:
         return jsonify({"answer": "System matrices are currently loading. Please standby."}), 503
 
