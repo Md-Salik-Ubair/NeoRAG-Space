@@ -1,0 +1,11 @@
+{
+    "video_name": "video1.mp3",
+    "chunks": [
+        {
+            "video_name": "video1.mp3",
+            "start": 0.0,
+            "end": 60.0,
+            "text": "Initialization handshake logs capturing track identifier: video1.mp3. Core data systems are parsing this segment sequence cleanly within offline parameters environments."
+        }
+    ]
+}

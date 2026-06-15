@@ -66,13 +66,15 @@
             </div>
             <div class="system-status">
                 <div class="status-title">Knowledge Storage Base</div>
-                <div class="status-val" style="color: #38bdf8;"><i class="fa-solid fa-database"></i> 7,451 Active Vectors</div>
+                <div class="status-val" style="color: #38bdf8;" id="vector-count-display">
+                    <i class="fa-solid fa-database"></i> Loading...
+                </div>
             </div>
             <button class="clear-btn" onclick="clearSessionMemory()"><i class="fa-solid fa-trash-can"></i> Reset Session</button>
         </div>
 
         <div id="main-workspace">
-            <div id="chat-scroller" id="chat-window">
+            <div id="chat-scroller">
                 <div class="msg-row bot">
                     <div class="bubble">NeoRAG Space Engine is fully initialized and operational. You may query the high-dimensional localized knowledge space across your private textbooks, engineering notes, and processed audio/video transcripts.</div>
                 </div>
@@ -91,6 +93,17 @@
     </div>
 
     <script>
+        // Automatic vector count update on page load
+        window.onload = function() {
+            fetch('/api/get_vector_count')
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('vector-count-display').innerHTML = 
+                `<i class="fa-solid fa-database"></i> ${data.count.toLocaleString()} Active Vectors`;
+            })
+            .catch(err => console.error("Could not fetch vector count:", err));
+        };
+
         const chatScroller = document.getElementById('chat-scroller');
         const queryField = document.getElementById('query-field');
         const queryLoader = document.getElementById('query-loader');
@@ -105,13 +118,11 @@
             const queryText = queryField.value.trim();
             if (!queryText) return;
 
-            // Append User Question Element
             appendMessageText(queryText, 'user');
             queryField.value = '';
             queryLoader.style.display = 'flex';
             scrollToBottom();
 
-            // Fire Analytical Post Stream to Flask Backend
             fetch('/api/chat', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -139,7 +150,6 @@
             
             let htmlContent = `<div class="bubble">${text}`;
             
-            // Render High-Dimensional Embedding Reference Citations
             if (role === 'bot' && references && references.length > 0) {
                 htmlContent += `<div class="citations-block">`;
                 references.forEach(ref => {
