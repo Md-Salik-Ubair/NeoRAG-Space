@@ -114,26 +114,34 @@ body {
     font-size: 13px;
     color: #cbd5e1;
 }
-
 /* ========================= */
+/* PREMIUM GHOST CLEAR BUTTON */
+/* ========================= */
+
 #clear-btn {
     margin-top: auto;
-    border: none;
-    background: linear-gradient(90deg, #dc2626, #ef4444);
+    border: 1px solid rgba(239, 68, 68, 0.3); /* Subtle red border */
+    background: rgba(239, 68, 68, 0.05); /* Very transparent red background */
     padding: 14px;
     border-radius: 12px;
     cursor: pointer;
-    color: white;
+    color: #ef4444; /* Danger red text */
     font-size: 14px;
     font-weight: 600;
-    transition: .3s;
+    transition: all .3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 
 #clear-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(239, 68, 68, .4);
+    transform: translateY(-2px);
+    background: rgba(239, 68, 68, 0.15); /* Slightly darker on hover */
+    border-color: rgba(239, 68, 68, 0.8);
+    box-shadow: 0 5px 15px rgba(239, 68, 68, 0.15); /* Soft red glow */
+    color: #f8fafc; /* Text turns white */
 }
-
 /* ========================= */
 .main-area {
     flex: 1;

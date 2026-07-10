@@ -11,3 +11,6 @@ src/__pycache__/
 vault_manager/vector_index.bin
 # Secrets
 .env
+# Ignore heavy binary vector indexes
+*.bin
+vault_manager/vector_index.bin

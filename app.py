@@ -1,6 +1,8 @@
 import os
 import sys
 import threading
+import time
+import requests
 from flask import Flask, render_template, request, jsonify
 from dotenv import load_dotenv
 from groq import Groq
@@ -27,9 +29,34 @@ SYSTEM_STATUS = {
 }
 
 VECTOR_DB_FILE = "./vault_manager/vector_index.bin"
+GDRIVE_FILE_ID = "18Az-0GiyfNYkAOXCM4PTPJ5k13wlcoyZ"
 
 vector_store = None
 embedder = None
+
+
+def download_file_from_google_drive(id, destination):
+    """Bypasses Google Drive virus scan warning for large files to download cleanly."""
+    URL = "https://docs.google.com/uc?export=download"
+    session = requests.Session()
+    response = session.get(URL, params={'id': id}, stream=True)
+    
+    # Check for confirmation token
+    token = None
+    for key, value in response.cookies.items():
+        if key.startswith('download_warning'):
+            token = value
+            break
+            
+    if token:
+        params = {'id': id, 'confirm': token}
+        response = session.get(URL, params=params, stream=True)
+        
+    CHUNK_SIZE = 32768
+    with open(destination, "wb") as f:
+        for chunk in response.iter_content(CHUNK_SIZE):
+            if chunk:
+                f.write(chunk)
 
 
 def async_pipeline_compilation():
@@ -38,10 +65,20 @@ def async_pipeline_compilation():
     global SYSTEM_STATUS
 
     try:
+        # Step A: Ensure Directory Exists
+        os.makedirs(os.path.dirname(VECTOR_DB_FILE), exist_ok=True)
+
+        # Step B: Cloud Fetch Logic
+        if not os.path.exists(VECTOR_DB_FILE):
+            SYSTEM_STATUS["current_phase"] = "CLOUD_FETCH_INITIATED"
+            SYSTEM_STATUS["details"] = "Downloading 175MB Knowledge Vault from Cloud Storage. Please wait..."
+            print("[CLOUD FETCH] Starting download from Google Drive...")
+            download_file_from_google_drive(GDRIVE_FILE_ID, VECTOR_DB_FILE)
+            print("[CLOUD FETCH] Download complete.")
+
         SYSTEM_STATUS["current_phase"] = "API_GATEWAY_INITIALIZATION"
         SYSTEM_STATUS["details"] = "Connecting to Hugging Face Cloud Inference API..."
 
-        # Now initializes the lightweight cloud embedder (Zero RAM load)
         embedder = TextEmbedder(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
         SYSTEM_STATUS["current_phase"] = "VECTOR_DATABASE_LOADING"
@@ -71,7 +108,6 @@ threading.Thread(
 @app.route("/")
 def home():
     if SYSTEM_STATUS["is_loading"]:
-        # Upgraded premium loading screen for enterprise feel
         return f"""
         <!DOCTYPE html>
         <html>
@@ -115,31 +151,21 @@ def vector_count():
 @app.route("/api/chat", methods=["POST"])
 def process_client_query():
     if SYSTEM_STATUS["is_loading"]:
-        return jsonify({
-            "answer": "Knowledge Base is still loading. Please wait."
-        }), 503
+        return jsonify({"answer": "Knowledge Base is still loading. Please wait."}), 503
 
     body = request.json or {}
     user_query = body.get("question", "").strip()
 
     if not user_query:
-        return jsonify({
-            "answer": "Empty query."
-        }), 400
+        return jsonify({"answer": "Empty query."}), 400
 
     try:
-        # HUGE CHANGE HERE: Using the updated cloud embedder logic safely
         query_vector = embedder.encode(user_query)
         
         if not query_vector:
-            return jsonify({
-                "answer": "[SYSTEM ERROR] Failed to generate vector from Cloud API. Ensure HF_API_KEY is correct."
-            }), 500
+            return jsonify({"answer": "[SYSTEM ERROR] Failed to generate vector from Cloud API. Ensure HF_API_KEY is correct."}), 500
 
-        matched_contexts = vector_store.query_similarity(
-            query_vector,
-            top_k=3
-        )
+        matched_contexts = vector_store.query_similarity(query_vector, top_k=3)
         
         context_strings = []
         client_references_payload = []
@@ -189,9 +215,7 @@ PRIVATE KNOWLEDGE BASE
         })
 
     except Exception as e:
-        return jsonify({
-            "answer": f"[SERVER ERROR] {str(e)}"
-        }), 500
+        return jsonify({"answer": f"[SERVER ERROR] {str(e)}"}), 500
 
 
 @app.route("/api/clear", methods=["POST"])
