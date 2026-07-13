@@ -1,16 +1,58 @@
+# =========================
+# Python
+# =========================
 .venv/
 __pycache__/
-*.bin
-*.pkl
+*.pyc
+*.pyo
+*.pyd
+
+src/__pycache__/
+
+# =========================
+# Environment
+# =========================
+.env
+
+# =========================
+# Generated Data
+# =========================
 vault_manager/
+outputs/
+uploads/
 audios/
 videos/
-.DS_Store
-_ARCHIVE/
-src/__pycache__/
-vault_manager/vector_index.bin
-# Secrets
-.env
-# Ignore heavy binary vector indexes
+
+# =========================
+# Vector Databases
+# =========================
 *.bin
-vault_manager/vector_index.bin
+*.pkl
+*.faiss
+*.index
+
+# =========================
+# Models (too large)
+# =========================
+local_models/
+
+# =========================
+# Knowledge Base
+# =========================
+Knowledge_Source/
+
+# =========================
+# Generated Chunks
+# =========================
+smart_jsons/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Archives
+# =========================
+_ARCHIVE/

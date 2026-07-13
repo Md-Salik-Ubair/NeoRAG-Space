@@ -1,77 +1,76 @@
+"""
+=============================================================================
+NEORAG SPACE - LOCAL EMBEDDING ENGINE (OFFLINE CORE)
+=============================================================================
+Uses local SentenceTransformers to generate dense vector embeddings.
+Zero internet connection required. Air-gapped execution guaranteed.
+=============================================================================
+"""
+
 import os
-import time
-import requests
+from sentence_transformers import SentenceTransformer
 
 class TextEmbedder:
     def __init__(self, model_name: str = "sentence-transformers/all-MiniLM-L6-v2"):
         """
-        Production-Grade Cloud AI Framework Embedder Blueprint.
-        Uses Hugging Face Inference API to generate vectors, saving local RAM.
+        Production-Grade Local AI Embedder.
+        Loads the model directly from local system cache into hardware memory.
         """
         self.model_name = model_name
-        self.api_url = f"https://api-inference.huggingface.co/models/{model_name}"
+        print(f"⏳ Initializing Local Embedding Pipeline [{model_name}] into hardware memory...")
         
-        # Retrieve Hugging Face API key from environment variables
-        self.hf_token = os.getenv("HF_API_KEY")
-        if not self.hf_token:
-            print("[CRITICAL ERROR] HF_API_KEY not found in environment variables. Vectorization will fail.")
-            
-        self.headers = {"Authorization": f"Bearer {self.hf_token}"}
-        print(f"⏳ Initializing Cloud Embedding Pipeline via Hugging Face API [{model_name}]...")
-
-    def _query_huggingface(self, payload, max_retries=3):
-        """Internal method to handle API requests with robust retry logic."""
-        for attempt in range(max_retries):
-            try:
-                response = requests.post(self.api_url, headers=self.headers, json=payload)
-                if response.status_code == 200:
-                    return response.json()
-                elif response.status_code == 503:
-                    # Model is currently loading/waking up on HF servers
-                    estimated_time = response.json().get("estimated_time", 15)
-                    print(f"[WAIT] Cloud model is booting up. Retrying in {estimated_time} seconds...")
-                    time.sleep(estimated_time)
-                else:
-                    print(f"[ERROR] API Request failed with status {response.status_code}: {response.text}")
-                    return []
-            except Exception as e:
-                print(f"[EXCEPTION] API connection error: {str(e)}")
-                return []
-        return []
+        try:
+            # Load model locally (will use cached weights automatically)
+            self.model = SentenceTransformer(model_name)
+            print("[SUCCESS] Local Embedding Engine successfully loaded into RAM.")
+        except Exception as e:
+            print(f"[CRITICAL ERROR] Failed to load local SentenceTransformer model: {str(e)}")
+            raise e
 
     def encode(self, text: str) -> list:
         """
-        Generates a vector for a single query string.
+        Generates a 384-dimensional vector for a single query string locally.
         Used dynamically during live user inference in app.py.
         """
-        vectors = self._query_huggingface({"inputs": text})
-        if vectors and isinstance(vectors, list):
-            # API returns a list of floats for a single string
-            return vectors
-        return []
+        try:
+            if not text or not isinstance(text, str):
+                return []
+            
+            # Generate embedding locally on CPU/GPU
+            vector = self.model.encode(text, show_progress_bar=False)
+            return vector.tolist()
+        except Exception as e:
+            print(f"[EMBEDDING ERROR] Failed to generate local vector: {str(e)}")
+            return []
 
     def generate_embeddings(self, processed_chunks: list) -> list:
         """
         Takes the chunk payload list, extracts text strings,
-        generates vectors via Cloud API in bulk, and updates the payload nodes.
+        generates vectors locally in bulk, and updates the payload nodes.
         """
         if not processed_chunks:
             print("[WARNING] No chunks provided for embedding.")
             return []
 
-        # Extracting text strings for bulk cloud vectorization
+        # Extract text strings for bulk local vectorization
         texts_to_embed = [chunk["text"] for chunk in processed_chunks]
         
-        print(f"🧬 Sending {len(texts_to_embed)} chunks to Cloud API for vectorization...")
-        vectors = self._query_huggingface({"inputs": texts_to_embed})
-        
-        if not vectors or len(vectors) != len(texts_to_embed):
-            print("[ERROR] Cloud Vector generation failed or payload length mismatch.")
-            return processed_chunks
-
-        # Mapping the generated vector array back to its respective payload node
-        for idx, vector in enumerate(vectors):
-            processed_chunks[idx]["embedding"] = vector 
+        print(f"🧬 Sending {len(texts_to_embed)} chunks to Local CPU/GPU for vectorization...")
+        try:
+            # Batch encoding is highly optimized in SentenceTransformers
+            vectors = self.model.encode(texts_to_embed, show_progress_bar=True, batch_size=32)
             
-        print(f"[SUCCESS] Cloud Vectorization complete. Dimensionality: {len(vectors[0])} channels")
-        return processed_chunks
+            if len(vectors) != len(texts_to_embed):
+                print("[ERROR] Local Vector generation failed: payload length mismatch.")
+                return processed_chunks
+
+            # Map the generated vector array back to its respective payload node
+            for idx, vector in enumerate(vectors):
+                processed_chunks[idx]["embedding"] = vector.tolist()
+                
+            print(f"[SUCCESS] Local Vectorization complete. Dimensionality: {len(vectors[0])} channels")
+            return processed_chunks
+            
+        except Exception as e:
+            print(f"[CRITICAL ERROR] Bulk vectorization failed: {str(e)}")
+            return processed_chunks
