@@ -11,7 +11,9 @@ By leveraging decentralized Python modules combined with memory-cached NumPy mat
 ### 🔍 Live System Inference & Response Attribution
 The custom web client provides real-time, explainable structural analytics by linking local LLM generation directly to the source knowledge base via verifiable metadata attribution.
 
-![NeoRAG Look](./assets/NeoRAG_Look.png)
+<div align="center">
+  <img src="./assets/NeoRAG_Look.png" alt="NeoRAG Look" width="90%" />
+</div>
 
 #### Explanation of the Inference Flow:
 * **Context-Aware Generation:** Upon receiving a query, the semantic tracking core automatically scans the local vector vault to extract high-dimensional nodes aligned with user inputs.
@@ -19,18 +21,25 @@ The custom web client provides real-time, explainable structural analytics by li
 * **Trust & Transparency:** By exposing exact match percentages, users can independently verify the relevance and factual grounding of the AI's response against the private document corpus.
 * **Real-Time Telemetry:** The dashboard monitors operational health dynamically, displaying active matrix statistics (such as **46,238 active vector nodes**) locked in the current memory matrix.
 
+---
+
+### ⚡ Core Operational Pipelines
+
 | 🧠 REAL-TIME DOMAIN INFERENCE | 🔬 DATA SCIENCE CORE PIPELINE |
 | :---: | :---: |
-| ![NeoRAG Response Demo](./assets/neo_rag_response_demo.png) | ![Data Science Demo](./assets/demo_2.png) |
-| *Demonstrating factual query extraction and dynamic follow-up prediction chips.* | *Showcasing Markdown code rendering, SIMD optimization docs, and Pandas structural tracing.* |
-
-| 📊 PROJECT SHOWCASE (PPT VIEW) | 🚀 CORE BRANDING ASSET |
-| :---: | :---: |
-| ![NeoRAG Architecture](./assets/NeoRAG_Architecture.png) | ![NeoRAG Space Logo](./assets/NeoRAG_Space_Logo.ico) |
-| *Integrated interactive timeline detailing project origin, data engineering, and system flow.* | *Custom executable branding platform icon.* |
+| <img src="./assets/neo_rag_response_demo.png" alt="NeoRAG Response Demo" width="100%" /> | <img src="./assets/demo_2.png" alt="Data Science Demo" width="100%" /> |
+| > *Demonstrating factual query extraction and dynamic follow-up prediction chips.* | > *Showcasing Markdown code rendering, SIMD optimization docs, and Pandas structural tracing.* |
 
 ---
 
+### 🏗️ Architecture Showcase & Branding
+
+| 📊 PROJECT SHOWCASE (PPT VIEW) | 🚀 CORE BRANDING ASSET |
+| :---: | :---: |
+| <img src="./assets/NeoRAG_Architecture.png" alt="NeoRAG Architecture" width="100%" /> | <br><img src="./assets/NeoRAG_Space_Logo.ico" alt="NeoRAG Space Logo" width="180px" /><br><br> |
+| > *Integrated interactive timeline detailing project origin, data engineering, and system flow.* | > *Custom executable branding platform icon.* |
+
+---
 ## 🛠️ System Architecture Design & Data Pipelines
 
 The system executes data transaction handling over six distinct decoupled pipeline phases on dedicated asynchronous execution layers:
