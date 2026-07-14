@@ -77,7 +77,7 @@ The system executes data transaction handling over six distinct decoupled pipeli
 4. Persistent Vector Index Database (src/vector_store.py)Handles clean memory dumping through binary serialization, locking compiled tracking payloads safely inside a high‑speed .bin disk format.
 5. Numpy Mathematical Search Layer (src/vector_store.py)Employs optimized matrix mathematical operations natively to calculate vector‑space angles via the Cosine Similarity 
 # formula:
-### Similarity score = (Q . V) / ||Q||||V||
+### Similarity score = (Q . V) / ||Q|| ||V||
 6. Asynchronous Framework Portal (app.py)Built with a multithreaded architecture. On bootup, a background worker primes the multi‑dimensional index vector payload directly into the server’s RAM while simultaneously hosting a responsive progress monitor layout in the browser to ensure zero connection timeout anomalies.
 # 🗂️ Repository Blueprint & Taxonomy MappingPlaintextRAG_Master_Project/
 ```text 
