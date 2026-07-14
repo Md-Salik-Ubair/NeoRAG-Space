@@ -71,6 +71,7 @@ The system executes data transaction handling over six distinct decoupled pipeli
 ### Similarity score = (Q . V) / ||Q||||V||
 6. Asynchronous Framework Portal (app.py)Built with a multithreaded architecture. On bootup, a background worker primes the multi‑dimensional index vector payload directly into the server’s RAM while simultaneously hosting a responsive progress monitor layout in the browser to ensure zero connection timeout anomalies.
 # 🗂️ Repository Blueprint & Taxonomy MappingPlaintextRAG_Master_Project/
+```text 
 ├── .venv/                      # Isolated sandboxed environment dependencies cluster
 ├── assets/                     # Graphic resources and user dashboard layout preview captures
 │   ├── demo_2.png              # Data science workflow and markdown rendering demonstration
@@ -96,7 +97,8 @@ The system executes data transaction handling over six distinct decoupled pipeli
 ├── main_pipeline.py            # Master vector matrix builder compiler script execution entrypoint
 ├── query_engine.py             # Standalone interactive terminal prompt shell interface utility
 └── requirements.txt            # System hardware-efficient library dependency specifications
-# 🚀 Technical Setup & Deployment SequenceFollow these engineering sequence parameters to compile and run the local private knowledge instance seamlessly:
+```
+#### 🚀 Technical Setup & Deployment SequenceFollow these engineering sequence parameters to compile and run the local private knowledge instance seamlessly:
 1. Isolated Virtual Ecosystem ActivationInitialize the local tracking space and pull down the optimized operational frameworks:Bash# Initialize and activate your virtual execution environment track
 .venv\Scripts\activate
 
