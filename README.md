@@ -126,7 +126,8 @@ python main_pipeline.py
 Initialize the main production server orchestration framework or double-click the standalone NeoRAG_Space.bat desktop execution launcher:
 
 python app.py
-Access the live executive dashboard at: 👉 http://127.0.0.1:5000
+
+Access the live executive dashboard at: 👉 http://127.0.0.1:5000 but in your own Personal computer.
 ## 📊 System Performance & Optimization Metrics
 
 | **Component** | **Description** | **Optimization Strategy** |
