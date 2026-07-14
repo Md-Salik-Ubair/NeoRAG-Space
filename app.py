@@ -11,6 +11,12 @@ Vector Store : Dense Binary Vault (Cosine Similarity)
 
 import os
 import sys
+
+# 1. FORCE HUGGINGFACE TO 100% OFFLINE MODE (CRASH FIX)
+# Must be set before any local ML libraries are parsed
+os.environ["HF_HUB_OFFLINE"] = "1"
+os.environ["TRANSFORMERS_OFFLINE"] = "1"
+
 import threading
 import time
 import requests
@@ -23,7 +29,7 @@ sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 from src.vector_store import LocalVectorStore
 from src.embedder import TextEmbedder
 
-# Initialize Environment
+# Initialize Environment configuration
 load_dotenv()
 
 app = Flask(__name__)
