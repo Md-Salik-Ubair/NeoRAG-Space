@@ -152,7 +152,7 @@ Access the live executive dashboard at: 👉 http://127.0.0.1:5000 but in your o
 This system was solo-architected and developed from the ground up as an Enterprise Data Privacy & AIML Portfolio Module, focusing on localized mathematical computation, multi-format data engineering, and standalone software execution.
 
 - **Developer:** Md Salik Ubair
-- **Domain:** Computer Science & AIML Engineering (7th Semester)
+- **Domain:** Computer Science & AIML Engineering 
 - **Live Portfolio & Projects Showcase:** [portfolio-salik-live.vercel.app](https://portfolio-salik-live.vercel.app)
 
 ---
