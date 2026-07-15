@@ -1,4 +1,4 @@
-# 🧑‍💻NeoRAG Space — Enterprise Local Private Knowledge Core
+# 🌌NeoRAG Space — Enterprise Local Private Knowledge Core
 
 NeoRAG Space is a production-grade, 100% offline, local Retrieval-Augmented Generation (RAG) platform engineered to parse, split, vectorize, and search deep technical text repositories. Architected to eliminate data leaks to public clouds, the framework hosts high-dimensional vector spaces and multi-turn linguistic models entirely within a sandboxed, air-gapped local computational environment.
 
