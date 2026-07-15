@@ -1,4 +1,4 @@
-# 🌌 NeoRAG Space — Enterprise Local Private Knowledge Core
+# 🧑‍💻NeoRAG Space — Enterprise Local Private Knowledge Core
 
 NeoRAG Space is a production-grade, 100% offline, local Retrieval-Augmented Generation (RAG) platform engineered to parse, split, vectorize, and search deep technical text repositories. Architected to eliminate data leaks to public clouds, the framework hosts high-dimensional vector spaces and multi-turn linguistic models entirely within a sandboxed, air-gapped local computational environment.
 
@@ -76,7 +76,7 @@ The system executes data transaction handling over six distinct decoupled pipeli
 3. High‑Dimensional Transformation Engine (src/embedder.py)Loads a localized transformer framework (all‑MiniLM‑L6‑v2) directly within hardware cache spaces, executing spatial vector mappings that convert characters into a static vector field containing 384 floating‑point channels without external network calls.
 4. Persistent Vector Index Database (src/vector_store.py)Handles clean memory dumping through binary serialization, locking compiled tracking payloads safely inside a high‑speed .bin disk format.
 5. Numpy Mathematical Search Layer (src/vector_store.py)Employs optimized matrix mathematical operations natively to calculate vector‑space angles via the Cosine Similarity 
-# formula:
+### formula:
 ### Similarity score = (Q . V) / ||Q|| ||V||
 6. Asynchronous Framework Portal (app.py)Built with a multithreaded architecture. On bootup, a background worker primes the multi‑dimensional index vector payload directly into the server’s RAM while simultaneously hosting a responsive progress monitor layout in the browser to ensure zero connection timeout anomalies.
 # 🗂️ Repository Blueprint & Taxonomy MappingPlaintextRAG_Master_Project/
