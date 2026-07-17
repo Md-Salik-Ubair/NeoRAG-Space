@@ -27,7 +27,7 @@ The custom web client provides real-time, explainable structural analytics by li
 
 | 🧠 REAL-TIME DOMAIN INFERENCE | 🔬 DATA SCIENCE CORE PIPELINE |
 | :---: | :---: |
-| <img src="./assets/neo_rag_response_demo.png" alt="NeoRAG Response Demo" width="100%" /> | <img src="./assets/demo_2.png" alt="Data Science Demo" width="100%" /> |
+| <img src="./assets/neo_rag_response_demo.png" alt="NeoRAG Response Demo" width="100%" /> | <img src="./assets/demo_21.png" alt="Data Science Demo" width="100%" /> |
 | > *Demonstrating factual query extraction and dynamic follow-up prediction chips.* | > *Showcasing Markdown code rendering, SIMD optimization docs, and Pandas structural tracing.* |
 
 ---
@@ -83,7 +83,7 @@ The system executes data transaction handling over six distinct decoupled pipeli
 ```text 
 ├── .venv/                      # Isolated sandboxed environment dependencies cluster
 ├── assets/                     # Graphic resources and user dashboard layout preview captures
-│   ├── demo_2.png              # Data science workflow and markdown rendering demonstration
+│   ├── demo_21.png              # Data science workflow and markdown rendering demonstration
 │   ├── neo_rag_response_demo.png # Live operational inference attribution screenshot
 │   ├── NeoRAG_Architecture.png # Integrated interactive presentation (PPT) showcase capture
 │   ├── NeoRAG_Look.png         # Main executive workspace and vector matrix dashboard view
