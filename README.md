@@ -83,33 +83,6 @@ The custom web client provides real-time, explainable structural analytics by li
                                   ▼
  [ 💻 7. Client Dashboard ] ----------> Displays Response + Citation Metrics UI
 ```
-```text
-[Raw Private PDFs] + [Lecture JSON Transcripts] + [Plain Text Volumes]
-                                    │
-                                    ▼
-                     [ PHASE 1: DATA INGESTION UTILITY ]
-              (Extracts characters & traces unique file source strings)
-                                    │
-                                    ▼
-                     [ PHASE 2: SEMANTIC SLIDING CHUNKER ]
-               (Slices corpus into overlapping 500-char context slots)
-                                    │
-                                    ▼
-                    [ PHASE 3: TRANSFORMER TRANSFORMATION ]
-               (Maps text nodes to 384-dimensional dense tensors locally)
-                                    │
-                                    ▼
-                     [ PHASE 4: PERSISTENT STORAGE VAULT ]
-              (Serializes matrix data structures cleanly to local binary .bin)
-                                    │
-                                    ▼
-                     [ PHASE 5: NUMPY SIMILARITY SEARCH ]
-             (Computes vector dot products & Euclidean space Cosine norms)
-                                    │
-                                    ▼
-                     [ PHASE 6: LOCAL INFERENCE RUNTIME ]
-            (Asynchronous multi-threaded Flask server streaming via Ollama)
-```
 1. Ingestion Layer (src/ingestor.py)Multi‑format file streaming engine parsing binary data streams across page‑by‑page PDF inputs, nested JSON video transcript properties, and raw unformatted plain text logs.
 2. Context Window Chunker (src/chunker.py)Implements a sliding character window algorithm splitting strings into structured blocks with predefined context balance configurations (~15% overlap) to completely avoid linguistic data clipping at node edges.
 3. High‑Dimensional Transformation Engine (src/embedder.py)Loads a localized transformer framework (all‑MiniLM‑L6‑v2) directly within hardware cache spaces, executing spatial vector mappings that convert characters into a static vector field containing 384 floating‑point channels without external network calls.
