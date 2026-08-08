@@ -1,6 +1,17 @@
-# 🌌NeoRAG Space — Enterprise Local Private Knowledge Core
+<div align="center">
+  <h2># 🌌 NeoRAG Space — Enterprise Local Private Knowledge Core</h2>
+  <p><b>Architected by Md Salik Ubair</b></p>
+  <p><i>A production-grade, 100% offline, local Retrieval-Augmented Generation (RAG) platform engineered to parse, split, vectorize, and search deep technical text repositories. Architected to eliminate data leaks to public clouds, providing seamless, real-time interactive intelligence backed by an air-gapped local computational environment.</i></p>
 
-NeoRAG Space is a production-grade, 100% offline, local Retrieval-Augmented Generation (RAG) platform engineered to parse, split, vectorize, and search deep technical text repositories. Architected to eliminate data leaks to public clouds, the framework hosts high-dimensional vector spaces and multi-turn linguistic models entirely within a sandboxed, air-gapped local computational environment.
+  <img src="https://img.shields.io/badge/Architecture-Offline_RAG-success?style=for-the-badge" alt="Architecture" />
+  <img src="https://img.shields.io/badge/Frontend-HTML5_%7C_CSS3_%7C_Vanilla_JS-blue?style=for-the-badge" alt="Frontend" />
+  <img src="https://img.shields.io/badge/Backend-Python_%7C_Flask-4B8BBE?style=for-the-badge" alt="Backend" />
+  <img src="https://img.shields.io/badge/Database-NumPy_Binary_Vault-yellow?style=for-the-badge" alt="Database" />
+  <img src="https://img.shields.io/badge/LLM-Ollama_%7C_Llama3-8A2BE2?style=for-the-badge" alt="LLM" />
+  <img src="https://img.shields.io/badge/Embeddings-all--MiniLM--L6--v2-red?style=for-the-badge" alt="Embeddings" />
+</div>
+
+<br>
 
 By leveraging decentralized Python modules combined with memory-cached NumPy matrix computations, the pipeline extracts fact-based references from academic textbooks, software manuals, and processed multimedia transcripts to constrain a local LLM runtime engine via Ollama.
 
@@ -42,8 +53,35 @@ The custom web client provides real-time, explainable structural analytics by li
 ---
 ## 🛠️ System Architecture Design & Data Pipelines
 
-The system executes data transaction handling over six distinct decoupled pipeline phases on dedicated asynchronous execution layers:
+```bash
++---------------------------------------------------------------------------------+
+|                    🚀 NeoRAG Space: Architecture Flow 🚀                        |
++---------------------------------------------------------------------------------+
 
+ [ 📄 Private Documents ] (PDF, TXT, JSON Transcripts)
+          │
+          ▼
+ [ ⚙️ 1. Ingestion Layer ] -----------> Parses streams & tracks file metadata
+          │
+          ▼
+ [ ✂️ 2. Semantic Chunker ] ----------> Overlapping 500-char context windows
+          │
+          ▼
+ [ 🧠 3. Local Embedder ] ------------> all-MiniLM-L6-v2 (384-dim dense tensors)
+          │
+          ▼
+ [ 💾 4. Vector Vault (.bin) ] -------> Binary serialized NumPy storage matrix
+          │
+          +-----------------------+ (User Query hits Flask Backend)
+                                  │
+                                  ▼
+ [ 🧮 5. Similarity Search ] ---------> Dot-Product & Cosine Distance math scan
+                                  │
+                                  ▼
+ [ 🤖 6. Ollama Local LLM ] ----------> Llama3 synthesizes factual answers locally
+                                  │
+                                  ▼
+ [ 💻 7. Client Dashboard ] ----------> Displays Response + Citation Metrics UI
 ```text
 [Raw Private PDFs] + [Lecture JSON Transcripts] + [Plain Text Volumes]
                                     │
