@@ -244,9 +244,15 @@
 
         .message-bubble { max-width: 75%; padding: 18px 22px; border-radius: 14px; font-size: 14.5px; line-height: 1.7; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); }
         .user-bubble { background: var(--accent-cyan); color: #030712; font-weight: 600; border-bottom-right-radius: 4px; }
-        .assistant-bubble { background: var(--bg-card); border: 1px solid var(--border-highlight); color: var(--text-main); border-bottom-left-radius: 4px; max-width: 85%; }
+        .assistant-bubble { 
+            background: var(--bg-card); 
+            border: 1px solid var(--border-highlight); 
+            color: var(--text-main); 
+            border-bottom-left-radius: 4px; 
+            max-width: 85%; 
+        }
 
-        /* Markdown Styles inside Assistant Bubble */
+        /* Improved Markdown Styles inside Assistant Bubble */
         .assistant-bubble strong { color: #ffffff; font-weight: 600; }
         .assistant-bubble p { margin-bottom: 12px; }
         .assistant-bubble p:last-child { margin-bottom: 0; }
@@ -458,9 +464,6 @@
 
             let isProcessing = false;
 
-            // ==========================================
-            // UI NAVIGATION LOGIC (Fix for Blank Screen)
-            // ==========================================
             window.showArchitecture = function() {
                 welcomeScreen.style.display = "none";
                 messagesContainer.style.display = "none";
@@ -493,9 +496,6 @@
                 });
             };
 
-            // ==========================================
-            // DYNAMIC GREETING & TEMPORAL SYNC
-            // ==========================================
             function updateGreeting() {
                 const hour = new Date().getHours();
                 let greeting = "Good Evening";
@@ -509,7 +509,6 @@
             }
             updateGreeting();
 
-            // Fetch Vector Count
             fetch("/api/get_vector_count")
                 .then(res => res.json())
                 .then(data => {
@@ -543,17 +542,15 @@
                 }
             }
 
-            // Simple Markdown Parser for beautiful text formatting
+            // Enhanced Markdown Parser (Handles formatting issues cleanly)
             function parseMarkdown(text) {
+                if (!text) return "";
                 let html = text
-                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Bold
-                    .replace(/```([\s\S]*?)```/g, '<div class="code-block">$1</div>') // Multiline code
-                    .replace(/`([^`]+)`/g, '<code class="inline-code">$1</code>') // Inline code
-                    .replace(/^- (.*$)/gim, '<ul><li>$1</li></ul>') // Basic lists (Hyphen)
-                    .replace(/^\* (.*$)/gim, '<ul><li>$1</li></ul>'); // Basic lists (Asterisk)
-                
-                // Cleanup consecutive ul tags
-                html = html.replace(/<\/ul>\n<ul>/g, '\n');
+                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                    .replace(/```([\s\S]*?)```/g, '<div class="code-block">$1</div>')
+                    .replace(/`([^`]+)`/g, '<code class="inline-code">$1</code>')
+                    .replace(/\n/g, '<br>')
+                    .replace(/<br>\s*<br>/g, '<br><br>');
                 return html;
             }
 
@@ -565,11 +562,12 @@
                 const rowDiv = document.createElement("div");
                 rowDiv.className = `message-row ${role === "user" ? "user-row" : "assistant-row"}`;
                 
-                let cleanText = text;
+                // Absolute Type Safety
+                let cleanText = typeof text === "string" ? text : String(text);
                 let sugHTML = "";
                 
-                if (role === "assistant" && text.includes("NEXT_SUGGESTIONS:")) {
-                    const parts = text.split("NEXT_SUGGESTIONS:");
+                if (role === "assistant" && cleanText.includes("NEXT_SUGGESTIONS:")) {
+                    const parts = cleanText.split("NEXT_SUGGESTIONS:");
                     cleanText = parts[0].replace(/\*\*\s*$/, "").trim();
                     const sugText = parts[1] || "";
                     
@@ -587,15 +585,17 @@
                     cleanText = cleanText.replace(/\*\*\s*$/, "").trim();
                 }
 
-                // Apply Markdown Parsing to assistant's text
                 let formattedText = role === "assistant" ? parseMarkdown(cleanText) : cleanText;
 
                 let refHTML = "";
-                if (references && references.length > 0) {
-                    refHTML = `<div class="ref-box">` + references.map(r => `
+                if (Array.isArray(references) && references.length > 0) {
+                    refHTML = `<div class="ref-box">` + references.map(r => {
+                        let scoreNum = parseFloat(r.score) || 0;
+                        return `
                         <div class="ref-tag">
-                            <i class="fa-solid fa-file-lines"></i> ${r.source} (Page ${r.page}) • Match: ${(r.score * 100).toFixed(1)}%
-                        </div>`).join('') + `</div>`;
+                            <i class="fa-solid fa-file-lines"></i> ${r.source} (Page ${r.page}) • Match: ${(scoreNum * 100).toFixed(1)}%
+                        </div>`;
+                    }).join('') + `</div>`;
                 }
 
                 rowDiv.innerHTML = `
@@ -609,7 +609,8 @@
                 chatScroller.scrollTop = chatScroller.scrollHeight;
             }
 
-            window.sendQuery = function() {
+            // Super-Robust Async Fetch with Precise Error Logging
+            window.sendQuery = async function() {
                 if (isProcessing) return;
                 
                 const text = queryField.value.trim();
@@ -619,20 +620,30 @@
                 queryField.value = "";
                 setInputLock(true);
 
-                fetch("/api/chat", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ question: text })
-                })
-                .then(res => res.json())
-                .then(data => {
+                try {
+                    const response = await fetch("/api/chat", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ question: text })
+                    });
+                    
+                    // Verify that the server didn't crash and return an HTML 500 page
+                    const contentType = response.headers.get("content-type");
+                    if (!contentType || !contentType.includes("application/json")) {
+                        throw new Error(`The Python backend crashed or returned a non-JSON error. HTTP Status: ${response.status}`);
+                    }
+
+                    const data = await response.json();
+                    
                     setInputLock(false);
-                    appendMessage("assistant", data.answer || "No response generated by the local engine.", data.references);
-                })
-                .catch(err => {
+                    // Append data natively even if Python returned a 500 with a JSON err_msg
+                    appendMessage("assistant", data.answer || "No response generated by the local engine.", data.references || []);
+
+                } catch (err) {
                     setInputLock(false);
-                    appendMessage("assistant", "[CONNECTION ERROR] Could not reach the local backend. Please ensure app.py and Ollama are active.");
-                });
+                    console.error("Critical Fetch Error:", err);
+                    appendMessage("assistant", `**[SYSTEM EXCEPTION]** ${err.message} <br><br>👉 **Tip to Fix:** Check your backend terminal window where \`app.py\` is running. If the script stopped, restart it. Make sure \`ollama serve\` is also running in a separate terminal!`);
+                }
             }
 
             window.triggerPrompt = function(promptText) {
