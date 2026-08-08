@@ -82,6 +82,7 @@ The custom web client provides real-time, explainable structural analytics by li
                                   │
                                   ▼
  [ 💻 7. Client Dashboard ] ----------> Displays Response + Citation Metrics UI
+```
 ```text
 [Raw Private PDFs] + [Lecture JSON Transcripts] + [Plain Text Volumes]
                                     │
