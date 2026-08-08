@@ -1,5 +1,5 @@
 <div align="center">
-  <h2># 🌌 NeoRAG Space — Enterprise Local Private Knowledge Core</h2>
+  <h2> 🌌 NeoRAG Space — Enterprise Local Private Knowledge Core</h2>
   <p><b>Architected by Md Salik Ubair</b></p>
   <p><i>A production-grade, 100% offline, local Retrieval-Augmented Generation (RAG) platform engineered to parse, split, vectorize, and search deep technical text repositories. Architected to eliminate data leaks to public clouds, providing seamless, real-time interactive intelligence backed by an air-gapped local computational environment.</i></p>
 
