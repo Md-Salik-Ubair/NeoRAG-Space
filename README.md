@@ -94,15 +94,12 @@ The web client provides explainable, real-time analytics by tying local LLM gene
 
 </div>
 
-### 🏗️ Architecture Showcase & Branding
+### 🏗️ Architecture Showcase & Journey
 
 <div align="center">
-
-| 📊 Project Showcase (PPT View) | 🚀 Core Branding Asset |
-| :---: | :---: |
-| <img src="./assets/NeoRAG_Architecture.png" alt="NeoRAG Architecture" width="100%" /> | <br><img src="./assets/NeoRAG_Space_Logo.ico" alt="NeoRAG Space Logo" width="180px" /><br><br> |
-| *Interactive timeline covering project origin, data engineering, and system flow.* | *Custom executable branding platform icon.* |
-
+  <img src="./assets/NeoRAG_Architecture.png" alt="NeoRAG Architecture" width="100%" />
+  <br/>
+  <p><i>Interactive timeline covering project origin, data engineering, and system flow.</i></p>
 </div>
 
 ---
